@@ -1,0 +1,967 @@
+type,lat,lng,icon,name/text,alt_names,subheader/text,description,size,angle,spacing,curve,coords,style,overlay
+marker,-21.80030805097259,44.89013671875001,settlement,Pawtucket,,,,,,,,,{},Settlements
+marker,-76.97024507077676,-90.19775390625001,settlement,Marker,,,,,,,,,{},
+marker,-0.48337991318247436,135.2636894644682,settlement,Meeshawn,,,,,,,,,{},Settlements
+marker,-4.4997617436205255,143.10791015625003,settlement,Marker,,,,,,,,,{},Settlements
+marker,-20.015381961202028,152.51259230309853,forts,Unknown Fort or Palisade Village,,,"Upon arrival in Cape Cod, the Pilgrims discovered the ruins of a walled fortress or palisaded village filled with remains of local Nauset who had died from disease. Unaware of its native origins, the pilgrims assumed the location to be of European Christian construction and falsely mistook it as a graveyard. In the Pilgrims Journal the following is written.[^¹] [^¹]: ""We found a great burying place, one part whereof was encompassed with a large Palazado, like a Church-yard, with yong spires foure or five yards long, set as close one by another as they could two or three foot in the ground, within it was full of Graves, some bigger, and some lesse, some were also paled about, & others had like an Indian house made over them, but not matted: those Graves were more sumptuous than those at Corne-hill, yet we digged none of them up,. but onely viewed them, and went our way; without the Palazado were graves also, but not so costl.""",,,,,,{},Forts
+marker,-5.8127569137510084,143.3276367140934,forts,Unknown Fort or Palisade Village,,,"Upon arrival in Cape Cod, the Pilgrims discovered the ruins of a walled fortress or palisaded village near the mouth of Pamet River, at Truro. Unaware of its native origins, the pilgrims assumed the location to be of European Christian construction. [^¹] [^¹]: ""Not far from this place we found the remainder of an old fort, or palisade, which as we conceived had been made by some Christians. This was also hard by that place which we thought had been a river, unto which we went and found it so to be, dividing itself into two arms by a high bank. Standing right by the cut or mouth which came from the sea, that which was next unto us was the less; the other arm was more than twice as big, and not unlike to be a harbor for ships. But whether it be a fresh river, or only an indraught of the sea, we had no time to discover, for we had commandment to be out but two days. Here also we saw two canoes, the one on the one side, the other on the other side; we could not believe it was a canoe, till we came near it.""",,,,,,{},Forts
+marker,-66.57448342017541,29.157714843750004,forts,Marker,,,"A Niantic Indian stronghold located on a small five-acre island near the south shore of Great Pond, near Indian Head Neck. Discovered and attacked by Massachusetts colonial troops under John Endicott in 1637.
+
+It was described as a native fort in 1661 and an English fortification in 1705.",,,,,,{},Forts
+marker,-76.14822912651843,-144.40378202944026,rock,Mishow,,,"The Grey Mare and Mishow were two  boulders said to have been placed in their location by Manitou, the boulders served as an important ritual site used for sacred ceremonies.",,,,,,{},
+marker,-21.88190519004537,152.31445313198495,agriculture,Four or Five houses with Planting Grounds,,,"From this place we went and found more corn-ground, but not of this year. As we ranged we light on four or five Indian houses, which had been lately dwelt in, but they were uncovered, and had no mats about them, else they were like those we found at Cornhill but had not been so lately dwelt in. There was nothing left but two or three pieces of old mats, and a little sedge. Also, a little further we found two baskets full of parched acorns hid in the ground, which we supposed had been corn when we began to dig the same; we cast earth thereon again and went our way. All this while we saw no people.",,,,,,{},
+marker,-21.57571893245848,152.16064453125003,wigwam,Four or Five homes with Planting Grounds,,,"""From this place we went and found more corn-ground, but not of this year. As we ranged we light on four or five Indian houses, which had been lately dwelt in, but they were uncovered, and had no mats about them, else they were like those we found at Cornhill but had not been so lately dwelt in. There was nothing left but two or three pieces of old mats, and a little sedge. Also, a little further we found two baskets full of parched acorns hid in the ground, which we supposed had been corn when we began to dig the same; we cast earth thereon again and went our way. All this while we saw no people.""",,,,,,{},
+marker,19.621892180319374,11.645507812500002,mine,Coal Mine,,fgfdgd,dfgdfgd,,,,,,{},Mines/Quarries
+marker,44.2294565683017,-49.65820312500001,capital,Pocumtuck,,,,,,,,,{},
+marker,-45.70617928533085,57.01904296875001,agriculture,Marker,,,,,,,,,{},
+marker,-65.90165338613072,29.355468750000004,settlement,Marker,,,,,,,,,{},Settlements
+marker,-0.2636709443366629,-14.172363281250002,mine,Tantiusques,,“to a black deposit between two hills”,was a graphite mine which the local nipmucs used to mine graphite to make paints. ,,,,,,{},
+marker,-41.426253195072704,39.57275390625001,agriculture,Marker,,,,,,,,,{},
+marker,48.1367666796927,-43.98925781250001,settlement,Marker,,,,,,,,,{},
+marker,54.67383096593114,-37.79296875000001,settlement,Marker,,,,,,,,,{},
+marker,25.403584973186703,-49.94384765625001,settlement,Nonotuck,,,,,,,,,{},
+marker,26.155267744564583,-48.273795628065834,settlement,Marker,,,,,,,,,{},
+marker,-62.33941057752869,-31.508789062500004,settlement,Marker,,,,,,,,,{},
+marker,-59.3556624873046,88.22009383600171,settlement,Marker,,,,,,,,,{},
+marker,-4.981505049328246,77.16796875000001,rock,Wonnocoote ,,,,,,,,,{},
+marker,10.746969318460001,22.148437500000004,settlement,Hassanamesit ,,"""Place of Small Stones""",,,,,,,{},
+marker,18.95824648598139,36.18896484375001,agriculture,Marker,,,,,,,,,{},
+marker,25.878994400196202,-48.9990234375,agriculture,Marker,,,,,,,,,{},
+marker,-24.226928664976363,105.05126953125001,agriculture,Planting grounds,,,"The site of an ""Ancient Indian Plantation"" ",,,,,,{},
+marker,41.046216814520655,38.6279296875,seamonster,A'pcinic,,,"A'pcinic was a horned and beaked sea monster said to live in Lake Nagog, the monster reportedly dragged a tentacled arms along the shoreline when hungry to find its next meal.[^1] [^1]:https://newenglandfolklore.blogspot.com/2013/04/praying-indians-and-tentacled-lake.html",,,,,,{},
+marker,41.77131167976407,37.19970703125001,forts,Nashoba Fort,,,,,,,,,{},Forts
+marker,-46.99524110694595,65.45654296875001,settlement,Acoaxet,,,,,,,,,{},Settlements
+marker,-30.410781790845878,104.63378906250001,pteroglyph,Bourne Stone,,,,,,,,,{},Petroglyph
+marker,-38.13455657705413,87.67089843750001,pteroglyph,Mattapoisett Hand,,,,,,,,,{},Petroglyph
+marker,25.46311452925943,-49.17480468750001,agriculture,Marker,,,,,,,,,{},
+marker,25.06569718553588,-49.39453125000001,agriculture,Marker,,,,,,,,,{},
+marker,25.403584973186703,-50.95458984375001,agriculture,Marker,,,,,,,,,{},
+marker,25.740529092773226,-50.95458984375001,agriculture,Marker,,,,,,,,,{},
+marker,-52.25470880113082,37.57324218750001,mine,Coojoot,,Cajoot Cajout ,Coojoot was a graphite mine used by the Narragansett from the Woodland era until 1657,,,,,,{},Mines/Quarries
+marker,-51.8086147519852,39.28710937500001,agriculture,Marker,,,,,,,,,{},
+marker,49.009050809382074,87.18750000000001,settlement,Chebaco,,,,,,,,,{},Settlements
+marker,-71.7739410364347,-28.278808593750004,settlement,Marker,,,,,,,,,{},Settlements
+marker,-72.24891676830892,-27.004394531250004,settlement,Marker,,,,,,,,,{},Settlements
+marker,-72.57424976385356,-23.26904296875,settlement,Marker,,,,,,,,,{},Settlements
+marker,-70.12542991464234,4.855957031250001,settlement,Marker,,,,,,,,,{},Settlements
+marker,-74.45524706208214,-34.34326171875001,settlement,Marker,,,,,,,,,{},Settlements
+marker,-72.46865875387394,-21.796875000000004,settlement,Marker,,,,,,,,,{},Settlements
+marker,-75.66675882465918,-42.42919921875001,settlement,Marker,,,,,,,,,{},Settlements
+marker,-75.85591106616448,-42.64892578125001,settlement,Marker,,,,,,,,,{},Settlements
+marker,-76.03201380959756,-42.20947265625,settlement,Marker,,,,,,,,,{},Settlements
+marker,-76.33633385775283,-42.5390625,settlement,Marker,,,,,,,,,{},Settlements
+marker,-75.13514201950775,-37.41943359375001,settlement,Marker,,,,,,,,,{},Settlements
+marker,-75.53013598609306,-30.498046875000004,settlement,Marker,,,,,,,,,{},Settlements
+marker,-75.70478638174053,-32.60742187500001,agriculture,Marker,,,,,,,,,{},
+marker,-74.85641315279072,-27.114257812500004,agriculture,Marker,,,,,,,,,{},
+marker,-71.6774828543785,-19.951171875000004,settlement,Marker,,,,,,,,,{},Settlements
+marker,-71.89040942842333,-21.467285156250004,settlement,Marker,,,,,,,,,{},Settlements
+marker,-71.86306997499312,-19.753417968750004,settlement,Marker,,,,,,,,,{},Settlements
+marker,-71.32191469801221,-15.029296875000002,settlement,Marker,,,,,,,,,{},Settlements
+marker,-71.76019138754776,-16.721191406250004,settlement,Marker,,,,,,,,,{},Settlements
+marker,-71.91088787611527,-14.765625000000002,settlement,Marker,,,,,,,,,{},Settlements
+marker,-72.3424643905499,-13.886718750000002,settlement,Marker,,,,,,,,,{},Settlements
+marker,-72.6530383592017,-16.918945312500004,settlement,Marker,,,,,,,,,{},Settlements
+marker,-75.68306846179547,-122.49755859375001,settlement,Marker,,,,,,,,,{},
+marker,-75.25864871532573,-125.61767578125001,settlement,Marker,,,,,,,,,{},
+marker,-75.85591106616448,-124.67285156250001,settlement,Marker,,,,,,,,,{},
+marker,-75.05035357407698,-118.95996093750001,settlement,Marker,,,,,,,,,{},
+marker,-75.01630602063717,-116.87255859375001,settlement,Marker,,,,,,,,,{},
+marker,-75.47513069090053,-116.96044921875,settlement,Marker,,,,,,,,,{},
+marker,-76.44490733708945,-44.71435546875,settlement,Marker,,,,,,,,,{},Settlements
+marker,-76.14295846479848,-45.966796875,settlement,Marker,,,,,,,,,{},Settlements
+marker,-76.58325853729983,-46.51611328125,settlement,Marker,,,,,,,,,{},Settlements
+marker,-76.8207925254374,-48.69140625,settlement,Marker,,,,,,,,,{},Settlements
+marker,-77.03941844273028,-49.37255859375001,settlement,Marker,,,,,,,,,{},Settlements
+marker,-77.0836963067392,-50.42724609375001,settlement,Marker,,,,,,,,,{},Settlements
+marker,-75.30331101068566,-47.06542968750001,settlement,Marker,,,,,,,,,{},Settlements
+marker,-74.83918324990893,-55.4150390625,settlement,Marker,,,,,,,,,{},Settlements
+marker,-75.67763393603113,-56.6455078125,settlement,Marker,,,,,,,,,{},Settlements
+marker,-75.53562529096112,-68.88427734375001,settlement,Marker,,,,,,,,,{},Settlements
+marker,-74.74696664174384,-70.09277343750001,settlement,Marker,,,,,,,,,{},Settlements
+marker,-75.18017014726308,-67.25830078125001,settlement,Marker,,,,,,,,,{},Settlements
+marker,-13.902075852500483,72.57568359375001,forts,Marker,,,,,,,,,{},
+marker,34.97600151317588,63.30322265625001,forts,Marker,,,,,,,,,{},
+marker,40.78054143186033,80.02441406250001,forts,Marker,,,,,,,,,{},
+marker,41.492120839687786,82.88085937500001,forts,Marker,,,,,,,,,{},
+marker,42.74701217318067,79.6728515625,forts,Marker,,,,,,,,,{},
+marker,39.35129035526705,80.52978515625001,forts,Marker,,,,,,,,,{},
+marker,58.56252272853734,65.96191406250001,settlement,Marker,,,,,,,,,{},Settlements
+marker,60.08676274626006,67.93945312500001,settlement,Marker,,,,,,,,,{},Settlements
+marker,62.103882522897884,77.60742187500001,settlement,Marker,,,,,,,,,{},Settlements
+marker,59.31076795603884,74.17968750000001,settlement,Marker,,,,,,,,,{},Settlements
+marker,58.06625598088457,83.03466796875001,settlement,Marker,,,,,,,,,{},Settlements
+marker,53.067626642387374,90.615234375,settlement,Agawam,,,,,,,,,{},Settlements
+marker,50.064191736659104,96.30615234375001,settlement,Wenesquawam ,,,,,,,,,{},Settlements
+marker,47.30903424774781,89.75830078125001,settlement,Marker,,,,,,,,,{},Settlements
+marker,47.62097541515849,80.77148437500001,settlement,Marker,,,,,,,,,{},Settlements
+marker,45.213003555993964,78.11279296875001,settlement,Marker,,,,,,,,,{},Settlements
+marker,-65.07213008560697,-85.49560546875001,settlement,Marker,,,,,,,,,{},Settlements
+marker,-65.62202261510642,-90.02197265625,settlement,Marker,,,,,,,,,{},Settlements
+marker,-62.73460087706358,-72.81738281250001,settlement,Marker,,,,,,,,,{},Settlements
+marker,-59.265880628258095,-12.041015625000002,settlement,Marker,,,,,,,,,{},
+marker,-39.23225314171489,102.06298828125001,settlement,Marker,,,,,,,,,{},Settlements
+marker,-37.94419750075404,110.12695312500001,settlement,Marker,,,,,,,,,{},Settlements
+marker,-40.64730356252251,108.14941406250001,settlement,Marker,,,,,,,,,{},Settlements
+marker,-38.37611542403603,112.98339843750001,settlement,Marker,,,,,,,,,{},Settlements
+marker,-43.02071359427861,110.10498046875001,settlement,Marker,,,,,,,,,{},Settlements
+marker,-43.9928145004899,113.26904296875,settlement,Marker,,,,,,,,,{},Settlements
+marker,-40.613952441166596,115.11474609375,settlement,Marker,,,,,,,,,{},Settlements
+marker,-21.47351753334985,79.82666015625001,settlement,Marker,,,,,,,,,{},Settlements
+marker,-17.832374329567507,70.79589843750001,settlement,Marker,,,,,,,,,{},Settlements
+marker,-14.157881896141461,73.27880859375001,settlement,Marker,,,,,,,,,{},Settlements
+marker,5.900188795584184,-8.415527343750002,settlement,Marker,,,,,,,,,{},Settlements
+marker,6.293458760393985,-9.799804687500002,settlement,Marker,,,,,,,,,{},Settlements
+marker,5.309766171943691,-9.514160156250002,settlement,Marker,,,,,,,,,{},Settlements
+marker,7.035475652433024,-9.492187500000002,settlement,Marker,,,,,,,,,{},Settlements
+marker,12.12526421833159,-9.316406250000002,settlement,Marker,,,,,,,,,{},Settlements
+marker,16.762467717941604,-15.139160156250002,settlement,Marker,,,,,,,,,{},Settlements
+marker,19.16592425362802,6.745605468750001,settlement,Marker,,,,,,,,,{},Settlements
+marker,16.846605106396304,10.898437500000002,settlement,Marker,,,,,,,,,{},Settlements
+marker,20.673905264672843,13.974609375000002,settlement,Marker,,,,,,,,,{},Settlements
+marker,-62.48187744898419,-38.6279296875,settlement,Marker,,,,,,,,,{},Settlements
+marker,-49.224772722794825,-20.676269531250004,settlement,Marker,,,,,,,,,{},Settlements
+marker,-21.493963563064455,5.229492187500001,settlement,Marker,,,,,,,,,{},Settlements
+marker,6.533645130567532,-59.80957031250001,settlement,Marker,,,,,,,,,{},Settlements
+marker,-34.361576287484176,-97.294921875,settlement,Marker,,,,,,,,,{},Settlements
+marker,-48.19538740833338,-91.23046875,settlement,Marker,,,,,,,,,{},Settlements
+marker,-49.65340458843789,-88.94531250000001,settlement,Marker,,,,,,,,,{},Settlements
+marker,-33.46810795527895,-19.577636718750004,settlement,Marker,,,,,,,,,{},Settlements
+marker,-17.308687886770024,81.40869140625001,settlement,Marker,,,,,,,,,{},Settlements
+marker,-11.178401873711772,98.21777343750001,settlement,Patuxet,,,,,,,,,{},Settlements
+marker,55.99838095535963,-96.064453125,settlement,Hoosic,,,,,,,,,{},Settlements
+marker,-80.90066856076275,-162.00439453125003,settlement,Nayack,,,,,,,,,{},Settlements
+marker,11.005904459659451,-109.40185546875001,settlement,Marker,,,,,,,,,{},Settlements
+marker,13.966054081318314,-107.86376953125001,settlement,Marker,,,,,,,,,{},Settlements
+marker,22.69512018496571,-104.91943359375001,settlement,Wnahtukook,,,,,,,,,{},Settlements
+marker,-16.99375545289455,-116.27929687500001,settlement,Marker,,,,,,,,,{},Settlements
+marker,-58.859223547066584,-2.0874023437500004,settlement,Marker,,,,,,,,,{},Settlements
+marker,-60.29429873400916,-4.042968750000001,settlement,Marker,,,,,,,,,{},Settlements
+marker,-56.860985750644886,3.9770507812500004,settlement,Marker,,,,,,,,,{},Settlements
+marker,-60.04288763076307,3.7133789062500004,settlement,Marker,,,,,,,,,{},Settlements
+marker,-40.094872337893925,-18.171386718750004,settlement,Marker,,,,,,,,,{},Settlements
+marker,36.03133177633189,21.071777343750004,settlement,Marker,,,,,,,,,{},Settlements
+marker,51.303145259199084,47.35107421875001,settlement,Marker,,,,,,,,,{},Settlements
+marker,37.92977319243816,23.80833384119878,settlement,Marker,,,,,,,,,{},Settlements
+marker,43.43696596521823,51.70166015625001,settlement,Marker,,,![Map from 1642](images/04-Map-1642.jpg),,,,,,{},Settlements
+marker,40.21246025329131,56.030281649008565,settlement,Marker,,,![Map from 1642](images/04-Map-1642.jpg),,,,,,{},Settlements
+marker,27.0982539061379,38.03466796875001,settlement,Marker,,,,,,,,,{},Settlements
+marker,24.32707654001865,31.113281250000004,settlement,Marker,,,,,,,,,{},Settlements
+marker,-14.41340016520608,10.9423828125,settlement,Marker,,,,,,,,,{},Settlements
+marker,-11.759814674441921,8.613281250000002,settlement,Marker,,,,,,,,,{},Settlements
+marker,-5.725311447610142,1.0766601562500002,settlement,Marker,,,,,,,,,{},Settlements
+marker,-15.982453522973495,21.4453125,settlement,Marker,,,,,,,,,{},Settlements
+marker,29.516110386062277,-12.502441406250002,settlement,Marker,,,,,,,,,{},Settlements
+marker,28.091366281406945,-13.623046875,settlement,Marker,,,,,,,,,{},Settlements
+marker,27.352252938063845,-14.611816406250002,settlement,Marker,,,,,,,,,{},Settlements
+marker,28.70986084394286,60.07324218750001,settlement,Marker,,,,,,,,,{},Settlements
+marker,23.221154981846556,58.82080078125001,settlement,Marker,,,,,,,,,{},Settlements
+marker,-12.875939037217996,28.850097656250004,settlement,Marker,,,,,,,,,{},Settlements
+marker,-0.3981522316457348,28.740234375000004,settlement,Marker,,,,,,,,,{},Settlements
+marker,2.284467588374642,28.1689453125,settlement,Marker,,,,,,,,,{},Settlements
+marker,3.5349053313990932,28.410644531250004,settlement,Marker,,,,,,,,,{},Settlements
+marker,18.89590466057119,36.91406250000001,settlement,Marker,,,,,,,,,{},Settlements
+marker,20.03497127651161,40.10009765625001,settlement,Marker,,,,,,,,,{},Settlements
+marker,19.352429877965967,27.268066406250004,settlement,Marker,,,,,,,,,{},Settlements
+marker,24.266927326659292,42.31933593750001,settlement,Marker,,,,,,,,,{},Settlements
+marker,40.94612917944953,37.68310546875,settlement,Marker,,,,,,,,,{},Settlements
+marker,33.56033549257388,61.34765625000001,settlement,Marker,,,,,,,,,{},Settlements
+marker,31.353926392327995,68.95019531250001,settlement,Marker,,,,,,,,,{},Settlements
+marker,33.79698892147911,73.01513671875001,settlement,Marker,,,,,,,,,{},Settlements
+marker,30.487096437490415,73.74023437500001,settlement,Marker,,,,,,,,,{},Settlements
+marker,41.16278798663197,83.51806640625001,settlement,Marker,,,,,,,,,{},Settlements
+marker,49.681846899401286,74.00390625000001,settlement,Marker,,,,,,,,,{},Settlements
+marker,51.46746190298089,63.87451171875001,settlement,Marker,,,,,,,,,{},Settlements
+marker,52.32143399533718,68.46679687500001,settlement,Marker,,,,,,,,,{},Settlements
+marker,50.28944548865566,71.47705078125001,settlement,Marker,,,,,,,,,{},Settlements
+marker,-42.87596878898569,-32.12402343750001,settlement,Marker,,,,,,,,,{},Settlements
+marker,-59.90016673427393,-70.92773437500001,settlement,Marker,,,,,,,,,{},Settlements
+marker,-60.42475279712382,-67.17041015625001,settlement,Marker,,,,,,,,,{},Settlements
+marker,-44.44932763861106,32.34375000000001,settlement,Marker,,,,,,,,,{},Settlements
+marker,-45.21264728120965,38.18847656250001,settlement,Marker,,,,,,,,,{},Settlements
+marker,-36.403253635441885,50.91064453125001,settlement,Marker,,,,,,,,,{},Settlements
+marker,-36.73844338405072,54.36035156250001,settlement,Marker,,,,,,,,,{},Settlements
+marker,-35.18796509142401,53.61328125000001,settlement,Marker,,,,,,,,,{},Settlements
+marker,-32.37995078692509,51.08642578125001,settlement,Marker,,,,,,,,,{},Settlements
+marker,-37.12486289441255,59.72167968750001,settlement,Marker,,,,,,,,,{},Settlements
+marker,-43.85038817586523,57.81005859375001,settlement,Marker,,,,,,,,,{},Settlements
+marker,-44.0095067234058,75.60791015625001,settlement,Marker,,,,,,,,,{},Settlements
+marker,-26.431199760361128,64.73144531250001,settlement,Marker,,,,,,,,,{},Settlements
+marker,-21.146210315366762,83.45214843750001,settlement,Marker,,,,,,,,,{},Settlements
+marker,-18.375709055381044,83.93554687500001,settlement,Marker,,,,,,,,,{},Settlements
+marker,-61.45996387034884,142.49267578125003,settlement,Marker,,,,,,,,,{},Settlements
+marker,-60.14175022218421,149.43603515625003,settlement,Marker,,,,,,,,,{},Settlements
+marker,-37.19513419096924,134.84619140625003,settlement,Marker,,,,,,,,,{},Settlements
+marker,-36.03146980766242,126.78222656250001,settlement,Marker,,,,,,,,,{},Settlements
+marker,-30.827215185061817,137.48291015625003,settlement,Marker,,,,,,,,,{},Settlements
+marker,-26.31318630368297,152.62207031250003,settlement,Marker,,,,,,,,,{},Settlements
+marker,-25.145696633770918,152.99560546875003,settlement,Marker,,,,,,,,,{},Settlements
+marker,-25.344380247056534,154.68750000000003,settlement,Marker,,,,,,,,,{},Settlements
+marker,-26.941552470150757,150.53466796875003,settlement,Marker,,,,,,,,,{},Settlements
+marker,-27.019854480761342,148.62304687500003,settlement,Marker,,,,,,,,,{},Settlements
+marker,-34.16199077965677,153.41308593750003,settlement,Manamoycke,,,,,,,,,{},Settlements
+marker,38.82245799763665,-16.413574218750004,settlement,Marker,,,,,,,,,{},Settlements
+marker,49.69627036272315,51.48193359375001,settlement,Marker,,,,,,,,,{},Settlements
+marker,-7.601531395848714,-57.78808593750001,settlement,Marker,,,,,,,,,{},Settlements
+marker,-5.7695453247274875,-46.07666015625001,settlement,Marker,,,,,,,,,{},Settlements
+marker,-9.946517823755379,-40.80322265625001,settlement,Marker,,,,,,,,,{},Settlements
+marker,-5.354150760822185,-52.11914062500001,settlement,Marker,,,,,,,,,{},Settlements
+marker,47.2341248761915,50.62536157662888,settlement,Marker,,,![Map from 1642](images/04-Map-1642.jpg),,,,,,{},Settlements
+marker,24.106507079653614,68.77368269159157,settlement,Marker,,,,,,,,,{},Settlements
+marker,22.33013090638646,68.11425647457186,settlement,Mattapan,,,,,,,,,{},Settlements
+marker,22.431304682863786,70.55422078053705,capital,Moswetuset ,,,![ME_Boston_Map_28x36_Flat-1-e1490057999642](images/ME_Boston_Map_28x36_Flat-1-e1490057999642.jpg),,,,,,{},Settlements
+marker,22.776181505086505,71.45507812500001,settlement,Musquantum,,,![ME_Boston_Map_28x36_Flat-1-e1490057999642](images/ME_Boston_Map_28x36_Flat-1-e1490057999642.jpg),,,,,,{},Settlements
+marker,22.573745338624363,71.85100503768348,settlement,Marker,,,,,,,,,{},Settlements
+marker,19.973414902296028,68.37907060301313,settlement,Marker,,,,,,,,,{},Settlements
+marker,16.109226968604325,90.70342905307433,settlement,Marker,,,,,,,,,{},Settlements
+marker,18.374796455267646,90.5495629357697,settlement,Marker,,,,,,,,,{},Settlements
+marker,12.33962698536624,93.09845680197498,settlement,Marker,,,,,,,,,{},Settlements
+marker,-62.92495331310624,-54.512344055454875,settlement,Marker,,,,,,,,,{},Settlements
+marker,-63.19396652496589,-5.229023781412564,settlement,Marker,,,,,,,,,{},Settlements
+marker,-63.03503351575593,-3.536496491062007,settlement,Marker,,,,,,,,,{},Settlements
+marker,-23.725111266606707,45.28594858432432,settlement,Pawtucket,,,,,,,,,{},Settlements
+marker,-23.523858380011706,41.08760166929889,settlement,Pawtucket,,,,,,,,,{},Settlements
+marker,-25.40319792282417,43.15380381596061,settlement,Pawtucket,,,,,,,,,{},Settlements
+marker,-27.46976410688444,45.04341938285798,settlement,Pawtucket,,,,,,,,,{},Settlements
+marker,-31.14641518926923,41.92213528896474,settlement,Pawtucket,,,,,,,,,{},Settlements
+marker,-27.391777905521824,39.74721211449425,settlement,Pawtucket,,,,,,,,,{},Settlements
+marker,-32.00874298360159,38.936730216694556,settlement,Pawtucket,,,,,,,,,{},Settlements
+marker,-32.87999535263296,41.684339454276675,settlement,Pawtucket,,,,,,,,,{},Settlements
+marker,-37.352179351595915,37.72637693389617,settlement,Pawtucket,,,,,,,,,{},Settlements
+marker,-36.22635926635158,43.397442400265604,settlement,Pawtucket,,,,,,,,,{},Settlements
+marker,-50.19066068304026,43.637982930273004,settlement,Pawtucket,,,,,,,,,{},Settlements
+marker,-61.56453429750232,-120.38832329381118,settlement,Pawtucket,,,,,,,,,{},Settlements
+marker,-60.83437877736833,-122.4545254404729,settlement,Pawtucket,,,,,,,,,{},Settlements
+marker,-64.06259063688063,-108.56811074354721,settlement,Pawtucket,,,,,,,,,{},Settlements
+marker,-68.0152736601904,-102.34821371231654,settlement,Pawtucket,,,,,,,,,{},Settlements
+marker,-40.647871276167166,118.21267696608295,settlement,Pawtucket,,,,,,,,,{},Settlements
+marker,7.18810087117902,-63.08349609375001,settlement,Marker,,,,,,,,,{},Settlements
+marker,4.477856485570586,-60.55664062500001,settlement,Marker,,,,,,,,,{},Settlements
+marker,6.642782900356179,-63.08349609375001,forts,Marker,,,,,,,,,{},
+marker,33.37641235124679,14.831542968750002,capital,marker,,,,,,,,,{},
+marker,-31.278550858946517,50.11962890625001,capital,marker,,,,,,,,,{},
+marker,-52.46939684276204,58.11767578125001,settlement,Marker,,,,,,,,,{},Settlements
+marker,8.798225459016358,-19.138183593750004,settlement,Marker,,,,,,,,,{},Settlements
+marker,-41.228249015185305,79.21142578125001,settlement,Marker,,,,,,,,,{},Settlements
+marker,40.01078714046552,81.21093750000001,settlement,Marker,,,,,,,,,{},Settlements
+marker,39.9602803542957,82.99072265625001,settlement,Marker,,,,,,,,,{},Settlements
+marker,38.75408327579141,5.207519531250001,settlement,Marker,,,,,,,,,{},Settlements
+marker,1.5818302639606454,-48.14208984375001,settlement,Marker,,,,,,,,,{},Settlements
+marker,1.7575368113083254,-52.09716796875001,settlement,Marker,,,,,,,,,{},Settlements
+marker,1.9551868337565232,-51.52587890625001,settlement,Marker,,,,,,,,,{},Settlements
+marker,0.7250783020332547,-50.62500000000001,settlement,Marker,,,,,,,,,{},Settlements
+marker,1.7355743631421197,-49.98779296875001,settlement,Marker,,,,,,,,,{},Settlements
+marker,1.3621763466641712,-49.43847656250001,settlement,Marker,,,,,,,,,{},Settlements
+marker,0.17578097424708533,-46.75781250000001,settlement,Marker,,,,,,,,,{},Settlements
+marker,2.3943223575350774,-47.52685546875001,settlement,Marker,,,,,,,,,{},Settlements
+marker,2.591888984149953,-50.07568359375001,settlement,Marker,,,,,,,,,{},Settlements
+marker,2.833317196855306,-50.64697265625001,settlement,Marker,,,,,,,,,{},Settlements
+marker,3.3160183381615123,-50.09765625000001,settlement,Marker,,,,,,,,,{},Settlements
+marker,3.7984839750369748,-50.62500000000001,settlement,Marker,,,,,,,,,{},Settlements
+marker,4.368320420876243,-50.03173828125001,settlement,Marker,,,,,,,,,{},Settlements
+marker,8.167993177231883,-49.6142578125,settlement,Marker,,,,,,,,,{},Settlements
+marker,8.99360046428003,-48.0322265625,settlement,Marker,,,,,,,,,{},Settlements
+marker,53.133589829244826,61.67724609375001,mine,Mine,,fgfdgd,dfgdfgd,,,,,,{},Mines/Quarries
+marker,17.476432197195518,69.60937500000001,mine,Mine,,fgfdgd,dfgdfgd,,,,,,{},Mines/Quarries
+marker,17.790535393588975,70.31250000000001,mine,Mine,,fgfdgd,dfgdfgd,,,,,,{},Mines/Quarries
+marker,-16.46769474828897,103.75488281250001,rock,Sacrifice Rock,,,The sacrifice rock was a particular stone which tradition held one should place a small stone or stick upon when traveling past it. This would help the traveler become closer to the Manitou a fundamental and omnipresent life force that Algonquian,,,,,,{},
+marker,-28.729130483430154,105.97412109375,rock,Sacrifice Rock ,,,The sacrifice rock was a particular stone which tradition held one should place a small stone or stick upon when traveling past it. This would help the traveler become closer to the Manitou a fundamental and omnipresent life force that Algonquian,,,,,,{},
+marker,-37.63163475580644,114.82910156250001,settlement,Marker,,,,,,,,,{},Settlements
+marker,-47.66538735632655,99.38232421875001,settlement,Marker,,,,,,,,,{},Settlements
+marker,-28.401064827220896,110.2587890625,rock,Sigamore Hill,,,Sigamore Hill was an important meeting site used by the Wampanoag ,,,,,,{},
+marker,-28.03319784767635,106.10595703125001,settlement,Marker,,,,,,,,,{},Settlements
+marker,-63.37183226679281,151.56738281250003,settlement,Marker,,,,,,,,,{},Settlements
+marker,-63.44068640036803,144.66796875000003,settlement,Marker,,,,,,,,,{},Settlements
+marker,-59.60109549032134,150.93017578125003,settlement,Marker,,,,,,,,,{},Settlements
+marker,-32.37996146435729,58.75488281250001,agriculture,Marker,,,,,,,,,{},
+marker,-33.11915022676886,58.86474609375001,agriculture,Shawamet,,,,,,,,,{},
+marker,-33.43144133557529,56.99707031250001,agriculture,Mattapoisett,,,,,,,,,{},
+marker,-34.27083595165,54.75585937500001,agriculture,Toowooset,,,,,,,,,{},
+marker,18.812717856407776,72.57568359375001,settlement,Passanageset,,,![ME_Boston_Map_28x36_Flat-1-e1490057999642](images/ME_Boston_Map_28x36_Flat-1-e1490057999642.jpg),,,,,,{},Settlements
+marker,-15.432500881886043,107.11669921875,settlement,Manomet,,,,,,,,,{},Settlements
+marker,25.16517336866393,-48.42773437500001,agriculture,Marker,,,,,,,,,{},
+marker,24.786734541988906,-48.69140625,agriculture,Marker,,,,,,,,,{},
+marker,31.725882537641308,-131.22224688860555,settlement,Marker,,,,,,,,,{},Settlements
+marker,20.4270128142574,71.54299955255291,agriculture,Massachusetts Planting Fields,,,![ME_Boston_Map_28x36_Flat-1-e1490057999642](images/ME_Boston_Map_28x36_Flat-1-e1490057999642.jpg),,,,,,{},
+marker,20.653777076652563,71.0376869836534,agriculture,Massachusetts Planting Fields,,,![ME_Boston_Map_28x36_Flat-1-e1490057999642](images/ME_Boston_Map_28x36_Flat-1-e1490057999642.jpg),,,,,,{},
+marker,-63.02508423410086,87.91259295262459,fishing,Marker,,,,,,,,,{},
+marker,-43.67709060906243,32.62939453125001,forts,Marker,,,,,,,,,{},
+marker,-31.541089879585822,81.43066406250001,settlement,Marker,,,,,,,,,{},Settlements
+marker,-13.325484885597936,145.28320312500003,settlement,Marker,,,,,,,,,{},Settlements
+marker,-6.246728287806848,144.09627113428928,wigwam,Two Unidentified Homes Encountered by Pilgrams,,,"[^1] [^1]:Whilst we were thus ranging and searching, two of the sailors, which were newly come on the shore, by chance espied two houses which had been lately dwelt in, but the people were gone. They, having their pieces and hearing nobody, entered the houses and took out some things, and durst not stay but came again and told us. So some seven or eight of us went with them, and found how we had gone within a flight shot of them before. The houses were made with long young sapling trees, bended and both ends stuck into the ground. They were made round, like unto an arbor, and covered down to the ground with thick and well wrought mats, and the door was not over a yard high, made of a mat to open. The chimney was a wide open hole in the top, for which they had a mat to cover it close when they pleased. One might stand and go upright in them. In the midst of them were four little trunches knocked into the ground, and small sticks laid over, on which they hung their pots, and what they had to seethe. Round about the fire they lay on mats, which are their beds. The houses were double matted, for as they were matted without, so were they within, with newer and fairer mats. In the houses we found wooden bowls, trays and dishes, earthen pots, handbaskets made of crabshells wrought together, also an English pail or bucket; it wanted a bail, but it had two iron ears. There was also baskets of sundry sorts, bigger and some lesser, finer and some coarser; some were curiously wrought with black and white in pretty works, and sundry other of their household stuff. We found also two or three deer’s heads, one whereof had been newly killed, for it was still fresh. There was also a company of deer’s feet stuck up in the houses, harts’ horns, and eagles’ claws, and sundry such like things there was, also two or three baskets full of parched acorns, pieces of fish, and a piece of a broiled herring. We found also a little silk grass, and a little tobacco seed, with some other seeds which we knew not. Without was sundry bundles of flags, and sedge, bulrushes, and other stuff to make mats. There was thrust into a hollow tree two or three pieces of venison, but we thought it fitter for the dogs than for us. Some of the best things we took away with us, and left the houses standing still as they were.",,,,,,{},
+marker,-59.05189565078284,-10.238752004857291,forts,Fort Hill,,,[^¹] dfgdfgdf g,,,,,,{},
+marker,-55.528562934867665,-11.95352595922982,forts,Fort Shamtok,,,[^¹] dfgdfgdf g,,,,,,{},
+marker,-59.899964678333895,-5.822796866167483,forts,Fort Mystic,,,[^¹] dfgdfgdf g,,,,,,{},Forts
+marker,-61.98040250271992,11.997085308375503,forts,Fort Niniget,,,[^¹] dfgdfgdf g,,,,,,{},Forts
+text,-61.2,10.8,,Acqueednuck,,,"Acqueednuck (a branch of the Pawtuxet River) & Pond in Washington County. Possibly derived from ukque-dene-auke 'place at the end of the hill' or ogque-adene-auke 'place beyond the hill'. Now known as the Quidnic River.",5,0,0,0,,,
+text,-61.2,11.4,,Allum Pond,,,"Allum (or Wallum) Pond in Providence County, named for the Quinebaug Nipmuc sachem Allums, whose name meant 'The Fox'.",5,0,0,0,,,
+text,-61.2,12,,Aqueedenuck,,,"Aqueedenuck in Washington County meaning 'at the island' or possibly 'place beyond the hill'.",5,0,0,0,,,
+text,-61.2,12.6,,Aqueednuck,,,"Aqueednuck (now Quidnic) River and Pond near Week's Hill in Coventry. Name may combine ukque-dene-auke 'place at the end of the hill' or ogque-adene-auke 'place beyond the hill'.",5,0,0,0,,,
+text,-61.2,13.2,,Assanapset Brook,,,"Assanapset Brook in Providence County possibly means 'where the net was held down by rocks' or 'at the small rocky stream'.",5,0,0,0,,,
+text,-61.2,13.8,,Canangogum,,,"Canangogum in northwestern Providence County meaning 'the fence or boundary' or possibly 'highland'.",5,0,0,0,,,
+text,-61.5,10.8,,Chanangonum,,,"Chanangonum, possibly in Providence County, interpreted as 'great reed place' or 'great paint place'.",5,0,0,0,,,
+text,-61.5,11.4,,Cheetoskeunke,,,"Cheetoskeunke in Kent County, likely meaning 'at the principal wading place'—a ford or bridge.",5,0,0,0,,,
+text,-61.5,12,,Chepatset,,,"Chepatset (now Chepachet) in northwestern Providence County meaning 'boundary place' or 'place of separation' where the stream divides.",5,0,0,0,,,
+text,-61.5,12.6,,Chickasheen Brook,,,"Chickasheen Brook in Washington County with interpretations including 'fish weir', 'high water', or 'cedars', most likely 'big spring'.",5,0,0,0,,,
+text,-61.5,13.2,,Chipchug Pond,,,"Chipchug Pond in Washington County; see the related Chipchug in Connecticut.",5,0,0,0,,,
+text,-61.5,13.8,,Chockalaug River,,,"Chockalaug River in Providence County meaning 'fox place'.",5,0,0,0,,,
+text,-61.8,10.8,,Escoheag Village,,,"Escoheag Village (Eascoheage, Escoheague, Easterig, Esterig) in Kent County, interpreted as 'this is as far as the fish-spearing goes', 'fork in the river', or possibly 'red land' or 'a meadow'.",5,0,0,0,,,
+text,-61.8,11.4,,Liswoosuckit,,,"Liswoosuckit, a modification of Niswosaket, likely connected to modern Woonsocket.",5,0,0,0,,,
+text,-61.8,12,,Louisquisset Pike,,,"Louisquisset Pike in Providence County meaning 'at the meeting place'; recorded with many historical spellings such as Locasquisset and Loquasquocit.",5,0,0,0,,,
+text,-61.8,12.6,,Machepaconaponsuck,,,"Machepaconaponsuck in Coventry or Foster marked the eastern bounds of Quinebaug lands sold by Hyems (Allumps), near Wishquatennioge.",5,0,0,0,,,
+text,-61.8,13.2,,Massanegtocaneh,,,"Massanegtocaneh in Providence County, possibly meaning 'place of the source of the great stream' or 'union of great streams'.",5,0,0,0,,,
+text,-61.8,13.8,,Mattato Hill,,,"Mattato Hill in Providence County, perhaps meaning 'bad hill' and likely shortened from a longer original name.",5,0,0,0,,,
+text,-62.1,10.8,,Molligwasset,,,"Molligwasset in Providence County meaning 'valley place'.",5,0,0,0,,,
+text,-62.1,11.4,,Neastoquaheagunnuck,,,"Neastoquaheagunnuck, the eastern boundary of the Quinebaug country near Atchaubbenuck; later corrupted into names like Easterig and Eascoheague.",5,0,0,0,,,
+text,-62.1,12,,Neetmock River,,,"Neetmock River in Kent County, a modern form of Nipmuck meaning 'fresh water place'.",5,0,0,0,,,
+text,-62.1,12.6,,Paquantuck Stream,,,"Paquantuck Stream in Providence County meaning 'clear or shallow river'.",5,0,0,0,,,
+text,-62.1,13.2,,Pascoag Village,,,"Pascoag Village, Reservoir, and River in Providence County meaning 'the dividing place' or 'land at the branch'.",5,0,0,0,,,
+text,-62.1,13.8,,Quidnic Pond,,,"Quidnic Pond in Providence County; see related forms in Rhode Island and Connecticut such as Aqueednuck and Acqueedenuck.",5,0,0,0,,,
+text,-62.4,10.8,,Sachuck Hill,,,"Sachuck Hill in Providence County meaning 'at the mountain'.",5,0,0,0,,,
+text,-62.4,11.4,,Scatacook,,,"Scatacook in Kent County meaning 'fork in the river', also appearing as Scatacoke or Scatacosh.",5,0,0,0,,,
+text,-62.4,12,,Segreganset,,,"Segreganset in Bristol County, a Nipmuc village name meaning 'place of hard rocks' or 'where it pours out'.",5,0,0,0,,,
+text,-62.4,12.6,,Sneech Pond,,,"Sneech Pond in Providence County possibly meaning 'rocks at the outlet'.",5,0,0,0,,,
+text,-62.4,13.2,,Walllum Pond,,,"Walllum Pond, Lake, and Village in Providence County, sharing the meaning 'a dog' with Allum Pond.",5,0,0,0,,,
+text,-62.4,13.8,,Watchaug Pond,,,"Watchaug Pond in Washington County meaning 'hill country'.",5,0,0,0,,,
+text,-62.7,10.8,,Wayunkeke Hill,,,"Wayunkeke Hill in Providence County meaning 'at the bend' or 'land at the bend'.",5,0,0,0,,,
+text,-62.7,11.4,,Wincheck Pond,,,"Wincheck Pond in Washington County meaning 'at the pleasant place'.",5,0,0,0,,,
+text,-62.7,12,,Woonsocket Hill,,,"Woonsocket Hill and Reservoir in Providence County meaning 'place of steep descent' or possibly 'two brook place' from Niswesocket.",5,0,0,0,,,
+marker,-71.43416801575344,1.8017578125000002,forts,Fort Montauk,,,"[^¹] An old Montauk fort was reportedly situated on ,the eastern extremity of Montauk Point near Fresh Pond; the pond is near the Hither (Nominick) Hills. The fort had supposedly ·fallen into decay by the time the English arrived in 1640.",,,,,,{},Forts
+marker,-71.21604917397931,-28.124749400481367,forts,Fort Manhnnett,,,[^¹] dfgdfgdf g,,,,,,{},Forts
+marker,-72.7967975917526,-42.321949332480116,forts,Fort Corchaug,,,"[^¹] Fort Corchaug, although it is accessible to a major waterway, appears to have functioned as a refuge as well as a wampum manufactory",,,,,,{},Forts
+marker,-75.50834193457236,-40.890955761552576,forts,Fort Shinnecock,,,[^¹] dfgdfgdf g,,,,,,{},Forts
+marker,-79.71861079737243,-107.22656250000001,forts,Fort Massapeag,,,"[^¹] Only one site on Long Island, Fort Massapeag, which may have been built under the supervision of the Dutch in 1656, meets Ceci's criteria for a trading station. Because of its small size, it could not have served as a refuge from possible attack for a large Indianpopulation. It was a wampum manufactory.",,,,,,{},Forts
+marker,-66.44245198617834,-115.40038949426483,forts,Wappinger Fort,,,"[^¹] Mentioned in the literature was an Indian that had been attacked by the Dutch in 1644 on Strickland's Plains at Poundridge, Westchester County, New York (Brodhead 1859:I: 390-391). Some 500 Indians were said to have been slaughtered there, while the Dutch suffered only 15 wounded. No archaeological reports that we know of have· confirmed this event.",,,,,,{},Forts
+marker,12.0395291064696,22.192383186426973,chambers,Upton Stone Chamber ,,,,,,,,,{},Ceremonial Stone Landscapes
+marker,64.650123754094,-39.66180298693398,settlement,Marker,,,,,,,,,{},
+marker,-79.70290666685683,-161.12547416821354,camps,Marker,,,,,,,,,{},
+marker,50.52739681329302,55.61279296875001,settlement,Marker,,,,,,,,,{},Settlements
+marker,50.59692665798444,56.73212822024983,chambers,Indian Cellar ,,,,,,,,,{},Ceremonial Stone Landscapes
+marker,-79.71627864940642,-157.14843750000003,settlement,Werpos ,,,,,,,,,{},
+marker,-57.124001816760575,113.77441406250001,settlement,Marker,,,,,,,,,{},
+marker,-80.83790672822796,-162.37792968750003,agriculture,Marker,,,,,,,,,{},
+marker,-80.9422727563339,-162.20214843750003,agriculture,Marker,,,,,,,,,{},
+marker,-80.89719300308133,-162.46582031250003,agriculture,Marker,,,,,,,,,{},
+marker,-80.05425525934193,-159.45556640625003,agriculture,Marker,,,,,,,,,{},
+marker,-72.48189144841272,-8.371582031250002,settlement,Marker,,,,,,,,,{},Settlements
+marker,-72.84850201835972,-11.71142578125,settlement,Marker,,,,,,,,,{},Settlements
+marker,-73.05464165865112,-10.502929687500002,settlement,Marker,,,,,,,,,{},Settlements
+marker,-70.97402838932706,2.2631835937500004,settlement,Marker,,,,,,,,,{},Settlements
+marker,-73.08023943580535,-11.887207031250002,forts,Fort ,,,,,,,,,{},Forts
+marker,-71.55969222946285,-34.14550781250001,settlement,Marker,,,,,,,,,{},Settlements
+marker,-73.16953636227886,-22.126464843750004,settlement,Marker,,,,,,,,,{},Settlements
+marker,-68.02402198693447,-27.114257812500004,settlement,Marker,,,,,,,,,{},Settlements
+marker,-68.19605229820671,-25.11474609375,settlement,Marker,,,,,,,,,{},Settlements
+marker,-69.81689109911444,-32.95898437500001,settlement,Marker,,,,,,,,,{},Settlements
+marker,-70.56880331763341,-35.04638671875001,settlement,Marker,,,,,,,,,{},Settlements
+marker,-71.16648590317222,-39.83642578125,settlement,Marker,,,,,,,,,{},Settlements
+marker,-71.23728930162322,-38.86962890625001,settlement,Marker,,,,,,,,,{},Settlements
+marker,-70.7724429742589,-38.67187500000001,settlement,Marker,,,,,,,,,{},Settlements
+marker,-68.95050024546569,-29.311523437500004,settlement,Marker,,,,,,,,,{},Settlements
+marker,-71.23022052382078,-36.80419921875001,settlement,Marker,,,,,,,,,{},Settlements
+marker,-71.46213966619457,-36.89208984375001,settlement,Marker,,,,,,,,,{},Settlements
+marker,-71.49703690095419,-38.12255859375001,settlement,Marker,,,,,,,,,{},Settlements
+marker,-71.80141030136787,-38.43017578125001,settlement,Marker,,,,,,,,,{},Settlements
+marker,-74.72961516378618,-53.50341796875001,settlement,Marker,,,,,,,,,{},Settlements
+marker,-74.58426829888151,-52.11914062500001,settlement,Marker,,,,,,,,,{},Settlements
+marker,-74.36667478672422,-52.14111328125001,settlement,Marker,,,,,,,,,{},Settlements
+marker,-74.2597383709313,-50.97656250000001,settlement,Marker,,,,,,,,,{},Settlements
+marker,-74.2597383709313,-47.94433593750001,settlement,Marker,,,,,,,,,{},Settlements
+marker,-72.60712040027555,-42.91259765625,settlement,Marker,,,,,,,,,{},Settlements
+marker,-72.77708126440069,-43.59375000000001,settlement,Marker,,,,,,,,,{},Settlements
+marker,-72.41563109719552,-40.89111328125001,settlement,Marker,,,,,,,,,{},Settlements
+marker,-72.08743247624157,-40.38574218750001,settlement,Marker,,,,,,,,,{},Settlements
+marker,-72.05361149670412,-38.69384765625001,settlement,Marker,,,,,,,,,{},Settlements
+marker,51.34433866059924,56.05224609375001,earthworks,Marker,,,,,,,,,{},
+marker,50.77815527465925,56.31591796875,earthworks,Marker,,,,,,,,,{},
+marker,-68.46379955520322,-25.598144531250004,earthworks,Native Burial Site,,,,,,,,,{},
+marker,-70.89507794040429,-24.895019531250004,earthworks,Native Burial Site,,,,,,,,,{},
+marker,-78.52557254138316,-148.73291015625003,settlement,Werpos ,,,,,,,,,{},
+marker,-78.30495507232303,-150.07324218750003,settlement,Werpos ,,,,,,,,,{},
+marker,-78.85094562059197,-148.84277343750003,settlement,Werpos ,,,,,,,,,{},
+marker,-81.4008017052346,-146.14013671875003,settlement,Werpos ,,,,,,,,,{},
+marker,-81.30832090051811,-144.51416015625003,settlement,Werpos ,,,,,,,,,{},
+marker,-81.24165957439662,-142.62451171875003,settlement,Werpos ,,,,,,,,,{},
+marker,-35.19176696594738,148.35937500000003,settlement,Manamoycke,,,,,,,,,{},Settlements
+marker,-33.06404075235115,150.49072265625003,earthworks,Native Burial Site,,,,,,,,,{},
+marker,-30.16473849049732,150.24902343750003,earthworks,Native Burial Site,,,,,,,,,{},
+marker,-30.977035022255258,136.1210383728144,rock,Hokum Rock,,,Hokum Rock's was a massive boulder that was said to serve as a council spot when meetings were held by a local leader who bears the rock's name.[^1] In July 1674 the English ordered that an elderly Nobscusset man named Hoken  who was said to live by the rock be arrested and sold into slavery in Barbadoes for his ill temper and crimnal actions against the English.[^2] He was eventually exiled to Rhode Island.[^3] If both accounts are true it's likely that the rock held significance to the local people. [^1]:https://www.dennishistoricalsociety.org/sites/default/files/2019-07/Jun1979.pdf [^2]:https://www.wickedlocal.com/story/register/2008/05/28/local-legend/39698300007/?gnt-cfr=1&gca-cat=p&gca-uir=true&gca-epti=z119388e000900v119388b0093xxd119365&gca-ft=114&gca-ds=sophi [^3]:https://www.dennishistoricalsociety.org/sites/default/files/2019-07/Jul1987.pdf,,,,,,{},
+marker,47.279229002570844,-22.236328125000004,settlement,Marker,,,,,,,,,{},Settlements
+marker,11.738302371436854,25.510253906250004,settlement,Hassanamesit ,,"""Place of Small Stones""",,,,,,,{},
+marker,29.53522956294847,41.70410156250001,settlement,Marker,,,,,,,,,{},Settlements
+marker,-17.748686651728793,80.59570312500001,pteroglyph,Hand Rock,,,,,,,,,{},Petroglyph
+marker,-18.583775688370928,79.91455078125001,pteroglyph,Great Rock,,,,,,,,,{},Petroglyph
+marker,-19.373340713364044,85.40771484375001,pteroglyph,Marker ,,,,,,,,,{},Petroglyph
+marker,-23.926013033021192,80.70556640625001,pteroglyph,Marker ,,,,,,,,,{},Petroglyph
+marker,-50.94458443495011,27.751464843750004,forts,Chemunganoc ,,,A Narragansett Indian stronghold. Described in historical sources as a 60-yard square stone and earthwork with no bastions. It may have been built by Dutch traders in the 1630's for the Niantic Indians against the Pequot Indians. Exact location undetermined (possibly on Shumuncanuc Hill ?) near Carolina ,,,,,,{},
+marker,-59.07444815466584,6.08642578125,settlement,Marker,,,,,,,,,{},Settlements
+marker,-48.92249926375824,35.11230468750001,pteroglyph,Gardiner Petroglyph,,,,,,,,,{},Petroglyph
+text,-55.00282580979324,96.28417968750001,,AGUNNINAH,,,The shore of the island,1,0,0,0,,,
+text,-53.12040528310657,101.90917968750001,,KEITAHSIMET,,,Place of a great spring,1,0,0,0,,,
+text,-52.26815737376817,100.72265625000001,,KUPPEGON,,,A good enclosure for shelter/hitching,1,0,0,0,,,
+text,-51.508742458803326,103.09570312500001,,MANNASAAK,,,A bush/brush place,1,0,0,0,,,
+text,-54.64841250231668,104.58984375000001,,MASAPIQUOT,,,Skunk Place,1,0,0,0,,,
+text,-54.239550531561775,100.37109375,,SANCHIACATTUATUCK,,,Place where the wood is rotten,2,1,0,0,,,
+text,-54.1624339680678,98.70117187500001,,SANNAMENACK,,,Eat much,1,0,0,0,,,
+text,-52.56299503955801,99.49218750000001,,SAQUENAUSAUQUANN,,,Early summer or lay rich eels,1,0,0,0,,,
+text,-52.68304276227742,102.37060546875001,,TAKEMMY,,,Cold water,1,0,0,0,,,
+text,-56.365250136856076,109.5556640625,,TASHQUIMMACASSICK,,,Black fish place,1,0,0,0,,,
+text,-54.418929968658254,96.63574218750001,,MASHIANAUKE,,,Big town,1,0,0,0,,,
+text,-53.46189043285913,102.34863281250001,,MASSAPOOTOOQUAK,,,Land of great blowing holes,1,0,0,0,,,
+text,-54.418929968658254,98.61328125,,MESPESHAUTUK,,,At the edge of the cliff,1,0,0,0,,,
+text,-55.85064987433714,96.63574218750001,,NASHANEAUPE,,,They went there,1,0,0,0,,,
+text,-56.72862197314074,108.76464843750001,,PAQUAAHUNAUK,,,Quahog land,1,0,0,0,,,
+text,-52.829320910313726,100.89843750000001,,PONANASAUSIG,,,To spread their wings,1,0,0,0,,,
+text,-53.59250480903937,99.93164062500001,,QUATAQUETUCA,,,Red crabs,1,0,0,0,,,
+text,-53.00156227459147,99.60205078125001,,SANSHUWACHU,,,Brook lodge,1,0,0,0,,,
+text,-63.05531863767043,85.9142663862525,,Cappoaquit,,"""Refuge Place"" ","Cappoaquit was an island south of Noepe used for fishing and used as a summer camping ground At the time of European arrival, Cappoaquit was inhabited by the Powwow Tequenoman who was believed to hold dominion over it. Judge Sewall in 1702 says of Nomans Land, that the ""Inhabitants (are) mostly of the 7th day Indians,"" i. e., Sabbatarian Baptists.[^1] [^1]:http://history.vineyard.net/dukes/bnk2c_71.htm",8,0,0,0,,,Geographical Locations
+text,-78.38342792107784,-162.5682401582486,,Canarsie,,,Canarsie Lenape homelands in present-day Brooklyn.,24,0,0,0,,,Tribes
+text,-72.76643494811363,-71.73513141636457,,Corchaug,,,Corchaug territory on the North Fork of Long Island.,24,0,0,0,,,Tribes
+text,-56.32872090717995,-14.39208984375,,Eastern Niantic,,,Eastern Niantic homelands along the Niantic River in Connecticut.,24,0,0,0,,,Tribes
+text,-60.08676274626006,-60.60058593750001,,Hammonasset,,,Hammonasset homelands along the central Connecticut shoreline.,24,0,0,0,,,Tribes
+text,-69.16724012600773,-49.949353504869585,,Manhanset,,,"Manhanset people of Shelter Island, between Long Island's forks.",24,0,0,0,,,Tribes
+text,-66.98836600973269,23.16686297828692,,Manissean,,,Manissean (Manitou) homelands on Block Island.,24,0,0,0,,,Tribes
+text,23.32208001137844,48.16406250000001,,Massachusett,,,Massachusett homelands around the Shawmut Peninsula (Boston).,24,0,0,0,,,Tribes
+text,-37.23032838760386,-39.90234375000001,,Mashantucket Pequot,,,Mashantucket Pequot homelands near the Pawcatuck River.,24,0,0,0,,,Tribes
+text,-79.65392213419594,-146.93163540003792,,Matinecock,,,Matinecock homelands on Long Island's north shore.,24,0,0,0,,,Tribes
+text,-76.01582449107187,-109.50898851393923,,Merrick,,,Merrick (Merokee) territory on Long Island's south shore.,24,0,0,0,,,Tribes
+text,-72.76619493972098,-36.42071459256301,,Montaukett ,,"""high or hilly land"" or ""the fort country""","Montaukett homelands at the eastern tip of Long Island. Montauk, or Manatacut, or Meuntacut, or Montaukut",24,0,0,0,,,Tribes
+text,-34.84996950050357,-35.77148437500001,,Mohegan,,,Mohegan homelands along the Thames River in Connecticut.,31,0,0,0,,,Tribes
+text,-31.278550858946517,15.996093750000002,,Narragansett,,,Narragansett homelands along the southern Rhode Island coast.,24,0,0,0,,,Tribes
+text,-17.26672782352052,147.61230468750003,,Nauset,,,Nauset (Cape Cod) Wampanoag homelands on the outer Cape.,24,0,0,0,,,Tribes
+text,22.609599841723895,0.5148490443191812,,Nipmuc,dsfsdf,sdfds,"Nipmuc homelands across central Massachusetts and northern Connecticut. Nipnet, Nipmook or Nipmuck",24,0,0,0,,,Tribes
+text,-77.19570508665286,-143.9446752320028,,Nissequogue,,,"Nissequogue homelands around present-day Smithtown, Long Island.",24,0,0,0,,,Tribes
+text,-8.363855266221476,-72.37792968750001,,Paugussett,,,Paugussett homelands along the lower Housatonic River.,24,0,0,0,,,Tribes
+text,-54.825433284376075,-45.966796875,,Pequot,,,Pequot homelands surrounding the lower Thames River.,24,0,0,0,,,Tribes
+text,-2.6577377901397883,-54.00878906250001,,Podunk,,,Podunk homelands on the east side of the Connecticut River.,24,0,0,0,,,Tribes
+text,-32.546813173515154,47.19726562500001,,Pokanoket,,,Pokanoket (Wampanoag) homelands around Mount Hope and Narragansett Bay.,20,0,0,0,,,Tribes
+text,-15.284185114076433,-90.17578125000001,,Quinnipiac,,,Quinnipiac homelands at the mouth of the Quinnipiac River.,24,0,0,0,,,Tribes
+text,-78.86850415610446,-131.1195136082202,,Rockaway,,,Rockaway (Reckgawawank) Lenape homelands on the Rockaway Peninsula.,24,0,0,0,,,Tribes
+text,-26.74561038219901,-62.49023437500001,,Schaghticoke,,,Schaghticoke homelands near the confluence of the Housatonic and Ten Mile Rivers.,24,0,0,0,,,Tribes
+text,-77.91475737592121,-115.48264463361654,,Secatogue,,,Secatogue homelands around Islip on Long Island.,24,0,0,0,,,Tribes
+text,-76.20596704314148,-78.13476562500001,,Setalcott,,,Setalcott (Setauket) homelands on Long Island's north shore.,24,0,0,0,,,Tribes
+text,-73.9891972630182,-48.009566547570316,,Shinnecock,,,Shinnecock homelands near Shinnecock Bay on Long Island.,24,0,0,0,,,Tribes
+text,-36.84447593061207,-89.36270799212208,,Tunxis,,"""the point where the river bends""",Tunxis homelands in the Farmington River Valley.,24,0,0,0,,,Tribes
+text,-36.215,-88.052,,Suckiaug,,"""black fertile earth""","Suckiaug was the Tunxis village along the rich intervale at the confluence of the Connecticut and Park Rivers, later forming the core of Hartford.",5,0,0,0,,,Tribes
+text,-35.742,-85.912,,Matianuck,,"""at the great tree""",Matianuck referred to the great tree that marked the Tunxis planting grounds on the meadows of present-day Windsor along the Connecticut River.,6,0,0,0,,,Tribes
+text,-35.658,-84.297,,Poquonnock,,"""cleared land""",Poquonnock described the open Tunxis fields near modern Windsor where families farmed along the Poquonock River.,5,0,0,0,,,Tribes
+text,-37.112,-92.843,,Massaco,,"""place of much water""",Massaco marked the Tunxis fishing and planting grounds on the broad meadows of the Farmington River in what is now Simsbury.,5,0,0,0,,,Tribes
+text,-36.862,-91.327,,Tunxis Sepus,,"""little river place""","Tunxis Sepus named the Farmington River itself— the ""little river"" that threads through the center of the Tunxis homeland.",3,0,0,0,,,Tribes
+text,-36.978,-92.118,,Weatogue,,"""at the bend in the river""",Weatogue identified the Tunxis village settled on the sweeping bend of the Farmington River between present-day Simsbury and Avon.,4,0,0,0,,,
+text,-37.462,-94.017,,Nassahegon,,"""between the rocks""",Nassahegon referred to the stony uplands west of the Farmington River in modern Granby that Tunxis hunters used for seasonal camps.,3,0,0,0,,,Tribes
+text,-74.21333248041581,-95.62940360654963,,Unkechaug,,,Unkechaug (Poospatuck) homelands on Long Island's south shore.,24,0,0,0,,,Tribes
+text,-75.39779877737388,-85.23309122513776,,Unquachog,,,Unqua homelands near present-day Seaford and Massapequa.,24,0,0,0,,,Tribes
+text,-12.811801316582619,56.6455078125,,Wampanoag,,,Wampanoag homelands across Plymouth and Bristol counties.,24,0,0,0,,,Tribes
+text,-47.694974341862824,-52.29492187500001,,Wangunk,Wongunk,"""at the bend""",Wangunk homelands along the lower Connecticut River.,24,0,0,0,,,Tribes
+text,-60.321147194219755,-105.8073484903449,,Wappinger,,,Wappinger homelands spanning southwestern Connecticut and the lower Hudson Valley.,24,0,0,0,,,Tribes
+text,-57.657157596582984,-35.41992187500001,,Western Niantic,,,Western Niantic homelands near the mouth of the Connecticut River.,24,0,0,0,,,Tribes
+text,-69.31043717139833,-127.60414123535158,,Siwanogs,,,,24,0,0,0,,,Tribes
+text,17.602139123350852,11.975097656250002,,Sagatabscot ,,“the place of the hard rock”,is a hill in the southeastern part of Worcester.[^¹],3,0,0,0,,,Mountains
+text,20.262197124246534,13.557128906250002,,Quinsigamond,,Quinsikamon,Quinsikamon,7,76,0,0,,,
+text,68.07330474079025,-53.96484375000001,,Monadnock,,,"g “place of the surpassing, or",14,0,0,0,,,
+text,11.82444165146143,20.258782901989424,,Hassanamesit ,,"""Place of Small Stones""",,7,0,0,0,,,
+text,0.6591651462894632,-15.380859375000002,,Tantiusques,,“to a black deposit between two hills”,,5,0,0,0,,,Mountains
+text,42.01665183556825,38.34228515625001,,Nagog,,,,6,0,0,0,,,
+text,31.50362930577303,-61.56738281250001,,Unquomonk,,,,7,0,0,0,,,Mountains
+text,-50.14874640066278,57.67822265625001,,Sakonnet," 'Sekonnet', 'Seaconnet', 'Sakonnet', 'Saconnet', 'Sakonett', Saugkonnet 'Segonet'.","""where the water pours forth""",,15,0,0,0,,,Tribes
+text,-54.69923352848138,10.283203125000002,,Ashawague ,," ""land in the middle"" or ""land between""",,6,0,0,0,,,
+text,-64.73664139557683,-56.29394531250001,,Massauqunnock,,,,6,0,0,0,,,Geographical Locations
+text,-63.97596090918337,-62.22656250000001,,Kuttomquch ,,,,6,0,0,0,,,Geographical Locations
+text,-58.75680543225761,125.74951171875001,,Mooskeiakit,,"“westernmost of the Sturgeon Islands,”",,5,0,0,0,,,Geographical Locations
+text,33.284619968887675,-21.90673828125,,Pottapaug,,"""marshy, damp bog,"" or ""a bulging cove or pond.""",Pottapogue Pottapoug,6,0,0,0,,,Bodies of Water
+text,49.62494564650146,86.11083984375001,,Chebaco,,,,6,0,0,0,,,Settlements
+text,-74.1040150160411,-36.62841796875001,,Towd,,,,4,0,0,0,,,
+text,-74.06786624952264,-35.09033203125001,,Mattock,,,,4,0,0,0,,,
+text,-74.44935750063424,-35.31005859375001,,Missipaug,,,,4,0,0,0,,,
+text,-72.82256413229331,-31.442871093750004,,Noyack,,,,4,0,0,0,,,
+text,-75.49165372814439,-44.09912109375,,Niamuck,,,,4,0,0,0,,,
+text,-76.07966773378998,-43.90136718750001,,Ponquogue,,,,4,0,0,0,,,
+text,-75.1238641082958,-38.38623046875001,,Seponack,,,,4,0,0,0,,,
+text,-75.53013598609306,-32.98095703125001,,Wickapogue,,,,4,0,0,0,,,
+text,-75.1633002462206,-123.02490234375001,,Sewanhaka,,,,5,0,0,0,,,
+text,-75.85054080189762,-121.02539062500001,,Sagamore,,,,6,45,0,0,,,
+text,-74.5959455601744,-119.17968750000001,,Caumsett,,,,7,0,0,0,,,
+text,-77.32698957951607,-140.42724609375003,,Madnank,,,,5,0,0,0,,,
+text,-76.03201380959756,-45.28564453125,,Tianna,,,,4,35,0,0,,,
+text,-76.80575496970872,-50.42724609375001,,Achabachawesuck,,,,4,0,0,0,,,
+text,-77.05419428289703,-51.19628906250001,,Quogue,,,,4,0,0,0,,,
+text,-3.4037578795775887,142.07519531250003,,Pamet,,,,7,0,0,0,,,Settlements
+text,0.615222552406841,133.83544921875003,,Meeshawn,"Meeshaun,  Mushawn",,Meeshaun ,7,0,0,0,,,Settlements
+text,-3.5572827265412794,144.22851562500003,,Tashmuit,,“a place of springs.”,"The highlands of Pamet which were valued for its fertile soil and fresh springs, both of which were utilized by the local people. ![North_Truro_from_the_south](images/North_Truro_from_the_south.png) ",6,52,2,0,,,Geographical Locations
+text,-6.7737162387535,144.49218750000003,,Pamet,,,,13,0,0,0,,,Territories
+text,-45.93587062119053,50.42724609375001,,Aquidnet,,,,11,0,0,0,,,Geographical Locations
+text,-55.216547833210726,96.92138671875001,,NOEPE,,,,32,0,5,0,,,
+text,-80.71109268759261,-162.81738281250003,,Nayack ,,,,7,0,0,0,,,Settlements
+text,-79.56850599323725,-161.82861328125003,,Pagganck,,"""Nut Island""",,4,0,0,0,,,Geographical Locations
+text,60.04358934572451,64.43395614624025,,Wemesit,,,,12,0,0,0,,,
+text,-57.55120803456642,23.005371093750004,,Weekapaug,,,,6,0,0,0,,,
+text,-62.7595586121253,-87.47159957885744,,Hammonasett,,,,14,0,0,0,,,
+text,-43.65588781419645,-61.32637023925782,,Scatacook,,,,14,0,0,0,,,
+text,64.92354174306499,-69.08203125000001,,Hoosac,,,,14,0,0,0,,,
+text,-14.26438308756265,-118.23486328125001,,Weguadnack,,,,7,0,0,0,,,Bodies of Water
+text,-11.264612212504428,-116.9384765625,,Wononpakok,,,,7,0,0,0,,,Bodies of Water
+text,-9.600749932246847,-116.34521484375,,Wononscopoiroc,,,,7,0,0,0,,,Bodies of Water
+text,-34.34343606848294,-109.46777343750001,,Waramaug,,,,7,0,0,0,,,Bodies of Water
+text,-56.05976947910657,-121.44287109375001,,Kanoshal,,,,7,0,0,0,,,Bodies of Water
+text,-56.13330691237569,-59.41406250000001,,Quonisepaug,,,,7,0,0,0,,,Bodies of Water
+text,-50.81981826215653,4.899902343750001,,Wyassup,,,,7,0,0,0,,,Bodies of Water
+text,-49.19606400072379,3.8671875000000004,,Mahmansuck,,,,7,0,0,0,,,Bodies of Water
+text,-48.61838518688487,11.601562500000002,,Yawgoag,,,,5,0,0,0,,,Bodies of Water
+text,-49.00905080938206,13.139648437500002,,Winchek,,,,5,0,0,0,,,Bodies of Water
+text,-51.944264879028765,29.267578125000004,,Chipchug,,,,5,0,0,0,,,Bodies of Water
+text,-57.040729838360875,18.808593750000004,,Watchaug,,,,5,0,0,0,,,Bodies of Water
+text,-53.68369534495074,27.465820312500004,,Aguebauaug,,,,5,0,0,0,,,Bodies of Water
+text,20.879342971957897,22.21435546875,,Hobomoco,,,,3,0,0,0,,,Bodies of Water
+text,46.24100579395699,14.790200027175716,,Unchechewhaton,,,,5,0,0,0,,,Bodies of Water
+text,45.767522962149904,-28.652343750000004,,Mattawa,,,,4,0,0,0,,,Bodies of Water
+text,-2.6573545009375485,-112.6092050940509,,Hackankamonk,,,,6,0,0,0,,,Bodies of Water
+text,3.425704292015428,12.48046875,,Manchaug,,,,5,56,0,0,,,Bodies of Water
+text,-4.193807734214353,20.390625000000004,,Chokalog,,,,5,0,0,0,,,Bodies of Water
+text,-47.20488569704063,-94.76806640625001,,Quassapaug,,,,7,0,0,0,,,Bodies of Water
+text,-36.368173823400824,122.91504447380082,,Wequaquet,,,,4,45,0,0,,,Bodies of Water
+text,-31.334881833100955,143.19580078125003,,Massiby,,,,7,-20,0,0,,,Bodies of Water
+text,-49.196002035473335,46.5380859375,,Woonachaset,,,,4,0,0,0,,,Geographical Locations
+text,-3.8862779472549307,-64.37988281250001,,Congamond,,,,7,-80,0,0,,,Bodies of Water
+text,-61.67943790870445,1.8457688662052398,,Wicopesset,,,,3,0,0,0,,,Geographical Locations
+text,-54.711614819498465,23.13788087860384,,Paquiset,,,,5,0,0,0,,,Bodies of Water
+text,-46.513792848481856,71.91942117223316,,Paskumanset ,,,,5,0,0,0,,,Bodies of Water
+text,-42.56926437219384,45.39550781250001,,Chibachuweset ,,,Chibachuwese,8,-77,0,0,,,Geographical Locations
+text,-39.639468617241036,50.009798495602645,,Chisawannock,,,,5,0,0,0,,,Geographical Locations
+text,-46.39267584235039,43.22102017351436,,Quinunlcut ,,,,5,0,0,0,,,Geographical Locations
+text,-47.561657599781086,45.15379215844869,,Aquopimonquk ,,,,5,0,0,0,,,Geographical Locations
+text,53.0936976235228,89.55965115107843,,Agawam,,,,6,0,0,0,,,Settlements
+text,-48.137018484279025,-92.50492390075328,,Meshapock,,,,6,0,0,0,,,Settlements
+text,-49.58228824034103,-89.95404136308912,,Naugatuck,,,,6,0,0,0,,,Settlements
+text,-59.888936896765834,-68.00542837562294,,Totoket,,,,6,0,0,0,,,Settlements
+text,-62.246888547856656,-73.91570335427505,,Mioonktuck,,,,6,0,0,0,,,Settlements
+text,-62.46160496515689,-39.83331129165111,,Pochaug,,,,6,0,0,0,,,Settlements
+text,-61.88709608905768,-33.28804828910797,,Pashesauke,,,,6,0,0,0,,,Settlements
+text,-59.25480647478875,-13.315224246233583,,Pequotauk,,,,6,0,0,0,,,Settlements
+text,-58.36726366448147,-2.702012177300084,,Mistic,,,,6,0,0,0,,,Settlements
+text,-59.81137296969263,-4.831724521069415,,Noank,,,,6,0,0,0,,,Settlements
+text,-56.789121967927656,2.8785083629072,,Asupsuck,,,,6,0,0,0,,,Settlements
+text,-59.511789280392115,2.593940343893273,,Aushnook,,,,6,0,0,0,,,Settlements
+text,-59.05174764761254,4.792027733958949,,Wequetequock,,,,6,0,0,0,,,Settlements
+text,-44.52760571857897,36.84939361414983,,Cocumcosuck,,,,5,0,0,0,,,Settlements
+text,-43.6920917086009,30.67477315482552,,Woossowenbiskw,,,,5,0,0,0,,,Settlements
+text,-46.36209301204983,64.62158203125001,,Acoaxet,,,,5,0,0,0,,,Settlements
+text,-43.72347489611481,72.15820312500001,,Copatneast,,,Thick woods or brush. An area south of Adamsville on the West Branch.,5,0,0,0,,,Geographical Locations
+text,-36.47430675509521,60.68847656250001,,Copicut,,,Dense pine woods or swamp. The Copicut Woods are located in Fall River.,5,30,0,0,,,Geographical Locations
+text,-42.29356419217008,69.06005859375001,,HussunnegkorHassanegk,,,"Cellar dwelling, cave, cavern, or enclosure with stone flaggings or stone house. This is the earliest form of Horseneck.",5,0,0,0,,,Geographical Locations
+text,-43.21318330073887,66.90673828125001,,Mashtuxet,,,Reed or grass brook. A brook that flowed into Allen’s Pond.,5,0,0,0,,,Bodies of Water
+text,-41.02964338716639,65.50048828125001,,Masquamskiesett or Mashuamskesett,,,"At the place of the red standing stone. The east side of the East Branch of the Westport River, two miles south of Hix Bridge.",5,0,0,0,,,Geographical Locations
+text,-40.91351257612758,70.53222656250001,,Nanekumsick,,,A cedar swamp in northern Westport.,5,0,0,0,,,Geographical Locations
+text,-49.979487761086475,61.87500000000001,,Nonoquechage,,,Richmond Pond.,1.5,50,0,0,,,Bodies of Water
+text,-45.96642454131026,68.97216796875001,,Noquochoke,,,His small piece of land or land at the fork. The East Branch of the Westport River.,5,0,0,0,,,Bodies of Water
+text,-41.60722821271717,69.96093750000001,,Paquachuck,,,At the clear or open hill. Westport Point.,5,0,0,0,,,Geographical Locations
+text,-36.24427318493909,71.03759765625001,,Paschetest,,,A swamp in the northeast corner of Westport.,5,29,0,0,,,Geographical Locations
+text,-44.949249266611524,65.56640625000001,,Peetskeshuet,,,"On the east side of the East Branch, about one mile south of South Westport.",5,0,0,0,,,Geographical Locations
+text,-49.325121991040014,66.04980468750001,,Poquanset,,"""At the opening""",The natural harbor at the end of Westport Point.,3,25,0,0,,,Bodies of Water
+text,-42.01665183556823,62.86376953125001,,Poganset,,,At the pond. Devol Pond.,3,-65,0,0,,,Bodies of Water
+text,-44.63739123445586,68.70849609375001,,Quannachuck,,,At the long hill. The swamp between Westport Factory and the Watuppa Pond.,5,0,0,0,,,Geographical Locations
+text,-39.639537564366705,65.85205078125001,,Quansetor Nutaquanset,,,The place of the terrible fire or at the burnt woods.,5,0,0,0,,,Geographical Locations
+text,-45.69083283645817,67.45605468750001,,Shimsuet,,,"An area on the east side of the East Branch, about a mile south of Hix Bridge.",5,0,0,0,,,Geographical Locations
+text,-44.11914151643736,70.37841796875001,,Wasontuxsett,,,The area of land that is on the east side of the East Branch north of Hix Bridge or a brook that joins the river.,5,0,0,0,,,Geographical Locations
+text,-43.707593504052944,66.77490234375001,,Watuppa,,,They draw water.,5,0,0,0,,,Bodies of Water
+text,-43.11748160856244,56.99769485394992,,Espowett,,,,5,0,0,0,,,Settlements
+text,-20.468099350519722,77.8710362264454,,Wampanucket,,,,7,0,0,0,,,Settlements
+text,-14.051330743518175,72.22412109375001,,Titicut,,,,7,0,0,0,,,Settlements
+text,-16.720385051693988,69.45556640625001,,Cohannet,,,"Cohaanet, Cohannett",7,0,0,0,,,Settlements
+text,-16.29903259997615,80.20154300720772,,Namasachet,,,Nemasket,7,0,0,0,,,Settlements
+text,20.03507341605914,66.88503680747169,,Uniquititquessett,,,,4,0,0,0,,,Settlements
+text,14.029586440616434,-109.02670143532063,,Oustonuck,,,,5,0,0,0,,,Settlements
+text,11.931858584012664,-110.16818661278329,,Scatekook,,,,5,0,0,0,,,Settlements
+text,23.5644267743393,-106.10590772534609,,Wnahtukook,,,Waubtucook,5,0,0,0,,,Settlements
+text,-34.30759287914818,-98.08508286433172,,Peatan,,,,5,0,0,0,,,Settlements
+text,-65.14629225164387,-91.44821485869174,,Pisquheege,,,,7,0,0,0,,,Settlements
+text,-64.6333606369832,-86.94292460352015,,Wepowaug,,,,7,0,0,0,,,Settlements
+text,-27.839076094777816,103.82080078125001,,Comasskumkanit,,,,7,0,0,0,,,Settlements
+text,27.896987499832555,36.869213245927774,,Penobscot,,,,5,0,0,0,,,Settlements
+text,32.13903686440613,67.89572968906776,,Winnisimmet,,,,5,0,0,0,,,Settlements
+text,34.59704151614417,71.67480468750001,,Winnisimmet,,,,5,0,0,0,,,Settlements
+text,-4.653124537311702,0.4193294401477488,,Maanexit,,,,5,0,0,0,,,Settlements
+text,-14.391734022653369,10.043698018975347,,Quaddick,,,,5,0,0,0,,,Settlements
+text,-11.69560464311918,7.517656097640383,,Quinnatisset,,,,5,0,0,0,,,Settlements
+text,-21.47353538728909,4.176472870583311,,Attawangan,,,,5,0,0,0,,,Settlements
+text,13.539262853432747,-9.667996472297618,,Podunk,,,,5,-40,0,0,,,Bodies of Water
+text,8.015684329318784,-11.227925695325423,,Putikookuppogg,,,,4,0,0,0,,,Bodies of Water
+text,-63.38167869302983,147.65625000000003,,Toupchue,,,,3,0,0,0,,,Bodies of Water
+text,-63.045001015420105,146.46972656250003,,Madequecham,,,,3,0,0,0,,,Bodies of Water
+text,-63.51917465269721,143.43750000000003,,Wammasquid,,,,5,0,0,0,,,Geographical Locations
+text,-60.61927021789213,126.65039556368947,,Nopque ,,,Nopque was an area of coast on the island of Tuckernuck used as canoe docks and a landing spot for those traveling to the island from Noepe,3,22,3,0,,,Bodies of Water
+text,-60.80206374467982,129.33105468750003,,Tuckernuck,,,Petockenock and Tuckanucket,5,17,0,0,,,Geographical Locations
+text,-62.985179715993766,150.33691406250003,,Oggawame,,,,5,0,0,0,,,Geographical Locations
+text,-60.791350301043764,151.65527344476888,,Sesachacha,,,,2.5,-45,0,0,,,Bodies of Water
+text,-60.00965882727966,140.51544014903416,,Cuppammet,,,,3,0,0,0,,,Bodies of Water
+text,-62.60345318745797,142.93212890625003,,Miacomit,,,,5,0,0,0,,,Settlements
+text,-61.4597705702975,141.76757812500003,,Wesco,,,,5,0,0,0,,,Settlements
+text,-61.27023279000062,146.86523437500003,,Shimmoh,,,,5,0,0,0,,,Settlements
+text,-59.64554025144323,148.82080078125003,,Quaise,,,,5,0,0,0,,,Settlements
+text,-56.619976528450195,151.04003906250003,,Satucket,,,,5,0,0,0,,,Settlements
+text,-60.8502623930218,136.73583984375003,,Cuppammet,,,,5,0,0,0,,,Settlements
+text,-60.26161708284461,144.95361328125003,,Coatue,,,,5,-27,0,0,,,Geographical Locations
+text,-53.51418452077112,-122.62939453125001,,Kohanga,,,,5,0,0,0,,,Geographical Locations
+text,-62.451405884537564,-104.7216796875,,Tashua,,,,5,0,0,0,,,Geographical Locations
+text,3.995780512963038,-106.96289062500001,,Outhotonnook ,,,,10,60,0,0,,,Geographical Locations
+text,-63.27318217465046,-42.40722656250001,,Pecukwunnaune,,,,6,0,0,0,,,Geographical Locations
+text,41.541477666790286,-99.86572265625,,Moonkeek-Shoonkeek,,,,6,0,0,0,,,Bodies of Water
+text,38.42777351132902,-100.50292968750001,,Pontoosuck,,,,6,0,0,0,,,Bodies of Water
+text,49.993615462541136,-65.17089843750001,,Paugemtuk,,,,5,0,0,0,,,Rivers
+text,44.15068115978094,-47.4169921875,,Quinnitekuk,,,,5,0,0,0,,,Rivers
+text,45.300000000000004,-47.20000000000001,,Mattamacket,,,,5,0,0,0,,,Bodies of Water
+text,44.21372213673447,-43.94586385056617,,Taughkannacoas Islands,,,,5,0,0,0,,,Bodies of Water
+text,52.749165171699985,-42.78071376757689,,Nallahamcomgon,,,"Nallahamcomgon, now Bennett's meadow was a field that served as the boundry between the Squakeag and Pocumtuck territory.",5,0,0,0,,,Geographical Locations
+text,42.69837902593775,-44.75939728743217,,Puckommegon,,,,5,0,0,0,,,Geographical Locations
+text,43.357197138732246,-43.94595057986873,,Papacontuckquash,,,,5,0,0,0,,,Geographical Locations
+text,41.96764334885846,-49.32843362769474,,Weekquunnuch,,,,5,0,0,0,,,Geographical Locations
+text,41.72211466934566,-49.24054919764493,,Amiskw Alow,,,,5,0,0,0,,,Geographical Locations
+text,41.81068115978094,-47.9619921875,,Kia,,,,5,0,0,0,,,Geographical Locations
+text,41.71068115978094,-46.4869921875,,Pottapaug,,,,5,0,0,0,,,Geographical Locations
+text,41.60068115978094,-47.8719921875,,Bivahs,,,,5,0,0,0,,,Geographical Locations
+text,41.32729109134357,-47.94421823344656,,Siok,,,,5,0,0,0,,,Geographical Locations
+text,41.14554725011771,-49.328408847893996,,Mattawan,,,,5,0,0,0,,,Geographical Locations
+text,41.673032872008385,-50.62456015853709,,Mins,,,,5,0,0,0,,,Geographical Locations
+text,40.74719880504101,-48.91099652359601,,Barhar,,,,5,0,0,0,,,Geographical Locations
+text,40.97068115978094,-47.0619921875,,Nea,,,,5,0,0,0,,,Geographical Locations
+text,40.870681159780936,-47.7719921875,,Omanacig,,,,5,0,0,0,,,Geographical Locations
+text,40.5304466703332,-53.56794207370912,,Weauitayaug,,,,5,0,0,0,,,Geographical Locations
+text,40.730681159780936,-46.4419921875,,Temes,,,,5,0,0,0,,,Geographical Locations
+text,40.296234472367466,-50.69033564343292,,Kapawank,,,,5,0,0,0,,,Geographical Locations
+text,41.17878236958771,-50.690125015126746,,Seca Naot,,,,5,0,0,0,,,Geographical Locations
+text,40.17068115978094,-46.5569921875,,Menemesty,,,,5,0,0,0,,,Geographical Locations
+text,40.10068115978094,-48.7119921875,,Pacha,,,,5,0,0,0,,,Geographical Locations
+text,39.82537379917438,-51.50337967923455,,Akikons,,,,5,0,0,0,,,Geographical Locations
+text,39.74095356213108,-49.72386710079256,,Asotalak,,,,5,0,0,0,,,Geographical Locations
+text,39.740681159780934,-47.9369921875,,Poa,,,,5,0,0,0,,,Geographical Locations
+text,39.47007903116007,-49.32843362769474,,Nerwotuk,,,,5,0,0,0,,,Geographical Locations
+text,38.959312620807985,-49.89954923158966,,Kuna,,,,5,0,0,0,,,Geographical Locations
+text,39.26068115978094,-47.9419921875,,Wanmagoekset,,,,5,0,0,0,,,Geographical Locations
+text,39.01068115978094,-48.0119921875,,Chusick,,,,5,0,0,0,,,Geographical Locations
+text,38.82068115978094,-46.1469921875,,Serhan,,,,5,0,0,0,,,Geographical Locations
+text,38.620681159780936,-45.7869921875,,Letone,,,,5,0,0,0,,,Geographical Locations
+text,36.35014229753896,-51.76694624008148,,Woninohe / Wol,,,,5,0,0,0,,,Geographical Locations
+text,38.270681159780935,-47.9719921875,,Ricoh,,,,5,0,0,0,,,Geographical Locations
+text,38.130681159780934,-46.5519921875,,Ashquash,,,,5,0,0,0,,,Geographical Locations
+text,37.75068115978094,-48.1469921875,,Nyaset,,,,5,0,0,0,,,Geographical Locations
+text,37.57068115978094,-49.2269921875,,Pochasuch,,,,5,0,0,0,,,Geographical Locations
+text,36.26174805031505,-42.760288240443984,,Aalok,,,,5,0,0,0,,,Geographical Locations
+text,37.43068115978094,-46.8869921875,,Quasiak,,,,5,0,0,0,,,Geographical Locations
+text,37.71864767595437,-45.63739287975545,,Tantasgues,,,,5,0,0,0,,,Geographical Locations
+text,37.97899631531391,-43.44122995588779,,Massa,,,,5,0,0,0,,,Geographical Locations
+text,36.990681159780934,-46.7619921875,,Matewemesik,,,,5,0,0,0,,,Geographical Locations
+text,37.3352955688924,-42.782372405797254,,Asan,,,,5,0,0,0,,,Geographical Locations
+text,35.46040247405223,-43.4631716373869,,Muskikoshitash,,,,5,0,0,0,,,Geographical Locations
+text,36.809332505513524,-43.77074546023562,,Suckompsk,,,,5,0,0,0,,,Geographical Locations
+text,36.53068115978094,-46.5219921875,,Mashapaus,,,,5,0,0,0,,,Geographical Locations
+text,36.3150976559187,-45.46145675600091,,Quinnebaue,,,,5,0,0,0,,,Geographical Locations
+text,36.10233165333265,-47.702735837952915,,Suis,,,,5,0,0,0,,,Geographical Locations
+text,36.08459717002052,-46.31866912250909,,Poggotussue,,,,5,0,0,0,,,Geographical Locations
+text,35.65726852636389,-45.945288840013625,,Amiskwatamal,,,,5,0,0,0,,,Geographical Locations
+text,35.660681159780935,-49.2269921875,,Wenckocamaug,,,,5,0,0,0,,,Geographical Locations
+text,35.410681159780935,-49.5469921875,,Massaco,,,,5,0,0,0,,,Geographical Locations
+text,35.15068115978094,-47.4869921875,,Nashaway,,, Quaboag and Quinnebaug Nipmuk: Pocumtuk,14,0,0,0,,,0
+text,50.96147828339582,-46.49392148490192,,Mashapaug and Sokoki Wobankai Nations Territories,,,,5,0,0,0,,,Geographical Locations
+text,47.93109492259736,-30.10397629094216,,Papacontuckquash,,,,8,13,0,0,,,Rivers
+text,-20.694461597907797,43.57177734375001,,Pawtucket,,,,7,0,0,0,,,Settlements
+text,-22.695120184965695,44.36279296875,,Seacuncke,,,,7,0,0,0,,,Settlements
+text,-22.471954507739227,39.46289062500001,,Moshosick,,,,7,0,0,0,,,Settlements
+text,-25.383735254706856,41.77001953125001,,Wachemoqt,,,,7,0,0,0,,,Settlements
+text,-27.196014383173296,38.54003906250001,,Mashpaug,,,,7,0,0,0,,,Settlements
+text,55.32914440840507,-39.06738281250001,,Squakeag,,,,7,0,0,0,,,Settlements
+text,44.9336963896947,-51.13037109375,,Pocumtuck,,,,7,0,0,0,,,Settlements
+text,59.18718526575666,64.62158203125001,,Pentucket,,,,7,0,0,0,,,Settlements
+text,58.676937672586924,80.72753906250001,,Kwaskwaikikwen,,,,7,0,0,0,,,Settlements
+text,60.673178565817715,67.06054687500001,,Kenoza,,,,7,0,0,0,,,Settlements
+text,52.1874047455997,61.78710937500001,,Cochichawick,,,,7,0,0,0,,,Settlements
+text,50.359480346298696,72.44384765625001,,Shenewemedy ,,,,7,0,0,0,,,Settlements
+text,48.32703913063479,79.25537109375001,,Nahumkeak ,,,,7,0,0,0,,,Settlements
+text,50.75035931136963,94.52636718750001,,Wenesquawam ,,,,7,0,0,0,,,Settlements
+text,45.99696161820381,76.24511718750001,,Wahquamesecok ,,,,7,0,0,0,,,Settlements
+text,40.1452892956766,78.79394531250001,,Massabequash ,,,,7,0,0,0,,,Settlements
+text,54.88924640307589,63.58886718750001,,Cochichewick,,,,5,0,0,0,,,Bodies of Water
+text,47.39834920035926,78.88183593750001,,Michigamea,,,,5,0,0,0,,,Bodies of Water
+text,-22.532853707527117,77.49755859375001,,Assawompsett,,,,5,0,0,0,,,Bodies of Water
+text,-25.97779895546436,75.84960937500001,,Apponaqut,,,,7,85,0,0,,,Bodies of Water
+text,-25.878994400196202,79.78271484375001,,Quittacas,,,,5,0,0,0,,,Bodies of Water
+text,-28.671310915880834,82.19970703125001,,Snipatuit ,,,,5,-76,0,0,,,Bodies of Water
+text,-5.703447982149503,83.40820312500001,,Munponset,,,,5,0,0,0,,,Bodies of Water
+text,-9.384032109601689,61.45751953125001,,Winnecunnet ,,,,5,0,0,0,,,Bodies of Water
+text,-9.362352822055593,68.07128906250001,,Nippenicket,,,,5,0,0,0,,,Bodies of Water
+text,-49.696061819115656,41.04492187500001,,Aquidnesue,,,,4,0,0,0,,,Geographical Locations
+text,-58.68835857268097,19.775390625,,Pawaget,,,,5,0,0,0,,,Bodies of Water
+text,-57.01681401739112,-4.108886718750001,,Sickenames,,,,5,0,0,0,,,Bodies of Water
+text,-59.18718526575666,149.98535156250003,,Squatesit,,,,5,0,0,0,,,Settlements
+text,-51.84935276370606,57.23876953125,,Saconet,,,,5,0,0,0,,,Settlements
+text,-34.016241889667015,151.47949218750003,,Manamoycke,"Manomoyick, Monomoyk",,,7,0,0,0,,,Settlements
+text,-11.178451544473875,97.05322265625001,,Patuxet,,,,7,0,0,0,,,Settlements
+text,-18.729501999072138,41.35253906250001,,Pawtuxet,,,Pokanoket (Wampanoag) homelands around Mount Hope and Narragansett Bay.,14,0,0,0,,,Tribes
+text,-23.241346102386135,34.84863281250001,,Coweset,,,Pokanoket (Wampanoag) homelands around Mount Hope and Narragansett Bay.,14,0,0,0,,,Tribes
+text,-43.96119063892026,74.15771484375001,,Apponagansett,,,,7,0,0,0,,,Settlements
+text,-36.27970720524017,57.85400390625,,Quequechand,,,,5,0,0,0,,,Settlements
+text,-25.60190226111574,63.85253906250001,,Assonet,,,,5,0,0,0,,,Settlements
+text,-35.92464453144098,53.52539062500001,,Montaup,,,,5,0,0,0,,,Settlements
+text,-30.56226095049943,49.2626953125,,Sowams,,,,5,0,0,0,,,Settlements
+text,-22.207749178410847,62.70996093750001,,Kteticut,,,,7,-92,0,0,,,Rivers
+text,-32.63937487360668,56.16210937500001,,Weyposet,,,,7,-75,0,0,,,Rivers
+text,-27.15692045688088,63.32519531250001,,Assonet,,,,7,-56,0,0,,,Rivers
+text,-23.84564988765934,67.01660156250001,,Mastucksett,,,,7,61,0,0,,,Rivers
+text,41.705728515237524,36.49658203125001,,Nashobah,,,,5,0,0,0,,,Settlements
+text,-14.349547837185362,106.01806640625001,,Manomet,,,,7,0,0,0,,,Settlements
+text,26.391869671769022,-51.13037109375,,Nonotuck,,,,7,0,0,0,,,Settlements
+text,40.02757526111039,46.58187523133773,,Musketaquid,,,,5,0,0,0,,,Settlements
+text,32.50625615680383,-132.40458245675012,,Kaunaumeek,,,Waubtucook,5,0,0,0,,,Settlements
+text,23.543622313905296,70.48885109722865,,Musquantum,,,,4,0,0,0,,,Geographical Locations
+text,12.661777510388525,64.64355468750001,,Ponkapoag,,,,3,-7,0,0,,,Bodies of Water
+text,15.792338830762365,72.46582031250001,,Monatiquot ,,,,3,0,0,-5,,,Rivers
+text,9.23226773945612,69.1479184161971,,Cochato,,,,3,-45,0,0,,,Rivers
+text,-51.28935049038226,29.289550781250004,,Chippuxet,,,,4,-54,0,0,,,Rivers
+text,-51.87649097061476,37.11181640625001,,Pettaquamscutt ,,,,4,54,0,0,,,Rivers
+text,-54.00776876193477,80.55175781250001,,Asnawana,,,,8,-12,1,90,,,Geographical Locations
+text,-30.619059260924562,152.81958363488377,,Ewnews,,,,3,0,0,0,,,Geographical Locations
+text,-36.68608187767096,113.81790112001666,,Santuit,,,,7,0,0,0,,,Settlements
+text,-38.30809432604605,111.99729824152816,,Mashpee,,,,7,0,0,0,,,Settlements
+text,-37.02004767128328,108.52315543349253,,Paupoesit,,,,7,0,0,0,,,Settlements
+text,-40.597270634420255,106.85285549813123,,Ashimuit,,,,7,0,0,0,,,Settlements
+text,-42.19793797708907,108.74260704300252,,Waquoit,,,,7,0,0,0,,,Settlements
+text,7.623009673716924,-54.3165295530166,,Agawam,, 'fish curing place',,24,0,0,0,,,Tribes
+text,24.044616678835595,-53.6133360513407,,Nonotuck,,,"The Nonotucks or Norwottucks, who originally claimed the country from the head of the falls to Mount Wequomps (now Sugarloaf), had villages and forts on both sides of the river. They had several plant- ing fields of 12 to 20 acres each; the hills to the west were covered with chestnut trees which furnished a store of nuts ; and the swamps and plains abounded in deer, wild turkeys and other game.[^1] [^1]:https://upload.wikimedia.org/wikipedia/commons/2/2e/A_history_of_the_town_of_Northfield%2C_Massachusetts%2C_for_150_years_%28IA_historyoftownofn00tem%29.pdf",24,0,0,0,,,Tribes
+text,47.63387523460074,-54.57829708142709,,Pacomptock,,,,24,0,0,0,,,Tribes
+text,57.0403859234177,-44.51688926953872,,Squakheag,,,,24,0,0,0,,,Tribes
+text,19.062117883514652,-53.52539062500001,,Pocomtuc Confederacy,,,"Pocomtuck, Pocumtuc, Pocumtuck According to Gookin, who wrote Historical Sketches of the Indians^ the Pacomptocks (including the Nonotucks) were subject to the sachem of the Massachusetts nation.",14,0,0,0,,,
+text,37.43997405227057,-53.30566406250001,,Weckwannuck ,,"""at the point of or extremity of a place where a hill drops off.",Today the area is known as Sugarloaf Brook.,5,0,0,0,,,Rivers
+text,-24.246964554300924,36.03515625000001,,Potowomut,,,,3,-26,0,-42,,,Rivers
+text,-31.42866311735861,80.11230468750001,,Agawams,,,,7,0,0,0,,,Settlements
+text,-12.340001834116316,143.21777343750003,,Chequessett ,,"""Rushing water"" ",Chequessett was the name of an inlet or where the tide rushes in and out of the land.,4,-51,0,0,,,Geographical Locations
+text,-13.261333170798274,143.85498046875003,,Pononakanet,,,,6,0,0,0,,,
+text,58.124466615596354,-168.84275654139205,,Kanienʼkehá꞉ka,,People of the Flint,Mohawk,24,0,0,0,,,Tribes
+text,-71.41316867778343,1.2744140690740615,,Nominick,,,Nominick known as Hither Hills today were a group of hills. ,3,-22,1,0,,,Mountains
+text,-31.128217552664182,121.28906246581501,,Chummaquid,,"""Long Point"" ",,6,0,3,0,,,Bodies of Water
+text,-26.076490241548964,147.37055831417953,,Nanskaket,Namaskaket,,,6,0,0,0,,,
+text,-26.273698890875846,151.7870487476951,,Tonset,,,,6,0,0,0,,,
+text,-24.166447931778855,152.07263265164022,,Weeset,Weesit,,,6,0,0,0,,,
+text,-31.78424557684737,152.75397361367214,,Monamesset,,"""at the deep fishing place,"" or ""lookout place.""",,3,0,0,0,,,Geographical Locations
+text,-36.36822869576792,133.11051323531308,,Pawkannawkut,,,Pawkunnawkut,6,0,0,0,,,
+text,65.34864542564475,-40.60616258442037,,Ktsi pontekw,,,,6,0,0,0,,,Settlements
+text,49.02415781991267,-36.979497262635824,,Corroheagan,,,,5,0,0,0,,,Geographical Locations
+text,49.325992011261164,-46.82559099929916,,Wisatinoag,,,"Wisatinoag was a sacred burial place that had been in use for at least 6,000 years prior to the arrival of Europeans in the region. Strategically placed in an upland location, it allowed the ancestors of the local peoples to keep watch over their villages and crop plots below",5,0,0,0,,,Geographical Locations
+text,36.91427327278093,-54.66842717631346,,Amiskwônowôkoik,,“Beaver tail hill place”,,7,0,0,0,,,
+text,48.28422591656822,-46.87000145904557,,Peskeomskut ,,,"Wissatinnewag-Peskeompskut Wissatinnewag, the Algonquin word for ""shining hill"", was once a village on the Connecticut River, where the Pocumtuck, Abenaki and Nipmuck lived year-round.  Indigenous people from several other tribes, including the Wampanoag and the Narragansett would visit every spring to fish near the Great Falls. This village was inhabited for thousands of years and Wissatinnewag was the last remaining undeveloped piece of what had been this extensive village. ",6,0,0,0,,,Settlements
+text,-62.613766623077154,138.8232426745136,,Acamy,,,“The Pond Acamy” (1659) identified Hummock Pond as a boundary between Wampanoag residents and English settlers.,3,-40,0,0,,,
+text,-63.722566051769455,126.56249959112664,,Ahapahconset,,,Documented in 1690 near Squam Pond.,3,0,0,0,,,
+text,-63.30131448220205,128.36425742906766,,Apaqunuminnohkit,,,Recorded in 1668 for an unidentified locality northeast of Quaise.,3,0,0,0,,,
+text,-60.70548101409132,145.21728515806726,,Aquidnese,,,"Seventeenth- and eighteenth-century records describe Aquidnese as a neck of land near Shimmo, probably modern Pimney's Point.",3,0,0,0,,,
+text,-58.5,136,,Aquidnet Point,,,"Named in 1722 for today's Quidnet, a shoreline neck also considered a candidate for Wammasquid.",3,0,0,0,,,
+text,-58.5,137.5,,Aqunaonagquessit,,"“the hole where a stone stands,”",noted in 1668 northeast of Quaise.,3,0,0,0,,,
+text,-58.24006138377546,137.74617980971058,,Bocochego,,,"A tract laid out in 1744 between Broad, Main, and Federal Streets, possibly from the Spanish Boca Ciega for a hidden harbor mouth.",3,0,0,0,,,
+text,-64.08968816541602,131.26464767426972,,Cappattudacona,,,Referenced in 1711 near Sankaty Head.,3,0,0,0,,,
+text,-58.2167804949716,135.4412031415224,,Catchcassok,,,Listed in 1667 near the Swain houselots on the southwest side of Hummock Pond.,3,0,0,0,,,
+text,-59.556916837834336,133.83614781405532,,Chapanacoy,,,A 1669 mention of salt marsh near Shawkemo or Shimmo.,3,0,0,0,,,
+text,-58.48220917835045,133.39608077196885,,Chappapemeset,,,Boundary noted in 1691 at the east edge of Tom Nevers Head near a valley called Pasocha.,3,0,0,0,,,
+text,-58.847858662908095,133.85721723597118,,Coboahcommoh,,,Likely the southeast of Hummock Pond where periodic openings to the sea supported shore whaling.,3,0,0,0,,,
+text,-58.85,136,,Cocyeama,,,Valley near Shimmo Spring and Aquidnese cited in 1687.,3,0,0,0,,,
+text,-58.06468480327568,131.74573233701878,,Codspannett ,,,Field Named in 1659 north of Hummock Pond.,3,0,0,0,,,
+text,-59.5902570233949,150.9999466089566,,Coscaty,,,"Woods and meadow at Coskata, recorded as Causkata in 1778.",3,0,0,0,,,
+text,-55.986091528233594,146.82124672339057,,Coweightuet,,,"Seventeenth-century name for Coatue and Great Point, necks used for cedar and prickly pear habitats.",3,40,0,0,,,
+text,-59.7344575971002,135.59506113090006,,Cuppammet Harbour,,,"Historic harbor now Capaum Pond, closed by storm-driven sand after about 1717.",3,0,0,0,,,
+text,-62.66531443113899,131.44040851794531,,Hashkinnitchaohket,,,Unknown 1668 locality near Quaise.,3,0,0,0,,,
+text,-59.02923630990909,136.0981317997053,,Kestokas Field,,,Field of unknown location in the Polpis area cited in 1715.,3,0,0,0,,,
+text,-63.05373700909547,131.6821286736465,,Machupunes,,,1742 reference to a south shore locality of unknown position.,3,0,0,0,,,
+text,-62.6931945644933,145.06347731119257,,Mana,,,About 20 acres near the present airport where early records note a great hunting meeting.,3,0,0,0,,,
+text,-63.96483239562897,134.18701144435056,,Manois,,,1702 mention of an unknown site just south of Coatue.,3,0,0,0,,,
+text,-58.89317804538598,139.13090171410946,,Mardadpoquehy,,,Described as the swampy flow or run near the highway at Mascotuck.,3,0,0,0,,,
+text,-59.2,140.5,,Mashaam,,,"Land granted in 1670 along the route to Coatue on the south side of meadows, likely Coskata.",3,0,0,0,,,
+text,-62.51136365576643,129.33105463298358,,Mashquapomtit,,,1668 reference to an unidentified spot northeast of Quaise.,3,0,0,0,,,
+text,-59.333107649718485,134.05599433736535,,Masquapock,,,"Creek with pond and marsh crossed by the Pocomo–Coatue cart path, noted for reddish waters.",3,0,0,0,,,
+text,-59.523303933678385,135.72561983859944,,Masquetuck,,,"Mr. Thomas Mayhew's Neck, the reed or red land now known as Quaise.",3,0,0,0,,,
+text,-62.824006437912416,146.4038094532927,,Mattaquitchame Pond,,,Seventeenth-century name for today’s Madequecham Pond and valley on the south shore.,3,0,0,0,,,
+text,-59.55,137.5,,Mawtukkit,,,Early form of Madaket on Nantucket’s west end.,3,0,0,0,,,
+text,-59.37792353711362,138.99902343750003,,Mekinnoowake,,,1690 record of a locality near Sesachacha Pond.,3,0,0,0,,,
+text,-59.55,140.5,,Monnument Harbor,,,"Also Wheeler’s Creek or Monomoy, covering the tidal creeks and meadows northeast of town.",3,0,0,0,,,
+text,-58.12361997309641,133.79223778414652,,Myacomet Pond,,,"Listed in 1695 as Moyacomet, later the Christian Indian village at the south shore pond.",3,0,0,0,,,
+text,-59.89995826181929,133.3082042600053,,Nannuhtukquesut,,,"Name meaning “The River,” recorded in 1690 near Squam Pond.",3,0,0,0,,,
+text,-59.299551634362274,135.92282333642706,,Napaneah,,,"Variant Nobadeer, a south shore wetland valley noted from 1668 onward.",3,0,0,0,,,
+text,-60.13048611528685,151.47949334324872,,Naretoqueso,,,Creek mouth at the northwest end of Squam Pond cited in 1692.,3,0,0,0,,,
+text,-59.82270219068666,137.48242325649178,,Nashayte,,,"“The neck but one northerly of Masquetuck,” today’s Swain’s Neck at Polpis.",3,0,0,0,,,
+text,-62.84428021975802,150.64453283279423,,Oggawame,,,"“Where the church meets,” headquarters of Waunuchmamuck east of Gibbs Pond.",3,0,0,0,,,
+text,-60.097659530055935,133.46206224938294,,Ongquahqam,,,Described in 1669 as a flaggy marsh west of Masquetuck.,3,0,0,0,,,
+text,-62.61279513678846,125.66162036322962,,Pakpannogkahkunnut,,,Recorded near Squam Pond in 1676.,3,0,0,0,,,
+text,-60.07576553829018,135.24167099267706,,Pakummohquoh,,,"Neck now called Pocomo, bounded by rivers, marsh, and Squam Swamp.",3,0,0,0,,,
+text,-60.25,137.5,,Pasocha,,,The great valley east of Tom Nevers Head.,3,0,0,0,,,
+text,-60.009878164923066,137.39450440541881,,Penetahpah,,,"The next creek east of Abram’s Point above Ashimmo, noted in 1669.",3,0,0,0,,,
+text,-60.13060421293185,148.82080146997444,,Poatpes,,"""divided or branch harbor."" ","Also Podpis or Polpis,Palpus a well-known neck on Nantucket. ",5,28,0,0,,,
+text,-58.34431763490037,131.94624534189887,,Poot Ponds,,,"Known today as Pout Ponds, linked to a whale legend.",3,0,0,0,,,
+text,-62.082825668213516,149.5458999294335,,Pquaopuachus,,,Islands of upland within the wetlands near Gibbs Pond.,3,0,0,0,,,
+text,-59.096552870102464,133.50576058374472,,Pukquotanussut,,,Land near Squam Pond given to Matakekin and George Hums by Nickanoose in 1696.,3,0,0,0,,,
+text,-62.89447137194583,128.1225580667577,,Quaquakunnuttummukutaut,,,Unlocated region near Squam Pond cited in 1690.,3,0,0,0,,,
+text,-60.32684330514656,135.7909450598177,,Quaquat,,,Region north of Siasconset Pasture mentioned in 1773.,3,0,0,0,,,
+text,-60.38120686847151,136.97736970606238,,Quaus,,,"Quaise, the reed-colored neck also called Masquetuck.",3,0,0,0,,,
+text,-60.44632358889771,138.1637943523071,,Quonsue,,,Area near present Consue Spring recorded in 1721.,3,0,0,0,,,
+text,-59.67847738032657,139.0425030197965,,Sanckatanck,,,"Place near the “blew cleft,” essentially Sankaty Head.",3,0,0,0,,,
+text,-57.70283970353806,134.73785233293887,,Seanakonkonit,,,"Likely Tom Nevers Pond, recorded simply as “the pond” in 1668.",3,0,0,0,,,
+text,-57.84350243786012,136.95731642277238,,Shimmo,,,Area around the spring west of Shimmo Creek noted since 1668.,3,0,0,0,,,
+text,-59.84438247319222,139.1108484308195,,Shuakimmo Creek,,,"Creek also called Showakemmoe or “The Snake Place,” with Read Spring at its head.",3,0,0,0,,,
+text,-59.35496812872613,137.2420930022795,,Sisackochat,,,Originally for an area with cod-fishing stages south of Sesachacha Pond.,3,0,0,0,,,
+text,-60.25044376854941,138.95602369844357,,Sisiasconset,,,"Early spelling of today’s Siasconset, long a fishing and whaling village.",3,0,0,0,,,
+text,-60.402789388835224,140.14244834468826,,Squatesit,,,"One of the three Christian Indian worship places in 1674, perhaps near Maskatuk Creek.",3,0,0,0,,,
+text,-61.058326206179345,138.86714516089057,,Stewakininkers,,,"Rattlesnake Hill, the junction of several boundary lines at Shuakimmo Creek’s head.",3,0,0,0,,,
+text,-60.95,140.5,,Tawtemeo,,,"Translated by Macy as “the hummock pond,” serving as a boundary marker.",3,0,0,0,,,
+text,-58.983882326673296,132.09966582714588,,Toochahy,,,"Possibly Touphchue Pond on the south shore, though the original record is unclear.",3,0,0,0,,,
+text,-63.459626708834264,131.52832019074663,,Tuppockommack,,,Unlocated site south of Shimmo cited in 1678.,3,0,0,0,,,
+text,-61.3,134.5,,Wahquatnoy,,,Neck along the beach between Quidnet and Sankaty used for worship in 1674.,3,0,0,0,,,
+text,-63.92687024112367,143.89892643363018,,Wammasquid,,,"One of the 1674 Christian Indian meeting places, possibly at Aquidnet Point.",3,0,0,0,,,
+text,-57.76136720456374,132.93310255670704,,Wannacomet,,,"Land west of Wesco along the north shore, recorded from 1664.",3,0,0,0,,,
+text,-61.3,139,,Waquittaquaug,,,The head of Hummock Pond used as the west-end purchase bound.,3,0,0,0,,,
+text,-58.42357648512029,140.14148865820826,,Wassomuhkattog,,,"“The little swamp and river” near Squam Pond, noted in 1676 and 1690.",3,0,0,0,,,
+text,-58.73395221086631,131.70414390160943,,Wataquete,,,"Sixteen acres of swamp, run, and meadow north of Pocomo mentioned in 1687.",3,0,0,0,,,
+text,-63.05449591664803,125.79345655877411,,Wesachimnussud,,,Unlocated tract at Squam or Polpis cited in 1710.,3,0,0,0,,,
+text,-61.71068488713661,142.00927808880814,,Wesquo,,,"Also Wesco or “The White Rock,” the present town near Lily Pond.",3,0,0,0,,,
+text,-61.65,134.5,,Weweda Pond,,,Seventeenth-century name for today’s Weweeder Ponds on the south shore.,3,0,0,0,,,
+text,-60.2942289626928,151.32568345927612,,Wonnashquoom,,,"Earlier Wunnasquam, referring to Squam Pond and Sachem Nickanoose’s headquarters.",3,0,0,0,,,
+text,-63.18468254518509,134.36178388664234,,Wonnahktih,,,1690 record of an unknown location near Sesachacha.,3,0,0,0,,,
+text,-42.763232601127406,148.82090662902357,,Monomoy ,,"""look-out place"" or ""deep water""",,10,-75,0,0,,,Geographical Locations
+text,-72.32913739787085,-15.314941406250002,,Acabonack,,,,5,0,0,0,,,Settlements
+text,-79.70291005763919,-157.74169921875003,,Werpos ,,,,5,0,0,0,,,Settlements
+text,-52.948588368139255,103.51318359375,,Ogkeshkuppe,,"""damp/wet thicket or woods.""",,6,-65,1,0,,,
+text,-58.74539152474415,86.2645416659574,,Mashatanauke ,,,(in the vicinity of Old South Road): Big town (main settlement),7,0,0,0,,,Settlements
+text,-59.987912041060916,87.31922204785454,,Aquinnah ,,,,9,34,0,0,,,Settlements
+text,-52.20087371733219,101.16207022543438,,Tashmoo,,,,6,69,0,0,,,Bodies of Water
+text,-54.52107933590939,106.50138654461875,,Sengekontacket ,,,,4,53,0,0,,,
+text,-48.25394114463432,98.67919921875001,,Nobska ,,,,3,37,0,0,,,
+text,-69.78654510363337,3.8012695312500004,,Shawango,,,,5,0,0,0,,,Settlements
+text,-69.3570863282203,-13.535156250000002,,Manchonack,,,,8,0,0,0,,,
+text,-72.77057418574792,-10.898437500000002,,Potinack,,,,5,0,0,0,,,
+text,-72.46203877644956,-9.997558593750002,,Nominick,,,,5,0,0,0,,,
+text,-72.20867825343294,-9.140625000000002,,Neapeague,, “land of water”,,5,0,0,0,,,
+text,-66.71385654790883,-19.841308593750004,,Manittuwond,,,,8,0,0,0,,,
+text,-73.40961261539776,-40.01220703125001,,Anchannock,," ""land well wooded"" or ""a place full of timber.""",,4,45,0,0,,,
+text,-71.44117085172384,-25.795898437500004,,Mashomuck,,,,4,45,0,0,,,
+text,-67.80094414922863,-26.850585937500004,,Poquatuck,,,,4,0,0,0,,,
+text,-68.04867651098903,-26.740722656250004,,Saugust,,,,4,0,0,0,,,
+text,-71.60134862675984,-42.86865234375,,Yennicock,,,,10,-40,0,0,,,
+text,-71.20899878425502,-40.38574218750001,,Mattituck,,,,4,0,0,0,,,
+text,-70.30393290852346,-30.498046875000004,,Manhansack-aha-quash-awamock,,“an island sheltered by islands”,,6,0,0,0,,,
+text,-75.9842000057889,-60.29296875000001,,Paumanack ,,"""land of tribute""","Paumanack was the name for Eastern Long Island, known as the land of tribute because it was the origin and manufacturing point for wampum shells that were used for paying tribute. Pommanocc 1639 Pamunke (1648), Pammanack (1656), Pawmanack (1658), Paumanuck and Paumanche (1659), and Pommanock (1665),[3] and later Paumanack and Pomonok",14,-20,4,0,,,
+text,-54.64841250231668,75.73974609375001,,Poocuohhunkkunnah ,,,,5,0,0,0,,,Geographical Locations
+text,-50.84757295365388,88.76953125,,Cataymucke,,,,9,-48,0,0,,,Geographical Locations
+text,5.834616165610059,-64.75341796875001,,Worrinoke,,,,5,23,0,0,,,Rivers
+text,3.8423316311549156,-60.13916015625001,,Pontoosic,,,,5,-23,0,0,,,Rivers
+text,8.211490323420694,-63.94042968750001,,Pochassic,,,,5,0,0,0,,,Rivers
+text,12.189703804004086,-66.37939453125001,,Woronocos,,,,18,0,0,0,,,Tribes
+text,10.941191793456534,-67.91748046875001,,Woronoake,,,,5,76,0,0,,,Rivers
+text,9.860628145365903,-61.52343750000001,,Tomhaumucke,,,,5,-76,0,0,,,Rivers
+text,-49.28214015975995,-23.356933593750004,,Mashepaug,,,,8,0,0,0,,,Bodies of Water
+text,-42.03297433244139,-33.35449218750001,,Ashowat,,,,6,0,0,0,,,Settlements
+text,-39.16414104768743,-19.335937500000004,,Poquechanneeg,,,,6,0,0,0,,,Settlements
+text,-42.940339233631825,-43.8134765625,,Pocotopaug,,,,8,0,0,0,,,Bodies of Water
+text,-34.34343606848294,146.51367187500003,,Sauguatucket,,,Sequatucket,7,0,0,0,,,Settlements
+text,-32.58384932565661,139.68017578125003,,Mattachseese,,"""old lands by the border of water.""",,14,0,0,0,,,Geographical Locations
+text,-29.45873118535533,152.95166015625003,,Squanacot,,,,3,0,0,0,,,Geographical Locations
+text,-30.95876857077986,150.732421875,,Monawoyick ,,,,6,0,0,0,,,Bodies of Water
+text,-27.916619715016818,153.72070312500003,,Pochet,,,,6,0,0,0,,,Bodies of Water
+text,-28.22697003891834,151.32568359375,,Namequoit,,,,3,0,0,0,,,Bodies of Water
+text,-31.672083485607388,146.29394531250003,,Askaonkton,,,,8,0,0,0,,,Geographical Locations
+text,-31.18460913574325,147.83203125000003,,Weqnaset,,,,6,0,0,0,,,Geographical Locations
+text,-32.546813173515154,149.41406250000003,,Monomesset,,,,4,-46,0,0,,,Geographical Locations
+text,-35.76434347966718,151.12792968750003,,Saguanset,,,,4,-35,0,0,,,Geographical Locations
+text,-33.192730941906916,152.49023437500003,,Catchpinecote,,,,4,0,0,0,,,Geographical Locations
+text,-29.017748018496047,149.34814453125003,,Potanumicut,Potanunquut,,,4,-46,0,0,,,Geographical Locations
+text,-35.2815006578912,125.41992187500001,,Mattacheese,,,,6,0,0,0,,,
+text,-29.935895213372433,136.12060546875003,,Nobscusset ,,,Pawkunnawkut,6,0,0,0,,,
+text,-28.071907727176228,144.55817775163504,,Sauquatucket,,,Pawkunnawkut,6,0,0,0,,,
+text,-46.89020997262433,98.02001953125,,Nobsque ,,,,7,0,0,0,,,Settlements
+text,-32.27503370439684,145.17333984375003,,Saguanset,,,,4,-35,0,0,,,Geographical Locations
+text,-36.26253760985168,149.37011718750003,,Matchapoxet,,,,4,-35,0,0,,,Geographical Locations
+text,-39.368279149160124,-39.46289062500001,,Mashantucket Pequot,,Mashantucket Pequot homelands near the Pawcatuck River.,24,14,0,0,0,,,
+text,31.05408391778296,-111.79687500000001,,Muhheconneok,,The People of the Waters That Are Never Still,"As more and more Europeans settled here, the Mohicans lost their ownership of the land and found themselves increasingly dependent on the settlers for goods that they had traditionally sourced from nature. Eventually the Mohicans were pushed east to the Housatonic River in what is now Massachusetts. The tribe was also catastrophically affected by diseases that the Europeans brought, which decreased their numbers greatly. In the mid-1780s, the Stockbridge Mohican people moved to New Stockbridge near Oneida Lake, where they had been offered a tract of land. However land companies focused on profit proposed that New York State remove all Indians from within its borders, and the tribe was forced to move again, this time to the White River area in what is now Indiana. Meanwhile, missionaries, agents from the state of New York, and commissioners from the War Department were negotiating with the Menominee and Ho- Chunk (Winnebago) for a large tract of land on which to relocate the Indigenous people from New York in what is now Wisconsin. A treaty was negotiated in 1822 and the Stockbridge Mohicans moved yet again, this time to the reservation in Wisconsin, where they still reside today.[^1] [^1]:https://flyingdeernaturecenter.org/the-muhheconneok/",24,0,0,0,,,Tribes
+text,16.448309250183947,69.91765136213205,,Housickwissick,,,4,5,0,0,0,,,
+text,15.580710739162123,63.36914062500001,,Massawachusett,Massawachusett,"""the place of the great hills""",,6,-10,1,0,,,Mountains
+text,19.64256946203327,71.49903267826588,,Passonagessit,,![ME_Boston_Map_28x36_Flat-1-e1490057999642](images/ME_Boston_Map_28x36_Flat-1-e1490057999642.jpg),4,4,0,0,0,,,
+text,22.471919044631637,69.91697678622356,,Moswetuset,,,4,4,0,0,0,,,
+text,30.181197723251778,66.84206781589243,,Musquantum,,,4,4,0,0,0,,,
+text,20.94098538139971,68.42283924147884,,Neponset,,,4,4,0,0,0,,,
+text,22.26843848543499,67.32410786080958,,Mattapan,,,4,4,0,0,0,,,
+text,26.647527304437542,68.44478109517594,,Mattapannock,,,4,4,0,0,0,,,
+text,28.41904662408636,66.64387343313597,,Mushauwomuk,,,4,4,0,0,0,,,
+text,20.34515469621985,75.71715122593143,,Mishawum,,,4,4,0,0,0,,,
+text,28.613397658582368,59.41410562357409,,Nonatum,,,4,4,0,0,0,,,
+text,28.93832049973028,60.47074292517258,,Pequusset,,,4,4,0,0,0,,,
+text,33.82989789019304,62.49182070647435,,Menotomett,,,4,4,0,0,0,,,
+text,35.72465804042076,72.83953412355683,,Abousett,,,4,5,0,0,0,,,
+text,36.963177033353084,74.07011992325785,,Sauguset,,,4,5,0,0,0,,,
+text,32.32132440176417,65.76537993734482,,Mystic,,,4,4,0,0,0,,,
+text,35.51054763950284,60.38321269004152,,Aberjona,,,4,5,0,0,0,,,
+text,-54.965001642304124,132.51694871338532,,Nantucket,,"Natocke and Nantican [^¹] [^¹]:Worth, Henry B. Land Records: Extracted from Nantucket Lands and Land Owners. Nantucket Historical Association, 1901. http://dunhamwilcox.net/ma/nantucket_land.htm",32,14,0,0,0,,,
+text,38.42777351132902,-53.21777343750001,,Wequamps ,,"""A place where a hill drops off.""","Wequomps It is said the mountain is the carcass of a human-eating giant beaver who lived in a lake now occupied by the Connecticut River. The people complained to the god Hobomok that the beaver was greedy, and consuming all their resources. In response Hobomok decided to kill the beaver with a club he fashioned from a large tree. After the struggle, the beaver died, sank to the bottom of the lake, turned to stone, and became what is now Wequamps Mountain. Geological evidence shows that 15,000 years ago the area was infact a massive post-glacial lake and that a now extinct species of giant beaver as big as black bears once inhabited the area about the same time ",10,0,0,0,,,Mountains
+text,-30.902427738444473,139.13085937500003,,Saquducket,,,Sa,5,-20,0,0,,,Bodies of Water
+text,-33.81540064025878,125.66162109375001,,Mattacheeset,,,Mattakeeset,6,0,0,0,,,
+text,-39.926588421909436,86.46240234375001,,Antassawamock ,,,,3,-45,0,0,,,Geographical Locations
+text,-43.34116005412307,100.19531250000001,,Sippewissett,,,,3,65,0,0,,,Geographical Locations
+text,-39.147102707700746,100.48095703125,,Sachonesset,,,,7,0,0,0,,,Settlements
+text,-44.84029065139799,82.79296875000001,,Poughkeeste,,"""bay with coves,""",Today known as Buzzards Bay ,18,-40,5,0,,,
+text,-46.78501604269255,99.82177734375,,Quamquissett,,,,2,37,0,0,,,
+text,-44.96479793033102,103.88671875000001,,Teaticket ,,,,3,-85,0,0,,,Geographical Locations
+text,-43.16512263158296,111.75292968750001,,Weesquabs,,,,7,0,0,0,,,Settlements
+text,-39.757879992021756,114.10400390625001,,Cotuit,,,,7,0,0,0,,,Settlements
+text,-39.79165483525342,116.96044921875,,Cotachessett,,,,7,0,0,0,,,Settlements
+text,-28.84467368077178,104.23828125000001,,Manamet,,,,15,0,0,0,,,Tribes
+text,-44.96479793033102,108.94042968750001,,Weeqayut,,,,4,-85,0,0,,,Bodies of Water
+text,-40.597270634420255,105.49072265625001,,Coonemesett,,,,3,-85,0,0,,,Bodies of Water
+text,-45.85941212790755,105.22705078125001,,Acapesket,,,,3,85,0,0,,,Geographical Locations
+text,-45.460130637921,107.1826171875,,Menauhant,,,,3,85,0,0,,,Geographical Locations
+text,-39.130060242135094,74.79492187500001,,Achushnet,,,,15,0,0,0,,,Tribes
+text,-40.380028402511826,77.54150390625001,,Achushnet,,,,7,0,0,0,,,Settlements
+text,-45.19752230305683,1.8017578125000002,,Pachaug,,,,7,0,0,0,,,Bodies of Water
+text,-44.38669150215206,9.953613281250002,,Paugamoug,,,,7,0,0,0,,,Bodies of Water
+text,-19.12440952808487,13.77685546875,,Ponaganset,,,,7,0,0,0,,,Bodies of Water
+text,-11.910353555774101,27.795410156250004,,Nipsachuck,,,,5,0,0,0,,,Settlements
+text,-15.072123545811683,20.456542968750004,,Chepachet,,,,5,0,0,0,,,Settlements
+text,-16.235772090429844,24.19189453125,,Absalona ,,,,6,0,0,0,,,Mountains
+text,39.65645604812829,-17.951660156250004,,Nichewaug,,,,7,0,0,0,,,Settlements
+text,48.019324184801185,-23.2470703125,,Pequig,,,,7,0,0,0,,,Settlements
+text,54.43171285946844,-38.58398437500001,,Coassock ,,,,5,45,0,0,,,Geographical Locations
+text,29.171348850951507,-14.809570312500002,,Menameset ,,,,7,0,0,0,,,Settlements
+text,30.44867367928756,-1.77978515625,,Naquag,,,,7,0,0,0,,,Geographical Locations
+text,17.035777250427195,9.42626953125,,Pakachoag,,,,7,0,0,0,,,
+text,19.269665296502332,5.405273437500001,,Tataesset,,,,7,0,0,0,,,
+text,19.932041306115536,34.95849609375001,,Mangunkaquog,,"""Place of Small Stones""",,7,0,0,0,,,
+text,21.04349121680354,37.83691406250001,,Waushakamaug,,"""Place of Small Stones""",,7,0,0,0,,,
+text,24.387127324604506,40.51757812500001,,Cochituate,,"""Place of Small Stones""",,7,0,0,0,,,
+text,51.984880139916655,45.94482421875,,Pawtucket,,,,7,0,0,0,,,Settlements
+text,50.44351305245807,50.42724609375001,,Wamesit,,,,7,0,0,0,,,Settlements
+text,62.36999628130772,64.84130859375001,,Pawtucket,,,,12,-33,3,0,,,
+text,-13.496472765758952,94.39453125000001,,Patuxet,,,,15,0,0,0,,,Tribes
+text,-4.915832801313164,76.35498046875001,,Wonnocoote ,,,,4,0,0,0,,,
+text,-26.88288045572338,90.46142578125001,,Weweantic ,,,,6,85,0,0,,,Rivers
+text,-29.55434512574828,96.41601562500001,,Agawam,,"""fish curing place""",,15,0,0,0,,,Tribes
+text,-31.728167146023935,60.62255859375,,Kteticut ,,,,6,-45,0,0,,,Rivers
+text,-36.3151251474805,49.63623046875001,,Poppasquash,,,,5,0,0,0,,,Settlements
+text,-34.415973384481866,52.58056640625001,,Waypoyset,,,,5,0,0,0,,,Settlements
+text,-27.371767300523032,43.13232421875,,Annawanscoate,,,,7,0,0,0,,,Settlements
+text,-31.09057409495418,37.39746093750001,,Toskeunke,,,,7,0,0,0,,,Settlements
+text,-30.145127183376115,40.47363281250001,,Pawtuxets,,,,7,0,0,0,,,Settlements
+text,-31.85889704445453,40.40771484375001,,Shawomet,,,,7,0,0,0,,,Settlements
+text,-31.55981453201843,50.47119140625001,,Kickimuit,,,,5,0,0,0,,,Settlements
+text,-30.334953881988564,45.15380859375001,,Annawomscutt,,,,4,-85,0,0,,,Rivers
+text,-52.32191088594772,37.06787109375001,,Coojoot,,Cajoot Cajout ,Coojoot was a graphite mine used by the Narragansett from the Woodland era until 1657,3,0,0,0,,,Mines/Quarries
+text,-63.11463763252091,-6.5478515625,,Munnawtawkit ,,,,6,-25,2,0,,,Geographical Locations
+text,-60.500525410511294,-7.602539062500001,,Niantic,,,,5,0,0,0,,,Geographical Locations
+text,-58.68835857268097,15.051269531250002,,Misquamicut ,,,,5,0,0,0,,,Geographical Locations
+text,-60.04290359809165,10.72265625,,Massachaug,,,,5,-12,0,0,,,Bodies of Water
+text,-59.58997510773555,15.534667968750002,,Quooocontaug,,,,5,-27,0,0,,,Bodies of Water
+text,-57.79794388498275,5.910644531250001,,Pawcatuck,,,,5,-90,2,0,,,Rivers
+text,-58.309488840677645,35.11230468750001,,Weyanitoke,,,,3,0,0,0,,,Geographical Locations
+text,-32.602361666817515,-20.786132812500004,,Willlmantic,,,,6,0,0,0,,,Settlements
+text,-22.268764039073968,27.597656250000004,,Moswansicut,,,,4,85,0,0,,,Bodies of Water
+text,-2.152813583128846,4.921875000000001,,Chabunagungamaug ,,,,7,0,0,0,,,Bodies of Water
+text,-11.566143767762856,17.446289062500004,,Pascoag,,,,4,-86,0,0,,,Rivers
+text,-15.580710739162123,37.74902343750001,,Mittaubscut,,,,5,26,0,0,,,Rivers
+text,-10.531020008464976,36.43066406250001,,Sneechteconet,,,,5,26,0,0,,,Rivers
+text,-9.42738661503235,24.675292968750004,,Mittaubscut,,,,5,26,0,0,,,Rivers
+text,-6.882800241767556,30.454101562500004,,Wunnashowatuckoog,,"""people at the fork of the river""",,14,0,0,0,,,Tribes
+text,6.577303118123887,26.586914062500004,,Nipnet,,,Pokanoket (Wampanoag) homelands around Mount Hope and Narragansett Bay.,14,0,0,0,,,Tribes
+text,-6.708253968671543,13.754882812500002,,Cowesett,,,Pokanoket (Wampanoag) homelands around Mount Hope and Narragansett Bay.,14,0,0,0,,,Tribes
+text,-1.7136116598836224,38.18847656250001,,Monashackotoog,,,,14,0,0,0,,,Tribes
+text,1.625758360412755,32.87109375000001,,Wusquowhananawkit ,,"""at the pigeon country""",,14,0,0,0,,,Tribes
+text,76.45520341078418,93.33984375000001,,Accominta,,,,12,0,0,0,,,Tribes
+text,55.677584411089526,76.37695312500001,,Agawam,,"""fish curing place""",,15,0,0,0,,,Tribes
+text,57.98360215912974,-35.857615483939256,,Putchaug ,,"""turning place"" or ""division place""",a brook ,6,0,0,0,,,Rivers

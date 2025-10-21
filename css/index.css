@@ -1,0 +1,333 @@
+#map{
+    width: 100vw;
+    height: 100vh;
+    background: #9CCDD1;
+}
+html, body{
+    height: 100%;
+    margin: 0;
+}
+
+#info-panel {
+    position: absolute;
+    top: 10px;
+    left: 60px;
+    width: 250px;
+    background: #fff;
+    border: 1px solid #333;
+    padding: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    z-index: 1000;
+}
+
+#save-changes {
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    z-index: 1000;
+}
+
+.floating-button {
+    background: #1f3c88;
+    color: #fff;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 20px;
+    font-family: 'Roboto', 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+    transition: background 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.floating-button:hover,
+.floating-button:focus {
+    background: #162b63;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    outline: none;
+}
+
+#credits-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1200;
+}
+
+#credits-panel {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 1100;
+}
+
+#credits-panel.hidden {
+    display: none;
+}
+
+#credits-panel .credits-content {
+    background: #ffffff;
+    color: #1a1a1a;
+    border-radius: 12px;
+    padding: 20px 24px 24px;
+    width: min(360px, 90vw);
+    max-height: 70vh;
+    overflow-y: auto;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+    position: relative;
+}
+
+#credits-panel .credits-content h2 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-align: left;
+}
+
+#credits-panel .credits-content p {
+    margin-top: 0;
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+#credits-panel .credits-content ul {
+    margin: 0 0 12px 18px;
+    padding: 0;
+    list-style: disc;
+}
+
+#credits-panel .credits-content li {
+    margin-bottom: 8px;
+}
+
+#info-panel .close-button,
+#credits-panel .close-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: transparent;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    color: #333;
+}
+
+#credits-panel .close-button:focus,
+#credits-panel .close-button:hover {
+    color: #000;
+}
+
+
+#info-title {
+    text-align: center;
+}
+
+.info-alt-names {
+    text-align: center;
+    font-size: 0.95em;
+    margin: 0.15em 0 0.30em;
+    color: #444;
+    font-style: italic;
+}
+
+.info-subheader {
+    text-align: center;
+    font-size: 0.95em;
+    margin: 0.25em 0 0.5em;
+    color: #555;
+}
+
+#info-description {
+    text-align: left;
+}
+
+#info-description .footnote-ref {
+    font-size: 0.75em;
+    line-height: 1;
+    vertical-align: super;
+}
+
+#info-description .footnote-ref a {
+    color: #555;
+    text-decoration: none;
+}
+
+#info-description .footnote-ref a:hover,
+#info-description .footnote-ref a:focus {
+    text-decoration: underline;
+}
+
+#info-description .footnotes {
+    margin-top: 0.75em;
+    padding-top: 0.5em;
+    border-top: 1px solid #ddd;
+    font-size: 0.85em;
+    text-align: left;
+}
+
+#info-description .footnotes ol {
+    margin: 0;
+    padding-left: 1.25em;
+}
+
+#info-description .footnotes li {
+    margin-bottom: 0.5em;
+}
+
+#info-description .footnotes a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+#info-panel .close-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: transparent;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Glow effect for markers */
+.leaflet-marker-icon:hover,
+.marker-selected {
+    filter: drop-shadow(0 0 5px gold);
+}
+
+/* Style for text markers */
+.text-label {
+    position: absolute;
+
+    width: auto !important;
+    height: auto !important;
+    text-align: center;
+    pointer-events: none;
+}
+.text-label__inner {
+    pointer-events: none;
+    transform-origin: top left;
+}
+.text-label__inner span,
+.text-label__measure {
+    font-family: 'Roboto', 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: bold;
+    color: #333;
+    display: block;
+    line-height: 1;
+    letter-spacing: 0;
+    transform-origin: top center;
+}
+
+.text-label__inner span,
+.text-label__inner svg text,
+.text-label__inner svg textPath,
+.text-label__inner svg tspan {
+    pointer-events: auto;
+}
+
+.text-label__measure {
+    position: absolute;
+    visibility: hidden;
+    white-space: pre;
+    pointer-events: none;
+}
+.text-label__inner svg {
+    overflow: visible;
+    transform-origin: top center;
+    pointer-events: none;
+}
+
+/* Marker form styles */
+#marker-form-overlay,
+#text-form-overlay,
+#polygon-form-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
+}
+
+#marker-form-overlay.hidden,
+#text-form-overlay.hidden,
+#polygon-form-overlay.hidden {
+    display: none;
+}
+
+#marker-form,
+#text-form,
+#polygon-form {
+    background: #fff;
+    padding: 15px;
+    border: 1px solid #333;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    width: 300px;
+}
+
+#marker-form label,
+#text-form label,
+#polygon-form label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+#marker-form label:first-of-type,
+#text-form label:first-of-type {
+    margin-bottom: 4px;
+}
+
+#marker-form input,
+#marker-form select,
+#marker-form textarea,
+#text-form input,
+#text-form select,
+#text-form textarea,
+#polygon-form input,
+#polygon-form select,
+#polygon-form textarea {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#marker-form button,
+#text-form button,
+#polygon-form button {
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+#info-description img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+#mouse-coords {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    background: #fff;
+    padding: 4px 8px;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    pointer-events: none;
+}
