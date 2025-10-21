@@ -718,7 +718,11 @@ function populateMarkerIconSelect() {
   populateIconOptions(document.getElementById('marker-icon'));
 }
 
-populateMarkerIconSelect();
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', populateMarkerIconSelect);
+} else {
+  populateMarkerIconSelect();
+}
 
 // Store custom marker data and marker instances
 var customMarkers = [];
