@@ -496,137 +496,116 @@ map.on('click', function () {
   clearSelectedMarker();
 });
 
-var WigwamIcon = createScaledIcon({
+function createIconFromPixels(config) {
+  if (!config || !Array.isArray(config.pixelSize) || config.pixelSize.length !== 2) {
+    throw new Error('pixelSize [width, height] is required to create an icon.');
+  }
+
+  var width = Number(config.pixelSize[0]);
+  var height = Number(config.pixelSize[1]);
+
+  if (!isFinite(width) || width <= 0 || !isFinite(height) || height <= 0) {
+    throw new Error('pixelSize values must be finite, positive numbers.');
+  }
+
+  function ratioComponent(ratios, index, fallback) {
+    if (Array.isArray(ratios) && typeof ratios[index] === 'number' && isFinite(ratios[index])) {
+      return ratios[index];
+    }
+    return fallback;
+  }
+
+  var anchorRatioX = ratioComponent(config.anchorRatio, 0, 0.5);
+  var anchorRatioY = ratioComponent(config.anchorRatio, 1, 1);
+  var popupRatioX = ratioComponent(config.popupAnchorRatio, 0, 0.1);
+  var popupRatioY = ratioComponent(config.popupAnchorRatio, 1, -1);
+  var tooltipRatioX = ratioComponent(config.tooltipAnchorRatio, 0, 0.5);
+  var tooltipRatioY = ratioComponent(config.tooltipAnchorRatio, 1, -0.5);
+
+  var baseWidth = width / ICON_SCALE_FACTOR;
+  var baseHeight = height / ICON_SCALE_FACTOR;
+
+  return createScaledIcon({
+    iconUrl: config.iconUrl,
+    iconRetinaUrl: config.iconRetinaUrl || config.iconUrl,
+    iconSize: [baseWidth, baseHeight],
+    iconAnchor: [baseWidth * anchorRatioX, baseHeight * anchorRatioY],
+    popupAnchor: [baseWidth * popupRatioX, baseHeight * popupRatioY],
+    tooltipAnchor: [baseWidth * tooltipRatioX, baseHeight * tooltipRatioY],
+  });
+}
+
+var WigwamIcon = createIconFromPixels({
   iconUrl: 'icons/wigwam.png',
-  iconRetinaUrl: 'icons/wigwam.png',
-  iconSize: [1.875, 1.875],
-  iconAnchor: [0.9375, 1.875],
-  popupAnchor: [0.1875, -1.875],
-  tooltipAnchor: [0.9375, -0.9375],
+  pixelSize: [16, 16],
 });
 
-var SettlementsIcon = createScaledIcon({
+var SettlementsIcon = createIconFromPixels({
   iconUrl: 'icons/settlement.png',
-  iconRetinaUrl: 'icons/settlement.png',
-  iconSize: [2.8125, 2.8125],
-  iconAnchor: [1.3125, 2.8125],
-  popupAnchor: [0.1875, -2.8125],
-  tooltipAnchor: [1.3125, -1.3125],
+  pixelSize: [20, 20],
+  anchorRatio: [7 / 15, 1],
+  popupAnchorRatio: [1 / 15, -1],
+  tooltipAnchorRatio: [7 / 15, -7 / 15],
 });
 
-var CapitalIcon = createScaledIcon({
+var CapitalIcon = createIconFromPixels({
   iconUrl: 'icons/capital.png',
-  iconRetinaUrl: 'icons/capital.png',
-  iconSize: [1.875, 1.875],
-  iconAnchor: [0.9375, 1.875],
-  popupAnchor: [0.1875, -1.875],
-  tooltipAnchor: [0.9375, -0.9375],
+  pixelSize: [20, 20],
 });
 
-var RockIcon = createScaledIcon({
+var RockIcon = createIconFromPixels({
   iconUrl: 'icons/rock.png',
-  iconRetinaUrl: 'icons/rock.png',
-  iconSize: [1.875, 1.875],
-  iconAnchor: [0.9375, 1.875],
-  popupAnchor: [0.1875, -1.875],
-  tooltipAnchor: [0.9375, -0.9375],
+  pixelSize: [512, 512],
 });
 
 var fishingIconPath = 'icons/fish.png';
-var FishingIcon = createScaledIcon({
+var FishingIcon = createIconFromPixels({
   iconUrl: fishingIconPath,
-  iconRetinaUrl: fishingIconPath,
-  // Preserve the original aspect ratio of the fish icon (25x11)
-  iconSize: [4.26, 1.875],
-  iconAnchor: [2.13, 1.875],
-  popupAnchor: [0.1875, -1.875],
-  tooltipAnchor: [2.13, -0.9375],
+  pixelSize: [438, 208],
+  popupAnchorRatio: [25 / 568, -1],
 });
 
-var AgricultureIcon = createScaledIcon({
+var AgricultureIcon = createIconFromPixels({
   iconUrl: 'icons/plantinggrounds.png',
-  iconRetinaUrl: 'icons/plantinggrounds.png',
-  iconSize: [1.875, 1.875],
-  iconAnchor: [0.9375, 1.875],
-  popupAnchor: [0.1875, -1.875],
-  tooltipAnchor: [0.9375, -0.9375],
+  pixelSize: [298, 438],
 });
 
-var PteroglyphIcon = createScaledIcon({
+var PteroglyphIcon = createIconFromPixels({
   iconUrl: 'icons/petrogliph.png',
-  iconRetinaUrl: 'icons/petrogliph.png',
-  iconSize: [1.875, 1.875],
-  iconAnchor: [0.9375, 1.875],
-  popupAnchor: [0.1875, -1.875],
-  tooltipAnchor: [0.9375, -0.9375],
+  pixelSize: [512, 512],
 });
 
-var MineIcon = createScaledIcon({
+var MineIcon = createIconFromPixels({
   iconUrl: 'icons/mine.png',
-  iconRetinaUrl: 'icons/mine.png',
-  iconSize: [1.875, 1.875],
-  iconAnchor: [0.9375, 1.875],
-  popupAnchor: [0.1875, -1.875],
-  tooltipAnchor: [0.9375, -0.9375],
+  pixelSize: [748, 641],
 });
 
-// Preserve the native aspect ratio of the wide Earthworks illustration while
-// keeping the shared marker height for consistent scaling.
-
-var earthworksIconHeight = 1.875 / 2;
-var earthworksIconWidth = (685 / 227) * earthworksIconHeight;
-
-var EarthworksIcon = createScaledIcon({
+var EarthworksIcon = createIconFromPixels({
   iconUrl: 'icons/earthworks.png',
-  iconRetinaUrl: 'icons/earthworks.png',
-  iconSize: [earthworksIconWidth, earthworksIconHeight],
-  iconAnchor: [earthworksIconWidth / 2, earthworksIconHeight],
-  popupAnchor: [0, -earthworksIconHeight],
-  tooltipAnchor: [earthworksIconWidth / 2, -earthworksIconHeight / 2],
+  pixelSize: [685, 227],
+  popupAnchorRatio: [0, -1],
 });
 
-// Preserve the original 39x17 aspect ratio of the fort icon while keeping the
-// consistent marker height used throughout the map.
-var fortIconHeight = 1.875;
-var fortIconWidth = (39 / 17) * fortIconHeight;
-
-var FortsIcon = createScaledIcon({
+var FortsIcon = createIconFromPixels({
   iconUrl: 'icons/fort.png',
-  iconRetinaUrl: 'icons/fort.png',
-  iconSize: [fortIconWidth, fortIconHeight],
-  iconAnchor: [fortIconWidth / 2, fortIconHeight],
-  popupAnchor: [0.3, -fortIconHeight],
-  tooltipAnchor: [fortIconWidth / 2, -fortIconHeight / 2],
+  pixelSize: [39, 17],
+  popupAnchorRatio: [68 / 975, -1],
 });
 
-var ChambersIcon = createScaledIcon({
+var ChambersIcon = createIconFromPixels({
   iconUrl: 'icons/csl.png',
-  iconRetinaUrl: 'icons/csl.png',
-  iconSize: [1.875, 1.875],
-  iconAnchor: [0.9375, 1.875],
-  popupAnchor: [0.1875, -1.875],
-  tooltipAnchor: [0.9375, -0.9375],
+  pixelSize: [874, 668],
 });
 
-var CampsIcon = createScaledIcon({
+var CampsIcon = createIconFromPixels({
   iconUrl: 'icons/fire.png',
-  iconRetinaUrl: 'icons/fire.png',
-  iconSize: [0.9375, 0.9375],
-  iconAnchor: [0.46875, 0.9375],
-  popupAnchor: [0.09375, -0.9375],
-  tooltipAnchor: [0.46875, -0.46875],
+  pixelSize: [9, 11],
 });
 
-var seaMonsterIconHeight = 2.8125;
-var seaMonsterIconWidth = (391 / 530) * seaMonsterIconHeight;
-
-var SeaMonsterIcon = createScaledIcon({
+var SeaMonsterIcon = createIconFromPixels({
   iconUrl: 'icons/seamonster.png',
-  iconRetinaUrl: 'icons/seamonster.png',
-  iconSize: [seaMonsterIconWidth, seaMonsterIconHeight],
-  iconAnchor: [seaMonsterIconWidth / 2, seaMonsterIconHeight],
-  popupAnchor: [0.1875, -seaMonsterIconHeight],
-  tooltipAnchor: [seaMonsterIconWidth / 2, -seaMonsterIconHeight / 2],
+  pixelSize: [391, 530],
+  popupAnchorRatio: [106 / 1173, -1],
 });
 
 
