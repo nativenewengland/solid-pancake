@@ -36,7 +36,7 @@ def match_icons(img):
     h, w = img.shape[:2]
     results = []
     # Only attempt to match a subset of icons to avoid excessive false positives
-    targets = ['wigwam.png']
+    targets = ['fort.png']
     for fname in targets:
         path = os.path.join(ICONS_DIR, fname)
         template = cv2.imread(path, cv2.IMREAD_UNCHANGED)

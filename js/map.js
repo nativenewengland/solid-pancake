@@ -535,96 +535,190 @@ function createIconFromPixels(config) {
   });
 }
 
-var WigwamIcon = createIconFromPixels({
-  iconUrl: 'icons/wigwam.png',
-  pixelSize: [16, 16],
-});
+var ICON_DEFINITIONS = [
+  { label: 'BEASTMAN SMALL', key: 'beastman-small', file: 'beastman-small.png', pixelSize: [74, 60] },
+  { label: 'BLOOD MOUNTAIN', key: 'blood-mountain', file: 'blood-mountain.png', pixelSize: [167, 64] },
+  { label: 'BP 001', key: 'bp-001', file: 'bp-001.webp', pixelSize: [79, 59] },
+  { label: 'BP 002', key: 'bp-002', file: 'bp-002.webp', pixelSize: [79, 55] },
+  { label: 'BP 003', key: 'bp-003', file: 'bp-003.webp', pixelSize: [124, 77] },
+  { label: 'BP 004', key: 'bp-004', file: 'bp-004.webp', pixelSize: [170, 73] },
+  { label: 'BP 005', key: 'bp-005', file: 'bp-005.webp', pixelSize: [112, 120] },
+  { label: 'BP 006', key: 'bp-006', file: 'bp-006.webp', pixelSize: [232, 335] },
+  { label: 'BP 007', key: 'bp-007', file: 'bp-007.webp', pixelSize: [226, 355] },
+  { label: 'BP 008', key: 'bp-008', file: 'bp-008.webp', pixelSize: [233, 346] },
+  { label: 'BP 009', key: 'bp-009', file: 'bp-009.webp', pixelSize: [232, 322] },
+  { label: 'BP 010', key: 'bp-010', file: 'bp-010.webp', pixelSize: [232, 322] },
+  { label: 'BP 011', key: 'bp-011', file: 'bp-011.webp', pixelSize: [211, 353] },
+  { label: 'BP 012', key: 'bp-012', file: 'bp-012.webp', pixelSize: [215, 322] },
+  { label: 'BP 013', key: 'bp-013', file: 'bp-013.webp', pixelSize: [226, 335] },
+  { label: 'BP 014', key: 'bp-014', file: 'bp-014.webp', pixelSize: [247, 337] },
+  { label: 'BP 015', key: 'bp-015', file: 'bp-015.webp', pixelSize: [207, 316] },
+  { label: 'BP 016', key: 'bp-016', file: 'bp-016.webp', pixelSize: [232, 322] },
+  { label: 'BP 017', key: 'bp-017', file: 'bp-017.webp', pixelSize: [163, 272] },
+  { label: 'BP 018', key: 'bp-018', file: 'bp-018.webp', pixelSize: [199, 218] },
+  { label: 'BP 019', key: 'bp-019', file: 'bp-019.webp', pixelSize: [117, 99] },
+  { label: 'BP 020', key: 'bp-020', file: 'bp-020.webp', pixelSize: [174, 65] },
+  { label: 'BP 021', key: 'bp-021', file: 'bp-021.webp', pixelSize: [164, 65] },
+  { label: 'BP 022', key: 'bp-022', file: 'bp-022.webp', pixelSize: [234, 320] },
+  { label: 'BP 023', key: 'bp-023', file: 'bp-023.webp', pixelSize: [219, 350] },
+  { label: 'BP 024', key: 'bp-024', file: 'bp-024.webp', pixelSize: [203, 79] },
+  { label: 'BRET 001', key: 'bret-001', file: 'bret-001.webp', pixelSize: [263, 365] },
+  { label: 'BRET 002', key: 'bret-002', file: 'bret-002.webp', pixelSize: [273, 114] },
+  { label: 'BRET 003', key: 'bret-003', file: 'bret-003.webp', pixelSize: [263, 365] },
+  { label: 'BRET 004', key: 'bret-004', file: 'bret-004.webp', pixelSize: [264, 109] },
+  { label: 'BRET 005', key: 'bret-005', file: 'bret-005.webp', pixelSize: [263, 365] },
+  { label: 'BRET 006', key: 'bret-006', file: 'bret-006.webp', pixelSize: [147, 103] },
+  { label: 'BRET 007', key: 'bret-007', file: 'bret-007.webp', pixelSize: [263, 365] },
+  { label: 'BRET 008', key: 'bret-008', file: 'bret-008.webp', pixelSize: [106, 103] },
+  { label: 'BRET 009', key: 'bret-009', file: 'bret-009.webp', pixelSize: [263, 365] },
+  { label: 'BRET 010', key: 'bret-010', file: 'bret-010.webp', pixelSize: [120, 96] },
+  { label: 'BRET 011', key: 'bret-011', file: 'bret-011.webp', pixelSize: [263, 365] },
+  { label: 'BRET 012', key: 'bret-012', file: 'bret-012.webp', pixelSize: [105, 94] },
+  { label: 'BRET 013', key: 'bret-013', file: 'bret-013.webp', pixelSize: [241, 101] },
+  { label: 'BRET 014', key: 'bret-014', file: 'bret-014.webp', pixelSize: [263, 365] },
+  { label: 'BRET 015', key: 'bret-015', file: 'bret-015.webp', pixelSize: [263, 365] },
+  { label: 'BRET 016', key: 'bret-016', file: 'bret-016.webp', pixelSize: [175, 91] },
+  { label: 'BRET 017', key: 'bret-017', file: 'bret-017.webp', pixelSize: [263, 365] },
+  { label: 'BRET 018', key: 'bret-018', file: 'bret-018.webp', pixelSize: [199, 97] },
+  { label: 'BRET 019', key: 'bret-019', file: 'bret-019.webp', pixelSize: [263, 365] },
+  { label: 'BRET 020', key: 'bret-020', file: 'bret-020.webp', pixelSize: [231, 62] },
+  { label: 'BRET 021', key: 'bret-021', file: 'bret-021.webp', pixelSize: [263, 365] },
+  { label: 'BRET 022', key: 'bret-022', file: 'bret-022.webp', pixelSize: [108, 104] },
+  { label: 'BRET 023', key: 'bret-023', file: 'bret-023.webp', pixelSize: [263, 365] },
+  { label: 'BRET 024', key: 'bret-024', file: 'bret-024.webp', pixelSize: [208, 89] },
+  { label: 'BRET 025', key: 'bret-025', file: 'bret-025.webp', pixelSize: [263, 365] },
+  { label: 'BRET 026', key: 'bret-026', file: 'bret-026.webp', pixelSize: [94, 103] },
+  { label: 'BRET 027', key: 'bret-027', file: 'bret-027.webp', pixelSize: [263, 365] },
+  { label: 'BRET 028', key: 'bret-028', file: 'bret-028.webp', pixelSize: [110, 95] },
+  { label: 'BRET 029', key: 'bret-029', file: 'bret-029.webp', pixelSize: [137, 84] },
+  { label: 'BRET 030', key: 'bret-030', file: 'bret-030.webp', pixelSize: [165, 76] },
+  { label: 'BRET 031', key: 'bret-031', file: 'bret-031.webp', pixelSize: [240, 81] },
+  { label: 'BRET 032', key: 'bret-032', file: 'bret-032.webp', pixelSize: [259, 80] },
+  { label: 'BRET 033', key: 'bret-033', file: 'bret-033.webp', pixelSize: [221, 99] },
+  { label: 'BRET 034', key: 'bret-034', file: 'bret-034.webp', pixelSize: [135, 83] },
+  { label: 'BROKEN DWARVEN HOLD', key: 'broken-dwarven-hold', file: 'broken-dwarven-hold.png', pixelSize: [807, 465] },
+  { label: 'DWARF OUTPOST', key: 'dwarf-outpost', file: 'dwarf-outpost.png', pixelSize: [895, 615] },
+  { label: 'ELEVEN TOWER', key: 'eleven-tower', file: 'eleven-tower.png', pixelSize: [231, 810] },
+  { label: 'EMP 001', key: 'emp-001', file: 'emp-001.webp', pixelSize: [200, 228] },
+  { label: 'EMP 002', key: 'emp-002', file: 'emp-002.webp', pixelSize: [200, 284] },
+  { label: 'EMP 003', key: 'emp-003', file: 'emp-003.webp', pixelSize: [200, 252] },
+  { label: 'EMP 004', key: 'emp-004', file: 'emp-004.webp', pixelSize: [200, 228] },
+  { label: 'FORT', key: 'fort', file: 'fort.png', pixelSize: [62, 39] },
+  { label: 'HOUSE', key: 'house', file: 'house.png', pixelSize: [506, 432] },
+  { label: 'KISLEV', key: 'kislev', file: 'kislev.png', pixelSize: [734, 827] },
+  { label: 'LD 001', key: 'ld-001', file: 'ld-001.webp', pixelSize: [402, 285] },
+  { label: 'LD 002', key: 'ld-002', file: 'ld-002.webp', pixelSize: [172, 112] },
+  { label: 'LD 003', key: 'ld-003', file: 'ld-003.webp', pixelSize: [293, 268] },
+  { label: 'LD 004', key: 'ld-004', file: 'ld-004.webp', pixelSize: [191, 166] },
+  { label: 'LD 005', key: 'ld-005', file: 'ld-005.webp', pixelSize: [352, 418] },
+  { label: 'LD 006 01', key: 'ld-006-01', file: 'ld-006-01.webp', pixelSize: [75, 141] },
+  { label: 'LD 006 02', key: 'ld-006-02', file: 'ld-006-02.webp', pixelSize: [117, 110] },
+  { label: 'LD 007', key: 'ld-007', file: 'ld-007.webp', pixelSize: [89, 84] },
+  { label: 'LD 008', key: 'ld-008', file: 'ld-008.webp', pixelSize: [240, 255] },
+  { label: 'LD 009', key: 'ld-009', file: 'ld-009.webp', pixelSize: [164, 120] },
+  { label: 'LD 010', key: 'ld-010', file: 'ld-010.webp', pixelSize: [264, 319] },
+  { label: 'LD 011', key: 'ld-011', file: 'ld-011.webp', pixelSize: [214, 113] },
+  { label: 'LD 012', key: 'ld-012', file: 'ld-012.webp', pixelSize: [127, 118] },
+  { label: 'LD 013', key: 'ld-013', file: 'ld-013.webp', pixelSize: [300, 334] },
+  { label: 'LD 014', key: 'ld-014', file: 'ld-014.webp', pixelSize: [186, 120] },
+  { label: 'LD 015', key: 'ld-015', file: 'ld-015.webp', pixelSize: [248, 296] },
+  { label: 'LD 016', key: 'ld-016', file: 'ld-016.webp', pixelSize: [347, 115] },
+  { label: 'LD 017', key: 'ld-017', file: 'ld-017.webp', pixelSize: [120, 62] },
+  { label: 'LD 018', key: 'ld-018', file: 'ld-018.webp', pixelSize: [170, 97] },
+  { label: 'LD 019', key: 'ld-019', file: 'ld-019.webp', pixelSize: [211, 369] },
+  { label: 'LD 020 01', key: 'ld-020-01', file: 'ld-020-01.webp', pixelSize: [157, 53] },
+  { label: 'LD 020 02', key: 'ld-020-02', file: 'ld-020-02.webp', pixelSize: [63, 150] },
+  { label: 'LD 020 03', key: 'ld-020-03', file: 'ld-020-03.webp', pixelSize: [138, 84] },
+  { label: 'LD 020 04', key: 'ld-020-04', file: 'ld-020-04.webp', pixelSize: [159, 40] },
+  { label: 'LD 020 05', key: 'ld-020-05', file: 'ld-020-05.webp', pixelSize: [160, 57] },
+  { label: 'LD 021', key: 'ld-021', file: 'ld-021.webp', pixelSize: [189, 123] },
+  { label: 'LD 022', key: 'ld-022', file: 'ld-022.webp', pixelSize: [167, 157] },
+  { label: 'LD 023', key: 'ld-023', file: 'ld-023.webp', pixelSize: [252, 312] },
+  { label: 'LD 024', key: 'ld-024', file: 'ld-024.webp', pixelSize: [203, 116] },
+  { label: 'LD 025', key: 'ld-025', file: 'ld-025.webp', pixelSize: [186, 126] },
+  { label: 'LD 026', key: 'ld-026', file: 'ld-026.webp', pixelSize: [264, 311] },
+  { label: 'LD 027', key: 'ld-027', file: 'ld-027.webp', pixelSize: [224, 114] },
+  { label: 'LD 028', key: 'ld-028', file: 'ld-028.webp', pixelSize: [148, 113] },
+  { label: 'LD 029', key: 'ld-029', file: 'ld-029.webp', pixelSize: [330, 75] },
+  { label: 'LD 030', key: 'ld-030', file: 'ld-030.webp', pixelSize: [202, 39] },
+  { label: 'LD 031 01', key: 'ld-031-01', file: 'ld-031-01.webp', pixelSize: [143, 51] },
+  { label: 'LD 031 02', key: 'ld-031-02', file: 'ld-031-02.webp', pixelSize: [138, 88] },
+  { label: 'LD 032', key: 'ld-032', file: 'ld-032.webp', pixelSize: [285, 52] },
+  { label: 'OG 001', key: 'og-001', file: 'og-001.webp', pixelSize: [200, 250] },
+  { label: 'OG 002', key: 'og-002', file: 'og-002.webp', pixelSize: [200, 237] },
+  { label: 'OG 003', key: 'og-003', file: 'og-003.webp', pixelSize: [200, 221] },
+  { label: 'OG 004', key: 'og-004', file: 'og-004.webp', pixelSize: [200, 200] },
+  { label: 'OG 005', key: 'og-005', file: 'og-005.webp', pixelSize: [200, 237] },
+  { label: 'OG 006', key: 'og-006', file: 'og-006.webp', pixelSize: [200, 201] },
+  { label: 'OG 007', key: 'og-007', file: 'og-007.webp', pixelSize: [200, 237] },
+  { label: 'OG 008', key: 'og-008', file: 'og-008.webp', pixelSize: [200, 200] },
+  { label: 'OG 009', key: 'og-009', file: 'og-009.webp', pixelSize: [200, 198] },
+  { label: 'OG 010', key: 'og-010', file: 'og-010.webp', pixelSize: [275, 256] },
+  { label: 'OG 011', key: 'og-011', file: 'og-011.webp', pixelSize: [116, 76] },
+  { label: 'OG 012', key: 'og-012', file: 'og-012.webp', pixelSize: [247, 138] },
+  { label: 'OG 013', key: 'og-013', file: 'og-013.webp', pixelSize: [86, 73] },
+  { label: 'OG 014', key: 'og-014', file: 'og-014.webp', pixelSize: [131, 284] },
+  { label: 'OG 015', key: 'og-015', file: 'og-015.webp', pixelSize: [85, 76] },
+  { label: 'OG 016', key: 'og-016', file: 'og-016.webp', pixelSize: [99, 89] },
+  { label: 'OG 017', key: 'og-017', file: 'og-017.webp', pixelSize: [87, 78] },
+  { label: 'OG 018', key: 'og-018', file: 'og-018.webp', pixelSize: [231, 83] },
+  { label: 'OG 019', key: 'og-019', file: 'og-019.webp', pixelSize: [74, 51] },
+  { label: 'OG 020', key: 'og-020', file: 'og-020.webp', pixelSize: [84, 76] },
+  { label: 'PORTO', key: 'porto', file: 'porto.png', pixelSize: [573, 341] },
+];
 
-var SettlementsIcon = createIconFromPixels({
-  iconUrl: 'icons/settlement.png',
-  pixelSize: [20, 20],
-  anchorRatio: [7 / 15, 1],
-  popupAnchorRatio: [1 / 15, -1],
-  tooltipAnchorRatio: [7 / 15, -7 / 15],
-});
+var DEFAULT_ICON_KEY = (function () {
+  var fallback = 'fort';
+  if (ICON_DEFINITIONS.some(function (def) { return def.key === fallback; })) {
+    return fallback;
+  }
+  return ICON_DEFINITIONS.length ? ICON_DEFINITIONS[0].key : null;
+})();
 
-var CapitalIcon = createIconFromPixels({
-  iconUrl: 'icons/capital.png',
-  pixelSize: [20, 20],
-});
+var iconMap = ICON_DEFINITIONS.reduce(function (acc, def) {
+  acc[def.key] = createIconFromPixels({
+    iconUrl: 'icons/' + def.file,
+    pixelSize: def.pixelSize,
+  });
+  return acc;
+}, {});
 
-var RockIcon = createIconFromPixels({
-  iconUrl: 'icons/rock.png',
-  pixelSize: [512, 512],
-});
+function getDefaultIcon() {
+  if (DEFAULT_ICON_KEY && iconMap[DEFAULT_ICON_KEY]) {
+    return iconMap[DEFAULT_ICON_KEY];
+  }
+  var keys = Object.keys(iconMap);
+  return keys.length ? iconMap[keys[0]] : null;
+}
 
-var fishingIconPath = 'icons/fish.png';
-var FishingIcon = createIconFromPixels({
-  iconUrl: fishingIconPath,
-  pixelSize: [438, 208],
-  popupAnchorRatio: [25 / 568, -1],
-});
+function getIconOrDefault(key) {
+  if (key && iconMap[key]) {
+    return iconMap[key];
+  }
+  return getDefaultIcon();
+}
 
-var AgricultureIcon = createIconFromPixels({
-  iconUrl: 'icons/plantinggrounds.png',
-  pixelSize: [298, 438],
-});
+function populateIconOptions(select) {
+  if (!select) return;
+  select.innerHTML = '';
+  ICON_DEFINITIONS.forEach(function (def) {
+    var option = document.createElement('option');
+    option.value = def.key;
+    option.textContent = def.label;
+    select.appendChild(option);
+  });
+  if (DEFAULT_ICON_KEY && iconMap[DEFAULT_ICON_KEY]) {
+    select.value = DEFAULT_ICON_KEY;
+  } else if (ICON_DEFINITIONS.length) {
+    select.value = ICON_DEFINITIONS[0].key;
+  }
+}
 
-var PteroglyphIcon = createIconFromPixels({
-  iconUrl: 'icons/petrogliph.png',
-  pixelSize: [512, 512],
-});
+function populateMarkerIconSelect() {
+  populateIconOptions(document.getElementById('marker-icon'));
+}
 
-var MineIcon = createIconFromPixels({
-  iconUrl: 'icons/mine.png',
-  pixelSize: [748, 641],
-});
-
-var EarthworksIcon = createIconFromPixels({
-  iconUrl: 'icons/earthworks.png',
-  pixelSize: [685, 227],
-  popupAnchorRatio: [0, -1],
-});
-
-var FortsIcon = createIconFromPixels({
-  iconUrl: 'icons/fort.png',
-  pixelSize: [39, 17],
-  popupAnchorRatio: [68 / 975, -1],
-});
-
-var ChambersIcon = createIconFromPixels({
-  iconUrl: 'icons/csl.png',
-  pixelSize: [874, 668],
-});
-
-var CampsIcon = createIconFromPixels({
-  iconUrl: 'icons/fire.png',
-  pixelSize: [9, 11],
-});
-
-var SeaMonsterIcon = createIconFromPixels({
-  iconUrl: 'icons/seamonster.png',
-  pixelSize: [391, 530],
-  popupAnchorRatio: [106 / 1173, -1],
-});
-
-
-// Map of icon keys to actual icons
-var iconMap = {
-  wigwam: WigwamIcon,
-  settlement: SettlementsIcon,
-  capital: CapitalIcon,
-  rock: RockIcon,
-  fishing: FishingIcon,
-  agriculture: AgricultureIcon,
-  pteroglyph: PteroglyphIcon,
-  mine: MineIcon,
-  earthworks: EarthworksIcon,
-  forts: FortsIcon,
-  chambers: ChambersIcon,
-  seamonster: SeaMonsterIcon,
-  camps: CampsIcon,
-};
+populateMarkerIconSelect();
 
 // Store custom marker data and marker instances
 var customMarkers = [];
@@ -1046,7 +1140,7 @@ function loadFeaturesFromCSV(text) {
       markers.push({
         lat: parseFloat(cols[1]),
         lng: parseFloat(cols[2]),
-        icon: cols[3] || 'wigwam',
+        icon: cols[3] || DEFAULT_ICON_KEY,
         name: cols[4],
         altNames: cols[5] || '',
         subheader: cols[6] || '',
@@ -1382,7 +1476,7 @@ function detachTextLabel(labelMarker) {
 }
 
 function addMarkerToMap(data) {
-  var icon = iconMap[data.icon] || WigwamIcon;
+  var icon = getIconOrDefault(data.icon);
   if (data.subheader === undefined || data.subheader === null) {
     data.subheader = '';
   }
@@ -1834,7 +1928,7 @@ function showMarkerForm(latlng) {
     var subheader = document.getElementById('marker-subheader').value || '';
     var description =
       document.getElementById('marker-description').value || '';
-    var iconKey = document.getElementById('marker-icon').value || 'wigwam';
+    var iconKey = document.getElementById('marker-icon').value || DEFAULT_ICON_KEY;
     var overlayValue = overlaySelect ? overlaySelect.value : '';
     var data = {
       lat: latlng.lat,
@@ -1865,7 +1959,7 @@ function showMarkerForm(latlng) {
     document.getElementById('marker-alt-names').value = '';
     document.getElementById('marker-subheader').value = '';
     document.getElementById('marker-description').value = '';
-    document.getElementById('marker-icon').value = 'wigwam';
+    document.getElementById('marker-icon').value = DEFAULT_ICON_KEY || '';
     if (overlaySelect) {
       overlaySelect.value = '';
     }
@@ -1890,7 +1984,7 @@ function editMarkerForm(marker) {
   document.getElementById('marker-alt-names').value = marker._data.altNames || '';
   document.getElementById('marker-subheader').value = marker._data.subheader || '';
   document.getElementById('marker-description').value = marker._data.description || '';
-  document.getElementById('marker-icon').value = marker._data.icon || 'wigwam';
+  document.getElementById('marker-icon').value = marker._data.icon || DEFAULT_ICON_KEY || '';
   if (overlaySelect) {
     overlaySelect.value = marker._data.overlay || '';
   }
@@ -1901,7 +1995,7 @@ function editMarkerForm(marker) {
     var altNames = document.getElementById('marker-alt-names').value || '';
     var subheader = document.getElementById('marker-subheader').value || '';
     var description = document.getElementById('marker-description').value || '';
-    var iconKey = document.getElementById('marker-icon').value || 'wigwam';
+    var iconKey = document.getElementById('marker-icon').value || DEFAULT_ICON_KEY;
     var overlayValue = overlaySelect ? overlaySelect.value : '';
 
     marker._data.name = name;
@@ -1910,7 +2004,7 @@ function editMarkerForm(marker) {
     marker._data.description = description;
     marker._data.icon = iconKey;
 
-    var newIcon = iconMap[iconKey] || WigwamIcon;
+    var newIcon = getIconOrDefault(iconKey);
     marker.setIcon(newIcon);
     marker._baseIconOptions = JSON.parse(JSON.stringify(newIcon.options));
     moveMarkerToOverlay(marker, overlayValue);
@@ -1937,7 +2031,7 @@ function editMarkerForm(marker) {
     document.getElementById('marker-alt-names').value = '';
     document.getElementById('marker-subheader').value = '';
     document.getElementById('marker-description').value = '';
-    document.getElementById('marker-icon').value = 'wigwam';
+    document.getElementById('marker-icon').value = DEFAULT_ICON_KEY || '';
     if (overlaySelect) {
       overlaySelect.value = '';
     }
@@ -2233,7 +2327,7 @@ function convertTextToMarker(labelMarker) {
     altNames: data.altNames || '',
     subheader: data.subheader || '',
     description: data.description || '',
-    icon: 'wigwam',
+    icon: DEFAULT_ICON_KEY || '',
     overlay: data.overlay || '',
   };
   customMarkers.push(markerData);
