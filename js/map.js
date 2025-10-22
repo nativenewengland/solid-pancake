@@ -613,23 +613,6 @@ var WIKI_LINK_RULES = [
     entryId: 'kobolds',
     terms: ['Kobolds', 'kobolds', 'Kobold', 'kobold'],
   },
-  {
-    entryId: 'mountain-dwarfs',
-    terms: [
-      'Mountain Dwarfs',
-      'mountain dwarfs',
-      'Mountain Dwarf',
-      'mountain dwarf',
-    ],
-  },
-  {
-    entryId: 'dark-dwarfs',
-    terms: ['Dark Dwarfs', 'dark dwarfs', 'Dark Dwarf', 'dark dwarf'],
-  },
-  {
-    entryId: 'hill-dwarfs',
-    terms: ['Hill Dwarfs', 'hill dwarfs', 'Hill Dwarf', 'hill dwarf'],
-  },
 ];
 
 function escapeWikiTerm(term) {
