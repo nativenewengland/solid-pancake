@@ -325,6 +325,11 @@ L.Icon.Default.mergeOptions({
 });
 
 var ICON_SCALE_FACTOR = 2;
+var ICON_SCALE_MIN = 0.5;
+var ICON_SCALE_MAX = 2;
+var iconScaleMultiplier = 1;
+var iconSizeSlider = null;
+var iconSizeValueDisplay = null;
 
 function createScaledIcon(options) {
   var scaled = Object.assign({}, options);
@@ -358,7 +363,7 @@ function createScaledIcon(options) {
     if (rawValue <= 0) {
       return 0;
     }
-    var scaledValue = rawValue * ICON_SCALE_FACTOR;
+    var scaledValue = rawValue * ICON_SCALE_FACTOR * iconScaleMultiplier;
     var rounded = Math.round(scaledValue);
     return Math.max(1, rounded);
   }
@@ -377,7 +382,7 @@ function createScaledIcon(options) {
       var ratio = rawValue / rawDimension;
       scaled = ratio * scaledDimension;
     } else {
-      scaled = rawValue * ICON_SCALE_FACTOR;
+      scaled = rawValue * ICON_SCALE_FACTOR * iconScaleMultiplier;
     }
 
     var rounded = Math.round(scaled);
@@ -431,6 +436,17 @@ function createScaledIcon(options) {
   applyAnchorScaling('tooltipAnchor', options.tooltipAnchor, rawIconSize, scaledIconSize);
 
   return L.icon(scaled);
+}
+
+function refreshIconScaleUI() {
+  if (iconSizeValueDisplay) {
+    var percent = Math.round(iconScaleMultiplier * 100);
+    iconSizeValueDisplay.textContent = percent + '%';
+  }
+  if (iconSizeSlider && document.activeElement !== iconSizeSlider) {
+    var sliderValue = Math.round(iconScaleMultiplier * 100);
+    iconSizeSlider.value = String(sliderValue);
+  }
 }
 
 function showInfo(title, altNames, subheader, description) {
@@ -675,13 +691,21 @@ var DEFAULT_ICON_KEY = (function () {
   return ICON_DEFINITIONS.length ? ICON_DEFINITIONS[0].key : null;
 })();
 
-var iconMap = ICON_DEFINITIONS.reduce(function (acc, def) {
-  acc[def.key] = createIconFromPixels({
-    iconUrl: 'icons/' + def.file,
-    pixelSize: def.pixelSize,
+var iconMap = {};
+
+function rebuildIconMap() {
+  Object.keys(iconMap).forEach(function (key) {
+    delete iconMap[key];
   });
-  return acc;
-}, {});
+  ICON_DEFINITIONS.forEach(function (def) {
+    iconMap[def.key] = createIconFromPixels({
+      iconUrl: 'icons/' + def.file,
+      pixelSize: def.pixelSize,
+    });
+  });
+}
+
+rebuildIconMap();
 
 function getDefaultIcon() {
   if (DEFAULT_ICON_KEY && iconMap[DEFAULT_ICON_KEY]) {
@@ -742,6 +766,73 @@ var territoriesOverlay = L.layerGroup([territoriesLayer, territoryMarkersLayer])
 var TEXT_LABEL_FONT_FAMILY = "'IM Fell DW Pica', serif";
 var textMeasurementContext = null;
 var textMeasurementSpan = null;
+
+function refreshMarkerIcons() {
+  allMarkers.forEach(function (marker) {
+    if (!marker) {
+      return;
+    }
+    var iconKey = marker._data && marker._data.icon;
+    var newIcon = getIconOrDefault(iconKey);
+    if (!newIcon) {
+      return;
+    }
+    var wasSelected = marker === selectedMarker;
+    marker.setIcon(newIcon);
+    marker._baseIconOptions = JSON.parse(JSON.stringify(newIcon.options));
+    if (wasSelected) {
+      if (marker._icon) {
+        marker._icon.classList.add('marker-selected');
+      } else if (
+        typeof window !== 'undefined' &&
+        window.requestAnimationFrame
+      ) {
+        window.requestAnimationFrame(function () {
+          if (marker._icon) {
+            marker._icon.classList.add('marker-selected');
+          }
+        });
+      }
+    }
+  });
+  if (typeof rescaleIcons === 'function' && map && map.getZoom) {
+    rescaleIcons();
+  }
+}
+
+function setIconScaleMultiplier(multiplier) {
+  if (typeof multiplier !== 'number' || !Number.isFinite(multiplier)) {
+    return;
+  }
+  var clamped = Math.min(
+    ICON_SCALE_MAX,
+    Math.max(ICON_SCALE_MIN, multiplier)
+  );
+  if (Math.abs(clamped - iconScaleMultiplier) < 0.001) {
+    refreshIconScaleUI();
+    return;
+  }
+  iconScaleMultiplier = clamped;
+  rebuildIconMap();
+  refreshMarkerIcons();
+  refreshIconScaleUI();
+}
+
+iconSizeSlider = document.getElementById('icon-size-slider');
+iconSizeValueDisplay = document.getElementById('icon-size-value');
+refreshIconScaleUI();
+
+if (iconSizeSlider) {
+  var handleIconSizeInput = function (event) {
+    var sliderValue = Number(event.target.value);
+    if (!Number.isFinite(sliderValue)) {
+      return;
+    }
+    setIconScaleMultiplier(sliderValue / 100);
+  };
+  iconSizeSlider.addEventListener('input', handleIconSizeInput);
+  iconSizeSlider.addEventListener('change', handleIconSizeInput);
+}
 
 Settlements.addTo(map);
 territoriesOverlay.addTo(map);

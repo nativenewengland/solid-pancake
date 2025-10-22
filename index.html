@@ -17,6 +17,21 @@
 
     <div id="map"></div>
     <button id="save-changes">Save Changes</button>
+    <div id="icon-size-control" role="group" aria-labelledby="icon-size-label">
+        <div class="icon-size-control__header">
+            <label for="icon-size-slider" id="icon-size-label">Icon Size</label>
+            <span id="icon-size-value" aria-live="polite">100%</span>
+        </div>
+        <input
+            type="range"
+            id="icon-size-slider"
+            min="50"
+            max="200"
+            step="5"
+            value="100"
+            aria-labelledby="icon-size-label"
+        >
+    </div>
     <button
         id="credits-toggle"
         class="floating-button"
