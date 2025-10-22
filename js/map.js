@@ -2353,6 +2353,116 @@ var AddMarkerControl = L.Control.extend({
 
 map.addControl(new AddMarkerControl());
 
+(function setupMarkdownImageInsertion() {
+  if (typeof document === 'undefined') {
+    return;
+  }
+
+  function insertAtCursor(textarea, text) {
+    if (!textarea) {
+      return;
+    }
+
+    var start = textarea.selectionStart;
+    var end = textarea.selectionEnd;
+    var value = textarea.value || '';
+    if (typeof start !== 'number' || typeof end !== 'number') {
+      textarea.value = value + text;
+      textarea.focus();
+      return;
+    }
+
+    var before = value.slice(0, start);
+    var after = value.slice(end);
+    textarea.value = before + text + after;
+    var cursor = start + text.length;
+    textarea.focus();
+    textarea.setSelectionRange(cursor, cursor);
+
+    var event;
+    if (typeof Event === 'function') {
+      event = new Event('input', { bubbles: true });
+    } else {
+      event = document.createEvent('Event');
+      event.initEvent('input', true, true);
+    }
+    textarea.dispatchEvent(event);
+  }
+
+  function handleButtonClick(evt) {
+    var button = evt.currentTarget;
+    var targetId = button && button.getAttribute('data-target');
+    if (!targetId) {
+      return;
+    }
+    var selector = '.markdown-image-input[data-target="' + targetId + '"]';
+    var input = document.querySelector(selector);
+    if (!input) {
+      return;
+    }
+    input.value = '';
+    input.click();
+  }
+
+  function handleFileSelection(evt) {
+    var input = evt.currentTarget;
+    if (!input || !input.files || !input.files.length) {
+      return;
+    }
+
+    var targetId = input.getAttribute('data-target');
+    if (!targetId) {
+      return;
+    }
+
+    var textarea = document.getElementById(targetId);
+    if (!textarea) {
+      return;
+    }
+
+    var file = input.files[0];
+    var fileName = file && file.name ? file.name : '';
+    if (!fileName) {
+      return;
+    }
+
+    var defaultAlt = fileName.replace(/\.[^/.]+$/, '').replace(/[-_]+/g, ' ').trim();
+    if (!defaultAlt) {
+      defaultAlt = 'image';
+    }
+
+    var altText = defaultAlt;
+    if (typeof window !== 'undefined' && window.prompt) {
+      var response = window.prompt('Alt text for the image:', defaultAlt);
+      if (response !== null) {
+        altText = response.trim() || defaultAlt;
+      }
+    }
+
+    altText = altText.replace(/\]/g, '\\]');
+    var markdownPath = 'images/' + fileName;
+    var markdown = '![' + altText + '](' + markdownPath + ')';
+
+    var needsPrefixSpace =
+      textarea.value && /\S$/.test(textarea.value) && textarea.selectionStart === textarea.selectionEnd;
+    var insertion = (needsPrefixSpace ? ' ' : '') + markdown + '\n';
+    insertAtCursor(textarea, insertion);
+  }
+
+  var buttons = document.querySelectorAll('.markdown-image-button');
+  var inputs = document.querySelectorAll('.markdown-image-input');
+  if (!buttons.length || !inputs.length) {
+    return;
+  }
+
+  Array.prototype.forEach.call(buttons, function (button) {
+    button.addEventListener('click', handleButtonClick);
+  });
+  Array.prototype.forEach.call(inputs, function (input) {
+    input.addEventListener('change', handleFileSelection);
+  });
+})();
+
 function showTextForm(latlng) {
   var overlay = document.getElementById('text-form-overlay');
   var saveBtn = document.getElementById('text-save');
