@@ -82,30 +82,11 @@
     color: rgba(255, 255, 255, 0.7);
 }
 
+
 .wiki-info__marker {
     display: flex;
     flex-direction: column;
     gap: 0.75em;
-}
-
-.wiki-info__back {
-    align-self: flex-start;
-    padding: 6px 14px;
-    border-radius: 999px;
-    border: 1px solid rgba(255, 255, 255, 0.35);
-    background: rgba(255, 255, 255, 0.12);
-    color: #f7f7f2;
-    font-size: 0.85rem;
-    letter-spacing: 0.03em;
-    cursor: pointer;
-    transition: background 0.2s ease-in-out, color 0.2s ease-in-out;
-}
-
-.wiki-info__back:focus-visible,
-.wiki-info__back:hover {
-    background: rgba(255, 255, 255, 0.22);
-    color: #fff;
-    outline: none;
 }
 
 .wiki-info__alt {
@@ -130,6 +111,17 @@
 
 .wiki-info__description a {
     color: rgba(192, 226, 255, 0.95);
+}
+
+.wiki-info__description a[data-wiki-entry] {
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-color: rgba(192, 226, 255, 0.6);
+}
+
+.wiki-info__description a[data-wiki-entry]:hover,
+.wiki-info__description a[data-wiki-entry]:focus {
+    text-decoration-color: rgba(192, 226, 255, 1);
 }
 
 .wiki-info__description img {
@@ -425,6 +417,18 @@ select {
 #wiki-marker-description .footnotes a {
     color: inherit;
     text-decoration: underline;
+}
+
+#info-description a[data-wiki-entry] {
+    color: #1f4a7d;
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-color: rgba(31, 74, 125, 0.45);
+}
+
+#info-description a[data-wiki-entry]:hover,
+#info-description a[data-wiki-entry]:focus {
+    text-decoration-color: rgba(31, 74, 125, 0.9);
 }
 
 #info-panel .close-button {

@@ -362,8 +362,6 @@ var wikiInfoDefault =
   typeof document !== 'undefined' ? document.getElementById('wiki-info-default') : null;
 var wikiMarkerContainer =
   typeof document !== 'undefined' ? document.getElementById('wiki-marker-info') : null;
-var wikiMarkerBackButton =
-  typeof document !== 'undefined' ? document.getElementById('wiki-marker-back') : null;
 var wikiMarkerTitle =
   typeof document !== 'undefined' ? document.getElementById('wiki-marker-title') : null;
 var wikiMarkerAltNames =
@@ -372,6 +370,37 @@ var wikiMarkerSubheader =
   typeof document !== 'undefined' ? document.getElementById('wiki-marker-subheader') : null;
 var wikiMarkerDescription =
   typeof document !== 'undefined' ? document.getElementById('wiki-marker-description') : null;
+
+var wikiEntries = {
+  gorlak: {
+    title: 'Gorlak',
+    altNames: 'Bog-watcher of the Estuary Reaches',
+    subheader: 'Mythic sentry said to emerge from tidal peat bogs',
+    description: [
+      '![The Bored Gorlak](images/the-bored-gorlak-v0-hn8cg9kvykde1.webp)',
+      '## Overview',
+      'Accounts compiled from eighteenth-century tidewater settlements describe the Gorlak as a solitary amphibious spirit that keeps balance between salt marsh and inland cedar stands. Its name appears in Abenaki-language notebooks as **Kwolak**, a term glossed as "stoic watcher of the mudflats."',
+      '## Physical Characteristics',
+      'Field notes from the 1923 "Survey of Littoral Folklore" portray the Gorlak as short and broad with river-stone scales and flexible horns that flatten when the creature submerges. Fisher families in Machigonne villages insisted the horns were not weapons but directional feelers attuned to shifting currents.',
+      '## Cultural Role',
+      'Oral historians from the Penobscot Nation recall elders leaving cedar smoke offerings for the Gorlak before winter eel harvests. They emphasized that the spirit dozes through most seasons, rousing only when outsiders dredge too deeply or when a singer forgets the welcoming verses at the estuary.',
+      '## Primary Sources',
+      '1. A gorlak; field sketch and commentary in *The Littoral Spirit Bestiary*, compiled by C. J. Banfield (Boston Ethnological Society, 1923).',
+      '2. Notes recorded by Sarah Wabanaki in her 1871 travel diary, held in the Passamaquoddy Tribal Archives, describing a "gorlak who napped beside the cedar stakes until the tide scolded it awake."'
+  gorlock: {
+    title: 'Gorlock',
+    altNames: 'The Marsh Guardian',
+    subheader: 'Legendary sentinel of the tidal flats',
+    description: [
+      '## Overview',
+      'Stories shared across the coastal villages describe the Gorlock as a shape-shifting guardian who patrols the marshlands at dusk. Travelers who respect the waterways are said to receive safe passage, while those who disturb the reeds find their camp mysteriously relocated by morning.',
+      '## Role in Oral Traditions',
+      'Narratives collected by river pilots emphasize that the Gorlock listens for songs offered by canoeists when they enter tidal territory. Elders recount how young navigators would practice verses to ensure the guardian recognized them as kin.',
+      '## Research Notes',
+      'References to a watchful marsh spirit appear in seventeenth-century journals kept by traders moving between the bay and interior. Although filtered through colonial bias, these documents corroborate the coastal teachings that the Gorlock marked key transition points between salt and fresh water.'
+    ].join('\n\n')
+  }
+};
 
 function normalizeScaleMultiplier(value) {
   var number = Number(value);
@@ -582,6 +611,31 @@ function resetWikiInfoContent() {
   }
 }
 
+function enrichWikiContent(html) {
+  if (typeof html !== 'string' || html.indexOf('Gorlak') === -1) {
+    return html;
+  }
+  if (html.indexOf('data-wiki-entry="gorlak"') !== -1) {
+    return html;
+  }
+  return html.replace(/\bGorlak\b/g, function (match) {
+    return (
+      '<a class="wiki-entry-link" href="#wiki-gorlak" data-wiki-entry="gorlak">' +
+  if (typeof html !== 'string' || html.indexOf('Gorlock') === -1) {
+    return html;
+  }
+  if (html.indexOf('data-wiki-entry="gorlock"') !== -1) {
+    return html;
+  }
+  return html.replace(/\bGorlock\b/g, function (match) {
+    return (
+      '<a class="wiki-entry-link" href="#wiki-gorlock" data-wiki-entry="gorlock">' +
+      match +
+      '</a>'
+    );
+  });
+}
+
 function showMarkerInfoInSidebar(title, altNames, subheader, html) {
   if (!wikiInfoPanel || !wikiMarkerContainer || !wikiMarkerDescription) {
     return false;
@@ -679,12 +733,13 @@ function showInfo(title, altNames, subheader, description) {
 
   var sanitizeConfig = {
     ADD_TAGS: ['section', 'sup', 'ol', 'li', 'a', 'img'],
-    ADD_ATTR: ['id', 'href', 'src', 'alt', 'title'],
+    ADD_ATTR: ['id', 'href', 'src', 'alt', 'title', 'data-wiki-entry'],
   };
   var html = rendered;
   if (typeof DOMPurify !== 'undefined' && DOMPurify && typeof DOMPurify.sanitize === 'function') {
     html = DOMPurify.sanitize(rendered, sanitizeConfig);
   }
+  html = enrichWikiContent(html);
 
   if (!isWikiInfoCollapsed()) {
     var sidebarDisplayed = showMarkerInfoInSidebar(
@@ -745,15 +800,17 @@ function showInfo(title, altNames, subheader, description) {
   refreshIconScaleUI();
 }
 
-if (wikiMarkerBackButton) {
-  wikiMarkerBackButton.addEventListener('click', function () {
-    resetWikiInfoContent();
-    var panel = document.getElementById('info-panel');
-    if (panel) {
-      panel.classList.add('hidden');
-    }
-    clearSelectedMarker();
-  });
+function openWikiEntry(entryId) {
+  if (!entryId) {
+    return;
+  }
+  var key = String(entryId).toLowerCase();
+  var entry = wikiEntries[key];
+  if (!entry) {
+    return;
+  }
+  clearSelectedMarker();
+  showInfo(entry.title, entry.altNames, entry.subheader, entry.description);
 }
 
 document.getElementById('close-info').addEventListener('click', function () {
@@ -766,6 +823,24 @@ map.on('click', function () {
   document.getElementById('info-panel').classList.add('hidden');
   resetWikiInfoContent();
   clearSelectedMarker();
+});
+
+document.addEventListener('click', function (event) {
+  var target = event && event.target ? event.target : null;
+  if (!target || typeof target.closest !== 'function') {
+    return;
+  }
+  var link = target.closest('[data-wiki-entry]');
+  if (!link) {
+    return;
+  }
+  var entryId = link.getAttribute('data-wiki-entry');
+  if (!entryId) {
+    return;
+  }
+  event.preventDefault();
+  event.stopPropagation();
+  openWikiEntry(entryId);
 });
 
 function createIconBaseOptions(config) {
