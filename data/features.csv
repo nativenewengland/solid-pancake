@@ -1,1 +1,3 @@
 type,lat,lng,icon,name/text,alt_names,subheader/text,description,size,angle,spacing,curve,coords,style,overlay
+marker,35.85343961959182,-1.4941406250000002,broken-dwarven-hold,Marker,,,,,,,,,"{""iconScale"":0.01}",
+marker,17.602139123350852,-24.9609375,bp-010,Marker,,,,,,,,,"{""iconScale"":0.1}",
