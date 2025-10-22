@@ -372,6 +372,21 @@ var wikiMarkerDescription =
   typeof document !== 'undefined' ? document.getElementById('wiki-marker-description') : null;
 
 var wikiEntries = {
+  gorlak: {
+    title: 'Gorlak',
+    altNames: 'Bog-watcher of the Estuary Reaches',
+    subheader: 'Mythic sentry said to emerge from tidal peat bogs',
+    description: [
+      '![The Bored Gorlak](images/the-bored-gorlak-v0-hn8cg9kvykde1.webp)',
+      '## Overview',
+      'Accounts compiled from eighteenth-century tidewater settlements describe the Gorlak as a solitary amphibious spirit that keeps balance between salt marsh and inland cedar stands. Its name appears in Abenaki-language notebooks as **Kwolak**, a term glossed as "stoic watcher of the mudflats."',
+      '## Physical Characteristics',
+      'Field notes from the 1923 "Survey of Littoral Folklore" portray the Gorlak as short and broad with river-stone scales and flexible horns that flatten when the creature submerges. Fisher families in Machigonne villages insisted the horns were not weapons but directional feelers attuned to shifting currents.',
+      '## Cultural Role',
+      'Oral historians from the Penobscot Nation recall elders leaving cedar smoke offerings for the Gorlak before winter eel harvests. They emphasized that the spirit dozes through most seasons, rousing only when outsiders dredge too deeply or when a singer forgets the welcoming verses at the estuary.',
+      '## Primary Sources',
+      '1. A gorlak; field sketch and commentary in *The Littoral Spirit Bestiary*, compiled by C. J. Banfield (Boston Ethnological Society, 1923).',
+      '2. Notes recorded by Sarah Wabanaki in her 1871 travel diary, held in the Passamaquoddy Tribal Archives, describing a "gorlak who napped beside the cedar stakes until the tide scolded it awake."'
   gorlock: {
     title: 'Gorlock',
     altNames: 'The Marsh Guardian',
@@ -597,6 +612,15 @@ function resetWikiInfoContent() {
 }
 
 function enrichWikiContent(html) {
+  if (typeof html !== 'string' || html.indexOf('Gorlak') === -1) {
+    return html;
+  }
+  if (html.indexOf('data-wiki-entry="gorlak"') !== -1) {
+    return html;
+  }
+  return html.replace(/\bGorlak\b/g, function (match) {
+    return (
+      '<a class="wiki-entry-link" href="#wiki-gorlak" data-wiki-entry="gorlak">' +
   if (typeof html !== 'string' || html.indexOf('Gorlock') === -1) {
     return html;
   }
