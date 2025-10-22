@@ -2,3 +2,5 @@ type,lat,lng,icon,name/text,alt_names,subheader/text,description,size,angle,spac
 marker,35.85343961959182,-1.4941406250000002,broken-dwarven-hold,Marker,,,,,,,,,"{""iconScale"":0.01}",
 marker,17.602139123350852,-24.9609375,bp-010,Marker,,,"![69df3a4e695e5be07b1695521eb7d2ca](images/69df3a4e695e5be07b1695521eb7d2ca.jpg)
 ",,,,,,"{""iconScale"":0.1}",
+marker,68.5362764153349,30.540178243609155,broken-dwarven-hold,Marker,,,"![Avlar Thrûn](images/Avlar-Thrûn.jpg)
+",,,,,,"{""iconScale"":0.01}",
