@@ -73,6 +73,60 @@
     color: rgba(255, 255, 255, 0.7);
 }
 
+.wiki-info__marker {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75em;
+}
+
+.wiki-info__back {
+    align-self: flex-start;
+    padding: 6px 14px;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    background: rgba(255, 255, 255, 0.12);
+    color: #f7f7f2;
+    font-size: 0.85rem;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+    transition: background 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.wiki-info__back:focus-visible,
+.wiki-info__back:hover {
+    background: rgba(255, 255, 255, 0.22);
+    color: #fff;
+    outline: none;
+}
+
+.wiki-info__alt {
+    margin: -0.35em 0 0;
+    font-size: clamp(0.9rem, 0.95vw, 1rem);
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.78);
+}
+
+.wiki-info__subheader {
+    margin: -0.25em 0 0;
+    font-size: clamp(0.95rem, 1vw, 1.1rem);
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.wiki-info__description {
+    text-align: left;
+    line-height: 1.55;
+    font-size: clamp(0.92rem, 0.95vw, 1.02rem);
+    color: rgba(247, 247, 242, 0.92);
+}
+
+.wiki-info__description a {
+    color: rgba(192, 226, 255, 0.95);
+}
+
+.wiki-info--showing-marker .wiki-info__default {
+    display: none;
+}
+
 .wiki-info__toggle {
     position: absolute;
     top: 50%;
@@ -311,23 +365,28 @@ select {
     text-align: left;
 }
 
-#info-description .footnote-ref {
+#info-description .footnote-ref,
+#wiki-marker-description .footnote-ref {
     font-size: 0.75em;
     line-height: 1;
     vertical-align: super;
 }
 
-#info-description .footnote-ref a {
+#info-description .footnote-ref a,
+#wiki-marker-description .footnote-ref a {
     color: #555;
     text-decoration: none;
 }
 
 #info-description .footnote-ref a:hover,
-#info-description .footnote-ref a:focus {
+#info-description .footnote-ref a:focus,
+#wiki-marker-description .footnote-ref a:hover,
+#wiki-marker-description .footnote-ref a:focus {
     text-decoration: underline;
 }
 
-#info-description .footnotes {
+#info-description .footnotes,
+#wiki-marker-description .footnotes {
     margin-top: 0.75em;
     padding-top: 0.5em;
     border-top: 1px solid #ddd;
@@ -335,16 +394,19 @@ select {
     text-align: left;
 }
 
-#info-description .footnotes ol {
+#info-description .footnotes ol,
+#wiki-marker-description .footnotes ol {
     margin: 0;
     padding-left: 1.25em;
 }
 
-#info-description .footnotes li {
+#info-description .footnotes li,
+#wiki-marker-description .footnotes li {
     margin-bottom: 0.5em;
 }
 
-#info-description .footnotes a {
+#info-description .footnotes a,
+#wiki-marker-description .footnotes a {
     color: inherit;
     text-decoration: underline;
 }

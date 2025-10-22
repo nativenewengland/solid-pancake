@@ -356,6 +356,22 @@ var ICON_SCALE_MIN = 0.01;
 var ICON_SCALE_MAX = 2;
 var iconSizeSlider = null;
 var iconSizeValueDisplay = null;
+var wikiInfoPanel =
+  typeof document !== 'undefined' ? document.getElementById('wiki-info') : null;
+var wikiInfoDefault =
+  typeof document !== 'undefined' ? document.getElementById('wiki-info-default') : null;
+var wikiMarkerContainer =
+  typeof document !== 'undefined' ? document.getElementById('wiki-marker-info') : null;
+var wikiMarkerBackButton =
+  typeof document !== 'undefined' ? document.getElementById('wiki-marker-back') : null;
+var wikiMarkerTitle =
+  typeof document !== 'undefined' ? document.getElementById('wiki-marker-title') : null;
+var wikiMarkerAltNames =
+  typeof document !== 'undefined' ? document.getElementById('wiki-marker-alt-names') : null;
+var wikiMarkerSubheader =
+  typeof document !== 'undefined' ? document.getElementById('wiki-marker-subheader') : null;
+var wikiMarkerDescription =
+  typeof document !== 'undefined' ? document.getElementById('wiki-marker-description') : null;
 
 function normalizeScaleMultiplier(value) {
   var number = Number(value);
@@ -517,6 +533,97 @@ function createScaledIcon(options, multiplier) {
   return L.icon(scaled);
 }
 
+function isWikiInfoCollapsed() {
+  if (!wikiInfoPanel) {
+    return true;
+  }
+  return wikiInfoPanel.classList.contains('wiki-info--collapsed');
+}
+
+function isSidebarShowingMarkerInfo() {
+  if (!wikiInfoPanel || !wikiMarkerContainer) {
+    return false;
+  }
+  if (!wikiInfoPanel.classList.contains('wiki-info--showing-marker')) {
+    return false;
+  }
+  return !isWikiInfoCollapsed();
+}
+
+function resetWikiInfoContent() {
+  if (wikiInfoPanel) {
+    wikiInfoPanel.classList.remove('wiki-info--showing-marker');
+  }
+  if (wikiMarkerContainer) {
+    if (!wikiMarkerContainer.classList.contains('hidden')) {
+      wikiMarkerContainer.classList.add('hidden');
+    }
+  }
+  if (wikiInfoDefault) {
+    wikiInfoDefault.classList.remove('hidden');
+  }
+  if (wikiMarkerTitle) {
+    wikiMarkerTitle.textContent = '';
+  }
+  if (wikiMarkerAltNames) {
+    wikiMarkerAltNames.textContent = '';
+    if (!wikiMarkerAltNames.classList.contains('hidden')) {
+      wikiMarkerAltNames.classList.add('hidden');
+    }
+  }
+  if (wikiMarkerSubheader) {
+    wikiMarkerSubheader.textContent = '';
+    if (!wikiMarkerSubheader.classList.contains('hidden')) {
+      wikiMarkerSubheader.classList.add('hidden');
+    }
+  }
+  if (wikiMarkerDescription) {
+    wikiMarkerDescription.innerHTML = '';
+  }
+}
+
+function showMarkerInfoInSidebar(title, altNames, subheader, html) {
+  if (!wikiInfoPanel || !wikiMarkerContainer || !wikiMarkerDescription) {
+    return false;
+  }
+
+  wikiInfoPanel.classList.add('wiki-info--showing-marker');
+  if (wikiInfoDefault) {
+    wikiInfoDefault.classList.add('hidden');
+  }
+  wikiMarkerContainer.classList.remove('hidden');
+
+  if (wikiMarkerTitle) {
+    wikiMarkerTitle.textContent = title || '';
+  }
+
+  if (wikiMarkerAltNames) {
+    var hasAltNames = typeof altNames === 'string' ? altNames.trim() !== '' : Boolean(altNames);
+    if (hasAltNames) {
+      wikiMarkerAltNames.textContent = String(altNames);
+      wikiMarkerAltNames.classList.remove('hidden');
+    } else {
+      wikiMarkerAltNames.textContent = '';
+      wikiMarkerAltNames.classList.add('hidden');
+    }
+  }
+
+  if (wikiMarkerSubheader) {
+    var hasSubheader =
+      typeof subheader === 'string' ? subheader.trim() !== '' : Boolean(subheader);
+    if (hasSubheader) {
+      wikiMarkerSubheader.textContent = String(subheader);
+      wikiMarkerSubheader.classList.remove('hidden');
+    } else {
+      wikiMarkerSubheader.textContent = '';
+      wikiMarkerSubheader.classList.add('hidden');
+    }
+  }
+
+  wikiMarkerDescription.innerHTML = html;
+  return true;
+}
+
 function refreshIconScaleUI() {
   var displayText = '—';
   var sliderValue = 100;
@@ -524,7 +631,12 @@ function refreshIconScaleUI() {
   var infoPanel =
     typeof document !== 'undefined' ? document.getElementById('info-panel') : null;
   var infoVisible = infoPanel && !infoPanel.classList.contains('hidden');
-  if (selectedMarker && selectedMarker._markerType === 'marker' && infoVisible) {
+  var sidebarVisible = isSidebarShowingMarkerInfo();
+  if (
+    selectedMarker &&
+    selectedMarker._markerType === 'marker' &&
+    (infoVisible || sidebarVisible)
+  ) {
     var scale = getMarkerScale(selectedMarker);
     var percent = Math.round(scale * 100);
     displayText = percent + '%';
@@ -543,38 +655,19 @@ function refreshIconScaleUI() {
 }
 
 function showInfo(title, altNames, subheader, description) {
-  var panel = document.getElementById('info-panel');
-  document.getElementById('info-title').textContent = title;
-  var altNamesElement = document.getElementById('info-alt-names');
-  if (altNamesElement) {
-    var hasAltNames =
-      typeof altNames === 'string' ? altNames.trim() !== '' : Boolean(altNames);
-    if (hasAltNames) {
-      altNamesElement.textContent = String(altNames);
-      altNamesElement.classList.remove('hidden');
-    } else {
-      altNamesElement.textContent = '';
-      altNamesElement.classList.add('hidden');
-    }
-  }
-  var subheaderElement = document.getElementById('info-subheader');
-  if (subheaderElement) {
-    var hasSubheader =
-      typeof subheader === 'string' ? subheader.trim() !== '' : Boolean(subheader);
-    if (hasSubheader) {
-      subheaderElement.textContent = String(subheader);
-      subheaderElement.classList.remove('hidden');
-    } else {
-      subheaderElement.textContent = '';
-      subheaderElement.classList.add('hidden');
-    }
-  }
+  var resolvedTitle =
+    typeof title === 'string' ? title : title ? String(title) : 'Marker';
+  var altNamesValue =
+    typeof altNames === 'string' ? altNames : altNames ? String(altNames) : '';
+  var subheaderValue =
+    typeof subheader === 'string' ? subheader : subheader ? String(subheader) : '';
   var markdown = '';
   if (typeof description === 'string') {
     markdown = description;
   } else if (description) {
     markdown = String(description);
   }
+
   var rendered = markdown;
   if (typeof marked !== 'undefined' && marked) {
     if (typeof marked.parse === 'function') {
@@ -583,6 +676,7 @@ function showInfo(title, altNames, subheader, description) {
       rendered = marked(markdown);
     }
   }
+
   var sanitizeConfig = {
     ADD_TAGS: ['section', 'sup', 'ol', 'li', 'a', 'img'],
     ADD_ATTR: ['id', 'href', 'src', 'alt', 'title'],
@@ -591,18 +685,86 @@ function showInfo(title, altNames, subheader, description) {
   if (typeof DOMPurify !== 'undefined' && DOMPurify && typeof DOMPurify.sanitize === 'function') {
     html = DOMPurify.sanitize(rendered, sanitizeConfig);
   }
-  document.getElementById('info-description').innerHTML = html;
+
+  if (!isWikiInfoCollapsed()) {
+    var sidebarDisplayed = showMarkerInfoInSidebar(
+      resolvedTitle,
+      altNamesValue,
+      subheaderValue,
+      html
+    );
+    if (sidebarDisplayed) {
+      var infoPanelElement = document.getElementById('info-panel');
+      if (infoPanelElement) {
+        infoPanelElement.classList.add('hidden');
+      }
+      refreshIconScaleUI();
+      return;
+    }
+  }
+
+  resetWikiInfoContent();
+  var panel = document.getElementById('info-panel');
+  if (!panel) {
+    refreshIconScaleUI();
+    return;
+  }
+
+  var titleElement = document.getElementById('info-title');
+  if (titleElement) {
+    titleElement.textContent = resolvedTitle;
+  }
+
+  var altNamesElement = document.getElementById('info-alt-names');
+  if (altNamesElement) {
+    if (altNamesValue && altNamesValue.trim() !== '') {
+      altNamesElement.textContent = altNamesValue;
+      altNamesElement.classList.remove('hidden');
+    } else {
+      altNamesElement.textContent = '';
+      altNamesElement.classList.add('hidden');
+    }
+  }
+
+  var subheaderElement = document.getElementById('info-subheader');
+  if (subheaderElement) {
+    if (subheaderValue && subheaderValue.trim() !== '') {
+      subheaderElement.textContent = subheaderValue;
+      subheaderElement.classList.remove('hidden');
+    } else {
+      subheaderElement.textContent = '';
+      subheaderElement.classList.add('hidden');
+    }
+  }
+
+  var descriptionElement = document.getElementById('info-description');
+  if (descriptionElement) {
+    descriptionElement.innerHTML = html;
+  }
   panel.classList.remove('hidden');
   refreshIconScaleUI();
 }
 
+if (wikiMarkerBackButton) {
+  wikiMarkerBackButton.addEventListener('click', function () {
+    resetWikiInfoContent();
+    var panel = document.getElementById('info-panel');
+    if (panel) {
+      panel.classList.add('hidden');
+    }
+    clearSelectedMarker();
+  });
+}
+
 document.getElementById('close-info').addEventListener('click', function () {
   document.getElementById('info-panel').classList.add('hidden');
+  resetWikiInfoContent();
   clearSelectedMarker();
 });
 
 map.on('click', function () {
   document.getElementById('info-panel').classList.add('hidden');
+  resetWikiInfoContent();
   clearSelectedMarker();
 });
 
@@ -2604,6 +2766,7 @@ document.getElementById('save-changes').addEventListener('click', function () {
       'aria-label',
       isExpanded ? 'Collapse information panel' : 'Expand information panel'
     );
+    refreshIconScaleUI();
   });
 })();
 
