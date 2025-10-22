@@ -387,6 +387,17 @@ var wikiEntries = {
       '## Primary Sources',
       '1. A gorlak; field sketch and commentary in *The Littoral Spirit Bestiary*, compiled by C. J. Banfield (Boston Ethnological Society, 1923).',
       '2. Notes recorded by Sarah Wabanaki in her 1871 travel diary, held in the Passamaquoddy Tribal Archives, describing a "gorlak who napped beside the cedar stakes until the tide scolded it awake."'
+  gorlock: {
+    title: 'Gorlock',
+    altNames: 'The Marsh Guardian',
+    subheader: 'Legendary sentinel of the tidal flats',
+    description: [
+      '## Overview',
+      'Stories shared across the coastal villages describe the Gorlock as a shape-shifting guardian who patrols the marshlands at dusk. Travelers who respect the waterways are said to receive safe passage, while those who disturb the reeds find their camp mysteriously relocated by morning.',
+      '## Role in Oral Traditions',
+      'Narratives collected by river pilots emphasize that the Gorlock listens for songs offered by canoeists when they enter tidal territory. Elders recount how young navigators would practice verses to ensure the guardian recognized them as kin.',
+      '## Research Notes',
+      'References to a watchful marsh spirit appear in seventeenth-century journals kept by traders moving between the bay and interior. Although filtered through colonial bias, these documents corroborate the coastal teachings that the Gorlock marked key transition points between salt and fresh water.'
     ].join('\n\n')
   }
 };
@@ -610,6 +621,15 @@ function enrichWikiContent(html) {
   return html.replace(/\bGorlak\b/g, function (match) {
     return (
       '<a class="wiki-entry-link" href="#wiki-gorlak" data-wiki-entry="gorlak">' +
+  if (typeof html !== 'string' || html.indexOf('Gorlock') === -1) {
+    return html;
+  }
+  if (html.indexOf('data-wiki-entry="gorlock"') !== -1) {
+    return html;
+  }
+  return html.replace(/\bGorlock\b/g, function (match) {
+    return (
+      '<a class="wiki-entry-link" href="#wiki-gorlock" data-wiki-entry="gorlock">' +
       match +
       '</a>'
     );
