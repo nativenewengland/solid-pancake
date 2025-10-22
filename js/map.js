@@ -433,8 +433,208 @@ var wikiEntries = {
       '## Research Notes',
       'References to a watchful marsh spirit appear in seventeenth-century journals kept by traders moving between the bay and interior. Although filtered through colonial bias, these documents corroborate the coastal teachings that the Gorlock marked key transition points between salt and fresh water.'
     ].join('\n\n')
-  }
+  },
+  orcs: {
+    title: 'Orcish Strongholds',
+    altNames: 'Black Pines Confederacy blood-keeps',
+    subheader: 'Border Marches martial societies and seasonal keeps',
+    description: [
+      '![Terraced orcish stronghold lit by volcanic embers](images/markus-neidel-woa-poi-illustration-orc-stronghold-1920.jpg)',
+      '## Overview',
+      'Orcish polities of the Border Marches descend from thunder-crow migrations and balance martial readiness with a ritual calendar that governs hunting, ironworking, and diplomacy. Blood-keeps pledge stone-singers, stewards, and warriors to a rotating high warband, while relay shrines offer safe passage to travelers who present water at their altars.',
+      '## Clan Societies',
+      'Confederacy envoys describe consensus councils held beneath the Black Pines where drum-bearing delegates can postpone war plans for a lunar cycle. Three principal circles anchor these gatherings:\n\n- **Storm Banner Circle** — frontier guardians who field ashlance cavalry and maintain avalanche beacons.\n- **Ember Hearth Circle** — metallurgists and surgeons who trade surgical knotwork for dyes and glassware.\n- **Verdant Tide Circle** — riverine logisticians who manage barge libraries and seed exchanges.',
+      '## Stronghold Architecture',
+      'Surveyors note concentric terraces carved from basalt with communal forges on lower rings and dream interpreter quarters atop. Alternating crenellations and horn totems hide thunderstones tuned to clan rhythms, creating humming ramparts during storms. Captain Yara Estwin credits stone-singer resonance for the keeps\' resistance to artillery.',
+      '## Material and Ritual Culture',
+      'Every warrior maintains a practical field blade and a ceremonial twin etched with storms they have outrun; a blade is retired only when the lineage raises a new stone-singer. Seasonal rites pair martial drills with hospitality, serving fermented pine sap to allies before the polyphonic **Song of Ashes** recounts founding migrations.',
+      '## Alliances and Treaties',
+      'Confederate councils weave a braided **cord of witness** that records accords renewed each year. Key strands include the **Stonewake Compact (1742)** with Karthi River monasteries, the **Second Ember Exchange (1821)** trading copper for aurora dyes, and the **Stormgate Concord (1968)** pledging mutual defense against airship fleets. Severing a strand demands the offender broker three new treaties or accept exile.',
+      '## Field Notes',
+      '1. Captain Yara Estwin, "Observations from the Stormcrag Frontier" — engineering notebook folios 14–29 describing thunderstone maintenance.\n2. Emissary Hallan of the Verdant Tide — recorded interview archived at the Black Pines lodge covering barge libraries and oath circles.\n3. Caravan Master Edeya Lor, *Ledger of the Sapphire Route*, entries 223–264 on trade etiquette at dawn markets.\n4. Wax cylinder of the Storm Banner Circle chant captured by Professor I. Farsen (1903), corroborating the layers of the Song of Ashes.'
+    ].join('\n\n')
+  },
+  harpies: {
+    title: 'Harpies of the Screaming Fells',
+    altNames: 'Sky aeries of the White Gale campaigns',
+    subheader: 'Song-clan networks guarding the thunder-drenched ridges',
+    description: [
+      '![Harpy circling storm-wracked cliffs](images/62249418_454104258708570_3334301194563471651_n.jpg)',
+      '## Overview',
+      'Screaming Fells aeries cling to basalt ridges above the cloud sea, suspended by braided stormvine anchors that hum as both heralds and seismic alarms. Harpy migrations follow lightning-fed thermals between the Westspire and southern mesas, while visiting caravans contribute ballast salts or sky charts before receiving gliding escorts.',
+      '## Aerie Hierarchies',
+      'Contrary to tavern lore, harpy society is a lattice of rotating song-clans that share windwell cisterns. Leadership passes each equinox across three circles:\n\n- **Thermocline Circle** — scouts and windcallers who map updraft corridors and warn caravans with mirrored talon sweeps.\n- **Echo Circle** — lorekeepers who memorize stormballads, adjudicate disputes, and steady fledglings during first descents.\n- **Ember Circle** — harvesters cultivating embermoss, processing cloud milk, and trading guststone batteries with aerostat guilds.',
+      '## Windborne Tactics',
+      'Warflights emphasize disruption, with wing pairs blinding siege crews using powdered quicklime while talon cadres pierce airship envelopes via obsidian harpoons on magnetic reels. Doctrine notes from the 3rd Aerial Legion advise parley at dawn calms when Thermocline scouts must roost to recalibrate barometric chimes.',
+      '## Song-Lore and Rituals',
+      'Harmonized trills double as law, ledger, and welcome. Outsiders risk signaling debts if they mimic the choruses without leave. Fledglings earn their first featherbraid during the Cloudstay Vigil—an overnight suspension beneath the rookery lit only by embermoss lanterns.',
+      '## Sky Trade',
+      'Harpies monopolize thunderstone core delivery, bartering for salt, polished glass, finely tuned gliders, and annual grain drops arranged with the River Guild. Offering warming coils is an insult implying the aerie cannot maintain its own thermals.',
+      '## Field Notes',
+      '1. Dorun Pell, *Thermals, Thunder, and Treaty Songs* (Imperial Aerarium folio, 1890).\n2. Echo Circle conclave transcript with Envoy Aewyn, preserved in the Shatterglaze Archive.\n3. Skyhook Station weather almanacs covering Weeks 207–215 of the White Gale campaigns.'
+    ].join('\n\n')
+  },
+  goblins: {
+    title: 'Border Guild Goblins',
+    altNames: 'Copperwire, Pitchstone, and Glassfern syndicates',
+    subheader: 'Subterranean guild networks beneath market towns',
+    description: [
+      '![Goblin artisans negotiating in glowing forgeworks](images/33b12b7ce72e0106e8b90a95903aca37.jpg)',
+      '## Overview',
+      'Border Guild goblins maintain warrens that link surface plazas to foundries via freight lifts and pneumatic runners. Governance is contractual: brass-etched compacts define labor protections and security protocols, enforced by Ledger Circle arbiters whose sanctions include hidden strike teams.',
+      '## Guild Networks',
+      'Quarterly forums align three primary syndicates:\n\n- **Copperwire Syndic** — stewards whisperwire telegraphs and lantern towers tracking caravan movements.\n- **Pitchstone Consortium** — controls alchemical resins, blasting charges, and mining rights, fielding sandglass pistols that amber would-be thieves.\n- **Glassfern Combine** — cultivates botanical reagents and translucent armor traded to harpy aeries and riverfolk divers.',
+      '## Workshop Innovations',
+      'Modular tinker-cells allow furnaces to reconfigure in minutes using color-coded latch runes, while apprentices earn rank by improvising replacements for embargoed parts. Inspector Vyre documented steamworks that vent pressure through dissonant melody pipes doubling as evacuation alarms.',
+      '## Markets and Finance',
+      'Ledger stones keyed to palmprints route currency, and disputes settle through weighted promissory gears representing fractional cargo ownership. Neutral golem brokers guard escrow vaults during surface trade, and caravan masters split chromed chits to void agreements if negotiations sour.',
+      '## Alliances and Rivalries',
+      'Standing accords bind the Verdant Tide Circle for grain logistics and halfling river barges for clandestine routes, while tariffs strain relations with human duchies. Hostilities with the Stoneking dwarves persist after the Bronze Gate sabotage until the Ledger Circle yields disputed regulator schematics.',
+      '## Field Notes',
+      '1. Magistrate Asha Vyre, *Accounts from the Under-Market* (Treasury Case File 301-B).\n2. Ledger Circle minutes from the Brass Market Arbitration, sessions 3–6.\n3. Glassfern botanist testimonies recorded in the Embervault Tunnels, shelf 22.'
+    ].join('\n\n')
+  },
+  'ice-trolls': {
+    title: 'Ice Troll Enclaves',
+    altNames: 'Shardwild glacier wardens',
+    subheader: 'Breathstone-sharing kinship rooted in auroral icefields',
+    description: [
+      '![Ice troll guiding a glacier barge under auroras](images/420b81d51d92d31b88990525ee4628d1.jpg)',
+      '## Overview',
+      'Shardwild ice trolls roam glacier barges and geothermal cavern-halls, guarding ley-fed icefields that anchor ancestral memory pools. Kinship is sealed by exchanging breathstone shards carried in throat pouches, obligating mutual defense and songkeeping during thaw festivals.',
+      '## Physiology and Adaptations',
+      'Secondary hearts pump antifreeze serum through dermal canals, preventing frostbite even in whiteouts. Hollow tusks resonate clan signals across snowfields, while specialized adaptations include:\n\n- **Regenerative Torpor** — weeks-long trances beneath heated cairns that regrow icebone guided by carved sigils.\n- **Echo Sense** — sinus chambers mapping tunnels through low thrums that reveal intruders by their resonance frost distortions.\n- **Sunshard Veils** — crystal membranes woven into cloaks that refract glare and signal convoy routes.',
+      '## Glacier Settlements',
+      'Enclaves carve blue-ice shelves reinforced with basalt ribs hauled from fissures. Public halls glow with rune-etched prisms storing starlight, and dawn harmonics led by ice-wardens realign microfractures, explaining the Polar Survey\'s zero-collapse record across thirty winters.',
+      '## Ritual and Memory',
+      'Breathstone pools double as communal archives where elders replay ancestral deeds to teach oathweaving, binding promises sung across frozen canyons. Storykeepers engrave saga knots into their fur each solstice to record negotiations, victories, and penances.',
+      '## Diplomacy and Conflict',
+      'The Hoarfrost Pact allies ice trolls with frost elves and human beacon guilds, trading safe glacier passage for rune-etched copper that stabilizes breathstone caches. Ambushes under auroral veils confront fire giant forges encroaching on sacred meltwater basins, shattering arms with tusk-amplified resonance pulses.',
+      '## Field Notes',
+      '1. Lysa Ren, *Shardwild Observational Logs* (Polar Survey Corps Archive, Drawer 3).\n2. Dream-log fragments provided by Shaman Vreth during the Chillwater Armistice.\n3. Hoarfrost Pact trade tallies from 1891–1896, sealed in Beacon Guild vaults.'
+    ].join('\n\n')
+  },
+  kobolds: {
+    title: 'Kobolds of the Emberdeep',
+    altNames: 'Burrow Choir cooperatives',
+    subheader: 'Trap-savvy clutch networks within the Emberdeep caldera',
+    description: [
+      '![Kobolds gathering in a lava-lit cavern with banners](images/3ed13064f54fa486a48442c62c8bfb57.jpg)',
+      '## Overview',
+      'Emberdeep kobold warrens braid through basalt strata warmed by dormant drake vents. Clutch cooperatives pool labor for mining, trap maintenance, and tribute negotiations with patron drakes, recording tithes on glow-ink scrolls legible only beneath phosphorescent lichen.',
+      '## Burrow Structure',
+      'Spiral warrens align living quarters with radiant heat while ventilation shafts serve as message tubes for pebble-code rattles. Key districts include:\n\n- **Surface Apertures** — camouflaged skylights feeding lichen gardens and providing emergency egress during lava surges.\n- **Ember Galleries** — communal smelters that cycle cinders through rotating cages to prevent flare-ups.\n- **Dragon Vaults** — mirrorstone-lined tithe chambers with counterweighted floors ready to seal if diplomacy fails.',
+      '## Trapcraft and Engineering',
+      'Defense doctrine favors misdirection via dummy tunnels, thunder-pot echo chambers, and rolling cages that corral intruders toward negotiation platforms. Cavern Census advisories warn against tampering with lichen lanterns that hide flame siphons and recommend resonant chimes to disrupt pebble-code transmissions.',
+      '## Tribute and Trade',
+      'Tithes manifest as gemstone chimes tuned to a patron drake\'s favored frequencies, paired with automata that sweep volcanic ash from dragon scales. Surface commerce trades fireglass lenses, collapsible lantern poles, magma vein maps, and wartime sapper expertise for allied sieges.',
+      '## Myth and Oathbinding',
+      'Burrow Choir chants recount the First Ember coaxing a star-egg into the caldera. Oaths seal when kobolds press claws to heated anvilstones while reciting lineage spirals, and the decennial Sapphire Accord renewal warns that faltering the rhythm awakens the Ashwind sentinel to dissolve treacherous cooperatives.',
+      '## Field Notes',
+      '1. Archivist Tolan Nerys, *Emberdeep Census Rolls* (Cavern Archives, Case 12).\n2. Ironbridge collapse rescue accounts transcribed by Burrow Choir scribes.\n3. Drakespine tributary receipts from the Sapphire Accord editions 1885–1894.'
+    ].join('\n\n')
+  },
+  'mountain-dwarfs': {
+    title: 'Mountain Dwarfs of Stonefast',
+    altNames: 'Forge-hearth clans of the Shatterpeak Range',
+    subheader: 'Vault masons who temper basalt hearts beneath the high cols',
+    description: [
+      '![Mountain dwarf citadel carved into glacier cliffs](images/512f481d24643d9dc03b474546b76ed9.jpg)',
+      '## Overview',
+      'Stonefast citadels spiral through fault seams where aurora-lit ice meets adamant ore. Mountain dwarfs measure years by the number of anvils awakened for the winter conclave, when thawwater is sealed into resonance vaults to cool the keystones that support each level.',
+      '## Clanhalls and Governance',
+      'High Hearth councils include one seat for each living master mason, forge cantor, and glacier courier. Oaths are scored into load-bearing pillars, ensuring anyone who breaks a compact must chip their promise free under watch of the entire hall. Six terra cantons exchange apprentices yearly to prevent technique hoarding.',
+      '## Craft and Warfare',
+      'Stonefast smiths blend meteoric iron with glacier glass to produce mirror-backed axes that refract torchlight into confusing arcs. Warbands advance through pre-cut avalanche sluices, releasing powder snow curtains before shield columns emerge with sonic-hammer volleys tuned to fracture siege towers.',
+      '## Trade and Diplomacy',
+      'The citadels barter cold-coined promissory bars for geothermal charts and underdeep grain rights. Their embassy in the River Guild quarter demands visitors submit blades for harmonic testing; weapons that clash with the citadel pitch are reworked as goodwill gifts.',
+      '## Field Notes',
+      '1. Journeyman Eira Ashthumb, *Keystones of Stonefast* (Guild of Masters folio 7) detailing vault resonance protocols.\n2. Commodore Jal Orvan, siege journal entry 403 recounting failed battering ram assaults halted by avalanche sluices.\n3. River Guild attache memorandum, shelf mark RG-12-88, listing trade concessions granted after the Fourth Forge Conclave.',
+    ].join('\n\n'),
+  },
+  'dark-dwarfs': {
+    title: 'Dark Dwarfs of the Umbershade Vaults',
+    altNames: 'Lanternbound clans beneath the Ashen Deep',
+    subheader: 'Voidglass artisans who navigate the breathless caverns',
+    description: [
+      '![Dark dwarf enclave illuminated by voidglass lanterns](images/0eb7c454e6067e0f012e198528356fee.jpg)',
+      '## Overview',
+      'Umbershade vaults hang inverted over fumarole lakes whose fumes demand breathstone masks for passage. Dark dwarfs cultivate bioluminescent lichens along suspended catwalks, weaving glow-script warnings that ripple when tremors approach.',
+      '## Lanternbound Society',
+      'Clans pledge fealty to the Lantern Chorus, a guild of tone-keepers who maintain syncopated beacon songs guiding miners through the void. Justice is delivered through shadow parables recited in pitch-black chambers, where the judged must interpret hanging chimes to prove remorse.',
+      '## Voidglass Craft',
+      'Umbershade smelteries condense volcanic gases into voidglass panes capable of bending pressure waves. Artisans temper the panes within silence wells so they resonate only to coded tapping, letting strike teams communicate without echoing through the caverns.',
+      '## Surface Relations',
+      'Dark dwarf envoys trade nightwater tinctures and voidglass lenses in exchange for spice caches and aboveground seeds to rewild their fungal terraces. Diplomats arrive cloaked in soot-sheened mail that absorbs lantern glare, a courtesy to avoid blinding surface allies.',
+      '## Field Notes',
+      '1. Lantern Keeper Mavren\'s hymn tablets, catalogue LS-443, capturing the beacon rhythms for safe descent shafts.\n2. Professor Hesta Varr, *Echoes Without Air* (University of Caldera press, 1898) analyzing voidglass acoustic dampening.\n3. Trade manifests seized from smugglers by the River Watch, entry 22-B, detailing spice-for-nightwater exchanges.',
+    ].join('\n\n'),
+  },
+  'hill-dwarfs': {
+    title: 'Hill Dwarfs of the Sunmeadow Barrows',
+    altNames: 'Barrow harvesters of the Rolling Marches',
+    subheader: 'Terraced brewers who steward stone-laced vineyards',
+    description: [
+      '![Hill dwarf terraces with sunlit breweries](images/069c94f86058fa5fe8285a03939c93fb.jpg)',
+      '## Overview',
+      'Sunmeadow barrows rise as earthen domes cloaked in grapevines whose roots wind through mnemonic ossuaries. Hill dwarfs mark seasons by solstice feasts where ancestor-stones are bathed in fermenting must to awaken dream-guides for the coming year\'s plantings.',
+      '## Hearth Circles',
+      'Community hearths operate as rotating cooperatives: the Brewcircle tenders maintain kettles, the Seedcircle cartographers scribe soil-scent maps, and the Watchcircle outriders patrol with horn-bows that fire braided willow bolts. Council seats rotate every 28 days to ensure each circle sings in balance.',
+      '## Agriculture and Craft',
+      'Terraces mix mineral loam with powdered boneglass to stabilize slopes and flavor the copperleaf grapes prized by River Guild merchants. Hill dwarf coopers engineer collapsible casks for caravan trains, each etched with scent-runes that bloom when tapped to confirm authenticity.',
+      '## Diplomacy and Festivals',
+      'Barrow markets welcome traveling choirs who contribute verses to the Solstice Canticle. Envoys broker rain-rights with cloudmages and guarantee safe festival roads for river barges. Guests receive stone-scribed tasting slates recording the vintages they sampled as proof of hospitality rendered.',
+      '## Field Notes',
+      '1. Elder Bryn Willowbrace, oral history cylinder SB-23 on the founding of the tri-circle councils.\n2. Sommelier Carta Vane, *Vintages of the Rolling Marches* (Guild of Tasters ledger, 1906) cataloging copperleaf blends.\n3. River Watch dispatches, volume RW-311, reporting on hill dwarf outrider escorts during the Equinox caravan.',
+    ].join('\n\n'),
+  },
 };
+
+var WIKI_LINK_RULES = [
+  { entryId: 'gorlak', terms: ['Gorlak', 'gorlak'] },
+  { entryId: 'gorlock', terms: ['Gorlock', 'gorlock'] },
+  {
+    entryId: 'orcs',
+    terms: ['Orcs', 'orcs', 'Orcish', 'orcish'],
+  },
+  {
+    entryId: 'harpies',
+    terms: ['Harpies', 'harpies', 'Harpy', 'harpy'],
+  },
+  {
+    entryId: 'goblins',
+    terms: ['Goblins', 'goblins', 'Goblin', 'goblin'],
+  },
+  {
+    entryId: 'ice-trolls',
+    terms: ['Ice Trolls', 'ice trolls', 'Ice Troll', 'ice troll'],
+  },
+  {
+    entryId: 'kobolds',
+    terms: ['Kobolds', 'kobolds', 'Kobold', 'kobold'],
+  },
+  {
+    entryId: 'mountain-dwarfs',
+    terms: [
+      'Mountain Dwarfs',
+      'mountain dwarfs',
+      'Mountain Dwarf',
+      'mountain dwarf',
+    ],
+  },
+  {
+    entryId: 'dark-dwarfs',
+    terms: ['Dark Dwarfs', 'dark dwarfs', 'Dark Dwarf', 'dark dwarf'],
+  },
+  {
+    entryId: 'hill-dwarfs',
+    terms: ['Hill Dwarfs', 'hill dwarfs', 'Hill Dwarf', 'hill dwarf'],
+  },
+];
+
+function escapeWikiTerm(term) {
+  return term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
 
 function normalizeScaleMultiplier(value) {
   var number = Number(value);
@@ -652,20 +852,38 @@ function enrichWikiContent(html) {
 
   var result = html;
 
-  if (result.indexOf('Gorlak') !== -1 && result.indexOf('data-wiki-entry="gorlak"') === -1) {
-    result = result.replace(/\bGorlak\b/g, function (match) {
+  for (var i = 0; i < WIKI_LINK_RULES.length; i++) {
+    var rule = WIKI_LINK_RULES[i];
+    if (!rule || !rule.entryId || !Array.isArray(rule.terms)) {
+      continue;
+    }
+    var entryAttribute = 'data-wiki-entry="' + rule.entryId + '"';
+    if (result.indexOf(entryAttribute) !== -1) {
+      continue;
+    }
+    var escapedTerms = [];
+    for (var j = 0; j < rule.terms.length; j++) {
+      var term = rule.terms[j];
+      if (typeof term === 'string' && term !== '') {
+        escapedTerms.push(escapeWikiTerm(term));
+      }
+    }
+    if (!escapedTerms.length) {
+      continue;
+    }
+    var patternSource = '\\b(?:' + escapedTerms.join('|') + ')\\b';
+    var pattern = new RegExp(patternSource, 'gi');
+    if (!pattern.test(result)) {
+      continue;
+    }
+    var replacementPattern = new RegExp(patternSource, 'gi');
+    result = result.replace(replacementPattern, function (match) {
       return (
-        '<a class="wiki-entry-link" href="#wiki-gorlak" data-wiki-entry="gorlak">' +
-        match +
-        '</a>'
-      );
-    });
-  }
-
-  if (result.indexOf('Gorlock') !== -1 && result.indexOf('data-wiki-entry="gorlock"') === -1) {
-    result = result.replace(/\bGorlock\b/g, function (match) {
-      return (
-        '<a class="wiki-entry-link" href="#wiki-gorlock" data-wiki-entry="gorlock">' +
+        '<a class="wiki-entry-link" href="#wiki-' +
+        rule.entryId +
+        '" data-wiki-entry="' +
+        rule.entryId +
+        '">' +
         match +
         '</a>'
       );
