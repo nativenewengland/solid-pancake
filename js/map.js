@@ -738,8 +738,8 @@ var territoriesLayer = L.featureGroup();
 var territoryMarkersLayer = L.layerGroup();
 var Settlements = L.layerGroup();
 var territoriesOverlay = L.layerGroup([territoriesLayer, territoryMarkersLayer]);
-// Text labels use a bold sans-serif stack; mirror it when measuring glyph widths.
-var TEXT_LABEL_FONT_FAMILY = "Roboto, 'Open Sans', 'Helvetica Neue', Arial, sans-serif";
+// Text labels use the site font stack; mirror it when measuring glyph widths.
+var TEXT_LABEL_FONT_FAMILY = "'IM Fell DW Pica', serif";
 var textMeasurementContext = null;
 var textMeasurementSpan = null;
 
