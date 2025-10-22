@@ -132,6 +132,13 @@
     color: rgba(192, 226, 255, 0.95);
 }
 
+.wiki-info__description img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0.75em 0;
+}
+
 .wiki-info--showing-marker .wiki-info__default {
     display: none;
 }
