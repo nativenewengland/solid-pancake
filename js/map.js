@@ -533,7 +533,61 @@ var wikiEntries = {
       '## Field Notes',
       '1. Archivist Tolan Nerys, *Emberdeep Census Rolls* (Cavern Archives, Case 12).\n2. Ironbridge collapse rescue accounts transcribed by Burrow Choir scribes.\n3. Drakespine tributary receipts from the Sapphire Accord editions 1885–1894.'
     ].join('\n\n')
-  }
+  },
+  'mountain-dwarfs': {
+    title: 'Mountain Dwarfs of Stonefast',
+    altNames: 'Forge-hearth clans of the Shatterpeak Range',
+    subheader: 'Vault masons who temper basalt hearts beneath the high cols',
+    description: [
+      '![Mountain dwarf citadel carved into glacier cliffs](images/512f481d24643d9dc03b474546b76ed9.jpg)',
+      '## Overview',
+      'Stonefast citadels spiral through fault seams where aurora-lit ice meets adamant ore. Mountain dwarfs measure years by the number of anvils awakened for the winter conclave, when thawwater is sealed into resonance vaults to cool the keystones that support each level.',
+      '## Clanhalls and Governance',
+      'High Hearth councils include one seat for each living master mason, forge cantor, and glacier courier. Oaths are scored into load-bearing pillars, ensuring anyone who breaks a compact must chip their promise free under watch of the entire hall. Six terra cantons exchange apprentices yearly to prevent technique hoarding.',
+      '## Craft and Warfare',
+      'Stonefast smiths blend meteoric iron with glacier glass to produce mirror-backed axes that refract torchlight into confusing arcs. Warbands advance through pre-cut avalanche sluices, releasing powder snow curtains before shield columns emerge with sonic-hammer volleys tuned to fracture siege towers.',
+      '## Trade and Diplomacy',
+      'The citadels barter cold-coined promissory bars for geothermal charts and underdeep grain rights. Their embassy in the River Guild quarter demands visitors submit blades for harmonic testing; weapons that clash with the citadel pitch are reworked as goodwill gifts.',
+      '## Field Notes',
+      '1. Journeyman Eira Ashthumb, *Keystones of Stonefast* (Guild of Masters folio 7) detailing vault resonance protocols.\n2. Commodore Jal Orvan, siege journal entry 403 recounting failed battering ram assaults halted by avalanche sluices.\n3. River Guild attache memorandum, shelf mark RG-12-88, listing trade concessions granted after the Fourth Forge Conclave.',
+    ].join('\n\n'),
+  },
+  'dark-dwarfs': {
+    title: 'Dark Dwarfs of the Umbershade Vaults',
+    altNames: 'Lanternbound clans beneath the Ashen Deep',
+    subheader: 'Voidglass artisans who navigate the breathless caverns',
+    description: [
+      '![Dark dwarf enclave illuminated by voidglass lanterns](images/0eb7c454e6067e0f012e198528356fee.jpg)',
+      '## Overview',
+      'Umbershade vaults hang inverted over fumarole lakes whose fumes demand breathstone masks for passage. Dark dwarfs cultivate bioluminescent lichens along suspended catwalks, weaving glow-script warnings that ripple when tremors approach.',
+      '## Lanternbound Society',
+      'Clans pledge fealty to the Lantern Chorus, a guild of tone-keepers who maintain syncopated beacon songs guiding miners through the void. Justice is delivered through shadow parables recited in pitch-black chambers, where the judged must interpret hanging chimes to prove remorse.',
+      '## Voidglass Craft',
+      'Umbershade smelteries condense volcanic gases into voidglass panes capable of bending pressure waves. Artisans temper the panes within silence wells so they resonate only to coded tapping, letting strike teams communicate without echoing through the caverns.',
+      '## Surface Relations',
+      'Dark dwarf envoys trade nightwater tinctures and voidglass lenses in exchange for spice caches and aboveground seeds to rewild their fungal terraces. Diplomats arrive cloaked in soot-sheened mail that absorbs lantern glare, a courtesy to avoid blinding surface allies.',
+      '## Field Notes',
+      '1. Lantern Keeper Mavren\'s hymn tablets, catalogue LS-443, capturing the beacon rhythms for safe descent shafts.\n2. Professor Hesta Varr, *Echoes Without Air* (University of Caldera press, 1898) analyzing voidglass acoustic dampening.\n3. Trade manifests seized from smugglers by the River Watch, entry 22-B, detailing spice-for-nightwater exchanges.',
+    ].join('\n\n'),
+  },
+  'hill-dwarfs': {
+    title: 'Hill Dwarfs of the Sunmeadow Barrows',
+    altNames: 'Barrow harvesters of the Rolling Marches',
+    subheader: 'Terraced brewers who steward stone-laced vineyards',
+    description: [
+      '![Hill dwarf terraces with sunlit breweries](images/069c94f86058fa5fe8285a03939c93fb.jpg)',
+      '## Overview',
+      'Sunmeadow barrows rise as earthen domes cloaked in grapevines whose roots wind through mnemonic ossuaries. Hill dwarfs mark seasons by solstice feasts where ancestor-stones are bathed in fermenting must to awaken dream-guides for the coming year\'s plantings.',
+      '## Hearth Circles',
+      'Community hearths operate as rotating cooperatives: the Brewcircle tenders maintain kettles, the Seedcircle cartographers scribe soil-scent maps, and the Watchcircle outriders patrol with horn-bows that fire braided willow bolts. Council seats rotate every 28 days to ensure each circle sings in balance.',
+      '## Agriculture and Craft',
+      'Terraces mix mineral loam with powdered boneglass to stabilize slopes and flavor the copperleaf grapes prized by River Guild merchants. Hill dwarf coopers engineer collapsible casks for caravan trains, each etched with scent-runes that bloom when tapped to confirm authenticity.',
+      '## Diplomacy and Festivals',
+      'Barrow markets welcome traveling choirs who contribute verses to the Solstice Canticle. Envoys broker rain-rights with cloudmages and guarantee safe festival roads for river barges. Guests receive stone-scribed tasting slates recording the vintages they sampled as proof of hospitality rendered.',
+      '## Field Notes',
+      '1. Elder Bryn Willowbrace, oral history cylinder SB-23 on the founding of the tri-circle councils.\n2. Sommelier Carta Vane, *Vintages of the Rolling Marches* (Guild of Tasters ledger, 1906) cataloging copperleaf blends.\n3. River Watch dispatches, volume RW-311, reporting on hill dwarf outrider escorts during the Equinox caravan.',
+    ].join('\n\n'),
+  },
 };
 
 var WIKI_LINK_RULES = [
