@@ -312,9 +312,6 @@ function textLabelsMatch(a, b) {
       ? ''
       : String(b.subheader).trim();
   if (subheaderA !== subheaderB) return false;
-  var overlayA = a.overlay || '';
-  var overlayB = b.overlay || '';
-  if (overlayA !== overlayB) return false;
   var latA = Number(a.lat);
   var latB = Number(b.lat);
   var lngA = Number(a.lng);
@@ -1008,60 +1005,6 @@ if (iconSizeSlider) {
 Settlements.addTo(map);
 territoriesOverlay.addTo(map);
 
-var overlayTargetGroups = {
-  Settlements: Settlements,
-  Territories: territoryMarkersLayer,
-};
-
-var overlays = {
-  Settlements: Settlements,
-  Territories: territoriesOverlay,
-};
-
-var additionalOverlayNames = [
-  'Ceremonial Stone Landscapes',
-  'Mountains',
-  'Rivers',
-  'Bodies of Water',
-  'Planting Grounds',
-  'Fishing Weirs',
-  'Mines/Quarries',
-  'Geographical Locations',
-  'Tribes',
-  'Petroglyph',
-  'Trails',
-  'Forts',
-];
-
-additionalOverlayNames.forEach(function (name) {
-  var layer = L.layerGroup().addTo(map);
-  overlayTargetGroups[name] = layer;
-  overlays[name] = layer;
-});
-
-function populateOverlayOptions(select) {
-  if (!select) return;
-  select.innerHTML = '';
-  var defaultOption = document.createElement('option');
-  defaultOption.value = '';
-  defaultOption.textContent = 'None';
-  select.appendChild(defaultOption);
-  Object.keys(overlayTargetGroups).forEach(function (name) {
-    var option = document.createElement('option');
-    option.value = name;
-    option.textContent = name;
-    select.appendChild(option);
-  });
-}
-
-function populateOverlaySelects() {
-  populateOverlayOptions(document.getElementById('marker-overlay'));
-  populateOverlayOptions(document.getElementById('text-overlay'));
-}
-
-populateOverlaySelects();
-L.control.layers(null, overlays).addTo(map);
-
 function clearSelectedMarker() {
   if (selectedMarker && selectedMarker._icon) {
     selectedMarker._icon.classList.remove('marker-selected');
@@ -1662,91 +1605,14 @@ function addPolygonToMap(data) {
   return poly;
 }
 
-function getOverlayLayer(name) {
-  if (!name) return null;
-  return overlayTargetGroups[name] || null;
-}
-
-function moveMarkerToOverlay(marker, overlayName) {
-  if (!marker) return;
-  var normalized = overlayName || '';
-  var newLayer = getOverlayLayer(normalized);
-  var currentLayer = marker._overlayLayer || null;
-  var currentName = marker._overlayName || '';
-  if (currentLayer === newLayer && currentName === normalized) {
-    marker._overlayName = normalized;
-    if (marker._data) {
-      marker._data.overlay = normalized;
-    }
-    return;
-  }
-  if (currentLayer) {
-    currentLayer.removeLayer(marker);
-  } else if (marker._overlayLayer !== undefined) {
-    map.removeLayer(marker);
-  }
-  if (newLayer) {
-    newLayer.addLayer(marker);
-  } else {
-    marker.addTo(map);
-  }
-  marker._overlayLayer = newLayer;
-  marker._overlayName = normalized;
-  if (marker._data) {
-    marker._data.overlay = normalized;
-  }
-}
-
 function detachMarker(marker) {
   if (!marker) return;
-  if (marker._overlayLayer) {
-    marker._overlayLayer.removeLayer(marker);
-  } else {
-    map.removeLayer(marker);
-  }
-  marker._overlayLayer = null;
-  marker._overlayName = '';
-}
-
-function moveTextLabelToOverlay(labelMarker, overlayName) {
-  if (!labelMarker) return;
-  var normalized = overlayName || '';
-  var newLayer = getOverlayLayer(normalized);
-  var currentLayer = labelMarker._overlayLayer || null;
-  var currentName = labelMarker._overlayName || '';
-  if (currentLayer === newLayer && currentName === normalized) {
-    labelMarker._overlayName = normalized;
-    if (labelMarker._data) {
-      labelMarker._data.overlay = normalized;
-    }
-    return;
-  }
-  if (currentLayer) {
-    currentLayer.removeLayer(labelMarker);
-  } else if (labelMarker._overlayLayer !== undefined) {
-    map.removeLayer(labelMarker);
-  }
-  if (newLayer) {
-    newLayer.addLayer(labelMarker);
-  } else {
-    labelMarker.addTo(map);
-  }
-  labelMarker._overlayLayer = newLayer || null;
-  labelMarker._overlayName = normalized;
-  if (labelMarker._data) {
-    labelMarker._data.overlay = normalized;
-  }
+  map.removeLayer(marker);
 }
 
 function detachTextLabel(labelMarker) {
   if (!labelMarker) return;
-  if (labelMarker._overlayLayer) {
-    labelMarker._overlayLayer.removeLayer(labelMarker);
-  } else {
-    map.removeLayer(labelMarker);
-  }
-  labelMarker._overlayLayer = null;
-  labelMarker._overlayName = '';
+  map.removeLayer(labelMarker);
 }
 
 function addMarkerToMap(data) {
@@ -1782,16 +1648,8 @@ function addMarkerToMap(data) {
     data.subheader,
     data.description
   );
-  var overlayName = data.overlay || '';
-  var targetLayer = getOverlayLayer(overlayName);
-  if (targetLayer) {
-    targetLayer.addLayer(customMarker);
-  } else {
-    customMarker.addTo(map);
-  }
-  customMarker._overlayLayer = targetLayer || null;
-  customMarker._overlayName = overlayName;
-  data.overlay = overlayName;
+  customMarker.addTo(map);
+  data.overlay = '';
   customMarker._data = data;
   customMarker._iconScaleMultiplier = scale;
   customMarker.on('contextmenu', function () {
@@ -2008,16 +1866,8 @@ function addTextLabelToMap(data) {
       });
       saveTextLabels();
     });
-  var overlayName = data.overlay || '';
-  var targetLayer = getOverlayLayer(overlayName);
-  if (targetLayer) {
-    targetLayer.addLayer(m);
-  } else {
-    m.addTo(map);
-  }
-  m._overlayLayer = targetLayer || null;
-  m._overlayName = overlayName;
-  data.overlay = overlayName;
+  m.addTo(map);
+  data.overlay = '';
   m._baseFontSize = data.size;
   m._baseLetterSpacing = data.spacing;
   if (data.curve) {
@@ -2208,12 +2058,8 @@ function showMarkerForm(latlng) {
   var saveBtn = document.getElementById('marker-save');
   var cancelBtn = document.getElementById('marker-cancel');
   var convertBtn = document.getElementById('marker-convert');
-  var overlaySelect = document.getElementById('marker-overlay');
   overlay.classList.remove('hidden');
   convertBtn.classList.add('hidden');
-  if (overlaySelect) {
-    overlaySelect.value = '';
-  }
   document.getElementById('marker-alt-names').value = '';
   document.getElementById('marker-subheader').value = '';
 
@@ -2224,7 +2070,6 @@ function showMarkerForm(latlng) {
     var description =
       document.getElementById('marker-description').value || '';
     var iconKey = document.getElementById('marker-icon').value || DEFAULT_ICON_KEY;
-    var overlayValue = overlaySelect ? overlaySelect.value : '';
     var data = {
       lat: latlng.lat,
       lng: latlng.lng,
@@ -2233,7 +2078,6 @@ function showMarkerForm(latlng) {
       subheader: subheader,
       description: description,
       icon: iconKey,
-      overlay: overlayValue || '',
     };
     addMarkerToMap(data);
     customMarkers.push(data);
@@ -2255,9 +2099,6 @@ function showMarkerForm(latlng) {
     document.getElementById('marker-subheader').value = '';
     document.getElementById('marker-description').value = '';
     document.getElementById('marker-icon').value = DEFAULT_ICON_KEY || '';
-    if (overlaySelect) {
-      overlaySelect.value = '';
-    }
   }
 
   saveBtn.addEventListener('click', submitHandler);
@@ -2271,7 +2112,6 @@ function editMarkerForm(marker) {
   var cancelBtn = document.getElementById('marker-cancel');
   var convertBtn = document.getElementById('marker-convert');
   var title = document.querySelector('#marker-form h3');
-  var overlaySelect = document.getElementById('marker-overlay');
   overlay.classList.remove('hidden');
   convertBtn.classList.remove('hidden');
 
@@ -2280,9 +2120,6 @@ function editMarkerForm(marker) {
   document.getElementById('marker-subheader').value = marker._data.subheader || '';
   document.getElementById('marker-description').value = marker._data.description || '';
   document.getElementById('marker-icon').value = marker._data.icon || DEFAULT_ICON_KEY || '';
-  if (overlaySelect) {
-    overlaySelect.value = marker._data.overlay || '';
-  }
   if (title) title.textContent = 'Edit Marker';
 
   function submitHandler() {
@@ -2291,16 +2128,14 @@ function editMarkerForm(marker) {
     var subheader = document.getElementById('marker-subheader').value || '';
     var description = document.getElementById('marker-description').value || '';
     var iconKey = document.getElementById('marker-icon').value || DEFAULT_ICON_KEY;
-    var overlayValue = overlaySelect ? overlaySelect.value : '';
-
     marker._data.name = name;
     marker._data.altNames = altNames;
     marker._data.subheader = subheader;
     marker._data.description = description;
     marker._data.icon = iconKey;
+    marker._data.overlay = '';
 
     applyScaleToMarker(marker, getMarkerScale(marker));
-    moveMarkerToOverlay(marker, overlayValue);
     saveMarkers();
     cleanup();
   }
@@ -2324,9 +2159,6 @@ function editMarkerForm(marker) {
     document.getElementById('marker-subheader').value = '';
     document.getElementById('marker-description').value = '';
     document.getElementById('marker-icon').value = DEFAULT_ICON_KEY || '';
-    if (overlaySelect) {
-      overlaySelect.value = '';
-    }
     convertBtn.classList.add('hidden');
     if (title) title.textContent = 'Add Marker';
   }
@@ -2364,12 +2196,8 @@ function showTextForm(latlng) {
   var saveBtn = document.getElementById('text-save');
   var cancelBtn = document.getElementById('text-cancel');
   var convertBtn = document.getElementById('text-convert');
-  var overlaySelect = document.getElementById('text-overlay');
   overlay.classList.remove('hidden');
   convertBtn.classList.add('hidden');
-  if (overlaySelect) {
-    overlaySelect.value = '';
-  }
   document.getElementById('text-label-alt-names').value = '';
 
   function submitHandler() {
@@ -2385,7 +2213,6 @@ function showTextForm(latlng) {
     var angle = parseFloat(document.getElementById('text-label-angle').value) || 0;
     var spacing = parseFloat(document.getElementById('text-letter-spacing').value) || 0;
     var curve = parseFloat(document.getElementById('text-curve-radius').value) || 0;
-    var overlayValue = overlaySelect ? overlaySelect.value : '';
     var data = {
       lat: latlng.lat,
       lng: latlng.lng,
@@ -2397,7 +2224,6 @@ function showTextForm(latlng) {
       angle: angle,
       spacing: spacing,
       curve: curve,
-      overlay: overlayValue || '',
     };
     addTextLabelToMap(data);
     customTextLabels.push(data);
@@ -2422,9 +2248,6 @@ function showTextForm(latlng) {
     document.getElementById('text-label-angle').value = '0';
     document.getElementById('text-letter-spacing').value = '0';
     document.getElementById('text-curve-radius').value = '0';
-    if (overlaySelect) {
-      overlaySelect.value = '';
-    }
   }
 
   saveBtn.addEventListener('click', submitHandler);
@@ -2437,7 +2260,6 @@ function editTextForm(labelMarker) {
   var saveBtn = document.getElementById('text-save');
   var cancelBtn = document.getElementById('text-cancel');
   var convertBtn = document.getElementById('text-convert');
-  var overlaySelect = document.getElementById('text-overlay');
   var data = labelMarker._data;
 
   document.getElementById('text-label-text').value = data.text || '';
@@ -2448,9 +2270,6 @@ function editTextForm(labelMarker) {
   document.getElementById('text-label-angle').value = data.angle || 0;
   document.getElementById('text-letter-spacing').value = data.spacing || 0;
   document.getElementById('text-curve-radius').value = data.curve || 0;
-  if (overlaySelect) {
-    overlaySelect.value = data.overlay || '';
-  }
   overlay.classList.remove('hidden');
   convertBtn.classList.remove('hidden');
 
@@ -2467,7 +2286,6 @@ function editTextForm(labelMarker) {
     var angle = parseFloat(document.getElementById('text-label-angle').value) || 0;
     var spacing = parseFloat(document.getElementById('text-letter-spacing').value) || 0;
     var curve = parseFloat(document.getElementById('text-curve-radius').value) || 0;
-    var overlayValue = overlaySelect ? overlaySelect.value : '';
 
     var textIcon;
     var pathWidth = 0;
@@ -2524,7 +2342,7 @@ function editTextForm(labelMarker) {
     data.angle = angle;
     data.spacing = spacing;
     data.curve = curve;
-    moveTextLabelToOverlay(labelMarker, overlayValue);
+    data.overlay = '';
     saveTextLabels();
     rescaleTextLabels();
     cleanup();
@@ -2553,9 +2371,6 @@ function editTextForm(labelMarker) {
     document.getElementById('text-label-angle').value = '0';
     document.getElementById('text-letter-spacing').value = '0';
     document.getElementById('text-curve-radius').value = '0';
-    if (overlaySelect) {
-      overlaySelect.value = '';
-    }
   }
 
   saveBtn.addEventListener('click', submitHandler);
@@ -2589,7 +2404,7 @@ function convertMarkerToText(marker) {
     angle: 0,
     spacing: 0,
     curve: 0,
-    overlay: data.overlay || '',
+    overlay: '',
   };
   customTextLabels.push(textData);
   var labelMarker = addTextLabelToMap(textData);
@@ -2620,7 +2435,7 @@ function convertTextToMarker(labelMarker) {
     subheader: data.subheader || '',
     description: data.description || '',
     icon: DEFAULT_ICON_KEY || '',
-    overlay: data.overlay || '',
+    overlay: '',
   };
   customMarkers.push(markerData);
   var marker = addMarkerToMap(markerData);
