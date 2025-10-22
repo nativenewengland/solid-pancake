@@ -41,6 +41,42 @@ select {
     z-index: 1000;
 }
 
+#icon-size-control {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 220px;
+    padding: 8px 12px;
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid #333;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+    z-index: 1100;
+    font-size: 14px;
+}
+
+#icon-size-control .icon-size-control__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 6px;
+}
+
+#icon-size-control label {
+    font-weight: 600;
+    font-size: 0.95em;
+}
+
+#icon-size-control #icon-size-value {
+    font-weight: 600;
+    font-size: 0.9em;
+}
+
+#icon-size-control input[type="range"] {
+    width: 100%;
+}
+
 .floating-button {
     background: #1f3c88;
     color: #fff;
