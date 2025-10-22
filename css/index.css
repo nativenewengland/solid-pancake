@@ -37,6 +37,15 @@
     letter-spacing: 0.04em;
 }
 
+.wiki-info.wiki-info--showing-marker {
+    justify-content: flex-start;
+}
+
+.wiki-info--showing-marker .wiki-info__title {
+    width: 100%;
+    text-align: center;
+}
+
 .wiki-info__intro {
     margin-top: 0;
     margin-bottom: 1em;
