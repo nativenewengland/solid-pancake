@@ -538,6 +538,42 @@ select {
     margin-right: 5px;
 }
 
+.markdown-image-tools {
+    margin: 8px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+}
+
+.markdown-image-button {
+    padding: 6px 12px;
+    border: 1px solid #333;
+    background: #f7f7f2;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.markdown-image-button:hover,
+.markdown-image-button:focus-visible {
+    background: #333;
+    color: #fff;
+    outline: none;
+}
+
+.markdown-image-input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
 #info-description img {
     max-width: 100%;
     height: auto;
