@@ -381,89 +381,7 @@ select {
     width: 100%;
 }
 
-.floating-button {
-    background: #1f3c88;
-    color: #fff;
-    border: none;
-    padding: 10px 16px;
-    border-radius: 20px;
-    font-family: inherit;
-    font-size: 14px;
-    cursor: pointer;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
-    transition: background 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-}
-
-.floating-button:hover,
-.floating-button:focus {
-    background: #162b63;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    outline: none;
-}
-
-#credits-toggle {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 1200;
-}
-
-#credits-panel {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.2);
-    z-index: 1100;
-}
-
-#credits-panel.hidden {
-    display: none;
-}
-
-#credits-panel .credits-content {
-    background: #ffffff;
-    color: #1a1a1a;
-    border-radius: 12px;
-    padding: 20px 24px 24px;
-    width: min(360px, 90vw);
-    max-height: 70vh;
-    overflow-y: auto;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
-    position: relative;
-}
-
-#credits-panel .credits-content h2 {
-    margin-top: 0;
-    margin-bottom: 12px;
-    font-size: 1.4rem;
-    font-weight: 700;
-    text-align: left;
-}
-
-#credits-panel .credits-content p {
-    margin-top: 0;
-    margin-bottom: 12px;
-    line-height: 1.5;
-}
-
-#credits-panel .credits-content ul {
-    margin: 0 0 12px 18px;
-    padding: 0;
-    list-style: disc;
-}
-
-#credits-panel .credits-content li {
-    margin-bottom: 8px;
-}
-
-#info-panel .close-button,
-#credits-panel .close-button {
+#info-panel .close-button {
     position: absolute;
     top: 5px;
     right: 5px;
@@ -472,11 +390,6 @@ select {
     font-size: 16px;
     cursor: pointer;
     color: #333;
-}
-
-#credits-panel .close-button:focus,
-#credits-panel .close-button:hover {
-    color: #000;
 }
 
 
