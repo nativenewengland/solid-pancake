@@ -16,6 +16,38 @@ var tiles = L.tileLayer('map/{z}/{x}/{y}.jpg', {
   maxNativeZoom: 6,
 }).addTo(map);
 
+(function configureLeafletDefaultIcons() {
+  if (typeof L === 'undefined' || !L || !L.Icon || !L.Icon.Default) {
+    return;
+  }
+
+  function svgToDataUri(svg) {
+    return (
+      'data:image/svg+xml;charset=UTF-8,' +
+      encodeURIComponent(svg).replace(/%0A/g, '').replace(/%20/g, ' ')
+    );
+  }
+
+  var markerSvg =
+    '<svg xmlns="http://www.w3.org/2000/svg" width="25" height="41" viewBox="0 0 25 41">' +
+    '<path d="M12.5 1C6.148 1 1 6.214 1 12.68c0 6.85 8.676 21.086 10.676 24.304.174.284.48.456.824.456s.65-.172.824-.456C15.324 33.766 24 19.53 24 12.68 24 6.214 18.852 1 12.5 1z" fill="#2b7bc9" stroke="#123f6e" stroke-width="2"/>' +
+    '<circle cx="12.5" cy="13" r="4.5" fill="#f7f7f2" stroke="#123f6e" stroke-width="1.5"/></svg>';
+  var shadowSvg =
+    '<svg xmlns="http://www.w3.org/2000/svg" width="41" height="41" viewBox="0 0 41 41">' +
+    '<ellipse cx="20.5" cy="34" rx="12" ry="7" fill="#000000" fill-opacity="0.35"/></svg>';
+
+  var markerUri = svgToDataUri(markerSvg);
+  var shadowUri = svgToDataUri(shadowSvg);
+
+  if (typeof L.Icon.Default.mergeOptions === 'function') {
+    L.Icon.Default.mergeOptions({
+      iconUrl: markerUri,
+      iconRetinaUrl: markerUri,
+      shadowUrl: shadowUri,
+    });
+  }
+})();
+
 // Prevent the map from panning past the edge of the rendered image tiles.
 (function constrainMapPanningToTiles() {
   var TILE_COORD_BOUNDS = {
@@ -387,6 +419,8 @@ var wikiEntries = {
       '## Primary Sources',
       '1. A gorlak; field sketch and commentary in *The Littoral Spirit Bestiary*, compiled by C. J. Banfield (Boston Ethnological Society, 1923).',
       '2. Notes recorded by Sarah Wabanaki in her 1871 travel diary, held in the Passamaquoddy Tribal Archives, describing a "gorlak who napped beside the cedar stakes until the tide scolded it awake."'
+    ].join('\n\n'),
+  },
   gorlock: {
     title: 'Gorlock',
     altNames: 'The Marsh Guardian',
@@ -612,28 +646,33 @@ function resetWikiInfoContent() {
 }
 
 function enrichWikiContent(html) {
-  if (typeof html !== 'string' || html.indexOf('Gorlak') === -1) {
+  if (typeof html !== 'string' || html.trim() === '') {
     return html;
   }
-  if (html.indexOf('data-wiki-entry="gorlak"') !== -1) {
-    return html;
+
+  var result = html;
+
+  if (result.indexOf('Gorlak') !== -1 && result.indexOf('data-wiki-entry="gorlak"') === -1) {
+    result = result.replace(/\bGorlak\b/g, function (match) {
+      return (
+        '<a class="wiki-entry-link" href="#wiki-gorlak" data-wiki-entry="gorlak">' +
+        match +
+        '</a>'
+      );
+    });
   }
-  return html.replace(/\bGorlak\b/g, function (match) {
-    return (
-      '<a class="wiki-entry-link" href="#wiki-gorlak" data-wiki-entry="gorlak">' +
-  if (typeof html !== 'string' || html.indexOf('Gorlock') === -1) {
-    return html;
+
+  if (result.indexOf('Gorlock') !== -1 && result.indexOf('data-wiki-entry="gorlock"') === -1) {
+    result = result.replace(/\bGorlock\b/g, function (match) {
+      return (
+        '<a class="wiki-entry-link" href="#wiki-gorlock" data-wiki-entry="gorlock">' +
+        match +
+        '</a>'
+      );
+    });
   }
-  if (html.indexOf('data-wiki-entry="gorlock"') !== -1) {
-    return html;
-  }
-  return html.replace(/\bGorlock\b/g, function (match) {
-    return (
-      '<a class="wiki-entry-link" href="#wiki-gorlock" data-wiki-entry="gorlock">' +
-      match +
-      '</a>'
-    );
-  });
+
+  return result;
 }
 
 function showMarkerInfoInSidebar(title, altNames, subheader, html) {
@@ -2790,6 +2829,293 @@ function convertTextToMarker(labelMarker) {
   editMarkerForm(marker);
 }
 
+function setupLeafletDrawFallbackControl() {
+  if (typeof L === 'undefined' || !L || !L.Control) {
+    return { available: false, usingFallback: false };
+  }
+
+  var hasPlugin =
+    L.Draw &&
+    L.Draw.Event &&
+    typeof L.Control.Draw === 'function' &&
+    typeof L.Draw.Event.CREATED === 'string';
+  if (hasPlugin) {
+    return { available: true, usingFallback: false };
+  }
+
+  var DrawEvent = {
+    CREATED: 'draw:created',
+    EDITED: 'draw:edited',
+    DELETED: 'draw:deleted',
+  };
+
+  if (!L.Draw) {
+    L.Draw = { Event: DrawEvent };
+  } else {
+    if (!L.Draw.Event) {
+      L.Draw.Event = DrawEvent;
+    } else {
+      if (!L.Draw.Event.CREATED) {
+        L.Draw.Event.CREATED = DrawEvent.CREATED;
+      }
+      if (!L.Draw.Event.EDITED) {
+        L.Draw.Event.EDITED = DrawEvent.EDITED;
+      }
+      if (!L.Draw.Event.DELETED) {
+        L.Draw.Event.DELETED = DrawEvent.DELETED;
+      }
+    }
+  }
+
+  var defaultShapeOptions = {
+    color: '#f357a1',
+    weight: 2,
+    fillColor: '#f357a1',
+    fillOpacity: 0.2,
+  };
+
+  function PolygonDrawingSession(map, options) {
+    this._map = map;
+    this._options = options || {};
+    this._shapeOptions = L.Util.extend({}, defaultShapeOptions);
+    if (options && options.shapeOptions) {
+      this._shapeOptions = L.Util.extend(this._shapeOptions, options.shapeOptions);
+    }
+    this._latlngs = [];
+    this._markers = [];
+    this._polyline = L.polyline([], {
+      color: this._shapeOptions.color,
+      weight: Math.max(1, this._shapeOptions.weight || 2),
+      opacity: 0.7,
+      dashArray: '4,6',
+    }).addTo(this._map);
+    this._preview = L.polygon([], this._shapeOptions);
+    this._onClick = this._onClick.bind(this);
+    this._onMouseMove = this._onMouseMove.bind(this);
+    this._onDoubleClick = this._onDoubleClick.bind(this);
+    this._onKeyDown = this._onKeyDown.bind(this);
+    this._map.doubleClickZoom.disable();
+    this._map.on('click', this._onClick);
+    this._map.on('mousemove', this._onMouseMove);
+    this._map.on('dblclick', this._onDoubleClick);
+    document.addEventListener('keydown', this._onKeyDown);
+  }
+
+  PolygonDrawingSession.prototype._updatePreview = function (hoverLatLng) {
+    var points = this._latlngs.slice();
+    if (hoverLatLng) {
+      points.push(hoverLatLng);
+    }
+    this._polyline.setLatLngs(points);
+    if (this._latlngs.length >= 3) {
+      if (!this._map.hasLayer(this._preview)) {
+        this._preview.addTo(this._map);
+      }
+      this._preview.setLatLngs([points]);
+    } else if (this._map.hasLayer(this._preview)) {
+      this._map.removeLayer(this._preview);
+    }
+  };
+
+  PolygonDrawingSession.prototype._onClick = function (e) {
+    if (!e || !e.latlng) {
+      return;
+    }
+    this._latlngs.push(e.latlng);
+    var marker = L.circleMarker(e.latlng, {
+      radius: 5,
+      weight: 2,
+      color: this._shapeOptions.color,
+      fillColor: '#ffffff',
+      fillOpacity: 1,
+    }).addTo(this._map);
+    this._markers.push(marker);
+    if (e.originalEvent) {
+      L.DomEvent.stop(e.originalEvent);
+    }
+    this._updatePreview();
+  };
+
+  PolygonDrawingSession.prototype._onMouseMove = function (e) {
+    if (!this._latlngs.length || !e || !e.latlng) {
+      return;
+    }
+    this._updatePreview(e.latlng);
+  };
+
+  PolygonDrawingSession.prototype._onDoubleClick = function (e) {
+    if (e && e.originalEvent) {
+      L.DomEvent.stop(e.originalEvent);
+    }
+    if (this._latlngs.length >= 3) {
+      this._finish();
+    }
+  };
+
+  PolygonDrawingSession.prototype._onKeyDown = function (e) {
+    if (!e) {
+      return;
+    }
+    var key = e.key || '';
+    if (key === 'Escape') {
+      e.preventDefault();
+      this.cancel();
+    } else if ((key === 'Enter' || key === 'Return') && this._latlngs.length >= 3) {
+      e.preventDefault();
+      this._finish();
+    }
+  };
+
+  PolygonDrawingSession.prototype._cleanup = function () {
+    this._map.off('click', this._onClick);
+    this._map.off('mousemove', this._onMouseMove);
+    this._map.off('dblclick', this._onDoubleClick);
+    this._map.doubleClickZoom.enable();
+    document.removeEventListener('keydown', this._onKeyDown);
+  };
+
+  PolygonDrawingSession.prototype._clearTempLayers = function () {
+    if (this._polyline) {
+      this._map.removeLayer(this._polyline);
+      this._polyline = null;
+    }
+    if (this._preview && this._map.hasLayer(this._preview)) {
+      this._map.removeLayer(this._preview);
+    }
+    this._preview = null;
+    this._markers.forEach(
+      function (marker) {
+        this._map.removeLayer(marker);
+      }.bind(this)
+    );
+    this._markers = [];
+  };
+
+  PolygonDrawingSession.prototype._finish = function () {
+    var latlngs = this._latlngs.slice();
+    this._cleanup();
+    this._clearTempLayers();
+    if (latlngs.length < 3) {
+      if (this._options && typeof this._options.onCancel === 'function') {
+        this._options.onCancel();
+      }
+      return;
+    }
+    var polygon = L.polygon(latlngs, this._shapeOptions).addTo(this._map);
+    if (this._options && typeof this._options.onFinish === 'function') {
+      this._options.onFinish(polygon);
+    }
+  };
+
+  PolygonDrawingSession.prototype.cancel = function () {
+    this._cleanup();
+    this._clearTempLayers();
+    if (this._options && typeof this._options.onCancel === 'function') {
+      this._options.onCancel();
+    }
+  };
+
+  var FallbackDrawControl = L.Control.extend({
+    options: { position: 'topleft', draw: { polygon: true }, edit: {} },
+    initialize: function (options) {
+      L.Control.prototype.initialize.call(this, options);
+      this.options = L.Util.extend({}, this.options);
+      if (options) {
+        this.options = L.Util.extend(this.options, options);
+      }
+      this._toolbars = { edit: { _checkDisabled: function () {} } };
+      this._activeSession = null;
+    },
+    onAdd: function (map) {
+      this._map = map;
+      var container = L.DomUtil.create('div', 'leaflet-bar leaflet-draw-fallback');
+      L.DomEvent.disableClickPropagation(container);
+      L.DomEvent.disableScrollPropagation(container);
+      if (this.options.draw && this.options.draw.polygon) {
+        var title =
+          'Draw polygon (click to add points, double-click or press Enter to finish, Esc to cancel)';
+        this._polygonButton = this._createButton(
+          '&#9651;',
+          title,
+          'leaflet-draw-button',
+          container,
+          this._togglePolygon,
+          this
+        );
+      }
+      return container;
+    },
+    onRemove: function () {
+      this._cancelDrawing();
+      this._map = null;
+    },
+    _createButton: function (html, title, className, container, fn, context) {
+      var link = L.DomUtil.create('a', className + ' leaflet-draw-button', container);
+      link.href = '#';
+      link.innerHTML = html;
+      link.setAttribute('role', 'button');
+      link.setAttribute('title', title);
+      link.setAttribute('aria-label', title);
+      L.DomEvent.on(link, 'click', L.DomEvent.stopPropagation)
+        .on(link, 'mousedown', L.DomEvent.stopPropagation)
+        .on(link, 'touchstart', L.DomEvent.stopPropagation)
+        .on(link, 'click', L.DomEvent.preventDefault)
+        .on(link, 'click', fn, context);
+      return link;
+    },
+    _togglePolygon: function () {
+      if (this._activeSession) {
+        this._cancelDrawing();
+      } else {
+        this._startPolygon();
+      }
+    },
+    _startPolygon: function () {
+      var shapeOptions = defaultShapeOptions;
+      if (this.options && this.options.draw && this.options.draw.polygon) {
+        shapeOptions = L.Util.extend(
+          {},
+          defaultShapeOptions,
+          this.options.draw.polygon.shapeOptions || {}
+        );
+      }
+      var self = this;
+      this._activeSession = new PolygonDrawingSession(this._map, {
+        shapeOptions: shapeOptions,
+        onFinish: function (layer) {
+          self._activeSession = null;
+          if (self._polygonButton) {
+            L.DomUtil.removeClass(self._polygonButton, 'leaflet-draw-button-active');
+          }
+          self._map.fire(L.Draw.Event.CREATED, { layerType: 'polygon', layer: layer });
+        },
+        onCancel: function () {
+          self._activeSession = null;
+          if (self._polygonButton) {
+            L.DomUtil.removeClass(self._polygonButton, 'leaflet-draw-button-active');
+          }
+        },
+      });
+      if (this._polygonButton) {
+        L.DomUtil.addClass(this._polygonButton, 'leaflet-draw-button-active');
+      }
+    },
+    _cancelDrawing: function () {
+      if (this._activeSession) {
+        this._activeSession.cancel();
+        this._activeSession = null;
+      }
+      if (this._polygonButton) {
+        L.DomUtil.removeClass(this._polygonButton, 'leaflet-draw-button-active');
+      }
+    },
+  });
+
+  L.Control.Draw = FallbackDrawControl;
+
+  return { available: true, usingFallback: true };
+}
+
 // Control to add text labels
 var AddTextControl = L.Control.extend({
   options: { position: 'topleft' },
@@ -2814,52 +3140,67 @@ var AddTextControl = L.Control.extend({
 
 map.addControl(new AddTextControl());
 
-var drawControl = new L.Control.Draw({
-  draw: {
-    polygon: true,
-    polyline: false,
-    rectangle: false,
-    circle: false,
-    circlemarker: false,
-    marker: false,
-  },
-  edit: {
-    featureGroup: territoriesLayer,
-  },
-});
-map.addControl(drawControl);
-updateEditToolbar();
+var drawControlDetails = setupLeafletDrawFallbackControl();
+var drawControl = null;
 
-map.on(L.Draw.Event.CREATED, function (e) {
-  if (e.layerType === 'polygon') {
-    showPolygonForm(e.layer);
-  }
-});
-
-map.on(L.Draw.Event.EDITED, function (e) {
-  e.layers.eachLayer(function (layer) {
-    if (customPolygons.includes(layer._data)) {
-      layer._data.coords = layer
-        .getLatLngs()[0]
-        .map(function (latlng) {
-          return [latlng.lat, latlng.lng];
-        });
-    }
+if (drawControlDetails.available && typeof L.Control.Draw === 'function') {
+  drawControl = new L.Control.Draw({
+    draw: {
+      polygon: true,
+      polyline: false,
+      rectangle: false,
+      circle: false,
+      circlemarker: false,
+      marker: false,
+    },
+    edit: {
+      featureGroup: territoriesLayer,
+    },
   });
-  savePolygons();
-});
-
-map.on(L.Draw.Event.DELETED, function (e) {
-  e.layers.eachLayer(function (layer) {
-    if (customPolygons.includes(layer._data)) {
-      customPolygons = customPolygons.filter(function (p) {
-        return p !== layer._data;
-      });
-    }
-  });
-  savePolygons();
+  map.addControl(drawControl);
   updateEditToolbar();
-});
+
+  if (L.Draw && L.Draw.Event) {
+    map.on(L.Draw.Event.CREATED, function (e) {
+      if (e.layerType === 'polygon') {
+        showPolygonForm(e.layer);
+      }
+    });
+
+    map.on(L.Draw.Event.EDITED, function (e) {
+      e.layers.eachLayer(function (layer) {
+        if (customPolygons.includes(layer._data)) {
+          layer._data.coords = layer
+            .getLatLngs()[0]
+            .map(function (latlng) {
+              return [latlng.lat, latlng.lng];
+            });
+        }
+      });
+      savePolygons();
+    });
+
+    map.on(L.Draw.Event.DELETED, function (e) {
+      e.layers.eachLayer(function (layer) {
+        if (customPolygons.includes(layer._data)) {
+          customPolygons = customPolygons.filter(function (p) {
+            return p !== layer._data;
+          });
+        }
+      });
+      savePolygons();
+      updateEditToolbar();
+    });
+  }
+
+  if (drawControlDetails.usingFallback) {
+    console.warn(
+      'Leaflet.draw plugin not found. Using a limited in-browser fallback for polygon drawing.'
+    );
+  }
+} else {
+  console.warn('Leaflet.draw is unavailable; polygon drawing controls have been disabled.');
+}
 
 document.getElementById('save-changes').addEventListener('click', function () {
   exportFeaturesToCSV();
