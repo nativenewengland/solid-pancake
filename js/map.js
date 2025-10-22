@@ -394,6 +394,8 @@ var wikiInfoDefault =
   typeof document !== 'undefined' ? document.getElementById('wiki-info-default') : null;
 var wikiMarkerContainer =
   typeof document !== 'undefined' ? document.getElementById('wiki-marker-info') : null;
+var wikiMarkerInfobox =
+  typeof document !== 'undefined' ? document.getElementById('wiki-marker-infobox') : null;
 var wikiMarkerTitle =
   typeof document !== 'undefined' ? document.getElementById('wiki-marker-title') : null;
 var wikiMarkerAltNames =
@@ -402,6 +404,8 @@ var wikiMarkerSubheader =
   typeof document !== 'undefined' ? document.getElementById('wiki-marker-subheader') : null;
 var wikiMarkerDescription =
   typeof document !== 'undefined' ? document.getElementById('wiki-marker-description') : null;
+var infoInfobox =
+  typeof document !== 'undefined' ? document.getElementById('info-infobox') : null;
 
 var wikiEntries = {
   gorlak: {
@@ -420,6 +424,19 @@ var wikiEntries = {
       '1. A gorlak; field sketch and commentary in *The Littoral Spirit Bestiary*, compiled by C. J. Banfield (Boston Ethnological Society, 1923).',
       '2. Notes recorded by Sarah Wabanaki in her 1871 travel diary, held in the Passamaquoddy Tribal Archives, describing a "gorlak who napped beside the cedar stakes until the tide scolded it awake."'
     ].join('\n\n'),
+    infobox: {
+      title: 'Gorlak Watch',
+      subtitle: 'Estuary Guardian Profile',
+      image: {
+        src: 'images/the-bored-gorlak-v0-hn8cg9kvykde1.webp',
+        alt: 'Illustration of the marsh sentinel Gorlak',
+      },
+      rows: [
+        { label: 'Habitat', value: 'Peat bogs at the river estuary' },
+        { label: 'Role', value: 'Balances salt and freshwater tides' },
+        { label: 'Offerings', value: 'Cedar smoke braids before eel harvests' },
+      ],
+    },
   },
   gorlock: {
     title: 'Gorlock',
@@ -997,6 +1014,219 @@ function resetWikiInfoContent() {
   if (wikiMarkerDescription) {
     wikiMarkerDescription.innerHTML = '';
   }
+  if (wikiMarkerInfobox) {
+    renderMarkerInfobox(wikiMarkerInfobox, null);
+  }
+  if (infoInfobox) {
+    renderMarkerInfobox(infoInfobox, null);
+  }
+}
+
+function renderMarkerInfobox(container, data) {
+  if (!container) {
+    return false;
+  }
+
+  while (container.firstChild) {
+    container.removeChild(container.firstChild);
+  }
+  container.classList.add('hidden');
+
+  if (data === null || data === undefined) {
+    return false;
+  }
+
+  var parsed = data;
+  if (typeof data === 'string') {
+    if (data.trim() === '') {
+      return false;
+    }
+    try {
+      parsed = JSON.parse(data);
+    } catch (err) {
+      return false;
+    }
+  }
+
+  if (Array.isArray(parsed)) {
+    parsed = { rows: parsed };
+  }
+
+  if (!parsed || typeof parsed !== 'object') {
+    return false;
+  }
+
+  var hasContent = false;
+
+  var headerTitle =
+    typeof parsed.title === 'string' && parsed.title.trim() !== ''
+      ? parsed.title.trim()
+      : '';
+  var headerSubtitle =
+    typeof parsed.subtitle === 'string' && parsed.subtitle.trim() !== ''
+      ? parsed.subtitle.trim()
+      : '';
+
+  if (headerTitle || headerSubtitle) {
+    var header = document.createElement('div');
+    header.className = 'wiki-infobox__header';
+    if (headerTitle) {
+      var titleEl = document.createElement('p');
+      titleEl.className = 'wiki-infobox__title';
+      titleEl.textContent = headerTitle;
+      header.appendChild(titleEl);
+    }
+    if (headerSubtitle) {
+      var subtitleEl = document.createElement('p');
+      subtitleEl.className = 'wiki-infobox__subtitle';
+      subtitleEl.textContent = headerSubtitle;
+      header.appendChild(subtitleEl);
+    }
+    container.appendChild(header);
+    hasContent = true;
+  }
+
+  var imageData = parsed.image && typeof parsed.image === 'object' ? parsed.image : null;
+  if (imageData) {
+    var src = '';
+    if (typeof imageData.src === 'string' && imageData.src.trim() !== '') {
+      src = imageData.src.trim();
+    } else if (typeof imageData.url === 'string' && imageData.url.trim() !== '') {
+      src = imageData.url.trim();
+    }
+    if (src) {
+      var figure = document.createElement('figure');
+      figure.className = 'wiki-infobox__image';
+      var img = document.createElement('img');
+      img.src = src;
+      img.alt = typeof imageData.alt === 'string' ? imageData.alt : '';
+      figure.appendChild(img);
+      if (typeof imageData.caption === 'string' && imageData.caption.trim() !== '') {
+        var caption = document.createElement('figcaption');
+        caption.textContent = imageData.caption.trim();
+        figure.appendChild(caption);
+      }
+      container.appendChild(figure);
+      hasContent = true;
+    }
+  }
+
+  var rows = [];
+  if (Array.isArray(parsed.rows)) {
+    rows = parsed.rows;
+  } else if (Array.isArray(parsed.fields)) {
+    rows = parsed.fields;
+  }
+
+  if (rows.length) {
+    var rowsWrapper = document.createElement('div');
+    rowsWrapper.className = 'wiki-infobox__rows';
+    var appendedRows = 0;
+    for (var i = 0; i < rows.length; i++) {
+      var row = rows[i];
+      var label = '';
+      var valueText = '';
+      var valueHtml = '';
+
+      if (row && typeof row === 'object' && !Array.isArray(row)) {
+        if (typeof row.label === 'string') {
+          label = row.label;
+        } else if (typeof row.label === 'number' || typeof row.label === 'boolean') {
+          label = String(row.label);
+        }
+        if (typeof row.valueHtml === 'string') {
+          valueHtml = row.valueHtml;
+        } else if (typeof row.html === 'string') {
+          valueHtml = row.html;
+        }
+        if (!valueHtml) {
+          if (typeof row.value === 'string') {
+            valueText = row.value;
+          } else if (typeof row.value === 'number' || typeof row.value === 'boolean') {
+            valueText = String(row.value);
+          } else if (Array.isArray(row.value)) {
+            valueText = row.value.join(', ');
+          } else if (typeof row.text === 'string') {
+            valueText = row.text;
+          } else if (typeof row.text === 'number' || typeof row.text === 'boolean') {
+            valueText = String(row.text);
+          }
+        }
+      } else if (Array.isArray(row)) {
+        if (typeof row[0] === 'string') {
+          label = row[0];
+        } else if (typeof row[0] === 'number' || typeof row[0] === 'boolean') {
+          label = String(row[0]);
+        }
+        if (typeof row[1] === 'string') {
+          valueText = row[1];
+        } else if (typeof row[1] === 'number' || typeof row[1] === 'boolean') {
+          valueText = String(row[1]);
+        }
+      } else if (typeof row === 'string') {
+        valueText = row;
+      } else if (typeof row === 'number' || typeof row === 'boolean') {
+        valueText = String(row);
+      }
+
+      var trimmedLabel = label ? String(label).trim() : '';
+      var trimmedText = valueText ? String(valueText).trim() : '';
+      var trimmedHtml = valueHtml ? String(valueHtml).trim() : '';
+      if (!trimmedLabel && !trimmedText && !trimmedHtml) {
+        continue;
+      }
+
+      var rowEl = document.createElement('div');
+      rowEl.className = 'wiki-infobox__row';
+
+      if (trimmedLabel) {
+        var labelEl = document.createElement('div');
+        labelEl.className = 'wiki-infobox__label';
+        labelEl.textContent = trimmedLabel;
+        rowEl.appendChild(labelEl);
+      }
+
+      var valueEl = document.createElement('div');
+      valueEl.className = 'wiki-infobox__value';
+      if (trimmedHtml) {
+        if (
+          typeof DOMPurify !== 'undefined' &&
+          DOMPurify &&
+          typeof DOMPurify.sanitize === 'function'
+        ) {
+          var sanitized = DOMPurify.sanitize(trimmedHtml, {
+            ALLOWED_TAGS: ['strong', 'em', 'span', 'a', 'br'],
+            ALLOWED_ATTR: ['href', 'title', 'target', 'rel'],
+          });
+          if (sanitized && sanitized.trim() !== '') {
+            valueEl.innerHTML = sanitized;
+          } else {
+            var fallbackTemp = document.createElement('div');
+            fallbackTemp.innerHTML = trimmedHtml;
+            valueEl.textContent = fallbackTemp.textContent || fallbackTemp.innerText || '';
+          }
+        } else {
+          var temp = document.createElement('div');
+          temp.innerHTML = trimmedHtml;
+          valueEl.textContent = temp.textContent || temp.innerText || '';
+        }
+      } else {
+        valueEl.textContent = trimmedText;
+      }
+      rowEl.appendChild(valueEl);
+      rowsWrapper.appendChild(rowEl);
+      appendedRows += 1;
+    }
+    if (appendedRows > 0) {
+      container.appendChild(rowsWrapper);
+      hasContent = true;
+    }
+  }
+
+  if (hasContent) {
+    container.classList.remove('hidden');
+  }
+  return hasContent;
 }
 
 function enrichWikiContent(html) {
@@ -1047,7 +1277,7 @@ function enrichWikiContent(html) {
   return result;
 }
 
-function showMarkerInfoInSidebar(title, altNames, subheader, html) {
+function showMarkerInfoInSidebar(title, altNames, subheader, html, infoboxData) {
   if (!wikiInfoPanel || !wikiMarkerContainer || !wikiMarkerDescription) {
     return false;
   }
@@ -1057,6 +1287,10 @@ function showMarkerInfoInSidebar(title, altNames, subheader, html) {
     wikiInfoDefault.classList.add('hidden');
   }
   wikiMarkerContainer.classList.remove('hidden');
+
+  if (wikiMarkerInfobox) {
+    renderMarkerInfobox(wikiMarkerInfobox, infoboxData);
+  }
 
   if (wikiMarkerTitle) {
     wikiMarkerTitle.textContent = title || '';
@@ -1119,7 +1353,7 @@ function refreshIconScaleUI() {
   }
 }
 
-function showInfo(title, altNames, subheader, description) {
+function showInfo(title, altNames, subheader, description, infoboxData) {
   var resolvedTitle =
     typeof title === 'string' ? title : title ? String(title) : 'Marker';
   var altNamesValue =
@@ -1152,12 +1386,17 @@ function showInfo(title, altNames, subheader, description) {
   }
   html = enrichWikiContent(html);
 
+  if (infoInfobox) {
+    renderMarkerInfobox(infoInfobox, infoboxData);
+  }
+
   if (!isWikiInfoCollapsed()) {
     var sidebarDisplayed = showMarkerInfoInSidebar(
       resolvedTitle,
       altNamesValue,
       subheaderValue,
-      html
+      html,
+      infoboxData
     );
     if (sidebarDisplayed) {
       var infoPanelElement = document.getElementById('info-panel');
@@ -1221,7 +1460,7 @@ function openWikiEntry(entryId) {
     return;
   }
   clearSelectedMarker();
-  showInfo(entry.title, entry.altNames, entry.subheader, entry.description);
+  showInfo(entry.title, entry.altNames, entry.subheader, entry.description, entry.infobox);
 }
 
 document.getElementById('close-info').addEventListener('click', function () {
@@ -1948,6 +2187,24 @@ function parseCsvRow(line) {
   return result;
 }
 
+function safeJsonParse(value) {
+  if (typeof value !== 'string') {
+    return null;
+  }
+  var trimmed = value.trim();
+  if (!trimmed) {
+    return null;
+  }
+  try {
+    return JSON.parse(trimmed);
+  } catch (err) {
+    if (typeof console !== 'undefined' && console && typeof console.warn === 'function') {
+      console.warn('Unable to parse JSON column', trimmed, err);
+    }
+  }
+  return null;
+}
+
 // Convert the CSV text into feature objects
 function loadFeaturesFromCSV(text) {
   var markers = [];
@@ -1996,11 +2253,14 @@ function loadFeaturesFromCSV(text) {
     var cols = parseCsvRow(line);
     var type = cols[0];
     if (type === 'marker') {
-      var style = cols[13] ? JSON.parse(cols[13]) : undefined;
+      var styleRaw = safeJsonParse(cols[13]);
+      var style = styleRaw && typeof styleRaw === 'object' ? styleRaw : undefined;
       var iconScaleValue =
         style && typeof style.iconScale === 'number' && Number.isFinite(style.iconScale)
           ? style.iconScale
           : undefined;
+      var infoboxRaw = cols.length > 15 ? safeJsonParse(cols[15]) : null;
+      var infobox = infoboxRaw && typeof infoboxRaw === 'object' ? infoboxRaw : null;
       markers.push({
         lat: parseFloat(cols[1]),
         lng: parseFloat(cols[2]),
@@ -2012,8 +2272,10 @@ function loadFeaturesFromCSV(text) {
         style: style,
         overlay: cols[14] || '',
         iconScale: iconScaleValue,
+        infobox: infobox,
       });
     } else if (type === 'text') {
+      var textInfoboxRaw = cols.length > 15 ? safeJsonParse(cols[15]) : null;
       textLabels.push({
         lat: parseFloat(cols[1]),
         lng: parseFloat(cols[2]),
@@ -2026,13 +2288,19 @@ function loadFeaturesFromCSV(text) {
         spacing: parseFloat(cols[10]) || 0,
         curve: parseFloat(cols[11]) || 0,
         overlay: cols[14] || '',
+        infobox: textInfoboxRaw && typeof textInfoboxRaw === 'object' ? textInfoboxRaw : null,
       });
     } else if (type === 'polygon') {
+      var coordsRaw = cols[12] ? safeJsonParse(cols[12]) : null;
+      var coords = Array.isArray(coordsRaw) ? coordsRaw : [];
+      var polygonStyleRaw = cols[13] ? safeJsonParse(cols[13]) : null;
+      var polygonStyle =
+        polygonStyleRaw && typeof polygonStyleRaw === 'object' ? polygonStyleRaw : undefined;
       polygons.push({
         name: cols[4],
         description: cols[7],
-        coords: cols[12] ? JSON.parse(cols[12]) : [],
-        style: cols[13] ? JSON.parse(cols[13]) : undefined,
+        coords: coords,
+        style: polygonStyle,
       });
     }
   });
@@ -2047,10 +2315,24 @@ function escapeCsvValue(val) {
 
 function buildFeaturesCSV() {
   var rows = [
-    'type,lat,lng,icon,name/text,alt_names,subheader/text,description,size,angle,spacing,curve,coords,style,overlay'
+    'type,lat,lng,icon,name/text,alt_names,subheader/text,description,size,angle,spacing,curve,coords,style,overlay,infobox'
   ];
 
   customMarkers.forEach(function (m) {
+    var styleString = '{}';
+    try {
+      styleString = JSON.stringify(m.style || {});
+    } catch (err) {
+      styleString = '{}';
+    }
+    var infoboxString = '';
+    if (m.infobox && typeof m.infobox === 'object') {
+      try {
+        infoboxString = JSON.stringify(m.infobox);
+      } catch (err) {
+        infoboxString = '';
+      }
+    }
     rows.push(
       [
         'marker',
@@ -2066,13 +2348,22 @@ function buildFeaturesCSV() {
         '',
         '',
         '',
-        escapeCsvValue(JSON.stringify(m.style || {})),
-        escapeCsvValue(m.overlay || '')
+        escapeCsvValue(styleString),
+        escapeCsvValue(m.overlay || ''),
+        escapeCsvValue(infoboxString)
       ].join(',')
     );
   });
 
   customTextLabels.forEach(function (t) {
+    var textInfoboxString = '';
+    if (t.infobox && typeof t.infobox === 'object') {
+      try {
+        textInfoboxString = JSON.stringify(t.infobox);
+      } catch (err) {
+        textInfoboxString = '';
+      }
+    }
     rows.push(
       [
         'text',
@@ -2089,12 +2380,25 @@ function buildFeaturesCSV() {
         escapeCsvValue(t.curve),
         '',
         '',
-        escapeCsvValue(t.overlay || '')
+        escapeCsvValue(t.overlay || ''),
+        escapeCsvValue(textInfoboxString)
       ].join(',')
     );
   });
 
   customPolygons.forEach(function (p) {
+    var coordsString = '[]';
+    try {
+      coordsString = JSON.stringify(p.coords);
+    } catch (err) {
+      coordsString = '[]';
+    }
+    var styleString = '{}';
+    try {
+      styleString = JSON.stringify(p.style || {});
+    } catch (err) {
+      styleString = '{}';
+    }
     rows.push(
       [
         'polygon',
@@ -2109,8 +2413,9 @@ function buildFeaturesCSV() {
         '',
         '',
         '',
-        escapeCsvValue(JSON.stringify(p.coords)),
-        escapeCsvValue(JSON.stringify(p.style || {})),
+        escapeCsvValue(coordsString),
+        escapeCsvValue(styleString),
+        '',
         ''
       ].join(',')
     );
@@ -2286,6 +2591,13 @@ function addMarkerToMap(data) {
   if (data.altNames === undefined || data.altNames === null) {
     data.altNames = '';
   }
+  if (data.infobox && typeof data.infobox !== 'object') {
+    var parsedInfobox = safeJsonParse(String(data.infobox));
+    data.infobox = parsedInfobox && typeof parsedInfobox === 'object' ? parsedInfobox : null;
+  }
+  if (data.infobox === undefined) {
+    data.infobox = null;
+  }
   var customMarker = createMarker(
     data.lat,
     data.lng,
@@ -2294,7 +2606,8 @@ function addMarkerToMap(data) {
     data.name,
     data.altNames,
     data.subheader,
-    data.description
+    data.description,
+    data.infobox
   );
   customMarker.addTo(map);
   data.overlay = '';
@@ -2480,7 +2793,7 @@ function addTextLabelToMap(data) {
         selectedMarker = this;
         refreshIconScaleUI();
       }
-      showInfo(data.text, data.altNames, data.subheader, data.description);
+      showInfo(data.text, data.altNames, data.subheader, data.description, data.infobox);
     })
     .on('dblclick', function (ev) {
       L.DomEvent.stopPropagation(ev);
@@ -2567,7 +2880,17 @@ fetch('data/features.csv')
 
 // //// START OF MARKERS
 // 1. Marker declarations
-function createMarker(lat, lng, icon, iconScale, name, altNames, subheader, description) {
+function createMarker(
+  lat,
+  lng,
+  icon,
+  iconScale,
+  name,
+  altNames,
+  subheader,
+  description,
+  infobox
+) {
   var scale = normalizeScaleMultiplier(iconScale);
   var m = L.marker([lat, lng], { icon: icon, draggable: true })
     .on('click', function (e) {
@@ -2584,8 +2907,9 @@ function createMarker(lat, lng, icon, iconScale, name, altNames, subheader, desc
           altNames: altNames,
           subheader: subheader,
           description: description,
+          infobox: infobox,
         };
-      showInfo(d.name, d.altNames, d.subheader, d.description);
+      showInfo(d.name, d.altNames, d.subheader, d.description, d.infobox);
     })
     .on('dragend', function () {
       if (m._data) {
@@ -2706,10 +3030,14 @@ function showMarkerForm(latlng) {
   var saveBtn = document.getElementById('marker-save');
   var cancelBtn = document.getElementById('marker-cancel');
   var convertBtn = document.getElementById('marker-convert');
+  var infoboxField = document.getElementById('marker-infobox');
   overlay.classList.remove('hidden');
   convertBtn.classList.add('hidden');
   document.getElementById('marker-alt-names').value = '';
   document.getElementById('marker-subheader').value = '';
+  if (infoboxField) {
+    infoboxField.value = '';
+  }
 
   function submitHandler() {
     var name = document.getElementById('marker-name').value || 'Marker';
@@ -2718,6 +3046,18 @@ function showMarkerForm(latlng) {
     var description =
       document.getElementById('marker-description').value || '';
     var iconKey = document.getElementById('marker-icon').value || DEFAULT_ICON_KEY;
+    var infoboxData = null;
+    if (infoboxField) {
+      var infoboxRaw = infoboxField.value ? infoboxField.value.trim() : '';
+      if (infoboxRaw) {
+        try {
+          infoboxData = JSON.parse(infoboxRaw);
+        } catch (err) {
+          alert('Infobox data must be valid JSON.');
+          return;
+        }
+      }
+    }
     var data = {
       lat: latlng.lat,
       lng: latlng.lng,
@@ -2726,6 +3066,7 @@ function showMarkerForm(latlng) {
       subheader: subheader,
       description: description,
       icon: iconKey,
+      infobox: infoboxData,
     };
     addMarkerToMap(data);
     customMarkers.push(data);
@@ -2747,6 +3088,9 @@ function showMarkerForm(latlng) {
     document.getElementById('marker-subheader').value = '';
     document.getElementById('marker-description').value = '';
     document.getElementById('marker-icon').value = DEFAULT_ICON_KEY || '';
+    if (infoboxField) {
+      infoboxField.value = '';
+    }
   }
 
   saveBtn.addEventListener('click', submitHandler);
@@ -2760,6 +3104,7 @@ function editMarkerForm(marker) {
   var cancelBtn = document.getElementById('marker-cancel');
   var convertBtn = document.getElementById('marker-convert');
   var title = document.querySelector('#marker-form h3');
+  var infoboxField = document.getElementById('marker-infobox');
   overlay.classList.remove('hidden');
   convertBtn.classList.remove('hidden');
 
@@ -2768,6 +3113,15 @@ function editMarkerForm(marker) {
   document.getElementById('marker-subheader').value = marker._data.subheader || '';
   document.getElementById('marker-description').value = marker._data.description || '';
   document.getElementById('marker-icon').value = marker._data.icon || DEFAULT_ICON_KEY || '';
+  if (infoboxField) {
+    try {
+      infoboxField.value = marker._data.infobox
+        ? JSON.stringify(marker._data.infobox, null, 2)
+        : '';
+    } catch (err) {
+      infoboxField.value = '';
+    }
+  }
   if (title) title.textContent = 'Edit Marker';
 
   function submitHandler() {
@@ -2776,12 +3130,27 @@ function editMarkerForm(marker) {
     var subheader = document.getElementById('marker-subheader').value || '';
     var description = document.getElementById('marker-description').value || '';
     var iconKey = document.getElementById('marker-icon').value || DEFAULT_ICON_KEY;
+    var infoboxData = marker._data.infobox || null;
+    if (infoboxField) {
+      var infoboxRaw = infoboxField.value ? infoboxField.value.trim() : '';
+      if (infoboxRaw) {
+        try {
+          infoboxData = JSON.parse(infoboxRaw);
+        } catch (err) {
+          alert('Infobox data must be valid JSON.');
+          return;
+        }
+      } else {
+        infoboxData = null;
+      }
+    }
     marker._data.name = name;
     marker._data.altNames = altNames;
     marker._data.subheader = subheader;
     marker._data.description = description;
     marker._data.icon = iconKey;
     marker._data.overlay = '';
+    marker._data.infobox = infoboxData;
 
     applyScaleToMarker(marker, getMarkerScale(marker));
     saveMarkers();
@@ -2807,6 +3176,9 @@ function editMarkerForm(marker) {
     document.getElementById('marker-subheader').value = '';
     document.getElementById('marker-description').value = '';
     document.getElementById('marker-icon').value = DEFAULT_ICON_KEY || '';
+    if (infoboxField) {
+      infoboxField.value = '';
+    }
     convertBtn.classList.add('hidden');
     if (title) title.textContent = 'Add Marker';
   }
@@ -3163,6 +3535,7 @@ function convertMarkerToText(marker) {
     spacing: 0,
     curve: 0,
     overlay: '',
+    infobox: data.infobox || null,
   };
   customTextLabels.push(textData);
   var labelMarker = addTextLabelToMap(textData);
@@ -3194,6 +3567,7 @@ function convertTextToMarker(labelMarker) {
     description: data.description || '',
     icon: DEFAULT_ICON_KEY || '',
     overlay: '',
+    infobox: data.infobox || null,
   };
   customMarkers.push(markerData);
   var marker = addMarkerToMap(markerData);
