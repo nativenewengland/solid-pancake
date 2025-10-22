@@ -40,6 +40,11 @@
                 <p class="wiki-info__footer">Contribute updates by contacting the maintainers or submitting pull requests.</p>
             </div>
             <div id="wiki-marker-info" class="wiki-info__marker hidden" aria-live="polite">
+                <div
+                    id="wiki-marker-infobox"
+                    class="wiki-infobox hidden"
+                    aria-label="Marker infobox"
+                ></div>
                 <h2 id="wiki-marker-title" class="wiki-info__title"></h2>
                 <p id="wiki-marker-alt-names" class="wiki-info__alt hidden"></p>
                 <h3 id="wiki-marker-subheader" class="wiki-info__subheader hidden"></h3>
@@ -83,6 +88,11 @@
     <div id="mouse-coords"></div>
     <div id="info-panel" class="hidden">
         <button id="close-info" class="close-button">&times;</button>
+        <div
+            id="info-infobox"
+            class="wiki-infobox hidden"
+            aria-label="Marker infobox"
+        ></div>
         <h2 id="info-title"></h2>
         <p id="info-alt-names" class="info-alt-names hidden"></p>
         <h3 id="info-subheader" class="info-subheader hidden"></h3>
@@ -132,6 +142,10 @@
                 </div>
                 <textarea id="marker-description"></textarea>
             </label>
+            <label for="marker-infobox">Infobox Data:
+                <small>Provide JSON describing the infobox (e.g., <code>{"title":"Profile","rows":[{"label":"Habitat","value":"Tidal bog"}]}</code>).</small>
+            </label>
+            <textarea id="marker-infobox" class="marker-infobox-input"></textarea>
             <label>Icon:
                 <select id="marker-icon"></select>
             </label>

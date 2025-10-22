@@ -89,6 +89,107 @@
     gap: 0.75em;
 }
 
+.wiki-infobox {
+    background: rgba(10, 20, 32, 0.92);
+    border: 1px solid rgba(192, 226, 255, 0.28);
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.35);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    color: #f7f7f2;
+}
+
+.wiki-info__marker .wiki-infobox,
+#info-panel .wiki-infobox {
+    margin-bottom: 0.75em;
+}
+
+.wiki-infobox__header {
+    background: linear-gradient(135deg, rgba(24, 36, 52, 0.95), rgba(42, 78, 108, 0.85));
+    padding: 0.75em 1em;
+    border-bottom: 1px solid rgba(192, 226, 255, 0.25);
+}
+
+.wiki-infobox__title {
+    margin: 0;
+    font-size: 1.05rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.wiki-infobox__subtitle {
+    margin: 0.35em 0 0;
+    font-size: 0.85rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: rgba(240, 250, 255, 0.72);
+}
+
+.wiki-infobox__image {
+    background: rgba(20, 32, 48, 0.8);
+    border-bottom: 1px solid rgba(192, 226, 255, 0.18);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    padding: 0.85em;
+}
+
+.wiki-infobox__image img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    object-fit: cover;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+}
+
+.wiki-infobox__image figcaption {
+    font-size: 0.8rem;
+    color: rgba(240, 250, 255, 0.72);
+}
+
+.wiki-infobox__rows {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 0;
+}
+
+.wiki-infobox__row {
+    display: flex;
+    flex-direction: column;
+    padding: 0.75em 1em;
+    border-top: 1px solid rgba(192, 226, 255, 0.18);
+    background: rgba(14, 23, 35, 0.65);
+}
+
+.wiki-infobox__row:nth-child(odd) {
+    background: rgba(18, 30, 46, 0.65);
+}
+
+.wiki-infobox__label {
+    font-size: 0.78rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: rgba(192, 226, 255, 0.9);
+}
+
+.wiki-infobox__value {
+    margin-top: 0.35em;
+    font-size: 0.92rem;
+    line-height: 1.45;
+    color: rgba(247, 247, 242, 0.95);
+}
+
+.wiki-infobox__value a {
+    color: rgba(192, 226, 255, 0.95);
+    text-decoration: underline;
+}
+
+.wiki-infobox__value a:hover,
+.wiki-infobox__value a:focus {
+    text-decoration-color: rgba(192, 226, 255, 1);
+}
+
 .wiki-info__alt {
     margin: -0.35em 0 0;
     font-size: clamp(0.9rem, 0.95vw, 1rem);
@@ -472,6 +573,17 @@ select {
 
 .hidden {
     display: none;
+}
+
+.marker-infobox-input {
+    width: 100%;
+    min-height: 140px;
+    padding: 0.75em;
+    border-radius: 6px;
+    border: 1px solid rgba(31, 74, 125, 0.45);
+    background: rgba(255, 255, 255, 0.9);
+    box-sizing: border-box;
+    resize: vertical;
 }
 
 /* Glow effect for markers */
