@@ -538,7 +538,7 @@ var wikiEntries = {
     description: [
       '![Kobolds gathering in a lava-lit cavern with banners](images/3ed13064f54fa486a48442c62c8bfb57.jpg)',
       '## Overview',
-      'Kobolds are a bipedal race of subterranean dragonkin that typically range in size from that of a Gnome to a Dwarf. For ages these reptilian attackes had been one of the Great Scourges of Dwarfkind, though just like their larger Dargonine relative, their numerous nature has declined in recent years and they've become more uncommon, leading them to be downgraded to simply a threat rather than a Great Threat.',
+      "Kobolds are a bipedal race of subterranean dragonkin that typically range in size from that of a Gnome to a Dwarf. For ages these reptilian attackes had been one of the Great Scourges of Dwarfkind, though just like their larger Dargonine relative, their numerous nature has declined in recent years and they've become more uncommon, leading them to be downgraded to simply a threat rather than a Great Threat.",
       '## Burrow Structure',
       'Spiral warrens align living quarters with radiant heat while ventilation shafts serve as message tubes for pebble-code rattles. Key districts include:\n\n- **Surface Apertures** — camouflaged skylights feeding lichen gardens and providing emergency egress during lava surges.\n- **Ember Galleries** — communal smelters that cycle cinders through rotating cages to prevent flare-ups.\n- **Dragon Vaults** — mirrorstone-lined tithe chambers with counterweighted floors ready to seal if diplomacy fails.',
       '## Trapcraft and Engineering',
