@@ -598,6 +598,10 @@ select {
     z-index: 11000;
 }
 
+.image-lightbox.hidden {
+    display: none;
+}
+
 .image-lightbox__inner {
     position: relative;
     max-width: min(90vw, 1200px);
