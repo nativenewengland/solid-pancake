@@ -16,6 +16,47 @@
     <!-- <h1>map</h1> -->
 
     <div id="map"></div>
+    <aside id="wiki-info" class="wiki-info" aria-expanded="true">
+        <div class="wiki-info__content">
+            <div id="wiki-info-default" class="wiki-info__default">
+                <h2 class="wiki-info__title">Project Overview</h2>
+                <p class="wiki-info__intro">
+                    This collaboratively maintained map documents Indigenous history throughout the region using
+                    primary source material, community knowledge, and archival research. Use the layers and markers to
+                    explore how the landscape has evolved and who has called it home.
+                </p>
+                <dl class="wiki-info__details">
+                    <div>
+                        <dt>Focus</dt>
+                        <dd>Pre-colonial geographies, settlements, and cultural sites.</dd>
+                    </div>
+                    <div>
+                        <dt>Sources</dt>
+                        <dd>Seventeenth-century cartography, oral histories, and academic publications.</dd>
+                    </div>
+                    <div>
+                        <dt>Navigation Tips</dt>
+                        <dd>Zoom to reveal additional markers, click icons for detailed context, and consult the credits for full acknowledgements.</dd>
+                    </div>
+                </dl>
+                <p class="wiki-info__footer">Contribute updates by contacting the maintainers or submitting pull requests.</p>
+            </div>
+            <div id="wiki-marker-info" class="wiki-info__marker hidden" aria-live="polite">
+                <button id="wiki-marker-back" class="wiki-info__back" type="button">Back to overview</button>
+                <h2 id="wiki-marker-title" class="wiki-info__title"></h2>
+                <p id="wiki-marker-alt-names" class="wiki-info__alt hidden"></p>
+                <h3 id="wiki-marker-subheader" class="wiki-info__subheader hidden"></h3>
+                <div id="wiki-marker-description" class="wiki-info__description"></div>
+            </div>
+        </div>
+        <button
+            id="wiki-info-toggle"
+            class="wiki-info__toggle"
+            type="button"
+            aria-label="Collapse information panel"
+            aria-expanded="true"
+        ></button>
+    </aside>
     <button id="save-changes">Save Changes</button>
     <div id="icon-size-control" role="group" aria-labelledby="icon-size-label">
         <div class="icon-size-control__header">
@@ -88,15 +129,14 @@
             </label>
             <label>Description:
                 <small>Supports Markdown (e.g., <code>**bold**</code>, <code>![alt](url)</code> for images) and footnotes (pair <code>[^1]</code> with <code>[^1]: Source details</code>).</small>
+                <div class="markdown-image-tools">
+                    <button type="button" class="markdown-image-button" data-target="marker-description">Insert image reference</button>
+                    <input type="file" accept="image/*" class="markdown-image-input" data-target="marker-description" aria-label="Choose an image to insert into the description">
+                </div>
                 <textarea id="marker-description"></textarea>
             </label>
             <label>Icon:
                 <select id="marker-icon"></select>
-            </label>
-            <label>Overlay:
-                <select id="marker-overlay">
-                    <option value="">None</option>
-                </select>
             </label>
             <button id="marker-save">Save</button>
             <button id="marker-cancel">Cancel</button>
@@ -111,6 +151,10 @@
             </label>
             <label>Description:
                 <small>Supports Markdown (e.g., <code>**bold**</code>, <code>![alt](url)</code> for images) and footnotes (pair <code>[^1]</code> with <code>[^1]: Source details</code>).</small>
+                <div class="markdown-image-tools">
+                    <button type="button" class="markdown-image-button" data-target="polygon-description">Insert image reference</button>
+                    <input type="file" accept="image/*" class="markdown-image-input" data-target="polygon-description" aria-label="Choose an image to insert into the description">
+                </div>
                 <textarea id="polygon-description"></textarea>
             </label>
             <label>Color:
@@ -134,6 +178,10 @@
             </label>
             <label>Description:
                 <small>Supports Markdown (e.g., <code>**bold**</code>, <code>![alt](url)</code> for images) and footnotes (pair <code>[^1]</code> with <code>[^1]: Source details</code>).</small>
+                <div class="markdown-image-tools">
+                    <button type="button" class="markdown-image-button" data-target="text-label-description">Insert image reference</button>
+                    <input type="file" accept="image/*" class="markdown-image-input" data-target="text-label-description" aria-label="Choose an image to insert into the description">
+                </div>
                 <textarea id="text-label-description"></textarea>
             </label>
             <label>Size:
@@ -147,11 +195,6 @@
             </label>
             <label>Curve Radius:
                 <input type="number" id="text-curve-radius" value="0">
-            </label>
-            <label>Overlay:
-                <select id="text-overlay">
-                    <option value="">None</option>
-                </select>
             </label>
             <button id="text-save">Save</button>
             <button id="text-cancel">Cancel</button>

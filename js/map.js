@@ -312,9 +312,6 @@ function textLabelsMatch(a, b) {
       ? ''
       : String(b.subheader).trim();
   if (subheaderA !== subheaderB) return false;
-  var overlayA = a.overlay || '';
-  var overlayB = b.overlay || '';
-  if (overlayA !== overlayB) return false;
   var latA = Number(a.lat);
   var latB = Number(b.lat);
   var lngA = Number(a.lng);
@@ -359,6 +356,22 @@ var ICON_SCALE_MIN = 0.01;
 var ICON_SCALE_MAX = 2;
 var iconSizeSlider = null;
 var iconSizeValueDisplay = null;
+var wikiInfoPanel =
+  typeof document !== 'undefined' ? document.getElementById('wiki-info') : null;
+var wikiInfoDefault =
+  typeof document !== 'undefined' ? document.getElementById('wiki-info-default') : null;
+var wikiMarkerContainer =
+  typeof document !== 'undefined' ? document.getElementById('wiki-marker-info') : null;
+var wikiMarkerBackButton =
+  typeof document !== 'undefined' ? document.getElementById('wiki-marker-back') : null;
+var wikiMarkerTitle =
+  typeof document !== 'undefined' ? document.getElementById('wiki-marker-title') : null;
+var wikiMarkerAltNames =
+  typeof document !== 'undefined' ? document.getElementById('wiki-marker-alt-names') : null;
+var wikiMarkerSubheader =
+  typeof document !== 'undefined' ? document.getElementById('wiki-marker-subheader') : null;
+var wikiMarkerDescription =
+  typeof document !== 'undefined' ? document.getElementById('wiki-marker-description') : null;
 
 function normalizeScaleMultiplier(value) {
   var number = Number(value);
@@ -520,6 +533,97 @@ function createScaledIcon(options, multiplier) {
   return L.icon(scaled);
 }
 
+function isWikiInfoCollapsed() {
+  if (!wikiInfoPanel) {
+    return true;
+  }
+  return wikiInfoPanel.classList.contains('wiki-info--collapsed');
+}
+
+function isSidebarShowingMarkerInfo() {
+  if (!wikiInfoPanel || !wikiMarkerContainer) {
+    return false;
+  }
+  if (!wikiInfoPanel.classList.contains('wiki-info--showing-marker')) {
+    return false;
+  }
+  return !isWikiInfoCollapsed();
+}
+
+function resetWikiInfoContent() {
+  if (wikiInfoPanel) {
+    wikiInfoPanel.classList.remove('wiki-info--showing-marker');
+  }
+  if (wikiMarkerContainer) {
+    if (!wikiMarkerContainer.classList.contains('hidden')) {
+      wikiMarkerContainer.classList.add('hidden');
+    }
+  }
+  if (wikiInfoDefault) {
+    wikiInfoDefault.classList.remove('hidden');
+  }
+  if (wikiMarkerTitle) {
+    wikiMarkerTitle.textContent = '';
+  }
+  if (wikiMarkerAltNames) {
+    wikiMarkerAltNames.textContent = '';
+    if (!wikiMarkerAltNames.classList.contains('hidden')) {
+      wikiMarkerAltNames.classList.add('hidden');
+    }
+  }
+  if (wikiMarkerSubheader) {
+    wikiMarkerSubheader.textContent = '';
+    if (!wikiMarkerSubheader.classList.contains('hidden')) {
+      wikiMarkerSubheader.classList.add('hidden');
+    }
+  }
+  if (wikiMarkerDescription) {
+    wikiMarkerDescription.innerHTML = '';
+  }
+}
+
+function showMarkerInfoInSidebar(title, altNames, subheader, html) {
+  if (!wikiInfoPanel || !wikiMarkerContainer || !wikiMarkerDescription) {
+    return false;
+  }
+
+  wikiInfoPanel.classList.add('wiki-info--showing-marker');
+  if (wikiInfoDefault) {
+    wikiInfoDefault.classList.add('hidden');
+  }
+  wikiMarkerContainer.classList.remove('hidden');
+
+  if (wikiMarkerTitle) {
+    wikiMarkerTitle.textContent = title || '';
+  }
+
+  if (wikiMarkerAltNames) {
+    var hasAltNames = typeof altNames === 'string' ? altNames.trim() !== '' : Boolean(altNames);
+    if (hasAltNames) {
+      wikiMarkerAltNames.textContent = String(altNames);
+      wikiMarkerAltNames.classList.remove('hidden');
+    } else {
+      wikiMarkerAltNames.textContent = '';
+      wikiMarkerAltNames.classList.add('hidden');
+    }
+  }
+
+  if (wikiMarkerSubheader) {
+    var hasSubheader =
+      typeof subheader === 'string' ? subheader.trim() !== '' : Boolean(subheader);
+    if (hasSubheader) {
+      wikiMarkerSubheader.textContent = String(subheader);
+      wikiMarkerSubheader.classList.remove('hidden');
+    } else {
+      wikiMarkerSubheader.textContent = '';
+      wikiMarkerSubheader.classList.add('hidden');
+    }
+  }
+
+  wikiMarkerDescription.innerHTML = html;
+  return true;
+}
+
 function refreshIconScaleUI() {
   var displayText = '—';
   var sliderValue = 100;
@@ -527,7 +631,12 @@ function refreshIconScaleUI() {
   var infoPanel =
     typeof document !== 'undefined' ? document.getElementById('info-panel') : null;
   var infoVisible = infoPanel && !infoPanel.classList.contains('hidden');
-  if (selectedMarker && selectedMarker._markerType === 'marker' && infoVisible) {
+  var sidebarVisible = isSidebarShowingMarkerInfo();
+  if (
+    selectedMarker &&
+    selectedMarker._markerType === 'marker' &&
+    (infoVisible || sidebarVisible)
+  ) {
     var scale = getMarkerScale(selectedMarker);
     var percent = Math.round(scale * 100);
     displayText = percent + '%';
@@ -546,38 +655,19 @@ function refreshIconScaleUI() {
 }
 
 function showInfo(title, altNames, subheader, description) {
-  var panel = document.getElementById('info-panel');
-  document.getElementById('info-title').textContent = title;
-  var altNamesElement = document.getElementById('info-alt-names');
-  if (altNamesElement) {
-    var hasAltNames =
-      typeof altNames === 'string' ? altNames.trim() !== '' : Boolean(altNames);
-    if (hasAltNames) {
-      altNamesElement.textContent = String(altNames);
-      altNamesElement.classList.remove('hidden');
-    } else {
-      altNamesElement.textContent = '';
-      altNamesElement.classList.add('hidden');
-    }
-  }
-  var subheaderElement = document.getElementById('info-subheader');
-  if (subheaderElement) {
-    var hasSubheader =
-      typeof subheader === 'string' ? subheader.trim() !== '' : Boolean(subheader);
-    if (hasSubheader) {
-      subheaderElement.textContent = String(subheader);
-      subheaderElement.classList.remove('hidden');
-    } else {
-      subheaderElement.textContent = '';
-      subheaderElement.classList.add('hidden');
-    }
-  }
+  var resolvedTitle =
+    typeof title === 'string' ? title : title ? String(title) : 'Marker';
+  var altNamesValue =
+    typeof altNames === 'string' ? altNames : altNames ? String(altNames) : '';
+  var subheaderValue =
+    typeof subheader === 'string' ? subheader : subheader ? String(subheader) : '';
   var markdown = '';
   if (typeof description === 'string') {
     markdown = description;
   } else if (description) {
     markdown = String(description);
   }
+
   var rendered = markdown;
   if (typeof marked !== 'undefined' && marked) {
     if (typeof marked.parse === 'function') {
@@ -586,6 +676,7 @@ function showInfo(title, altNames, subheader, description) {
       rendered = marked(markdown);
     }
   }
+
   var sanitizeConfig = {
     ADD_TAGS: ['section', 'sup', 'ol', 'li', 'a', 'img'],
     ADD_ATTR: ['id', 'href', 'src', 'alt', 'title'],
@@ -594,18 +685,86 @@ function showInfo(title, altNames, subheader, description) {
   if (typeof DOMPurify !== 'undefined' && DOMPurify && typeof DOMPurify.sanitize === 'function') {
     html = DOMPurify.sanitize(rendered, sanitizeConfig);
   }
-  document.getElementById('info-description').innerHTML = html;
+
+  if (!isWikiInfoCollapsed()) {
+    var sidebarDisplayed = showMarkerInfoInSidebar(
+      resolvedTitle,
+      altNamesValue,
+      subheaderValue,
+      html
+    );
+    if (sidebarDisplayed) {
+      var infoPanelElement = document.getElementById('info-panel');
+      if (infoPanelElement) {
+        infoPanelElement.classList.add('hidden');
+      }
+      refreshIconScaleUI();
+      return;
+    }
+  }
+
+  resetWikiInfoContent();
+  var panel = document.getElementById('info-panel');
+  if (!panel) {
+    refreshIconScaleUI();
+    return;
+  }
+
+  var titleElement = document.getElementById('info-title');
+  if (titleElement) {
+    titleElement.textContent = resolvedTitle;
+  }
+
+  var altNamesElement = document.getElementById('info-alt-names');
+  if (altNamesElement) {
+    if (altNamesValue && altNamesValue.trim() !== '') {
+      altNamesElement.textContent = altNamesValue;
+      altNamesElement.classList.remove('hidden');
+    } else {
+      altNamesElement.textContent = '';
+      altNamesElement.classList.add('hidden');
+    }
+  }
+
+  var subheaderElement = document.getElementById('info-subheader');
+  if (subheaderElement) {
+    if (subheaderValue && subheaderValue.trim() !== '') {
+      subheaderElement.textContent = subheaderValue;
+      subheaderElement.classList.remove('hidden');
+    } else {
+      subheaderElement.textContent = '';
+      subheaderElement.classList.add('hidden');
+    }
+  }
+
+  var descriptionElement = document.getElementById('info-description');
+  if (descriptionElement) {
+    descriptionElement.innerHTML = html;
+  }
   panel.classList.remove('hidden');
   refreshIconScaleUI();
 }
 
+if (wikiMarkerBackButton) {
+  wikiMarkerBackButton.addEventListener('click', function () {
+    resetWikiInfoContent();
+    var panel = document.getElementById('info-panel');
+    if (panel) {
+      panel.classList.add('hidden');
+    }
+    clearSelectedMarker();
+  });
+}
+
 document.getElementById('close-info').addEventListener('click', function () {
   document.getElementById('info-panel').classList.add('hidden');
+  resetWikiInfoContent();
   clearSelectedMarker();
 });
 
 map.on('click', function () {
   document.getElementById('info-panel').classList.add('hidden');
+  resetWikiInfoContent();
   clearSelectedMarker();
 });
 
@@ -1007,60 +1166,6 @@ if (iconSizeSlider) {
 
 Settlements.addTo(map);
 territoriesOverlay.addTo(map);
-
-var overlayTargetGroups = {
-  Settlements: Settlements,
-  Territories: territoryMarkersLayer,
-};
-
-var overlays = {
-  Settlements: Settlements,
-  Territories: territoriesOverlay,
-};
-
-var additionalOverlayNames = [
-  'Ceremonial Stone Landscapes',
-  'Mountains',
-  'Rivers',
-  'Bodies of Water',
-  'Planting Grounds',
-  'Fishing Weirs',
-  'Mines/Quarries',
-  'Geographical Locations',
-  'Tribes',
-  'Petroglyph',
-  'Trails',
-  'Forts',
-];
-
-additionalOverlayNames.forEach(function (name) {
-  var layer = L.layerGroup().addTo(map);
-  overlayTargetGroups[name] = layer;
-  overlays[name] = layer;
-});
-
-function populateOverlayOptions(select) {
-  if (!select) return;
-  select.innerHTML = '';
-  var defaultOption = document.createElement('option');
-  defaultOption.value = '';
-  defaultOption.textContent = 'None';
-  select.appendChild(defaultOption);
-  Object.keys(overlayTargetGroups).forEach(function (name) {
-    var option = document.createElement('option');
-    option.value = name;
-    option.textContent = name;
-    select.appendChild(option);
-  });
-}
-
-function populateOverlaySelects() {
-  populateOverlayOptions(document.getElementById('marker-overlay'));
-  populateOverlayOptions(document.getElementById('text-overlay'));
-}
-
-populateOverlaySelects();
-L.control.layers(null, overlays).addTo(map);
 
 function clearSelectedMarker() {
   if (selectedMarker && selectedMarker._icon) {
@@ -1662,91 +1767,14 @@ function addPolygonToMap(data) {
   return poly;
 }
 
-function getOverlayLayer(name) {
-  if (!name) return null;
-  return overlayTargetGroups[name] || null;
-}
-
-function moveMarkerToOverlay(marker, overlayName) {
-  if (!marker) return;
-  var normalized = overlayName || '';
-  var newLayer = getOverlayLayer(normalized);
-  var currentLayer = marker._overlayLayer || null;
-  var currentName = marker._overlayName || '';
-  if (currentLayer === newLayer && currentName === normalized) {
-    marker._overlayName = normalized;
-    if (marker._data) {
-      marker._data.overlay = normalized;
-    }
-    return;
-  }
-  if (currentLayer) {
-    currentLayer.removeLayer(marker);
-  } else if (marker._overlayLayer !== undefined) {
-    map.removeLayer(marker);
-  }
-  if (newLayer) {
-    newLayer.addLayer(marker);
-  } else {
-    marker.addTo(map);
-  }
-  marker._overlayLayer = newLayer;
-  marker._overlayName = normalized;
-  if (marker._data) {
-    marker._data.overlay = normalized;
-  }
-}
-
 function detachMarker(marker) {
   if (!marker) return;
-  if (marker._overlayLayer) {
-    marker._overlayLayer.removeLayer(marker);
-  } else {
-    map.removeLayer(marker);
-  }
-  marker._overlayLayer = null;
-  marker._overlayName = '';
-}
-
-function moveTextLabelToOverlay(labelMarker, overlayName) {
-  if (!labelMarker) return;
-  var normalized = overlayName || '';
-  var newLayer = getOverlayLayer(normalized);
-  var currentLayer = labelMarker._overlayLayer || null;
-  var currentName = labelMarker._overlayName || '';
-  if (currentLayer === newLayer && currentName === normalized) {
-    labelMarker._overlayName = normalized;
-    if (labelMarker._data) {
-      labelMarker._data.overlay = normalized;
-    }
-    return;
-  }
-  if (currentLayer) {
-    currentLayer.removeLayer(labelMarker);
-  } else if (labelMarker._overlayLayer !== undefined) {
-    map.removeLayer(labelMarker);
-  }
-  if (newLayer) {
-    newLayer.addLayer(labelMarker);
-  } else {
-    labelMarker.addTo(map);
-  }
-  labelMarker._overlayLayer = newLayer || null;
-  labelMarker._overlayName = normalized;
-  if (labelMarker._data) {
-    labelMarker._data.overlay = normalized;
-  }
+  map.removeLayer(marker);
 }
 
 function detachTextLabel(labelMarker) {
   if (!labelMarker) return;
-  if (labelMarker._overlayLayer) {
-    labelMarker._overlayLayer.removeLayer(labelMarker);
-  } else {
-    map.removeLayer(labelMarker);
-  }
-  labelMarker._overlayLayer = null;
-  labelMarker._overlayName = '';
+  map.removeLayer(labelMarker);
 }
 
 function addMarkerToMap(data) {
@@ -1782,16 +1810,8 @@ function addMarkerToMap(data) {
     data.subheader,
     data.description
   );
-  var overlayName = data.overlay || '';
-  var targetLayer = getOverlayLayer(overlayName);
-  if (targetLayer) {
-    targetLayer.addLayer(customMarker);
-  } else {
-    customMarker.addTo(map);
-  }
-  customMarker._overlayLayer = targetLayer || null;
-  customMarker._overlayName = overlayName;
-  data.overlay = overlayName;
+  customMarker.addTo(map);
+  data.overlay = '';
   customMarker._data = data;
   customMarker._iconScaleMultiplier = scale;
   customMarker.on('contextmenu', function () {
@@ -2008,16 +2028,8 @@ function addTextLabelToMap(data) {
       });
       saveTextLabels();
     });
-  var overlayName = data.overlay || '';
-  var targetLayer = getOverlayLayer(overlayName);
-  if (targetLayer) {
-    targetLayer.addLayer(m);
-  } else {
-    m.addTo(map);
-  }
-  m._overlayLayer = targetLayer || null;
-  m._overlayName = overlayName;
-  data.overlay = overlayName;
+  m.addTo(map);
+  data.overlay = '';
   m._baseFontSize = data.size;
   m._baseLetterSpacing = data.spacing;
   if (data.curve) {
@@ -2208,12 +2220,8 @@ function showMarkerForm(latlng) {
   var saveBtn = document.getElementById('marker-save');
   var cancelBtn = document.getElementById('marker-cancel');
   var convertBtn = document.getElementById('marker-convert');
-  var overlaySelect = document.getElementById('marker-overlay');
   overlay.classList.remove('hidden');
   convertBtn.classList.add('hidden');
-  if (overlaySelect) {
-    overlaySelect.value = '';
-  }
   document.getElementById('marker-alt-names').value = '';
   document.getElementById('marker-subheader').value = '';
 
@@ -2224,7 +2232,6 @@ function showMarkerForm(latlng) {
     var description =
       document.getElementById('marker-description').value || '';
     var iconKey = document.getElementById('marker-icon').value || DEFAULT_ICON_KEY;
-    var overlayValue = overlaySelect ? overlaySelect.value : '';
     var data = {
       lat: latlng.lat,
       lng: latlng.lng,
@@ -2233,7 +2240,6 @@ function showMarkerForm(latlng) {
       subheader: subheader,
       description: description,
       icon: iconKey,
-      overlay: overlayValue || '',
     };
     addMarkerToMap(data);
     customMarkers.push(data);
@@ -2255,9 +2261,6 @@ function showMarkerForm(latlng) {
     document.getElementById('marker-subheader').value = '';
     document.getElementById('marker-description').value = '';
     document.getElementById('marker-icon').value = DEFAULT_ICON_KEY || '';
-    if (overlaySelect) {
-      overlaySelect.value = '';
-    }
   }
 
   saveBtn.addEventListener('click', submitHandler);
@@ -2271,7 +2274,6 @@ function editMarkerForm(marker) {
   var cancelBtn = document.getElementById('marker-cancel');
   var convertBtn = document.getElementById('marker-convert');
   var title = document.querySelector('#marker-form h3');
-  var overlaySelect = document.getElementById('marker-overlay');
   overlay.classList.remove('hidden');
   convertBtn.classList.remove('hidden');
 
@@ -2280,9 +2282,6 @@ function editMarkerForm(marker) {
   document.getElementById('marker-subheader').value = marker._data.subheader || '';
   document.getElementById('marker-description').value = marker._data.description || '';
   document.getElementById('marker-icon').value = marker._data.icon || DEFAULT_ICON_KEY || '';
-  if (overlaySelect) {
-    overlaySelect.value = marker._data.overlay || '';
-  }
   if (title) title.textContent = 'Edit Marker';
 
   function submitHandler() {
@@ -2291,16 +2290,14 @@ function editMarkerForm(marker) {
     var subheader = document.getElementById('marker-subheader').value || '';
     var description = document.getElementById('marker-description').value || '';
     var iconKey = document.getElementById('marker-icon').value || DEFAULT_ICON_KEY;
-    var overlayValue = overlaySelect ? overlaySelect.value : '';
-
     marker._data.name = name;
     marker._data.altNames = altNames;
     marker._data.subheader = subheader;
     marker._data.description = description;
     marker._data.icon = iconKey;
+    marker._data.overlay = '';
 
     applyScaleToMarker(marker, getMarkerScale(marker));
-    moveMarkerToOverlay(marker, overlayValue);
     saveMarkers();
     cleanup();
   }
@@ -2324,9 +2321,6 @@ function editMarkerForm(marker) {
     document.getElementById('marker-subheader').value = '';
     document.getElementById('marker-description').value = '';
     document.getElementById('marker-icon').value = DEFAULT_ICON_KEY || '';
-    if (overlaySelect) {
-      overlaySelect.value = '';
-    }
     convertBtn.classList.add('hidden');
     if (title) title.textContent = 'Add Marker';
   }
@@ -2359,17 +2353,123 @@ var AddMarkerControl = L.Control.extend({
 
 map.addControl(new AddMarkerControl());
 
+(function setupMarkdownImageInsertion() {
+  if (typeof document === 'undefined') {
+    return;
+  }
+
+  function insertAtCursor(textarea, text) {
+    if (!textarea) {
+      return;
+    }
+
+    var start = textarea.selectionStart;
+    var end = textarea.selectionEnd;
+    var value = textarea.value || '';
+    if (typeof start !== 'number' || typeof end !== 'number') {
+      textarea.value = value + text;
+      textarea.focus();
+      return;
+    }
+
+    var before = value.slice(0, start);
+    var after = value.slice(end);
+    textarea.value = before + text + after;
+    var cursor = start + text.length;
+    textarea.focus();
+    textarea.setSelectionRange(cursor, cursor);
+
+    var event;
+    if (typeof Event === 'function') {
+      event = new Event('input', { bubbles: true });
+    } else {
+      event = document.createEvent('Event');
+      event.initEvent('input', true, true);
+    }
+    textarea.dispatchEvent(event);
+  }
+
+  function handleButtonClick(evt) {
+    var button = evt.currentTarget;
+    var targetId = button && button.getAttribute('data-target');
+    if (!targetId) {
+      return;
+    }
+    var selector = '.markdown-image-input[data-target="' + targetId + '"]';
+    var input = document.querySelector(selector);
+    if (!input) {
+      return;
+    }
+    input.value = '';
+    input.click();
+  }
+
+  function handleFileSelection(evt) {
+    var input = evt.currentTarget;
+    if (!input || !input.files || !input.files.length) {
+      return;
+    }
+
+    var targetId = input.getAttribute('data-target');
+    if (!targetId) {
+      return;
+    }
+
+    var textarea = document.getElementById(targetId);
+    if (!textarea) {
+      return;
+    }
+
+    var file = input.files[0];
+    var fileName = file && file.name ? file.name : '';
+    if (!fileName) {
+      return;
+    }
+
+    var defaultAlt = fileName.replace(/\.[^/.]+$/, '').replace(/[-_]+/g, ' ').trim();
+    if (!defaultAlt) {
+      defaultAlt = 'image';
+    }
+
+    var altText = defaultAlt;
+    if (typeof window !== 'undefined' && window.prompt) {
+      var response = window.prompt('Alt text for the image:', defaultAlt);
+      if (response !== null) {
+        altText = response.trim() || defaultAlt;
+      }
+    }
+
+    altText = altText.replace(/\]/g, '\\]');
+    var markdownPath = 'images/' + fileName;
+    var markdown = '![' + altText + '](' + markdownPath + ')';
+
+    var needsPrefixSpace =
+      textarea.value && /\S$/.test(textarea.value) && textarea.selectionStart === textarea.selectionEnd;
+    var insertion = (needsPrefixSpace ? ' ' : '') + markdown + '\n';
+    insertAtCursor(textarea, insertion);
+  }
+
+  var buttons = document.querySelectorAll('.markdown-image-button');
+  var inputs = document.querySelectorAll('.markdown-image-input');
+  if (!buttons.length || !inputs.length) {
+    return;
+  }
+
+  Array.prototype.forEach.call(buttons, function (button) {
+    button.addEventListener('click', handleButtonClick);
+  });
+  Array.prototype.forEach.call(inputs, function (input) {
+    input.addEventListener('change', handleFileSelection);
+  });
+})();
+
 function showTextForm(latlng) {
   var overlay = document.getElementById('text-form-overlay');
   var saveBtn = document.getElementById('text-save');
   var cancelBtn = document.getElementById('text-cancel');
   var convertBtn = document.getElementById('text-convert');
-  var overlaySelect = document.getElementById('text-overlay');
   overlay.classList.remove('hidden');
   convertBtn.classList.add('hidden');
-  if (overlaySelect) {
-    overlaySelect.value = '';
-  }
   document.getElementById('text-label-alt-names').value = '';
 
   function submitHandler() {
@@ -2385,7 +2485,6 @@ function showTextForm(latlng) {
     var angle = parseFloat(document.getElementById('text-label-angle').value) || 0;
     var spacing = parseFloat(document.getElementById('text-letter-spacing').value) || 0;
     var curve = parseFloat(document.getElementById('text-curve-radius').value) || 0;
-    var overlayValue = overlaySelect ? overlaySelect.value : '';
     var data = {
       lat: latlng.lat,
       lng: latlng.lng,
@@ -2397,7 +2496,6 @@ function showTextForm(latlng) {
       angle: angle,
       spacing: spacing,
       curve: curve,
-      overlay: overlayValue || '',
     };
     addTextLabelToMap(data);
     customTextLabels.push(data);
@@ -2422,9 +2520,6 @@ function showTextForm(latlng) {
     document.getElementById('text-label-angle').value = '0';
     document.getElementById('text-letter-spacing').value = '0';
     document.getElementById('text-curve-radius').value = '0';
-    if (overlaySelect) {
-      overlaySelect.value = '';
-    }
   }
 
   saveBtn.addEventListener('click', submitHandler);
@@ -2437,7 +2532,6 @@ function editTextForm(labelMarker) {
   var saveBtn = document.getElementById('text-save');
   var cancelBtn = document.getElementById('text-cancel');
   var convertBtn = document.getElementById('text-convert');
-  var overlaySelect = document.getElementById('text-overlay');
   var data = labelMarker._data;
 
   document.getElementById('text-label-text').value = data.text || '';
@@ -2448,9 +2542,6 @@ function editTextForm(labelMarker) {
   document.getElementById('text-label-angle').value = data.angle || 0;
   document.getElementById('text-letter-spacing').value = data.spacing || 0;
   document.getElementById('text-curve-radius').value = data.curve || 0;
-  if (overlaySelect) {
-    overlaySelect.value = data.overlay || '';
-  }
   overlay.classList.remove('hidden');
   convertBtn.classList.remove('hidden');
 
@@ -2467,7 +2558,6 @@ function editTextForm(labelMarker) {
     var angle = parseFloat(document.getElementById('text-label-angle').value) || 0;
     var spacing = parseFloat(document.getElementById('text-letter-spacing').value) || 0;
     var curve = parseFloat(document.getElementById('text-curve-radius').value) || 0;
-    var overlayValue = overlaySelect ? overlaySelect.value : '';
 
     var textIcon;
     var pathWidth = 0;
@@ -2524,7 +2614,7 @@ function editTextForm(labelMarker) {
     data.angle = angle;
     data.spacing = spacing;
     data.curve = curve;
-    moveTextLabelToOverlay(labelMarker, overlayValue);
+    data.overlay = '';
     saveTextLabels();
     rescaleTextLabels();
     cleanup();
@@ -2553,9 +2643,6 @@ function editTextForm(labelMarker) {
     document.getElementById('text-label-angle').value = '0';
     document.getElementById('text-letter-spacing').value = '0';
     document.getElementById('text-curve-radius').value = '0';
-    if (overlaySelect) {
-      overlaySelect.value = '';
-    }
   }
 
   saveBtn.addEventListener('click', submitHandler);
@@ -2589,7 +2676,7 @@ function convertMarkerToText(marker) {
     angle: 0,
     spacing: 0,
     curve: 0,
-    overlay: data.overlay || '',
+    overlay: '',
   };
   customTextLabels.push(textData);
   var labelMarker = addTextLabelToMap(textData);
@@ -2620,7 +2707,7 @@ function convertTextToMarker(labelMarker) {
     subheader: data.subheader || '',
     description: data.description || '',
     icon: DEFAULT_ICON_KEY || '',
-    overlay: data.overlay || '',
+    overlay: '',
   };
   customMarkers.push(markerData);
   var marker = addMarkerToMap(markerData);
@@ -2768,6 +2855,28 @@ document.getElementById('save-changes').addEventListener('click', function () {
       event.preventDefault();
       closeCredits();
     }
+  });
+})();
+
+(function initializeWikiInfoPanel() {
+  var panel = document.getElementById('wiki-info');
+  var toggle = document.getElementById('wiki-info-toggle');
+
+  if (!panel || !toggle) {
+    return;
+  }
+
+  toggle.addEventListener('click', function () {
+    var isCollapsed = panel.classList.toggle('wiki-info--collapsed');
+    var isExpanded = !isCollapsed;
+
+    panel.setAttribute('aria-expanded', String(isExpanded));
+    toggle.setAttribute('aria-expanded', String(isExpanded));
+    toggle.setAttribute(
+      'aria-label',
+      isExpanded ? 'Collapse information panel' : 'Expand information panel'
+    );
+    refreshIconScaleUI();
   });
 })();
 
