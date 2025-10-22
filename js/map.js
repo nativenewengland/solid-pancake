@@ -5,6 +5,7 @@ var map = L.map('map', {
   attributionControl: false,
   minZoom: 3,
   maxZoom: 6,
+  maxBoundsViscosity: 1.0,
 }).setView([0, 0], 4);
 
 var tiles = L.tileLayer('map/{z}/{x}/{y}.jpg', {
@@ -14,6 +15,34 @@ var tiles = L.tileLayer('map/{z}/{x}/{y}.jpg', {
   maxZoom: 6,
   maxNativeZoom: 6,
 }).addTo(map);
+
+// Prevent the map from panning past the edge of the rendered image tiles.
+(function constrainMapPanningToTiles() {
+  var TILE_COORD_BOUNDS = {
+    minX: 14,
+    maxX: 49,
+    minY: 10,
+    maxY: 53,
+    zoom: 6,
+  };
+
+  var tileSize = tiles.getTileSize();
+  var sizeX = tileSize && typeof tileSize.x === 'number' ? tileSize.x : 256;
+  var sizeY = tileSize && typeof tileSize.y === 'number' ? tileSize.y : sizeX;
+
+  var southWest = map.unproject(
+    [TILE_COORD_BOUNDS.minX * sizeX, (TILE_COORD_BOUNDS.maxY + 1) * sizeY],
+    TILE_COORD_BOUNDS.zoom
+  );
+  var northEast = map.unproject(
+    [(TILE_COORD_BOUNDS.maxX + 1) * sizeX, TILE_COORD_BOUNDS.minY * sizeY],
+    TILE_COORD_BOUNDS.zoom
+  );
+  var bounds = L.latLngBounds(southWest, northEast);
+
+  map.setMaxBounds(bounds);
+  map.panInsideBounds(bounds, { animate: false });
+})();
 
 (function configureMarkedFootnotes() {
   var placeholderPrefix = '§§FOOTNOTE_REF_';
