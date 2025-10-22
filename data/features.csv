@@ -1,21 +1,9 @@
-<<<<<<< HEAD
 type,lat,lng,icon,name/text,alt_names,subheader/text,description,size,angle,spacing,curve,coords,style,overlay,infobox
 marker,35.85343961959182,-1.4941406250000002,broken-dwarven-hold,Marker,,,,,,,,,"{""iconScale"":0.01}",,
-=======
-type,lat,lng,icon,name/text,alt_names,subheader/text,description,size,angle,spacing,curve,coords,style,overlay,infobox
-marker,35.85343961959182,-1.4941406250000002,broken-dwarven-hold,Marker,,,,,,,,,"{""iconScale"":0.01}",,
->>>>>>> fda0ad08c8d8ab29daec1f498cf82d6d5392b596
 marker,17.602139123350852,-24.9609375,bp-010,Marker,,,"![69df3a4e695e5be07b1695521eb7d2ca](images/69df3a4e695e5be07b1695521eb7d2ca.jpg)
 Gorlak Orc
 
 goblin
-
-<<<<<<< HEAD
 ",,,,,,"{""iconScale"":0.1}",,"{""title"":""Gorlak Watch"",""subtitle"":""Estuary Guardian Profile"",""image"":{""src"":""images/the-bored-gorlak-v0-hn8cg9kvykde1.webp"",""alt"":""Illustration of the marsh sentinel Gorlak""},""rows"":[{""label"":""Habitat"",""value"":""Peat bogs at the river estuary""},{""label"":""Role"",""value"":""Balances salt and freshwater tides""},{""label"":""Offerings"",""value"":""Cedar smoke braids before eel harvests""}]}"
-marker,68.5362764153349,30.540178243609155,broken-dwarven-hold,Marker,,,"![Avlar Thrûn](images/Avlar-Thrûn.jpg)
-",,,,,,"{""iconScale"":0.01}",,"{""title"":""Gorlak Watch"",""subtitle"":""Estuary Guardian Profile"",""image"":{""src"":""images/the-bored-gorlak-v0-hn8cg9kvykde1.webp"",""alt"":""Illustration of the marsh sentinel Gorlak""},""rows"":[{""label"":""Type"",""value"":""Lost Hold""},{""label"":""Role"",""value"":""Balances salt and freshwater tides""},{""label"":""Offerings"",""value"":""Cedar smoke braids before eel harvests""}]}"
-=======
-",,,,,,"{""iconScale"":0.1}",,"{""title"":""Gorlak Watch"",""subtitle"":""Estuary Guardian Profile"",""image"":{""src"":""images/the-bored-gorlak-v0-hn8cg9kvykde1.webp"",""alt"":""Illustration of the marsh sentinel Gorlak""},""rows"":[{""label"":""Habitat"",""value"":""Peat bogs at the river estuary""},{""label"":""Role"",""value"":""Balances salt and freshwater tides""},{""label"":""Offerings"",""value"":""Cedar smoke braids before eel harvests""}]}"
-marker,68.5362764153349,30.540178243609155,broken-dwarven-hold,Marker,,,"![Avlar Thrûn](images/Avlar-Thrûn.jpg)
-",,,,,,"{""iconScale"":0.01}",,
->>>>>>> fda0ad08c8d8ab29daec1f498cf82d6d5392b596
+marker,68.5362764153349,30.540178243609155,broken-dwarven-hold,Zubar,,,"![Avlar Thrûn](images/Avlar-Thrûn.jpg)
+",,,,,,"{""iconScale"":0.01}",,"{""title"":""Zubar Hold"",""subtitle"":""Lost Hold Profile"",""image"":{""src"":""images/Avlar-Thrûn.jpg"",""alt"":""Illustration of the hold in its current state""},""rows"":[{""label"":""Type"",""value"":""Lost Hold""},{""label"":""Location"",""value"":""Central-western Worlds Edge Mountains""},{""label"":""Population"",""value"":""N/A""},{""label"":""Allegiance"",""value"":""None""},{""label"":""Industry"",""value"":""Gemstones (Former); Dragontaming (Former)""}]}"
