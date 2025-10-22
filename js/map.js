@@ -325,13 +325,65 @@ L.Icon.Default.mergeOptions({
 });
 
 var ICON_SCALE_FACTOR = 2;
-var ICON_SCALE_MIN = 0.5;
+var ICON_SCALE_MIN = 0.01;
 var ICON_SCALE_MAX = 2;
-var iconScaleMultiplier = 1;
 var iconSizeSlider = null;
 var iconSizeValueDisplay = null;
 
-function createScaledIcon(options) {
+function normalizeScaleMultiplier(value) {
+  var number = Number(value);
+  if (!Number.isFinite(number)) {
+    return 1;
+  }
+  if (number <= 0) {
+    number = ICON_SCALE_MIN;
+  }
+  return Math.min(ICON_SCALE_MAX, Math.max(ICON_SCALE_MIN, number));
+}
+
+function getMarkerScale(marker) {
+  if (!marker) return 1;
+  if (typeof marker._iconScaleMultiplier === 'number' && Number.isFinite(marker._iconScaleMultiplier)) {
+    return normalizeScaleMultiplier(marker._iconScaleMultiplier);
+  }
+  if (
+    marker._data &&
+    typeof marker._data.iconScale === 'number' &&
+    Number.isFinite(marker._data.iconScale)
+  ) {
+    return normalizeScaleMultiplier(marker._data.iconScale);
+  }
+  if (
+    marker._data &&
+    marker._data.style &&
+    typeof marker._data.style.iconScale === 'number' &&
+    Number.isFinite(marker._data.style.iconScale)
+  ) {
+    return normalizeScaleMultiplier(marker._data.style.iconScale);
+  }
+  return 1;
+}
+
+function getScaleFromMarkerData(data) {
+  if (!data) return 1;
+  if (typeof data.iconScale === 'number' && Number.isFinite(data.iconScale)) {
+    return normalizeScaleMultiplier(data.iconScale);
+  }
+  if (
+    data.style &&
+    typeof data.style === 'object' &&
+    typeof data.style.iconScale === 'number' &&
+    Number.isFinite(data.style.iconScale)
+  ) {
+    return normalizeScaleMultiplier(data.style.iconScale);
+  }
+  return 1;
+}
+
+function createScaledIcon(options, multiplier) {
+  var scaleMultiplier = normalizeScaleMultiplier(
+    typeof multiplier === 'number' ? multiplier : 1
+  );
   var scaled = Object.assign({}, options);
 
   function isFiniteNumber(value) {
@@ -363,7 +415,7 @@ function createScaledIcon(options) {
     if (rawValue <= 0) {
       return 0;
     }
-    var scaledValue = rawValue * ICON_SCALE_FACTOR * iconScaleMultiplier;
+    var scaledValue = rawValue * ICON_SCALE_FACTOR * scaleMultiplier;
     var rounded = Math.round(scaledValue);
     return Math.max(1, rounded);
   }
@@ -382,7 +434,7 @@ function createScaledIcon(options) {
       var ratio = rawValue / rawDimension;
       scaled = ratio * scaledDimension;
     } else {
-      scaled = rawValue * ICON_SCALE_FACTOR * iconScaleMultiplier;
+      scaled = rawValue * ICON_SCALE_FACTOR * scaleMultiplier;
     }
 
     var rounded = Math.round(scaled);
@@ -439,13 +491,27 @@ function createScaledIcon(options) {
 }
 
 function refreshIconScaleUI() {
-  if (iconSizeValueDisplay) {
-    var percent = Math.round(iconScaleMultiplier * 100);
-    iconSizeValueDisplay.textContent = percent + '%';
+  var displayText = '—';
+  var sliderValue = 100;
+  var disableSlider = true;
+  var infoPanel =
+    typeof document !== 'undefined' ? document.getElementById('info-panel') : null;
+  var infoVisible = infoPanel && !infoPanel.classList.contains('hidden');
+  if (selectedMarker && selectedMarker._markerType === 'marker' && infoVisible) {
+    var scale = getMarkerScale(selectedMarker);
+    var percent = Math.round(scale * 100);
+    displayText = percent + '%';
+    sliderValue = percent;
+    disableSlider = false;
   }
-  if (iconSizeSlider && document.activeElement !== iconSizeSlider) {
-    var sliderValue = Math.round(iconScaleMultiplier * 100);
-    iconSizeSlider.value = String(sliderValue);
+  if (iconSizeValueDisplay) {
+    iconSizeValueDisplay.textContent = displayText;
+  }
+  if (iconSizeSlider) {
+    iconSizeSlider.disabled = disableSlider;
+    if (document.activeElement !== iconSizeSlider) {
+      iconSizeSlider.value = String(sliderValue);
+    }
   }
 }
 
@@ -500,6 +566,7 @@ function showInfo(title, altNames, subheader, description) {
   }
   document.getElementById('info-description').innerHTML = html;
   panel.classList.remove('hidden');
+  refreshIconScaleUI();
 }
 
 document.getElementById('close-info').addEventListener('click', function () {
@@ -512,7 +579,7 @@ map.on('click', function () {
   clearSelectedMarker();
 });
 
-function createIconFromPixels(config) {
+function createIconBaseOptions(config) {
   if (!config || !Array.isArray(config.pixelSize) || config.pixelSize.length !== 2) {
     throw new Error('pixelSize [width, height] is required to create an icon.');
   }
@@ -541,14 +608,14 @@ function createIconFromPixels(config) {
   var baseWidth = width / ICON_SCALE_FACTOR;
   var baseHeight = height / ICON_SCALE_FACTOR;
 
-  return createScaledIcon({
+  return {
     iconUrl: config.iconUrl,
     iconRetinaUrl: config.iconRetinaUrl || config.iconUrl,
     iconSize: [baseWidth, baseHeight],
     iconAnchor: [baseWidth * anchorRatioX, baseHeight * anchorRatioY],
     popupAnchor: [baseWidth * popupRatioX, baseHeight * popupRatioY],
     tooltipAnchor: [baseWidth * tooltipRatioX, baseHeight * tooltipRatioY],
-  });
+  };
 }
 
 var ICON_DEFINITIONS = [
@@ -698,7 +765,7 @@ function rebuildIconMap() {
     delete iconMap[key];
   });
   ICON_DEFINITIONS.forEach(function (def) {
-    iconMap[def.key] = createIconFromPixels({
+    iconMap[def.key] = createIconBaseOptions({
       iconUrl: 'icons/' + def.file,
       pixelSize: def.pixelSize,
     });
@@ -707,19 +774,29 @@ function rebuildIconMap() {
 
 rebuildIconMap();
 
-function getDefaultIcon() {
+function getDefaultBaseIconOptions() {
   if (DEFAULT_ICON_KEY && iconMap[DEFAULT_ICON_KEY]) {
     return iconMap[DEFAULT_ICON_KEY];
   }
   var keys = Object.keys(iconMap);
-  return keys.length ? iconMap[keys[0]] : null;
+  if (!keys.length) return null;
+  var firstKey = keys[0];
+  return iconMap[firstKey];
 }
 
-function getIconOrDefault(key) {
+function getBaseIconOptionsOrDefault(key) {
   if (key && iconMap[key]) {
     return iconMap[key];
   }
-  return getDefaultIcon();
+  return getDefaultBaseIconOptions();
+}
+
+function getIconOrDefault(key, multiplier) {
+  var baseOptions = getBaseIconOptionsOrDefault(key);
+  if (!baseOptions) {
+    return null;
+  }
+  return createScaledIcon(baseOptions, multiplier);
 }
 
 function populateIconOptions(select) {
@@ -773,13 +850,29 @@ function refreshMarkerIcons() {
       return;
     }
     var iconKey = marker._data && marker._data.icon;
-    var newIcon = getIconOrDefault(iconKey);
+    var scale = getMarkerScale(marker);
+    var newIcon = getIconOrDefault(iconKey, scale);
     if (!newIcon) {
       return;
     }
     var wasSelected = marker === selectedMarker;
     marker.setIcon(newIcon);
     marker._baseIconOptions = JSON.parse(JSON.stringify(newIcon.options));
+    marker._iconScaleMultiplier = scale;
+    if (marker._data) {
+      marker._data.iconScale = scale;
+      if (!marker._data.style || typeof marker._data.style !== 'object') {
+        marker._data.style = {};
+      }
+      if (scale === 1) {
+        delete marker._data.style.iconScale;
+        if (Object.keys(marker._data.style).length === 0) {
+          delete marker._data.style;
+        }
+      } else {
+        marker._data.style.iconScale = scale;
+      }
+    }
     if (wasSelected) {
       if (marker._icon) {
         marker._icon.classList.add('marker-selected');
@@ -798,23 +891,67 @@ function refreshMarkerIcons() {
   if (typeof rescaleIcons === 'function' && map && map.getZoom) {
     rescaleIcons();
   }
+  refreshIconScaleUI();
 }
 
-function setIconScaleMultiplier(multiplier) {
-  if (typeof multiplier !== 'number' || !Number.isFinite(multiplier)) {
+function applyScaleToMarker(marker, scale) {
+  if (!marker) return;
+  var normalized = normalizeScaleMultiplier(scale);
+  var iconKey = marker._data && marker._data.icon;
+  var newIcon = getIconOrDefault(iconKey, normalized);
+  if (!newIcon) {
     return;
   }
-  var clamped = Math.min(
-    ICON_SCALE_MAX,
-    Math.max(ICON_SCALE_MIN, multiplier)
-  );
-  if (Math.abs(clamped - iconScaleMultiplier) < 0.001) {
+  var wasSelected = marker === selectedMarker;
+  marker.setIcon(newIcon);
+  marker._baseIconOptions = JSON.parse(JSON.stringify(newIcon.options));
+  marker._iconScaleMultiplier = normalized;
+  if (marker._data) {
+    marker._data.iconScale = normalized;
+    if (!marker._data.style || typeof marker._data.style !== 'object') {
+      marker._data.style = {};
+    }
+    if (normalized === 1) {
+      delete marker._data.style.iconScale;
+      if (Object.keys(marker._data.style).length === 0) {
+        delete marker._data.style;
+      }
+    } else {
+      marker._data.style.iconScale = normalized;
+    }
+  }
+  if (wasSelected) {
+    if (marker._icon) {
+      marker._icon.classList.add('marker-selected');
+    } else if (
+      typeof window !== 'undefined' &&
+      window.requestAnimationFrame
+    ) {
+      window.requestAnimationFrame(function () {
+        if (marker._icon) {
+          marker._icon.classList.add('marker-selected');
+        }
+      });
+    }
+  }
+  rescaleIcons();
+}
+
+function updateSelectedMarkerScale(multiplier) {
+  if (!selectedMarker || selectedMarker._markerType !== 'marker') {
     refreshIconScaleUI();
     return;
   }
-  iconScaleMultiplier = clamped;
-  rebuildIconMap();
-  refreshMarkerIcons();
+  if (typeof multiplier !== 'number' || !Number.isFinite(multiplier)) {
+    return;
+  }
+  var normalized = normalizeScaleMultiplier(multiplier);
+  if (Math.abs(normalized - getMarkerScale(selectedMarker)) < 0.001) {
+    refreshIconScaleUI();
+    return;
+  }
+  applyScaleToMarker(selectedMarker, normalized);
+  saveMarkers();
   refreshIconScaleUI();
 }
 
@@ -824,11 +961,15 @@ refreshIconScaleUI();
 
 if (iconSizeSlider) {
   var handleIconSizeInput = function (event) {
+    if (!selectedMarker || selectedMarker._markerType !== 'marker') {
+      refreshIconScaleUI();
+      return;
+    }
     var sliderValue = Number(event.target.value);
     if (!Number.isFinite(sliderValue)) {
       return;
     }
-    setIconScaleMultiplier(sliderValue / 100);
+    updateSelectedMarkerScale(sliderValue / 100);
   };
   iconSizeSlider.addEventListener('input', handleIconSizeInput);
   iconSizeSlider.addEventListener('change', handleIconSizeInput);
@@ -896,6 +1037,7 @@ function clearSelectedMarker() {
     selectedMarker._icon.classList.remove('marker-selected');
   }
   selectedMarker = null;
+  refreshIconScaleUI();
 }
 
 function isTextualInput(element) {
@@ -965,6 +1107,7 @@ function highlightMarker(marker) {
     marker.once('add', applyHighlight);
   }
   selectedMarker = marker;
+  refreshIconScaleUI();
 }
 
 function rescaleIcons() {
@@ -1232,6 +1375,11 @@ function loadFeaturesFromCSV(text) {
     var cols = parseCsvRow(line);
     var type = cols[0];
     if (type === 'marker') {
+      var style = cols[13] ? JSON.parse(cols[13]) : undefined;
+      var iconScaleValue =
+        style && typeof style.iconScale === 'number' && Number.isFinite(style.iconScale)
+          ? style.iconScale
+          : undefined;
       markers.push({
         lat: parseFloat(cols[1]),
         lng: parseFloat(cols[2]),
@@ -1240,8 +1388,9 @@ function loadFeaturesFromCSV(text) {
         altNames: cols[5] || '',
         subheader: cols[6] || '',
         description: cols[7],
-        style: cols[13] ? JSON.parse(cols[13]) : undefined,
+        style: style,
         overlay: cols[14] || '',
+        iconScale: iconScaleValue,
       });
     } else if (type === 'text') {
       textLabels.push({
@@ -1571,7 +1720,22 @@ function detachTextLabel(labelMarker) {
 }
 
 function addMarkerToMap(data) {
-  var icon = getIconOrDefault(data.icon);
+  var scale = getScaleFromMarkerData(data);
+  data.iconScale = scale;
+  if (scale === 1) {
+    if (data.style && typeof data.style === 'object') {
+      delete data.style.iconScale;
+      if (Object.keys(data.style).length === 0) {
+        delete data.style;
+      }
+    }
+  } else {
+    if (!data.style || typeof data.style !== 'object') {
+      data.style = {};
+    }
+    data.style.iconScale = scale;
+  }
+  var icon = getIconOrDefault(data.icon, scale);
   if (data.subheader === undefined || data.subheader === null) {
     data.subheader = '';
   }
@@ -1582,6 +1746,7 @@ function addMarkerToMap(data) {
     data.lat,
     data.lng,
     icon,
+    scale,
     data.name,
     data.altNames,
     data.subheader,
@@ -1598,6 +1763,7 @@ function addMarkerToMap(data) {
   customMarker._overlayName = overlayName;
   data.overlay = overlayName;
   customMarker._data = data;
+  customMarker._iconScaleMultiplier = scale;
   customMarker.on('contextmenu', function () {
     detachMarker(customMarker);
     customMarkers = customMarkers.filter(function (m) {
@@ -1776,6 +1942,7 @@ function addTextLabelToMap(data) {
       if (this._icon) {
         this._icon.classList.add('marker-selected');
         selectedMarker = this;
+        refreshIconScaleUI();
       }
       showInfo(data.text, data.altNames, data.subheader, data.description);
     })
@@ -1872,7 +2039,8 @@ fetch('data/features.csv')
 
 // //// START OF MARKERS
 // 1. Marker declarations
-function createMarker(lat, lng, icon, name, altNames, subheader, description) {
+function createMarker(lat, lng, icon, iconScale, name, altNames, subheader, description) {
+  var scale = normalizeScaleMultiplier(iconScale);
   var m = L.marker([lat, lng], { icon: icon, draggable: true })
     .on('click', function (e) {
       L.DomEvent.stopPropagation(e);
@@ -1880,6 +2048,7 @@ function createMarker(lat, lng, icon, name, altNames, subheader, description) {
       if (this._icon) {
         this._icon.classList.add('marker-selected');
         selectedMarker = this;
+        refreshIconScaleUI();
       }
       var d =
         this._data || {
@@ -1906,6 +2075,7 @@ function createMarker(lat, lng, icon, name, altNames, subheader, description) {
     });
   m._markerType = 'marker';
   m._baseIconOptions = JSON.parse(JSON.stringify(icon.options));
+  m._iconScaleMultiplier = scale;
   allMarkers.push(m);
   return m;
 }
@@ -2099,11 +2269,8 @@ function editMarkerForm(marker) {
     marker._data.description = description;
     marker._data.icon = iconKey;
 
-    var newIcon = getIconOrDefault(iconKey);
-    marker.setIcon(newIcon);
-    marker._baseIconOptions = JSON.parse(JSON.stringify(newIcon.options));
+    applyScaleToMarker(marker, getMarkerScale(marker));
     moveMarkerToOverlay(marker, overlayValue);
-    rescaleIcons();
     saveMarkers();
     cleanup();
   }
