@@ -16,6 +16,38 @@
     <!-- <h1>map</h1> -->
 
     <div id="map"></div>
+    <aside id="wiki-info" class="wiki-info" aria-expanded="true">
+        <div class="wiki-info__content">
+            <h2 class="wiki-info__title">Project Overview</h2>
+            <p class="wiki-info__intro">
+                This collaboratively maintained map documents Indigenous history throughout the region using
+                primary source material, community knowledge, and archival research. Use the layers and markers to
+                explore how the landscape has evolved and who has called it home.
+            </p>
+            <dl class="wiki-info__details">
+                <div>
+                    <dt>Focus</dt>
+                    <dd>Pre-colonial geographies, settlements, and cultural sites.</dd>
+                </div>
+                <div>
+                    <dt>Sources</dt>
+                    <dd>Seventeenth-century cartography, oral histories, and academic publications.</dd>
+                </div>
+                <div>
+                    <dt>Navigation Tips</dt>
+                    <dd>Zoom to reveal additional markers, click icons for detailed context, and consult the credits for full acknowledgements.</dd>
+                </div>
+            </dl>
+            <p class="wiki-info__footer">Contribute updates by contacting the maintainers or submitting pull requests.</p>
+        </div>
+        <button
+            id="wiki-info-toggle"
+            class="wiki-info__toggle"
+            type="button"
+            aria-label="Collapse information panel"
+            aria-expanded="true"
+        ></button>
+    </aside>
     <button id="save-changes">Save Changes</button>
     <div id="icon-size-control" role="group" aria-labelledby="icon-size-label">
         <div class="icon-size-control__header">

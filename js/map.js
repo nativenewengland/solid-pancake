@@ -2586,5 +2586,26 @@ document.getElementById('save-changes').addEventListener('click', function () {
   });
 })();
 
+(function initializeWikiInfoPanel() {
+  var panel = document.getElementById('wiki-info');
+  var toggle = document.getElementById('wiki-info-toggle');
+
+  if (!panel || !toggle) {
+    return;
+  }
+
+  toggle.addEventListener('click', function () {
+    var isCollapsed = panel.classList.toggle('wiki-info--collapsed');
+    var isExpanded = !isCollapsed;
+
+    panel.setAttribute('aria-expanded', String(isExpanded));
+    toggle.setAttribute('aria-expanded', String(isExpanded));
+    toggle.setAttribute(
+      'aria-label',
+      isExpanded ? 'Collapse information panel' : 'Expand information panel'
+    );
+  });
+})();
+
 
 
