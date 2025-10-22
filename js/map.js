@@ -3,13 +3,14 @@ var map = L.map('map', {
   zoomAnimation: true,
   markerZoomAnimation: true,
   attributionControl: false,
+  minZoom: 3,
   maxZoom: 6,
 }).setView([0, 0], 4);
 
 var tiles = L.tileLayer('map/{z}/{x}/{y}.jpg', {
   continuousWorld: false,
   noWrap: true,
-  minZoom: 2,
+  minZoom: 3,
   maxZoom: 6,
   maxNativeZoom: 6,
 }).addTo(map);
