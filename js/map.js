@@ -2568,6 +2568,38 @@ function detachTextLabel(labelMarker) {
   map.removeLayer(labelMarker);
 }
 
+function updateMarkerNameLabel(marker, name) {
+  if (!marker || marker._markerType !== 'marker') {
+    return;
+  }
+  var label = '';
+  if (typeof name === 'string') {
+    label = name.trim();
+  } else if (name) {
+    label = String(name).trim();
+  }
+  if (!label) {
+    if (marker._nameTooltip) {
+      marker.unbindTooltip();
+      marker._nameTooltip = null;
+    }
+    return;
+  }
+  if (marker._nameTooltip) {
+    marker._nameTooltip.setContent(label);
+    return;
+  }
+  marker.bindTooltip(label, {
+    permanent: true,
+    direction: 'bottom',
+    className: 'marker-name-tooltip',
+    opacity: 1,
+    offset: [0, 12],
+    interactive: false,
+  });
+  marker._nameTooltip = marker.getTooltip();
+}
+
 function addMarkerToMap(data) {
   var scale = getScaleFromMarkerData(data);
   data.iconScale = scale;
@@ -2613,6 +2645,7 @@ function addMarkerToMap(data) {
   data.overlay = '';
   customMarker._data = data;
   customMarker._iconScaleMultiplier = scale;
+  updateMarkerNameLabel(customMarker, data.name);
   customMarker.on('contextmenu', function () {
     detachMarker(customMarker);
     customMarkers = customMarkers.filter(function (m) {
@@ -2926,6 +2959,7 @@ function createMarker(
       }
     });
   m._markerType = 'marker';
+  updateMarkerNameLabel(m, name);
   m._baseIconOptions = JSON.parse(JSON.stringify(icon.options));
   m._iconScaleMultiplier = scale;
   allMarkers.push(m);
@@ -3152,6 +3186,7 @@ function editMarkerForm(marker) {
     marker._data.overlay = '';
     marker._data.infobox = infoboxData;
 
+    updateMarkerNameLabel(marker, name);
     applyScaleToMarker(marker, getMarkerScale(marker));
     saveMarkers();
     cleanup();
@@ -4160,5 +4195,3 @@ document.getElementById('save-changes').addEventListener('click', function () {
     }
   });
 })();
-
-
