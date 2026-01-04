@@ -810,7 +810,7 @@ function escapeWikiTerm(term) {
 function normalizeScaleMultiplier(value) {
   var number = Number(value);
   if (!Number.isFinite(number)) {
-    return 1;
+    return ICON_SCALE_MIN;
   }
   if (number <= 0) {
     number = ICON_SCALE_MIN;
@@ -819,7 +819,7 @@ function normalizeScaleMultiplier(value) {
 }
 
 function getMarkerScale(marker) {
-  if (!marker) return 1;
+  if (!marker) return ICON_SCALE_MIN;
   if (typeof marker._iconScaleMultiplier === 'number' && Number.isFinite(marker._iconScaleMultiplier)) {
     return normalizeScaleMultiplier(marker._iconScaleMultiplier);
   }
@@ -838,11 +838,11 @@ function getMarkerScale(marker) {
   ) {
     return normalizeScaleMultiplier(marker._data.style.iconScale);
   }
-  return 1;
+  return ICON_SCALE_MIN;
 }
 
 function getScaleFromMarkerData(data) {
-  if (!data) return 1;
+  if (!data) return ICON_SCALE_MIN;
   if (typeof data.iconScale === 'number' && Number.isFinite(data.iconScale)) {
     return normalizeScaleMultiplier(data.iconScale);
   }
@@ -854,7 +854,7 @@ function getScaleFromMarkerData(data) {
   ) {
     return normalizeScaleMultiplier(data.style.iconScale);
   }
-  return 1;
+  return ICON_SCALE_MIN;
 }
 
 function createScaledIcon(options, multiplier) {
@@ -4160,6 +4160,5 @@ document.getElementById('save-changes').addEventListener('click', function () {
     }
   });
 })();
-
 
 
