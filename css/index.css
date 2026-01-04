@@ -4,6 +4,12 @@
     background: #9CCDD1;
 }
 
+.text-label.leaflet-div-icon {
+    border: none;
+    background: transparent;
+    box-shadow: none;
+}
+
 .wiki-info {
     position: absolute;
     top: 0;
