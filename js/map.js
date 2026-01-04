@@ -591,6 +591,23 @@ var wikiEntries = {
       '1. Lantern Keeper Mavren\'s hymn tablets, catalogue LS-443, capturing the beacon rhythms for safe descent shafts.\n2. Professor Hesta Varr, *Echoes Without Air* (University of Caldera press, 1898) analyzing voidglass acoustic dampening.\n3. Trade manifests seized from smugglers by the River Watch, entry 22-B, detailing spice-for-nightwater exchanges.',
     ].join('\n\n'),
   },
+  'grey-dwarfs': {
+    title: 'Grey Dwarfs of the Ironmantle Enclaves',
+    altNames: 'Ashline wardens of the Deep Forgeways',
+    subheader: 'Cinder-eyed sentries who patrol the old magma roads',
+    description: [
+      '## Overview',
+      'Grey dwarfs inhabit the Ironmantle Enclaves, a chain of basalt fortresses guarding the ancient magma roads. Their slate-toned skin and ember-bright eyes are said to have been tempered by generations of exposure to deep forge vents.',
+      '## Enclave Order',
+      'Governance rests with the **Ashline Council**, a rotating quorum of gate captains and forge chroniclers. Each enclave maintains a **Cinder Ledger** that records patrol oaths, trade convoys, and volcanic cycle warnings.',
+      '## Craft and Defense',
+      'Ironmantle smiths specialize in heat-hardened steel and sootglass seals that can endure lava surges. Patrols favor segmented shields that lock into bridge spans, creating mobile barricades along the forgeways.',
+      '## Trade and Alliances',
+      'Grey dwarfs barter forgeway access for basalt salts, obsidian lenses, and tunnel-mapping charts. They maintain guarded treaties with mountain dwarf citadels to share seismic alerts during the deep winters.',
+      '## Field Notes',
+      '1. Warden Kelyr Ashbound, *Ironmantle Watch Rotas* (Enclave Archive, Shelf 9).\n2. Forge chronicler Zethra Vonn, transcript of the Ashline Council Session 114.\n3. Trade dispatches from the River Guild on basalt salt exchanges.'
+    ].join('\n\n'),
+  },
   'hill-dwarfs': {
     title: 'Hill Dwarfs of the Sunmeadow Barrows',
     altNames: 'Barrow harvesters of the Rolling Marches',
@@ -772,6 +789,10 @@ var WIKI_LINK_RULES = [
   {
     entryId: 'dark-dwarfs',
     terms: ['Dark Dwarfs', 'dark dwarfs', 'Dark Dwarf', 'dark dwarf'],
+  },
+  {
+    entryId: 'grey-dwarfs',
+    terms: ['Grey Dwarfs', 'grey dwarfs', 'Grey Dwarf', 'grey dwarf'],
   },
   {
     entryId: 'hill-dwarfs',
