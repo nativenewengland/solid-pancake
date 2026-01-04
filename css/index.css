@@ -309,10 +309,10 @@ select {
 }
 
 .leaflet-tooltip.marker-name-tooltip {
-    background: rgba(17, 27, 40, 0.8);
+    background: rgba(245, 220, 120, 0.55);
     border: none;
     border-radius: 10px;
-    color: #f7f7f2;
+    color: #2a2412;
     font-size: 0.8rem;
     font-weight: 600;
     padding: 2px 8px;
@@ -320,6 +320,14 @@ select {
     text-transform: none;
     white-space: nowrap;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
+}
+
+.leaflet-tooltip.marker-name-tooltip.leaflet-tooltip-bottom:before {
+    border-bottom-color: rgba(245, 220, 120, 0.55);
+}
+
+.leaflet-tooltip.marker-name-tooltip.leaflet-tooltip-top:before {
+    border-top-color: rgba(245, 220, 120, 0.55);
 }
 
 .leaflet-tooltip.marker-name-tooltip::before {
