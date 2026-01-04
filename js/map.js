@@ -386,6 +386,10 @@ L.Icon.Default.mergeOptions({
 var ICON_SCALE_FACTOR = 2;
 var ICON_SCALE_MIN = 0.01;
 var ICON_SCALE_MAX = 2;
+var MARKER_LABEL_BASE_FONT_SIZE = 12;
+var MARKER_LABEL_BASE_PADDING_X = 8;
+var MARKER_LABEL_BASE_PADDING_Y = 2;
+var MARKER_LABEL_BASE_OFFSET_Y = 12;
 var iconSizeSlider = null;
 var iconSizeValueDisplay = null;
 var wikiInfoPanel =
@@ -2091,6 +2095,7 @@ function rescaleIcons() {
     }
     m.setIcon(L.icon(opts));
   });
+  rescaleMarkerNameLabels();
 }
 
 function rescaleTextLabels() {
