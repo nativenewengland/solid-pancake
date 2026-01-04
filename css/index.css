@@ -302,6 +302,24 @@ select {
     font-family: 'IM Fell DW Pica', serif;
 }
 
+.leaflet-tooltip.marker-name-tooltip {
+    background: rgba(17, 27, 40, 0.8);
+    border: none;
+    border-radius: 10px;
+    color: #f7f7f2;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 2px 8px;
+    text-align: center;
+    text-transform: none;
+    white-space: nowrap;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
+}
+
+.leaflet-tooltip.marker-name-tooltip::before {
+    display: none;
+}
+
 .leaflet-draw-fallback .leaflet-draw-button {
     display: block;
     width: 34px;
