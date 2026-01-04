@@ -386,6 +386,10 @@ L.Icon.Default.mergeOptions({
 var ICON_SCALE_FACTOR = 2;
 var ICON_SCALE_MIN = 0.01;
 var ICON_SCALE_MAX = 2;
+var MARKER_LABEL_BASE_FONT_SIZE = 12;
+var MARKER_LABEL_BASE_PADDING_X = 8;
+var MARKER_LABEL_BASE_PADDING_Y = 2;
+var MARKER_LABEL_BASE_OFFSET_Y = 12;
 var iconSizeSlider = null;
 var iconSizeValueDisplay = null;
 var wikiInfoPanel =
@@ -2091,6 +2095,7 @@ function rescaleIcons() {
     }
     m.setIcon(L.icon(opts));
   });
+  rescaleMarkerNameLabels();
 }
 
 function rescaleTextLabels() {
@@ -2568,6 +2573,67 @@ function detachTextLabel(labelMarker) {
   map.removeLayer(labelMarker);
 }
 
+function rescaleMarkerNameLabels() {
+  if (baseZoom === undefined) {
+    baseZoom = map.getZoom();
+  }
+  var scale = Math.pow(2, map.getZoom() - baseZoom);
+  var inverseScale = scale !== 0 ? 1 / scale : 1;
+  allMarkers.forEach(function (marker) {
+    if (!marker || !marker._nameTooltip) {
+      return;
+    }
+    var tooltip = marker.getTooltip ? marker.getTooltip() : null;
+    var tooltipEl = tooltip && tooltip.getElement ? tooltip.getElement() : null;
+    if (!tooltipEl) {
+      return;
+    }
+    if (tooltip && typeof tooltip.setOffset === 'function') {
+      tooltip.setOffset([0, MARKER_LABEL_BASE_OFFSET_Y * inverseScale]);
+    }
+    tooltipEl.style.fontSize =
+      Math.max(1, MARKER_LABEL_BASE_FONT_SIZE * inverseScale) + 'px';
+    tooltipEl.style.padding =
+      Math.max(1, MARKER_LABEL_BASE_PADDING_Y * inverseScale) +
+      'px ' +
+      Math.max(1, MARKER_LABEL_BASE_PADDING_X * inverseScale) +
+      'px';
+  });
+}
+
+function updateMarkerNameLabel(marker, name) {
+  if (!marker || marker._markerType !== 'marker') {
+    return;
+  }
+  var label = '';
+  if (typeof name === 'string') {
+    label = name.trim();
+  } else if (name) {
+    label = String(name).trim();
+  }
+  if (!label) {
+    if (marker._nameTooltip) {
+      marker.unbindTooltip();
+      marker._nameTooltip = null;
+    }
+    return;
+  }
+  if (marker._nameTooltip) {
+    marker._nameTooltip.setContent(label);
+    return;
+  }
+  marker.bindTooltip(label, {
+    permanent: true,
+    direction: 'bottom',
+    className: 'marker-name-tooltip',
+    opacity: 1,
+    offset: [0, MARKER_LABEL_BASE_OFFSET_Y],
+    interactive: false,
+  });
+  marker._nameTooltip = marker.getTooltip();
+  rescaleMarkerNameLabels();
+}
+
 function addMarkerToMap(data) {
   var scale = getScaleFromMarkerData(data);
   data.iconScale = scale;
@@ -2613,6 +2679,7 @@ function addMarkerToMap(data) {
   data.overlay = '';
   customMarker._data = data;
   customMarker._iconScaleMultiplier = scale;
+  updateMarkerNameLabel(customMarker, data.name);
   customMarker.on('contextmenu', function () {
     detachMarker(customMarker);
     customMarkers = customMarkers.filter(function (m) {
@@ -2926,6 +2993,7 @@ function createMarker(
       }
     });
   m._markerType = 'marker';
+  updateMarkerNameLabel(m, name);
   m._baseIconOptions = JSON.parse(JSON.stringify(icon.options));
   m._iconScaleMultiplier = scale;
   allMarkers.push(m);
@@ -3152,6 +3220,7 @@ function editMarkerForm(marker) {
     marker._data.overlay = '';
     marker._data.infobox = infoboxData;
 
+    updateMarkerNameLabel(marker, name);
     applyScaleToMarker(marker, getMarkerScale(marker));
     saveMarkers();
     cleanup();
@@ -4160,5 +4229,3 @@ document.getElementById('save-changes').addEventListener('click', function () {
     }
   });
 })();
-
-
