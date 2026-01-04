@@ -608,6 +608,59 @@ var wikiEntries = {
       '1. Warden Kelyr Ashbound, *Ironmantle Watch Rotas* (Enclave Archive, Shelf 9).\n2. Forge chronicler Zethra Vonn, transcript of the Ashline Council Session 114.\n3. Trade dispatches from the River Guild on basalt salt exchanges.'
     ].join('\n\n'),
   },
+  'red-curse': {
+    title: 'The Red Curse',
+    altNames: 'Saffron Blight of the Blood March',
+    subheader: 'Crimson affliction that stains stone and spirit alike',
+    description: [
+      '## Overview',
+      'The Red Curse is a slow-moving malady that first blooms as a faint rust streak in mortar, then spreads into living flesh as fevered crimson veining. Chroniclers note its arrival after the third Ember Exchange, when smelters ran night and day and the ash-sky never cleared.',
+      '## Signs and Progression',
+      'Early symptoms include metallic taste, sleep-heavy limbs, and a red dust that clings to tools and skin. In later stages the afflicted hear distant forge bells, while masonry around them develops hairline fractures that widen with every oath broken nearby.',
+      '## Cultural Response',
+      'Border guilds treat the curse as a civic emergency; quarantines are sealed with sootglass wards and posted with red-ink ledgers. Dwarven enclaves interpret the curse as a warning against unbalanced extraction and host emberfast vigils to restore the deepforge cadence.',
+      '## Containment Practices',
+      'Most remedies focus on balance: closing mine vents, dampening furnaces, and marking afflicted stones with cooling glyphs to redirect the curse. A shared ritual called the **Quiet Pour** requires saltwater libations poured into abandoned seams while apprentices recite the names of the lost.',
+      '## Field Notes',
+      '1. Archivist Merel Thorne, *Chronicle of the Saffron Blight* (River Guild Annex, folio 18).\n2. Healer Nessa Drel, treatment logs from the Emberfast Ward, entries 201–237.\n3. The Ashline Council proclamation sealing the fourth forgeway during the Red Moon.'
+    ].join('\n\n'),
+  },
+  'curse-of-stone': {
+    title: 'The Curse of Stone',
+    altNames: 'Stillheart Blight',
+    subheader: 'Petrifying affliction bound to oath-shattered rock',
+    description: [
+      '## Overview',
+      'The Curse of Stone is a petrifying condition that freezes muscle and memory into brittle mineral layers. It is said to awaken when compacts sworn upon living stone are broken, leaving a residue that seeps into the ground and those who walk it.',
+      '## Manifestations',
+      'Afflicted individuals report tingling in the fingers followed by gradual calcification of joints. Tools left beside them acquire a chalky patina, and nearby pillars sometimes echo with faint whispers of the broken oath.',
+      '## Lore and Belief',
+      'Mountain and hill dwarfs agree that the curse is not punishment alone but a record, preserving the moment of betrayal in the rock. Some clans keep Stillheart shards as warnings, sealing them in vaults that only oathkeepers may enter.',
+      '## Mitigation and Ritual',
+      'Breaking the curse requires restitution: renewed treaties, repaired stonework, and the **Binding Chorus**, a communal chant performed while re-etching the original oath into a newly quarried slab. Healers also apply softened basalt poultices to slow the spread.',
+      '## Field Notes',
+      '1. Stonefast tribunal records, case C-42 describing a returned merchant cured after treaty restitution.\n2. Field sketch by Master Mason Eira Ashthumb showing Stillheart vein patterns.\n3. The Binding Chorus transcript preserved in the Sunmeadow Barrows.',
+    ].join('\n\n'),
+  },
+  religion: {
+    title: 'Religion of the Holds',
+    altNames: 'The Forgefaith and the River Canticles',
+    subheader: 'Shared rites that bind clans, guilds, and wandering circles',
+    description: [
+      '## Overview',
+      'Religion in the Holds blends forge-rituals, river hymns, and seasonal observances into a living calendar. While each clan keeps its own patron spirits, most rites honor the balance between craft, kinship, and the land that sustains their halls.',
+      '## The Forgefaith',
+      'The Forgefaith centers on reverence for the **Anvil of First Heat**, an origin myth that teaches endurance through tempered labor. Devotees mark milestones by quenching newly forged tools in shared basins, symbolizing communal stewardship of work and wealth.',
+      '## River Canticles',
+      'River cantors guide processions that bless barges and trade routes with antiphonal chants. These hymns are believed to align tides with safe passage and are taught to apprentices alongside ledgerkeeping to reinforce honest exchange.',
+      '## Household Observances',
+      'Home altars often feature three stones: one for ancestors, one for the living hearth, and one left uncarved for the unknown. Offerings range from grain and coal to small crafted tokens left for travelers in need.',
+      '## Interclan Concords',
+      'Shared festivals, such as the **Emberfast Vigil** and the **First Thaw Procession**, bring disparate clans together. Oathkeepers oversee these gatherings to ensure disputes are paused and old agreements are honored before trade resumes.',
+      '## Field Notes',
+      '1. Cantor Lyra Fen, *Rites of the River Guild* (Ledger Hall Press, 1902).\n2. Hearthwarden Thane Brill, notes on Emberfast Vigils kept in the Stonefast archives.\n3. Festival rolls from the First Thaw Procession, Sunmeadow Barrows registry.',
+    ].join('\n\n'),
+  },
   'hill-dwarfs': {
     title: 'Hill Dwarfs of the Sunmeadow Barrows',
     altNames: 'Barrow harvesters of the Rolling Marches',
@@ -793,6 +846,23 @@ var WIKI_LINK_RULES = [
   {
     entryId: 'grey-dwarfs',
     terms: ['Grey Dwarfs', 'grey dwarfs', 'Grey Dwarf', 'grey dwarf'],
+  },
+  {
+    entryId: 'red-curse',
+    terms: ['Red Curse', 'red curse', 'Saffron Blight', 'saffron blight'],
+  },
+  {
+    entryId: 'curse-of-stone',
+    terms: [
+      'Curse of Stone',
+      'curse of stone',
+      'Stillheart Blight',
+      'stillheart blight',
+    ],
+  },
+  {
+    entryId: 'religion',
+    terms: ['Religion', 'religion', 'Forgefaith', 'forgefaith'],
   },
   {
     entryId: 'hill-dwarfs',
