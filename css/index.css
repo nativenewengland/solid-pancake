@@ -304,10 +304,10 @@ select {
 
 .leaflet-tooltip.marker-name-tooltip {
     background: rgba(17, 27, 40, 0.8);
-    border: none !important;
+    border: none;
     border-radius: 10px;
     color: #f7f7f2;
-    font-size: 12px;
+    font-size: 0.8rem;
     font-weight: 600;
     padding: 2px 8px;
     text-align: center;

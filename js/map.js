@@ -2573,34 +2573,6 @@ function detachTextLabel(labelMarker) {
   map.removeLayer(labelMarker);
 }
 
-function rescaleMarkerNameLabels() {
-  if (baseZoom === undefined) {
-    baseZoom = map.getZoom();
-  }
-  var scale = Math.pow(2, map.getZoom() - baseZoom);
-  var inverseScale = scale !== 0 ? 1 / scale : 1;
-  allMarkers.forEach(function (marker) {
-    if (!marker || !marker._nameTooltip) {
-      return;
-    }
-    var tooltip = marker.getTooltip ? marker.getTooltip() : null;
-    var tooltipEl = tooltip && tooltip.getElement ? tooltip.getElement() : null;
-    if (!tooltipEl) {
-      return;
-    }
-    if (tooltip && typeof tooltip.setOffset === 'function') {
-      tooltip.setOffset([0, MARKER_LABEL_BASE_OFFSET_Y * inverseScale]);
-    }
-    tooltipEl.style.fontSize =
-      Math.max(1, MARKER_LABEL_BASE_FONT_SIZE * inverseScale) + 'px';
-    tooltipEl.style.padding =
-      Math.max(1, MARKER_LABEL_BASE_PADDING_Y * inverseScale) +
-      'px ' +
-      Math.max(1, MARKER_LABEL_BASE_PADDING_X * inverseScale) +
-      'px';
-  });
-}
-
 function updateMarkerNameLabel(marker, name) {
   if (!marker || marker._markerType !== 'marker') {
     return;
@@ -2627,11 +2599,10 @@ function updateMarkerNameLabel(marker, name) {
     direction: 'bottom',
     className: 'marker-name-tooltip',
     opacity: 1,
-    offset: [0, MARKER_LABEL_BASE_OFFSET_Y],
+    offset: [0, 12],
     interactive: false,
   });
   marker._nameTooltip = marker.getTooltip();
-  rescaleMarkerNameLabels();
 }
 
 function addMarkerToMap(data) {
