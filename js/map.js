@@ -2193,23 +2193,7 @@ function rescaleTextLabels() {
   if (baseZoom === undefined) {
     baseZoom = map.getZoom();
   }
-  var scale = Math.pow(2, map.getZoom() - baseZoom);
-  allTextLabels.forEach(function (m) {
-    if (m._icon) {
-      var inner = m._icon.querySelector('.text-label__inner');
-      if (!inner) {
-        return;
-      }
-      inner.style.transformOrigin = 'top left';
-      inner.style.transform = 'scale(' + scale + ')';
-    }
-  });
-}
-function rescaleTextLabels() {
-  if (baseZoom === undefined) {
-    baseZoom = map.getZoom();
-  }
-  var scale = Math.pow(2, map.getZoom() - baseZoom);
+  var scale = 1;
   allTextLabels.forEach(function (m) {
     if (m._icon) {
       var span = m._icon.querySelector('span');
