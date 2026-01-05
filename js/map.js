@@ -2210,16 +2210,19 @@ function rescaleMarkerNameLabels() {
     if (!baseFontSize) {
       return;
     }
-    if (tooltipEl.dataset && !tooltipEl.dataset.baseTransform) {
-      var inlineTransform = tooltipEl.style.transform;
-      var baseTransform = inlineTransform;
-      if (!baseTransform || baseTransform === 'none') {
-        var computedTransform = window.getComputedStyle(tooltipEl).transform;
-        baseTransform = computedTransform && computedTransform !== 'none' ? computedTransform : '';
-      }
+    var inlineTransform = tooltipEl.style.transform;
+    var baseTransform = inlineTransform;
+    if (!baseTransform || baseTransform === 'none') {
+      var computedTransform = window.getComputedStyle(tooltipEl).transform;
+      baseTransform = computedTransform && computedTransform !== 'none' ? computedTransform : '';
+    }
+    if (baseTransform) {
+      baseTransform = baseTransform.replace(/\s*scale\([^)]+\)\s*$/, '');
+    }
+    if (tooltipEl.dataset) {
       tooltipEl.dataset.baseTransform = baseTransform;
     }
-    var baseTransformValue = (tooltipEl.dataset && tooltipEl.dataset.baseTransform) || '';
+    var baseTransformValue = baseTransform || '';
     tooltipEl.style.fontSize = baseFontSize + 'px';
     tooltipEl.style.transform =
       (baseTransformValue ? baseTransformValue + ' ' : '') + 'scale(' + scale + ')';
