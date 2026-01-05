@@ -309,18 +309,18 @@ select {
 }
 
 .leaflet-tooltip.marker-name-tooltip {
-    background: rgba(245, 220, 120, 0.35);
+    background: transparent;
     border: none;
-    border-radius: 1px;
+    border-radius: 0;
     color: #2a2412;
     font-size: 0.3rem;
     font-weight: 600;
-    padding: 1px 5px;
+    padding: 0;
     text-align: center;
     text-transform: none;
     transform-origin: top center;
     white-space: nowrap;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
+    box-shadow: none;
 }
 
 .leaflet-tooltip.marker-name-tooltip.leaflet-tooltip-bottom:before {
