@@ -315,7 +315,9 @@ select {
     color: #2a2412;
     font-size: 0.3rem;
     font-weight: 600;
+    cursor: pointer;
     padding: 0;
+    pointer-events: auto;
     text-align: center;
     text-transform: none;
     transform-origin: top center;

@@ -2689,6 +2689,35 @@ function detachTextLabel(labelMarker) {
   map.removeLayer(labelMarker);
 }
 
+function ensureMarkerNameLabelClickable(marker, tooltip) {
+  if (!marker || !tooltip || typeof tooltip.getElement !== 'function') {
+    return;
+  }
+
+  function attachHandler(el) {
+    if (!el || el.dataset.markerClickBound === 'true') {
+      return;
+    }
+    el.dataset.markerClickBound = 'true';
+    el.addEventListener('click', function (event) {
+      L.DomEvent.stopPropagation(event);
+      marker.fire('click');
+    });
+  }
+
+  var tooltipEl = tooltip.getElement();
+  if (tooltipEl) {
+    attachHandler(tooltipEl);
+    return;
+  }
+
+  if (typeof tooltip.once === 'function') {
+    tooltip.once('add', function () {
+      attachHandler(tooltip.getElement());
+    });
+  }
+}
+
 function updateMarkerNameLabel(marker, name) {
   if (!marker || marker._markerType !== 'marker') {
     return;
@@ -2708,6 +2737,7 @@ function updateMarkerNameLabel(marker, name) {
   }
   if (marker._nameTooltip) {
     marker._nameTooltip.setContent(label);
+    ensureMarkerNameLabelClickable(marker, marker._nameTooltip);
     return;
   }
   marker.bindTooltip(label, {
@@ -2716,7 +2746,7 @@ function updateMarkerNameLabel(marker, name) {
     className: 'marker-name-tooltip',
     opacity: 1,
     offset: [0, 0],
-    interactive: false,
+    interactive: true,
   });
   marker._nameTooltip = marker.getTooltip();
   if (marker._nameTooltip) {
@@ -2732,6 +2762,7 @@ function updateMarkerNameLabel(marker, name) {
       if (baseFontSize !== null) {
         tooltipEl.dataset.baseFontSize = String(baseFontSize);
       }
+      ensureMarkerNameLabelClickable(marker, tooltip);
     }
     if (!tooltipEl && typeof tooltip.once === 'function') {
       tooltip.once('add', function () {
@@ -2745,6 +2776,7 @@ function updateMarkerNameLabel(marker, name) {
           return;
         }
         el.dataset.baseFontSize = String(parsedSize);
+        ensureMarkerNameLabelClickable(marker, tooltip);
         rescaleMarkerNameLabels();
       });
     }
