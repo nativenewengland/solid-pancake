@@ -2210,8 +2210,19 @@ function rescaleMarkerNameLabels() {
     if (!baseFontSize) {
       return;
     }
+    if (tooltipEl.dataset && !tooltipEl.dataset.baseTransform) {
+      var inlineTransform = tooltipEl.style.transform;
+      var baseTransform = inlineTransform;
+      if (!baseTransform || baseTransform === 'none') {
+        var computedTransform = window.getComputedStyle(tooltipEl).transform;
+        baseTransform = computedTransform && computedTransform !== 'none' ? computedTransform : '';
+      }
+      tooltipEl.dataset.baseTransform = baseTransform;
+    }
+    var baseTransformValue = (tooltipEl.dataset && tooltipEl.dataset.baseTransform) || '';
     tooltipEl.style.fontSize = baseFontSize + 'px';
-    tooltipEl.style.transform = 'scale(' + scale + ')';
+    tooltipEl.style.transform =
+      (baseTransformValue ? baseTransformValue + ' ' : '') + 'scale(' + scale + ')';
     tooltipEl.style.transformOrigin = 'top center';
   });
 }
