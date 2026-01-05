@@ -2193,6 +2193,10 @@ function rescaleMarkerNameLabels() {
   if (!Array.isArray(allMarkers)) {
     return;
   }
+  if (baseZoom === undefined) {
+    baseZoom = map.getZoom();
+  }
+  var scale = 1 / Math.pow(2, map.getZoom() - baseZoom);
   allMarkers.forEach(function (marker) {
     if (!marker || !marker._nameTooltip) {
       return;
@@ -2207,6 +2211,8 @@ function rescaleMarkerNameLabels() {
       return;
     }
     tooltipEl.style.fontSize = baseFontSize + 'px';
+    tooltipEl.style.transform = 'scale(' + scale + ')';
+    tooltipEl.style.transformOrigin = 'top center';
   });
 }
 
