@@ -4,6 +4,12 @@
     background: #9CCDD1;
 }
 
+.text-label.leaflet-div-icon {
+    border: none;
+    background: transparent;
+    box-shadow: none;
+}
+
 .wiki-info {
     position: absolute;
     top: 0;
@@ -300,6 +306,32 @@ select {
 .leaflet-tooltip,
 .leaflet-popup-content {
     font-family: 'IM Fell DW Pica', serif;
+}
+
+.leaflet-tooltip.marker-name-tooltip {
+    background: rgba(245, 220, 120, 0.35);
+    border: none;
+    border-radius: 6px;
+    color: #2a2412;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 1px 5px;
+    text-align: center;
+    text-transform: none;
+    white-space: nowrap;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
+}
+
+.leaflet-tooltip.marker-name-tooltip.leaflet-tooltip-bottom:before {
+    border-bottom-color: rgba(245, 220, 120, 0.35);
+}
+
+.leaflet-tooltip.marker-name-tooltip.leaflet-tooltip-top:before {
+    border-top-color: rgba(245, 220, 120, 0.35);
+}
+
+.leaflet-tooltip.marker-name-tooltip::before {
+    display: none;
 }
 
 .leaflet-draw-fallback .leaflet-draw-button {

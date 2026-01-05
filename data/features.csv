@@ -7,3 +7,355 @@ goblin
 ",,,,,,"{""iconScale"":0.1}",,"{""title"":""Gorlak Watch"",""subtitle"":""Estuary Guardian Profile"",""image"":{""src"":""images/the-bored-gorlak-v0-hn8cg9kvykde1.webp"",""alt"":""Illustration of the marsh sentinel Gorlak""},""rows"":[{""label"":""Habitat"",""value"":""Peat bogs at the river estuary""},{""label"":""Role"",""value"":""Balances salt and freshwater tides""},{""label"":""Offerings"",""value"":""Cedar smoke braids before eel harvests""}]}"
 marker,68.5362764153349,30.540178243609155,broken-dwarven-hold,Zubar,,,"![Avlar Thrûn](images/Avlar-Thrûn.jpg)
 ",,,,,,"{""iconScale"":0.01}",,"{""title"":""Zubar Hold"",""subtitle"":""Lost Hold Profile"",""image"":{""src"":""images/Avlar-Thrûn.jpg"",""alt"":""Illustration of the hold in its current state""},""rows"":[{""label"":""Type"",""value"":""Lost Hold""},{""label"":""Location"",""value"":""Central-western Worlds Edge Mountains""},{""label"":""Population"",""value"":""N/A""},{""label"":""Allegiance"",""value"":""None""},{""label"":""Industry"",""value"":""Gemstones (Former); Dragontaming (Former)""}]}"
+marker,63.5,-12.3,broken-dwarven-hold,Khazadûn Kharn,Gate of the Skyhammer; Kharn-azor,Sky-carved bastion guarding the Northern Crown Pass,"## Overview
+Khazadûn Kharn straddles the Northern Crown Pass, its runic terraces carved into the sheer basalt ridgeline to watch the auroral skies. Granite signal towers feed a mesh of mirrored beacons that can alert every clanhold along the ridge in moments.
+
+## History
+Founded when Clan Stormthane fled the doom of Karak Nor, the hold was raised on the bones of an older Karak Bryn watchpost. Its skyhammer batteries famously shattered Warlord Golg's airship armada during the Iron Gale War, securing the upper passes for a century.
+
+### Culture and Craft
+The hold's guilds venerate the open sky; apprentices spend their oath-year tending wind-vanes and star charts before touching a forge hammer. Skyglass panelling and reinforced zeppelin docking claws are traded to allied holds for exotic ores and glacier mead.
+
+### Strategic Notes
+- The Skyhammer Gate can rotate to cover three separate valleys without repositioning its engines.
+- Mirror-beacon relays tied to Khazadûn Kharn cut messenger travel times between northern holds by two thirds.
+
+### Current Outlook
+With winter squalls thickening, Thane Dromri Stormthane has ordered additional patrols of the hanging rope-roads and reopened talks with Kislevite trappers for shared avalanche wards.
+",,,,,,,,"{""title"": ""Khazadûn Kharn"", ""subtitle"": ""Dwarfen Hold Profile"", ""rows"": [{""label"": ""Status"", ""value"": ""Prosperous High Hold""}, {""label"": ""Founded"", ""value"": ""c. -1900 KI""}, {""label"": ""Specialty"", ""value"": ""Skyhammer ballistae & aurora beacons""}, {""label"": ""Notable Clan"", ""value"": ""Clan Stormthane""}]}"
+marker,62.1,-10.0,broken-dwarven-hold,Dhurnomli Bûr,Oathforge Deep,Gem-cored stronghold renowned for oath-tempered steel,"## Overview
+Dhurnomli Bûr coils around a cathedral-sized geode whose glittering walls reflect every forge light. The glow lends the hold an amber twilight even in the deepest workshops, inspiring smiths and rune-priests alike.
+
+## History
+The hold was sealed for a generation after a magma surge in the Firewake Cataclysm, reopening once Clan Grimdron mastered rune-sluice valves to tame the molten flow. Its ""Pledgeblade"" campaign equipped three surface armies during the Pact of Barak Varn.
+
+### Culture and Craft
+Every journeyman must bind a sworn companion to witness their masterwork, a tradition that gives the hold its name. Dhurnomli smiths weave tiny gem shards into the edge of their blades, claiming the oath-stones sing warnings when wielders stray.
+
+### Strategic Notes
+- Deep magma channels power twelve vertical drop-furnaces capable of smelting sky-iron without outside fuel.
+- Rune-sluice spillways can flood the lower tunnels with liquid basalt to thwart invasions.
+
+### Current Outlook
+The thane's council debates opening a trade spur to nearby human barons in exchange for timber and draft animals to expand the forge-haulers.
+",,,,,,,,"{""title"": ""Dhurnomli Bûr"", ""subtitle"": ""Dwarfen Hold Profile"", ""rows"": [{""label"": ""Status"", ""value"": ""Thriving Forgehold""}, {""label"": ""Founded"", ""value"": ""-1687 KI""}, {""label"": ""Specialty"", ""value"": ""Oath-tempered adamant blades""}, {""label"": ""Notable Clan"", ""value"": ""Clan Grimdron""}]}"
+marker,60.7,-7.2,broken-dwarven-hold,Zarak-az-Garaz,Obsidian Crown,Volcanic bastion crowned with rune-lit obsidian,"## Overview
+Zarak-az-Garaz grips the rim of a dormant caldera, its curtain walls faced with obsidian plates etched in gold. Steam plumes vent from the terraces, giving the impression of a crown wreathed in silver vapour.
+
+## History
+The hold began as a lava observation outpost before Clan Darkflint anchored permanent bulwarks to contain the volcano's rage. It repelled the twin sieges of the Ashen Hordes thanks to rune-etched sluice gates that redirected pyroclastic flows into enemy lines.
+
+### Culture and Craft
+Residents cultivate heat-hardened fungus gardens and brew smoky lagers infused with volcanic mineral water. The rune-masters specialize in ash-steel lamellar armour prized by tunnel scouts who must endure searing vents.
+
+### Strategic Notes
+- Obsidian mirrors embedded in the parapets can focus sunlight into blinding lances at midday.
+- The hold's ash-storm sirens warn neighboring settlements of eruptions across three valleys.
+
+### Current Outlook
+A recent tremor has revived fears that the caldera may awaken; engineers are reinforcing the southern siphon tunnels while envoys request additional rune-warders from Karaz-a-Karak.
+",,,,,,,,"{""title"": ""Zarak-az-Garaz"", ""subtitle"": ""Dwarfen Hold Profile"", ""rows"": [{""label"": ""Status"", ""value"": ""Watchful Border Hold""}, {""label"": ""Founded"", ""value"": ""-1420 KI""}, {""label"": ""Specialty"", ""value"": ""Obsidian runebulwarks & ash-steel""}, {""label"": ""Notable Clan"", ""value"": ""Clan Darkflint""}]}"
+marker,59.3,-4.9,broken-dwarven-hold,Barûn-karag,Vault of Wells,Aquifer-bound hold famed for its subterranean breweries,"## Overview
+Barûn-karag anchors a network of natural aquifers, its halls linked by slow-moving underground canals. The air smells of malt and mineral springs, and carved cisterns line nearly every avenue.
+
+## History
+Initially founded as a pump-station to feed distant fortresses, Barûn-karag flourished after engineers discovered pressure gradients that could lift entire ore barges. The hold supplied water and beer during the Long March of the Silver Host, earning lasting gratitude from allied clans.
+
+### Culture and Craft
+Brewthane brewmasters guard yeast cultures older than the hold itself, sharing casks only during oath-swearing festivals. Aquifer wardens combine rune hydraulics with water-wheels to drive mills, polishing halls to a glasslike sheen.
+
+### Strategic Notes
+- Floodgates can reverse canal flow, turning central plazas into defensive moats within minutes.
+- Hydraulic lifts ferry entire shieldwalls between tiers, allowing rapid redeployment of defenders.
+
+### Current Outlook
+Low snowmelt has tightened rationing; the council weighs whether to trade reserve casks to surface caravans for additional grain.
+",,,,,,,,"{""title"": ""Barûn-karag"", ""subtitle"": ""Dwarfen Hold Profile"", ""rows"": [{""label"": ""Status"", ""value"": ""Prosperous Waterhold""}, {""label"": ""Founded"", ""value"": ""-1512 KI""}, {""label"": ""Specialty"", ""value"": ""Stone-filtered ales & hydraulic lifts""}, {""label"": ""Notable Clan"", ""value"": ""Clan Brewthane""}]}"
+marker,58.0,-2.1,broken-dwarven-hold,Gundûm Garmak,Hammer of the Westwall,Frontier fortress shielding the troll-haunted crags,"## Overview
+Gundûm Garmak juts from a wind-scoured ridge like the head of a warhammer, all blunt angles and bristling artillery towers. Signal bonfires scar the surrounding cliffs, remnants of countless campaigns against the western troll clans.
+
+## History
+Raised after trolls devastated the mining camps of Grung Har, the hold's founders swore never to yield the pass again. Their vow held even when the Stonebellied King besieged Gundûm Garmak for seven winters, only to be crushed under an avalanche triggered by hidden blast chambers.
+
+### Culture and Craft
+Every warrior trains with collapsible palisades designed to spring from the earth using torsion springs. Feast days commemorate troll-hunts; the greatest champions inscribe new slayer-epics onto the vaulting of the Hall of Broken Tusks.
+
+### Strategic Notes
+- Rotating bolt throwers nest within slot canyons, allowing defenders to fire and vanish between salvos.
+- A chain of collapsible palisade pits can seal the Western March in under an hour.
+
+### Current Outlook
+Scouts report troll warbands uniting under a fire-scarred shaman; preparations are underway to lure them into the avalanche traps before spring thaws the snowpack.
+",,,,,,,,"{""title"": ""Gundûm Garmak"", ""subtitle"": ""Dwarfen Hold Profile"", ""rows"": [{""label"": ""Status"", ""value"": ""Fortified Borderhold""}, {""label"": ""Founded"", ""value"": ""-1330 KI""}, {""label"": ""Specialty"", ""value"": ""Runed bolt throwers & collapsible palisades""}, {""label"": ""Notable Clan"", ""value"": ""Clan Trolldräng""}]}"
+marker,56.5,0.2,broken-dwarven-hold,Azar-khazad,Flamelit Sanctuary,Sacred forgehold that tends the Eternal Ember,"## Overview
+Azar-khazad is built around a sanctum whose heart-fire has burned without pause since before recorded lore. Pillared galleries direct the glow through rune lenses, painting the halls in amber and crimson bands.
+
+## History
+Legend claims Grungni himself lit the Eternal Ember; true or not, the hold has guarded it through greenskin invasions and the Sorcerous Rebellion. When Chaos sorcerers tried to smother the flame, the Emberborn unleashed a wave of consecrated fire that scoured the invaders from the mountainside.
+
+### Culture and Craft
+Pilgrims from distant holds bring offerings of rare coals and alchemical oils to feed the ember. Artificers shape ember glass—crystal hardened by sacred heat—into ritual armor plates that blaze like sunrise.
+
+### Strategic Notes
+- The Ember Ward can vent purifying flame through hidden floor vents to immolate intruders.
+- Resonant chanting amplifies the Eternal Ember, empowering rune-smiths during prolonged sieges.
+
+### Current Outlook
+The priest-smiths prepare for the once-in-a-century Ember Reckoning, when impurities are purged and new votive braziers are forged for allied holds.
+",,,,,,,,"{""title"": ""Azar-khazad"", ""subtitle"": ""Dwarfen Hold Profile"", ""rows"": [{""label"": ""Status"", ""value"": ""Holy Forgehold""}, {""label"": ""Founded"", ""value"": ""-2105 KI""}, {""label"": ""Specialty"", ""value"": ""Consecrated rune-fire & ember glass""}, {""label"": ""Notable Clan"", ""value"": ""Clan Emberborn""}]}"
+marker,55.0,2.9,broken-dwarven-hold,Thûrdrim Duraz,Lorevault,Repository hold preserving runic wisdom and maps,"## Overview
+Thûrdrim Duraz descends in concentric rings of libraries, each tier devoted to a different era of dwarfen lore. Lanterns filled with glow-worm colonies cast steady light over scriptoria and map vaults.
+
+## History
+When marauding skaven burned the Annals of Grungron, the survivors swore to make their new home indestructible. The Lorevault has since weathered plague, sorcery, and political intrigue, emerging as the trusted memory of countless clans.
+
+### Culture and Craft
+Scribes engrave oaths into stone cylinders that can be locked into rotating memory vaults. Apprentices spend their first century tracing relief maps onto hammered copper to learn the world's bones by touch.
+
+### Strategic Notes
+- Pivoting archive doors can seal entire knowledge tiers behind rune-locked stone within seconds.
+- A network of whispering tubes allows lorekeepers to coordinate defenses silently across the hold.
+
+### Current Outlook
+The archivists race to decode a recently unearthed tablet that hints at a forgotten underway linking Thûrdrim Duraz to distant Zorn Uzkul.
+",,,,,,,,"{""title"": ""Thûrdrim Duraz"", ""subtitle"": ""Dwarfen Hold Profile"", ""rows"": [{""label"": ""Status"", ""value"": ""Scholarly Hold""}, {""label"": ""Founded"", ""value"": ""-1980 KI""}, {""label"": ""Specialty"", ""value"": ""Rune archives & cartographer guilds""}, {""label"": ""Notable Clan"", ""value"": ""Clan Lorekeeper""}]}"
+marker,53.4,5.4,broken-dwarven-hold,Kazad-grimil,Hold of the Grim Oath,Stern sanctuary for slayer cults and oath-breakers seeking redemption,"## Overview
+Kazad-grimil looms like a granite gallows above the surrounding ravines, its statues depicting ancestors with axes held in grim salute. The hold offers sanctuary to oath-breakers who seek redemption through service and sacrifice.
+
+## History
+After the Tragedy of Dronfil, when a thane abandoned his post, the disgraced survivors carved Kazad-grimil as both prison and refuge. It has since birthed legendary slayer companies that marched against daemons and dragons alike.
+
+### Culture and Craft
+The hold's feasts are sparse, its songs low; residents carve their failings into the penitence walls before shaving their heads and taking the slayer's crest. Rune-masters forge double-edged axes balanced for whirlwind strikes favored by the hold's champions.
+
+### Strategic Notes
+- Retractable iron bridges can drop entire invading columns into spike-filled repentance pits.
+- A ring of watch chapels allows slayers to deploy rapidly to any gate when alarms sound.
+
+### Current Outlook
+A surge of volunteers from human frontier towns has strained supplies; the council weighs whether to expand the penitence quarters or send excess warriors to allied holds.
+",,,,,,,,"{""title"": ""Kazad-grimil"", ""subtitle"": ""Dwarfen Hold Profile"", ""rows"": [{""label"": ""Status"", ""value"": ""Solemn Redemption Hold""}, {""label"": ""Founded"", ""value"": ""-1205 KI""}, {""label"": ""Specialty"", ""value"": ""Slayer forges & penitent lodges""}, {""label"": ""Notable Clan"", ""value"": ""Clan Grimskald""}]}"
+marker,51.8,7.9,broken-dwarven-hold,Bêrdûm Barak,Harbor Under the Mountain,Dockhold controlling a subterranean river harbor,"## Overview
+Bêrdûm Barak nestles along a cavern lake where an underground river surfaces before plunging back into darkness. Tiered docks and carved breakwaters transform the chamber into a bustling harbor lit by floating lanterns.
+
+## History
+The hold grew from a waystation that ferried ore to the distant coast. After Clan Riverthane perfected rune-driven tide locks, Bêrdûm Barak monopolized trade along the subterranean waterways, even sheltering elf skiffs during the Storm of Broken Sails.
+
+### Culture and Craft
+Sailors here chart currents by listening to harmonic resonances in the cavern ceiling, translating them into intricate knot-scripts. Stone-hulled barges lined with buoyant mushrooms carry goods between holds and surface markets.
+
+### Strategic Notes
+- Tide locks can isolate sections of the harbor, trapping intruders or sealing contraband.
+- Floodgates redirect torrents to create defensive whirlpools against unwelcome vessels.
+
+### Current Outlook
+Merchants petition for expanded warehousing after discovering rich amber deposits downstream; negotiations with Thûrdrim Duraz scribes are underway to catalog the new routes.
+",,,,,,,,"{""title"": ""Bêrdûm Barak"", ""subtitle"": ""Dwarfen Hold Profile"", ""rows"": [{""label"": ""Status"", ""value"": ""Riverway Tradehold""}, {""label"": ""Founded"", ""value"": ""-1575 KI""}, {""label"": ""Specialty"", ""value"": ""Stone-hulled barges & tide locks""}, {""label"": ""Notable Clan"", ""value"": ""Clan Riverthane""}]}"
+marker,50.3,10.3,broken-dwarven-hold,Zirak-khazad,Peak of Echoes,Mountain-top hold famed for its resonant signal horns,"## Overview
+Zirak-khazad crowns a needle peak, its terraces stepping into the clouds. Vast bronze horns line the cliffs, channeling wind into melodies that can be heard valleys away.
+
+## History
+Legend says the Echohelm clan followed a comet to the mountain's summit and swore to never let silence fall there. Their warning horns rallied allied hosts during the Red Star Crusade and still coordinate aerial patrols today.
+
+### Culture and Craft
+Residents weave music into daily labor; miners tap rhythms that guide collapsible scaffolds, and hearths hum with harmonic wards. Artisans craft hornstone—porous granite tuned to amplify sound—used to build signal towers for neighboring holds.
+
+### Strategic Notes
+- Harmonic wards can shatter enemy formations by inducing vertigo when horns peal in sequence.
+- A fleet of tethered gyrobarges uses the updrafts to ferry envoys across the range.
+
+### Current Outlook
+Recent storm damage snapped two sky-bridges; repair crews race to restore them before trading season opens.
+",,,,,,,,"{""title"": ""Zirak-khazad"", ""subtitle"": ""Dwarfen Hold Profile"", ""rows"": [{""label"": ""Status"", ""value"": ""High Aerie Hold""}, {""label"": ""Founded"", ""value"": ""-1890 KI""}, {""label"": ""Specialty"", ""value"": ""Resonant hornworks & skywatching""}, {""label"": ""Notable Clan"", ""value"": ""Clan Echohelm""}]}"
+marker,48.7,12.8,broken-dwarven-hold,Uzbad-az-Narg,Throne of Crossing,Trade nexus linking human caravans and underway routes,"## Overview
+Uzbad-az-Narg rises above a rare surface-underway junction, its white granite terraces bristling with flagpoles bearing allied colors. Market squares spill into the tunnels, alive with barter between dwarfs, humans, and the occasional elf envoy.
+
+## History
+Founded to mediate feuds over toll rights, the hold grew wealthy arbitrating disputes and minting neutral trade-marks. Its diplomacy prevented a three-way war between the Border Princes, Tilean mercenaries, and Karaz Ankor during the Brass Ledger Crisis.
+
+### Culture and Craft
+The Bargrom clan trains interpreters in a dozen surface tongues, and every apprenticeship includes a year serving as a contract witness. Custom houses double as museums of the exotic goods that pass through, from Cathayan silk to Lustria amber.
+
+### Strategic Notes
+- Collapsible market stalls can transform into shielded barricades throughout the plaza.
+- Secret arbitration chambers connect to escape shafts, allowing negotiators to flee if talks sour.
+
+### Current Outlook
+Envoys from Marienburg arrive soon to negotiate river trade, and the hold's scribes compile centuries of precedent to guide the talks.
+",,,,,,,,"{""title"": ""Uzbad-az-Narg"", ""subtitle"": ""Dwarfen Hold Profile"", ""rows"": [{""label"": ""Status"", ""value"": ""Diplomatic Tradehold""}, {""label"": ""Founded"", ""value"": ""-1733 KI""}, {""label"": ""Specialty"", ""value"": ""Custom houses & negotiation halls""}, {""label"": ""Notable Clan"", ""value"": ""Clan Bargrom""}]}"
+marker,47.2,15.1,broken-dwarven-hold,Dûmthûr Mîn,Crystal Sanctum,Gem-mining hold renowned for luminous quartz vaults,"## Overview
+Dûmthûr Mîn dazzles visitors with vaulted chambers lined in luminous quartz that refracts even dim torchlight into radiant hues. Bridges of transparent lightstone span abyssal chasms, glowing softly beneath travelers' boots.
+
+## History
+The Glimmervein clan unearthed the first lightstone seam while chasing skaven raiders and immediately fortified the cavern network. Their gems lit the royal halls of Karaz-a-Karak and later financed a joint army to crush the Gray Seers of the Bleak Warrens.
+
+### Culture and Craft
+Gemcutters apprentice as prism-tenders, learning to align mirrors that bathe the mines in safe, indirect light. The hold's artisans cut ""skyvault"" crystals used by navigators and seers across the holds.
+
+### Strategic Notes
+- Adjustable prism arrays can blind intruders or plunge entire districts into darkness on command.
+- Suspended gem bridges can retract into the ceiling, isolating vital vaults from attack.
+
+### Current Outlook
+A newly discovered violet vein has sparked debate over whether to expand deeper despite whispers of restless spirits in the lower galleries.
+",,,,,,,,"{""title"": ""Dûmthûr Mîn"", ""subtitle"": ""Dwarfen Hold Profile"", ""rows"": [{""label"": ""Status"", ""value"": ""Glittering Minehold""}, {""label"": ""Founded"", ""value"": ""-1260 KI""}, {""label"": ""Specialty"", ""value"": ""Lightstone facets & precision gemcutting""}, {""label"": ""Notable Clan"", ""value"": ""Clan Glimmervein""}]}"
+marker,45.6,17.5,broken-dwarven-hold,Gûndâl Grum,Forge of Clever Hands,Engineering hold famed for gyrocopter foundries,"## Overview
+Gûndâl Grum rings with the clatter of gears and the whine of rotor testing rigs. Elevated walkways crisscross vast assembly halls where engineers tinker with experimental machines under the watchful gaze of stern runelords.
+
+## History
+Once a modest toolmaker's enclave, the hold vaulted to prominence after Master Geargrin unveiled the first reliable gyrocopter clutch. Their skyfliers turned the tide at the Battle of Five Peaks by harrying enemy supply lines.
+
+### Culture and Craft
+Tinker guilds prize innovation, though every prototype must pass rigorous rune-blessing rituals before flight. Apprentices rotate through design conclaves, forge halls, and a dangerous proving canyon where machines earn their names.
+
+### Strategic Notes
+- Retractable hangar doors shield fleets of gyrocopters from sabotage.
+- Automated hammer lines can be retooled as defensive crushers in case of invasion.
+
+### Current Outlook
+A coalition of young engineers petitions to test steam-powered tunneling machines, prompting elders to demand extensive safety trials before deployment.
+",,,,,,,,"{""title"": ""Gûndâl Grum"", ""subtitle"": ""Dwarfen Hold Profile"", ""rows"": [{""label"": ""Status"", ""value"": ""Innovator Hold""}, {""label"": ""Founded"", ""value"": ""-1104 KI""}, {""label"": ""Specialty"", ""value"": ""Gyrocopters & clockwork automata""}, {""label"": ""Notable Clan"", ""value"": ""Clan Geargrin""}]}"
+marker,44.0,19.8,broken-dwarven-hold,Thrâng-khazad,Ancestral Spiral,Hold descending through a spiral of ancestor crypts,"## Overview
+Thrâng-khazad winds downward in a grand spiral carved around a central shaft of ancestor statues. Each tier honors a different age, and the air is thick with incense and echoing hymns.
+
+## History
+Built to shelter the remains of heroes who fell in the War of Bloody Tears, the hold became a pilgrimage site for clans across the range. Its spiral fortifications absorbed and redirected countless assaults by greenskin hordes.
+
+### Culture and Craft
+Stoneward artisans specialize in memorial craftsmanship, inlaying sarcophagi with starmetal filigree. Processions carry memory lanterns along the spiral, recounting lineages stretching back millennia.
+
+### Strategic Notes
+- The spiral ramp can rotate, sealing sections and forcing attackers to fight uphill through kill zones.
+- Resonant hymn chambers amplify battle chants that bolster defending warriors' resolve.
+
+### Current Outlook
+The High Shieldthane prepares for the 500th Jubilee of Remembrance, expecting delegations from every loyal clanhold.
+",,,,,,,,"{""title"": ""Thrâng-khazad"", ""subtitle"": ""Dwarfen Hold Profile"", ""rows"": [{""label"": ""Status"", ""value"": ""Reverent Deephold""}, {""label"": ""Founded"", ""value"": ""-2077 KI""}, {""label"": ""Specialty"", ""value"": ""Ancestor crypts & spiral fortifications""}, {""label"": ""Notable Clan"", ""value"": ""Clan Stoneward""}]}"
+marker,42.5,22.0,broken-dwarven-hold,Khirûn-karag,Glacier Bastion,Frost-bound hold carved beneath a living glacier,"## Overview
+Khirûn-karag lies beneath translucent ice, its halls glimmering with captured starlight refracted through the glacier overhead. Frostbeard wardens patrol frozen galleries lined with runic heat braziers.
+
+## History
+The hold began as a refuge for miners trapped by an avalanche; they chose to remain, mastering techniques to carve the glacier without melting it. Khirûn warriors repelled the Chaos warband of Hroth the Bleak by shattering frozen causeways beneath them.
+
+### Culture and Craft
+Smiths temper steel in brine quenches and weave frost-proof mail lined with insulative fur. Children learn to read the glacier's creaks like weather auguries, aiding in avalanche prevention.
+
+### Strategic Notes
+- Heat-dispersal runes allow defenders to rapidly refreeze breached walls.
+- Subglacial sluice tunnels can drown intruders in slush before they reach the inner gates.
+
+### Current Outlook
+Spring thaws threaten to expose upper tunnels; crews work to redirect meltwater and reinforce key buttresses.
+",,,,,,,,"{""title"": ""Khirûn-karag"", ""subtitle"": ""Dwarfen Hold Profile"", ""rows"": [{""label"": ""Status"", ""value"": ""Frozen Sentinel""}, {""label"": ""Founded"", ""value"": ""-1615 KI""}, {""label"": ""Specialty"", ""value"": ""Ice-carved fortifications & frost-proof mail""}, {""label"": ""Notable Clan"", ""value"": ""Clan Frostbeard""}]}"
+marker,41.0,24.3,broken-dwarven-hold,Gazad-az-Bôr,Bastion of the Border,Southern sentinel guarding the emerald marches,"## Overview
+Gazad-az-Bôr overlooks rolling emerald plains from a rocky escarpment studded with signal towers. Caravan roads converge beneath its guns, ensuring every traveler is cataloged before crossing the marches.
+
+## History
+Established to shield trade routes from marauding beastmen, the hold grew into the keystone of southern defenses. Its rotating bastions turned the tide at the Battle of Thornfield when they shredded a Brayherd's ambush with crossfires.
+
+### Culture and Craft
+Shieldmarch drillmasters train warriors in combined arms tactics with humans and halfling scouts. Artisans craft modular fort sections that can be shipped to remote outposts and locked together like stone puzzle pieces.
+
+### Strategic Notes
+- Rotating bastions allow overlapping fields of fire across the entire march road.
+- Beacon towers connect to Uzbad-az-Narg, relaying warnings faster than horse messengers.
+
+### Current Outlook
+Diplomatic envoys from the Moot negotiate expanded patrol rights, promising grain shipments in exchange for protection.
+",,,,,,,,"{""title"": ""Gazad-az-Bôr"", ""subtitle"": ""Dwarfen Hold Profile"", ""rows"": [{""label"": ""Status"", ""value"": ""Southern March Hold""}, {""label"": ""Founded"", ""value"": ""-1182 KI""}, {""label"": ""Specialty"", ""value"": ""Border forts & rotating bastions""}, {""label"": ""Notable Clan"", ""value"": ""Clan Shieldmarch""}]}"
+marker,39.6,26.5,broken-dwarven-hold,Dûrgrim Dûm,Reliquary Hold,Vaulted sanctuary guarding relics of the Ancestors,"## Overview
+Dûrgrim Dûm is a maze of sanctified vaults, each protected by layered runes and adamantine gates. Incense burns constantly, and pilgrims offer prayers at niches containing fragments of ancestral heirlooms.
+
+## History
+The hold was carved after the Great Desecration, when Chaos marauders defiled sacred tombs elsewhere. Clan Relicshield gathered surviving relics and swore an eternal oath to guard them; no vault has been breached since.
+
+### Culture and Craft
+Artisans specialize in sanctified lockwork and rune keys that require multiple clan signatures to open. Ceremonial guardians memorize the lineage of every relic before being entrusted with its watch.
+
+### Strategic Notes
+- Vault corridors shift via rotating stone drums, confusing intruders.
+- Rune-sealed reliquaries can emit blinding light or defensive wards when tampered with.
+
+### Current Outlook
+A request from the High King seeks to temporarily exhibit the Hammer of Dronki; debate rages over whether any relic may leave the hold.
+",,,,,,,,"{""title"": ""Dûrgrim Dûm"", ""subtitle"": ""Dwarfen Hold Profile"", ""rows"": [{""label"": ""Status"", ""value"": ""Relic Wardens""}, {""label"": ""Founded"", ""value"": ""-2020 KI""}, {""label"": ""Specialty"", ""value"": ""Sacred vaults & rune-sealed reliquaries""}, {""label"": ""Notable Clan"", ""value"": ""Clan Relicshield""}]}"
+marker,38.2,28.0,broken-dwarven-hold,Bazâr-durin,Market of the First Forge,Grand bazaar celebrating invention and ancestral craftsmanship,"## Overview
+Bazâr-durin thrives around an immense plaza roofed by stained glass depicting the forging of the first rune hammer. Market stalls burst with color, music, and the aroma of spice breads from every corner of the empire.
+
+## History
+Founded by traders who followed the First Forge's pilgrim trail, the hold became the official venue for the Great Maker's Fair. Innovations unveiled here—like the collapsible cannon carriage—often reshape warfare and commerce alike.
+
+### Culture and Craft
+Guildhouses line the plaza, each offering apprenticeships in crafts from jewelry to mechanika. Festivals pair competitions with story circles where inventors recount the lineage of their tools.
+
+### Strategic Notes
+- Hidden portcullis tracks can isolate the bazaar into defensible wedges during unrest.
+- Vaulted acoustics allow announcers to coordinate the entire market from a single dais.
+
+### Current Outlook
+Preparations for the next Maker's Fair have begun, and invitations have been sent to elf artisans willing to share glassmaking secrets in exchange for rune lore.
+",,,,,,,,"{""title"": ""Bazâr-durin"", ""subtitle"": ""Dwarfen Hold Profile"", ""rows"": [{""label"": ""Status"", ""value"": ""Celebrated Market Hold""}, {""label"": ""Founded"", ""value"": ""-950 KI""}, {""label"": ""Specialty"", ""value"": ""Seasonal grand markets & artisan guildhouses""}, {""label"": ""Notable Clan"", ""value"": ""Clan Goldtally""}]}"
+marker,36.7,25.6,broken-dwarven-hold,Kharak-khazad,Sealed Redoubt,Partially collapsed hold watching over the southern deeps,"## Overview
+Kharak-khazad clings to cliffs above yawning chasms, many halls now sealed behind rune-locked gates after catastrophic quakes. Lantern-lit salvage crews still delve the blocked passages searching for lost kin and treasures.
+
+## History
+Once a thriving ore hub, the hold suffered a series of cave-ins during the Deep Rumble. Clan Rockvault saved the core districts by triggering counter-quakes that collapsed the invading skaven tunnels.
+
+### Culture and Craft
+Survivors maintain meticulous records of which passages remain sealed and who was entombed within. Salvage engineers design reinforced braces and shock-absorbing boots used across the range.
+
+### Strategic Notes
+- Counter-quake charges can bring down entire bridges if enemies press too hard.
+- Aerial tramways connect intact districts, bypassing unstable lower tunnels.
+
+### Current Outlook
+Rockvault prospectors petition to reopen a lower shaft after detecting vibration patterns suggesting empty, stable chambers beyond the collapse.
+",,,,,,,,"{""title"": ""Kharak-khazad"", ""subtitle"": ""Dwarfen Hold Profile"", ""rows"": [{""label"": ""Status"", ""value"": ""Partially Sealed Hold""}, {""label"": ""Founded"", ""value"": ""-1450 KI""}, {""label"": ""Specialty"", ""value"": ""Sealed gateworks & salvage crews""}, {""label"": ""Notable Clan"", ""value"": ""Clan Rockvault""}]}"
+marker,34.0,20.7,broken-dwarven-hold,Thûrdûn Thrum,Hall of Resonance,Melodic stronghold where runes are sung into stone,"## Overview
+Thûrdûn Thrum is carved like a great instrument, with every corridor tuned to amplify the voices of its inhabitants. Choral rehearsals double as structural inspections, for any discordant echo may signal stress in the stone.
+
+## History
+The hold emerged after rune-singer Thûrdûn discovered harmonic inscriptions that could bind magic more efficiently. Its choirs shattered a Chaos sorcerer's wards during the Siege of Nine Echoes, proving the power of sung runes.
+
+### Culture and Craft
+Songthane artisans engrave wave-patterns into pillars, then test them with crystal tuning forks. Young dwarfs learn to harmonize before wielding axes, ensuring battlefield commands carry even in the thickest melee.
+
+### Strategic Notes
+- Resonant halls can project stunning sonic bursts toward invaders.
+- Harmonic wards woven into the gates disrupt enemy spellcasting by desynchronizing incantations.
+
+### Current Outlook
+The Grand Chorus prepares a new Hymn of Binding to stabilize distant outposts suffering from warpstone tremors.
+",,,,,,,,"{""title"": ""Thûrdûn Thrum"", ""subtitle"": ""Dwarfen Hold Profile"", ""rows"": [{""label"": ""Status"", ""value"": ""Harmonic Runebastion""}, {""label"": ""Founded"", ""value"": ""-1010 KI""}, {""label"": ""Specialty"", ""value"": ""Resonant rune-singing & acoustic wards""}, {""label"": ""Notable Clan"", ""value"": ""Clan Songthane""}]}"
+marker,32.7,18.4,broken-dwarven-hold,Gazûl-dûm,Sanctum of Gazûl,Catacomb hold honoring the Lord of the Underearth,"## Overview
+Gazûl-dûm stretches through solemn catacombs carved with reliefs of every ancestor interred within. Luminous fungi paint the passageways in violet light as silent processions bear offerings to the Lord of the Underearth.
+
+## History
+Priests of Gazûl established the hold to safeguard the honored dead after necromancers desecrated burial fields elsewhere. The Gravesong clan has since thwarted undead incursions by sanctifying bones and sealing portals to the shadow realm.
+
+### Culture and Craft
+Mortuary artisans weave silver-wire ossuaries and inscribe lament runes that soothe restless spirits. Festivals of Quiet Remembrance invite living kin to dine among ancestor statues, reaffirming bonds across generations.
+
+### Strategic Notes
+- Sanctified catacombs emit wards that unravel necromantic energies.
+- Hidden reliquary caches house consecrated hammerheads used to banish spirits on short notice.
+
+### Current Outlook
+A surge in ghostly whispers hints at a new breach between worlds; the priests consult with Thûrdrim Duraz for lore on sealing shadow rifts.
+",,,,,,,,"{""title"": ""Gazûl-dûm"", ""subtitle"": ""Dwarfen Hold Profile"", ""rows"": [{""label"": ""Status"", ""value"": ""Sacred Necropolis""}, {""label"": ""Founded"", ""value"": ""-2120 KI""}, {""label"": ""Specialty"", ""value"": ""Ancestral catacombs & mortuary rites""}, {""label"": ""Notable Clan"", ""value"": ""Clan Gravesong""}]}"
+marker,31.3,16.2,broken-dwarven-hold,Gor Dûrgheled,Shadowfast,Mysterious hold guarding a rift-torn chasm,"## Overview
+Gor Dûrgheled clings to cliffs overlooking a chasm where shadows behave unnaturally, flowing like water against the stone. The hold is perpetually dim, lit by rune lanterns that emit steady, shadowless light.
+
+## History
+Established after daemonic silhouettes emerged from the chasm, Clan Nightward constructed overlapping wards to contain the threat. Their vigilance has prevented the gloom from spreading, though occasional incursions still test the defenses.
+
+### Culture and Craft
+Nightward sentries train to fight without relying on sight, using chime-lattices and tremor sense to navigate. Artisans craft obsidian ward-stones etched with anti-shadow runes exported to other holds needing protection.
+
+### Strategic Notes
+- Concentric ward circles can collapse inward, trapping manifestations in null-light cages.
+- The hold maintains hidden routes lit only by touch-sensitive glowstones for silent redeployment.
+
+### Current Outlook
+Recent fluctuations in the shadow wards prompt calls for aid; rune-smiths from Azar-khazad have been invited to reinforce the failing sigils.
+",,,,,,,,"{""title"": ""Gor Dûrgheled"", ""subtitle"": ""Dwarfen Hold Profile"", ""rows"": [{""label"": ""Status"", ""value"": ""Wardens of the Gloom""}, {""label"": ""Founded"", ""value"": ""-1325 KI""}, {""label"": ""Specialty"", ""value"": ""Shadow wards & lightless sentry paths""}, {""label"": ""Notable Clan"", ""value"": ""Clan Nightward""}]}"
