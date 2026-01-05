@@ -311,7 +311,7 @@ select {
 .leaflet-tooltip.marker-name-tooltip {
     background: rgba(245, 220, 120, 0.35);
     border: none;
-    border-radius: 6px;
+    border-radius: 3px;
     color: #2a2412;
     font-size: 0.3rem;
     font-weight: 600;
