@@ -337,6 +337,10 @@ select {
     display: none;
 }
 
+.leaflet-tooltip.marker-name-tooltip.marker-selected {
+    text-shadow: 0 0 6px gold;
+}
+
 .leaflet-draw-fallback .leaflet-draw-button {
     display: block;
     width: 34px;
