@@ -2690,7 +2690,7 @@ function updateMarkerNameLabel(marker, name) {
     direction: 'bottom',
     className: 'marker-name-tooltip',
     opacity: 1,
-    offset: [0, 6],
+    offset: [0, 0],
     interactive: false,
   });
   marker._nameTooltip = marker.getTooltip();
