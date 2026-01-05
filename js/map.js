@@ -1853,6 +1853,23 @@ var TEXT_LABEL_FONT_FAMILY = "'IM Fell DW Pica', serif";
 var textMeasurementContext = null;
 var textMeasurementSpan = null;
 
+function setMarkerSelectedState(marker, isSelected) {
+  if (!marker) return;
+  var action = isSelected ? 'add' : 'remove';
+  if (marker._icon) {
+    marker._icon.classList[action]('marker-selected');
+  }
+  var tooltip =
+    marker._nameTooltip ||
+    (typeof marker.getTooltip === 'function' ? marker.getTooltip() : null);
+  if (tooltip && typeof tooltip.getElement === 'function') {
+    var tooltipEl = tooltip.getElement();
+    if (tooltipEl) {
+      tooltipEl.classList[action]('marker-selected');
+    }
+  }
+}
+
 function refreshMarkerIcons() {
   allMarkers.forEach(function (marker) {
     if (!marker) {
@@ -1883,16 +1900,14 @@ function refreshMarkerIcons() {
       }
     }
     if (wasSelected) {
-      if (marker._icon) {
-        marker._icon.classList.add('marker-selected');
-      } else if (
+      setMarkerSelectedState(marker, true);
+      if (
+        !marker._icon &&
         typeof window !== 'undefined' &&
         window.requestAnimationFrame
       ) {
         window.requestAnimationFrame(function () {
-          if (marker._icon) {
-            marker._icon.classList.add('marker-selected');
-          }
+          setMarkerSelectedState(marker, true);
         });
       }
     }
@@ -1930,16 +1945,14 @@ function applyScaleToMarker(marker, scale) {
     }
   }
   if (wasSelected) {
-    if (marker._icon) {
-      marker._icon.classList.add('marker-selected');
-    } else if (
+    setMarkerSelectedState(marker, true);
+    if (
+      !marker._icon &&
       typeof window !== 'undefined' &&
       window.requestAnimationFrame
     ) {
       window.requestAnimationFrame(function () {
-        if (marker._icon) {
-          marker._icon.classList.add('marker-selected');
-        }
+        setMarkerSelectedState(marker, true);
       });
     }
   }
@@ -1988,9 +2001,7 @@ Settlements.addTo(map);
 territoriesOverlay.addTo(map);
 
 function clearSelectedMarker() {
-  if (selectedMarker && selectedMarker._icon) {
-    selectedMarker._icon.classList.remove('marker-selected');
-  }
+  setMarkerSelectedState(selectedMarker, false);
   selectedMarker = null;
   refreshIconScaleUI();
 }
@@ -2052,9 +2063,7 @@ function offsetLatLngForPaste(lat, lng) {
 function highlightMarker(marker) {
   if (!marker) return;
   function applyHighlight() {
-    if (marker._icon) {
-      marker._icon.classList.add('marker-selected');
-    }
+    setMarkerSelectedState(marker, true);
   }
   if (marker._icon) {
     applyHighlight();
@@ -2689,6 +2698,35 @@ function detachTextLabel(labelMarker) {
   map.removeLayer(labelMarker);
 }
 
+function ensureMarkerNameLabelClickable(marker, tooltip) {
+  if (!marker || !tooltip || typeof tooltip.getElement !== 'function') {
+    return;
+  }
+
+  function attachHandler(el) {
+    if (!el || el.dataset.markerClickBound === 'true') {
+      return;
+    }
+    el.dataset.markerClickBound = 'true';
+    el.addEventListener('click', function (event) {
+      L.DomEvent.stopPropagation(event);
+      marker.fire('click');
+    });
+  }
+
+  var tooltipEl = tooltip.getElement();
+  if (tooltipEl) {
+    attachHandler(tooltipEl);
+    return;
+  }
+
+  if (typeof tooltip.once === 'function') {
+    tooltip.once('add', function () {
+      attachHandler(tooltip.getElement());
+    });
+  }
+}
+
 function updateMarkerNameLabel(marker, name) {
   if (!marker || marker._markerType !== 'marker') {
     return;
@@ -2708,6 +2746,7 @@ function updateMarkerNameLabel(marker, name) {
   }
   if (marker._nameTooltip) {
     marker._nameTooltip.setContent(label);
+    ensureMarkerNameLabelClickable(marker, marker._nameTooltip);
     return;
   }
   marker.bindTooltip(label, {
@@ -2716,7 +2755,7 @@ function updateMarkerNameLabel(marker, name) {
     className: 'marker-name-tooltip',
     opacity: 1,
     offset: [0, 0],
-    interactive: false,
+    interactive: true,
   });
   marker._nameTooltip = marker.getTooltip();
   if (marker._nameTooltip) {
@@ -2732,6 +2771,7 @@ function updateMarkerNameLabel(marker, name) {
       if (baseFontSize !== null) {
         tooltipEl.dataset.baseFontSize = String(baseFontSize);
       }
+      ensureMarkerNameLabelClickable(marker, tooltip);
     }
     if (!tooltipEl && typeof tooltip.once === 'function') {
       tooltip.once('add', function () {
@@ -2745,6 +2785,7 @@ function updateMarkerNameLabel(marker, name) {
           return;
         }
         el.dataset.baseFontSize = String(parsedSize);
+        ensureMarkerNameLabelClickable(marker, tooltip);
         rescaleMarkerNameLabels();
       });
     }
@@ -2973,7 +3014,7 @@ function addTextLabelToMap(data) {
       L.DomEvent.stopPropagation(ev);
       clearSelectedMarker();
       if (this._icon) {
-        this._icon.classList.add('marker-selected');
+        setMarkerSelectedState(this, true);
         selectedMarker = this;
         refreshIconScaleUI();
       }
@@ -3081,7 +3122,7 @@ function createMarker(
       L.DomEvent.stopPropagation(e);
       clearSelectedMarker();
       if (this._icon) {
-        this._icon.classList.add('marker-selected');
+        setMarkerSelectedState(this, true);
         selectedMarker = this;
         refreshIconScaleUI();
       }
