@@ -2189,6 +2189,27 @@ function rescaleIcons() {
   rescaleMarkerNameLabels();
 }
 
+function rescaleMarkerNameLabels() {
+  if (!Array.isArray(allMarkers)) {
+    return;
+  }
+  allMarkers.forEach(function (marker) {
+    if (!marker || !marker._nameTooltip) {
+      return;
+    }
+    var tooltip = marker._nameTooltip;
+    var tooltipEl = tooltip.getElement && tooltip.getElement();
+    if (!tooltipEl) {
+      return;
+    }
+    var baseFontSize = tooltipEl.dataset && tooltipEl.dataset.baseFontSize;
+    if (!baseFontSize) {
+      return;
+    }
+    tooltipEl.style.fontSize = baseFontSize + 'px';
+  });
+}
+
 function rescaleTextLabels() {
   if (baseZoom === undefined) {
     baseZoom = map.getZoom();
@@ -2678,6 +2699,36 @@ function updateMarkerNameLabel(marker, name) {
     interactive: false,
   });
   marker._nameTooltip = marker.getTooltip();
+  if (marker._nameTooltip) {
+    var tooltip = marker._nameTooltip;
+    var tooltipEl = tooltip.getElement && tooltip.getElement();
+    var baseFontSize = null;
+    if (tooltipEl) {
+      var computed = window.getComputedStyle(tooltipEl);
+      var parsed = parseFloat(computed.fontSize);
+      if (isFinite(parsed)) {
+        baseFontSize = parsed;
+      }
+      if (baseFontSize !== null) {
+        tooltipEl.dataset.baseFontSize = String(baseFontSize);
+      }
+    }
+    if (!tooltipEl && typeof tooltip.once === 'function') {
+      tooltip.once('add', function () {
+        var el = tooltip.getElement && tooltip.getElement();
+        if (!el) {
+          return;
+        }
+        var computedStyle = window.getComputedStyle(el);
+        var parsedSize = parseFloat(computedStyle.fontSize);
+        if (!isFinite(parsedSize)) {
+          return;
+        }
+        el.dataset.baseFontSize = String(parsedSize);
+        rescaleMarkerNameLabels();
+      });
+    }
+  }
 }
 
 function addMarkerToMap(data) {
