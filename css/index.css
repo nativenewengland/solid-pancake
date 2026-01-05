@@ -311,11 +311,11 @@ select {
 .leaflet-tooltip.marker-name-tooltip {
     background: rgba(245, 220, 120, 0.35);
     border: none;
-    border-radius: 10px;
+    border-radius: 6px;
     color: #2a2412;
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: 600;
-    padding: 2px 8px;
+    padding: 1px 5px;
     text-align: center;
     text-transform: none;
     white-space: nowrap;
