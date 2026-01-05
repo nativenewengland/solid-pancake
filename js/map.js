@@ -71,9 +71,10 @@ var tiles = L.tileLayer('map/{z}/{x}/{y}.jpg', {
     TILE_COORD_BOUNDS.zoom
   );
   var bounds = L.latLngBounds(southWest, northEast);
+  var paddedBounds = bounds.pad(0.6);
 
-  map.setMaxBounds(bounds);
-  map.panInsideBounds(bounds, { animate: false });
+  map.setMaxBounds(paddedBounds);
+  map.panInsideBounds(paddedBounds, { animate: false });
 })();
 
 (function configureMarkedFootnotes() {
