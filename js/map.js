@@ -1667,6 +1667,7 @@ var ICON_DEFINITIONS = [
   { label: 'DWARF OUTPOST', key: 'dwarf-outpost', file: 'dwarf-outpost.png', pixelSize: [895, 615] },
   { label: 'ELEVEN TOWER', key: 'eleven-tower', file: 'eleven-tower.png', pixelSize: [231, 810] },
   { label: 'FORT', key: 'fort', file: 'fort.png', pixelSize: [62, 39] },
+  { label: 'GOBLIN', key: 'goblin', file: 'Goblin.png', pixelSize: [1024, 1024] },
   { label: 'HOUSE', key: 'house', file: 'house.png', pixelSize: [506, 432] },
   { label: 'KISLEV', key: 'kislev', file: 'kislev.png', pixelSize: [734, 827] },
   { label: 'LD 003', key: 'ld-003', file: 'ld-003.webp', pixelSize: [293, 268] },
@@ -1693,6 +1694,7 @@ var ICON_DEFINITIONS = [
   { label: 'OG 007', key: 'og-007', file: 'og-007.webp', pixelSize: [200, 237] },
   { label: 'OG 008', key: 'og-008', file: 'og-008.webp', pixelSize: [200, 200] },
   { label: 'OG 009', key: 'og-009', file: 'og-009.webp', pixelSize: [200, 198] },
+  { label: 'ORC', key: 'orc', file: 'Orc.webp', pixelSize: [99, 89] },
   { label: 'PORTO', key: 'porto', file: 'porto.png', pixelSize: [573, 341] },
 ];
 
