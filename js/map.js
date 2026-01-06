@@ -385,7 +385,7 @@ L.Icon.Default.mergeOptions({
 });
 
 var ICON_SCALE_FACTOR = 2;
-var ICON_SCALE_MIN = 0.01;
+var ICON_SCALE_MIN = 0.1;
 var ICON_SCALE_MAX = 2;
 var MARKER_LABEL_BASE_FONT_SIZE = 12;
 var MARKER_LABEL_BASE_PADDING_X = 8;
