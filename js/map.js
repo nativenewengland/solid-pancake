@@ -3,7 +3,7 @@ var map = L.map('map', {
   zoomAnimation: true,
   markerZoomAnimation: true,
   attributionControl: false,
-  minZoom: 0,
+  minZoom: 3,
   maxZoom: 6,
   maxBoundsViscosity: 1.0,
 }).setView([0, 0], 4);
@@ -11,7 +11,7 @@ var map = L.map('map', {
 var tiles = L.tileLayer('map/{z}/{x}/{y}.jpg', {
   continuousWorld: false,
   noWrap: true,
-  minZoom: 0,
+  minZoom: 3,
   maxZoom: 6,
   maxNativeZoom: 6,
 }).addTo(map);
@@ -71,10 +71,9 @@ var tiles = L.tileLayer('map/{z}/{x}/{y}.jpg', {
     TILE_COORD_BOUNDS.zoom
   );
   var bounds = L.latLngBounds(southWest, northEast);
-  var paddedBounds = bounds.pad(0.6);
 
-  map.setMaxBounds(paddedBounds);
-  map.panInsideBounds(paddedBounds, { animate: false });
+  map.setMaxBounds(bounds);
+  map.panInsideBounds(bounds, { animate: false });
 })();
 
 (function configureMarkedFootnotes() {
@@ -385,7 +384,7 @@ L.Icon.Default.mergeOptions({
 });
 
 var ICON_SCALE_FACTOR = 2;
-var ICON_SCALE_MIN = 0.1;
+var ICON_SCALE_MIN = 0.01;
 var ICON_SCALE_MAX = 2;
 var MARKER_LABEL_BASE_FONT_SIZE = 12;
 var MARKER_LABEL_BASE_PADDING_X = 8;
