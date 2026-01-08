@@ -443,29 +443,30 @@ marker,44.647740907829146,24.513017193968775,the-great-brey-heard,THE GREAT BREY
 marker,16,-4,the-monastic-order-of-the-wheel,THE MONASTIC ORDER OF THE WHEEL,,,,,,,,,"{""iconScale"":0.06}",,
 marker,66.30218997058611,-78.75022884273056,the-realm-of-azurreach,THE REALM OF AZURREACH,,,,,,,,,"{""iconScale"":0.04}",,
 marker,39.84064201211833,-29.146705631351928,dwarf-outpost,DWARF OUTPOST,,,,,,,,,"{""iconScale"":0.01}",,
-marker,-41.721428710864664,73.32045975787602,dwarf-outpost,Krak-Morgas,,,"![Krak-Morgas](images/Dwarfhold/Krak-Morgas.jpg)",,,,,,"{""iconScale"":0.01}",,
+marker,-41.721428710864664,73.32045975787602,dwarf-outpost,Krak-Morgas,,,![Krak-Morgas](images/Dwarfhold/Krak-Morgas.jpg),,,,,,"{""iconScale"":0.01}",,
 marker,57.680961955099285,98.60588477732192,abandon-dwarfhold,Uzbad-az-Narg,,,"![Uzbad-az-Narg](images/Dwarfhold/Uzbad-az-Narg.jpg)
 Hold has been sealed 1000 years so its unknown if the inhabitants are alive or dead and thus unknown if its an active or abandoned dwarfhold",,,,,,"{""iconScale"":0.01}",,
 marker,70.04329338556502,81.60533535046464,abandon-dwarfhold,Avlar-Thrûn,,,Dwarfhold destroyed by dragons ,,,,,,"{""iconScale"":0.01}",,
-marker,-43.844541500583176,55.71149769360912,dwarf-outpost,Dun-Ôrdstun,,,"![Dun-Ôrdstun](images/Dwarfhold/Dun-Ôrdstun.jpg)",,,,,,"{""iconScale"":0.01}",,
-marker,-35.35396257952243,66.35503496549036,dwarf-outpost,Dûrandur,,,"![Dûrandur](images/Dwarfhold/Dûrandur.jpg)",,,,,,"{""iconScale"":0.01}",,
-marker,-34.37966637421009,82.66012598852991,dwarf-outpost,Black Rock Forge,,,,,,,,,"{""iconScale"":0.01}",,
-marker,-12.854373616569383,83.32024374128984,dwarf-outpost,Barat Nûmenz,,,"![Barat Nûmenz](images/Dwarfhold/Barat Nûmenz.jpg)",,,,,,"{""iconScale"":0.01}",,
-marker,-69.48859416069357,55.63186793650062,dwarf-outpost,Dun Toruhm,,,"![Dun Toruhm](images/Dwarfhold/Dun Toruhm.jpg)",,,,,,"{""iconScale"":0.01}",,
-marker,-20.941008333246586,80.59367965438688,dwarf-outpost,Karad-Graef,,,"![Karad-Graef](images/Dwarfhold/Karad-Graef.jpg)",,,,,,"{""iconScale"":0.01}",,
+marker,-43.844541500583176,55.71149769360912,dwarf-outpost,Dun-Ôrdstun,,,![Dun-Ôrdstun](images/Dwarfhold/Dun-Ôrdstun.jpg),,,,,,"{""iconScale"":0.01}",,
+marker,-35.35396257952243,66.35503496549036,dwarf-outpost,Dûrandur,,,![Dûrandur](images/Dwarfhold/Dûrandur.jpg),,,,,,"{""iconScale"":0.01}",,
+marker,-34.37966637421009,82.66012598852991,dwarf-outpost,Black Rock Hold,,,,,,,,,"{""iconScale"":0.01}",,
+marker,-12.854373616569383,83.32024374128984,dwarf-outpost,Barat Nûmenz,,,![Barat Nûmenz](images/Dwarfhold/Barat Nûmenz.jpg),,,,,,"{""iconScale"":0.01}",,
+marker,-69.48859416069357,55.63186793650062,dwarf-outpost,Dun Toruhm,,,![Dun Toruhm](images/Dwarfhold/Dun Toruhm.jpg),,,,,,"{""iconScale"":0.01}",,
+marker,-20.941008333246586,80.59367965438688,dwarf-outpost,Karad-Graef,,,![Karad-Graef](images/Dwarfhold/Karad-Graef.jpg),,,,,,"{""iconScale"":0.01}",,
 marker,34.19554856630493,-25.848322373167758,bp-003,BP 003,,,,,,,,,"{""iconScale"":0.37}",,
 marker,15.158663336160132,-60.05096059356373,carrow,Neverwinter,,,,,,,,,"{""iconScale"":0.2}",,
 marker,-47.57627196331696,-50.27213309643573,carrow,Moorsfield,,,,,,,,,"{""iconScale"":0.3}",,
-marker,61.41754927758897,75.89469029520824,dwarf-outpost,Dûmthûr Mînrth,,,"![Dûmthûr Mînrth](images/Dwarfhold/Dûmthûr Mînrth.jpg)",,,,,,"{""iconScale"":0.01}",,
+marker,61.41754927758897,75.89469029520824,dwarf-outpost,Dûmthûr Mînrth,,,![Dûmthûr Mînrth](images/Dwarfhold/Dûmthûr Mînrth.jpg),,,,,,"{""iconScale"":0.01}",,
 marker,69.8698915662856,55.32714843750001,dwarf-outpost,Dûrgrim Dûm,,,"![Dûrgrim Dûm](images/Dwarfhold/Dûrgrim Dûm.jpg)
 Dûrgrim Dûm is an ancient Dwarvern hold located in the ___ 
 
 It should be noted the current dwarfhold of Dûrgrim Dûm is not the primary bearer of its name. In fact Dûrgrim Dûm as it currently exists, was abandoned for over a thousand years after it became too crowded and its population migrated to a new hold which was constructed to fit its much larger population. This hold was lost during the Great Desecration, when Chaos marauders defiled sacred tombs across the northern reaches and elsewhere. The surviving clans gathered remaining relics and relocated to their orginal hold that had been abandoned a millennium past. Out of the great shame of losing their hold the dwarves swore an eternal oath to erase the name of the original hold of their ancestors, they had retreated into and replace it with the one that had just been lost, as to make any without personal knowledge believe this was their only hold and no hold had been breached and looted by the outlanders. ",,,,,,"{""iconScale"":0.01}",,
-marker,-43.707593504052944,-3.251953125,dwarf-outpost,Y'olazad-az-Bôr,,,"![Y'olazad-az-Bôr](images/Dwarfhold/Y'olazad-az-Bôr.jpg)",,,,,,"{""iconScale"":0.01}",,
-marker,-18.750309813140653,58.97460937500001,dwarf-outpost,Gor Dûrgheld,,,"![Gor Dûrgheld](images/Dwarfhold/Gor Dûrgheld.png)",,,,,,"{""iconScale"":0.01}",,
+marker,-43.707593504052944,-3.251953125,dwarf-outpost,Y'olazad-az-Bôr,,,![Y'olazad-az-Bôr](images/Dwarfhold/Y'olazad-az-Bôr.jpg),,,,,,"{""iconScale"":0.01}",,
+marker,-18.750309813140653,58.97460937500001,dwarf-outpost,Gor Dûrgheld,,,![Gor Dûrgheld](images/Dwarfhold/Gor Dûrgheld.png),,,,,,"{""iconScale"":0.01}",,
 marker,-8.211490323420682,86.33056640625,dwarf-outpost,Barûn-Karag,,,"![Barûn-Karag](images/Dwarfhold/Barûn-Karag.jpg)
 Initially founded as a pump-station to feed distant fortresses, Barûn-karag flourished after engineers became taking up brewing as a hobby and found the local undersoil was exceptionally well for growing hops 
 
 The hold supplied water and beer during the Long March of the Grey Beards, earning lasting gratitude from allied clans.
 
 Brewthane brewmasters guard yeast cultures older than the hold itself, sharing casks only during oath-swearing festivals. Aquifer wardens combine rune hydraulics with water-wheels to drive mills, polishing halls to a glasslike sheen.",,,,,,"{""iconScale"":0.01}",,
+marker,-25.244870668979043,26.410072149433425,dwarf-outpost,Dwemerhelm,,,,,,,,,"{""iconScale"":0.01}",,
