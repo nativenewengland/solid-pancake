@@ -55,22 +55,6 @@ Residents cultivate heat-hardened fungus gardens and brew smoky lagers infused w
 ### Current Outlook
 A recent tremor has revived fears that the caldera may awaken; engineers are reinforcing the southern siphon tunnels while envoys request additional rune-warders from Karaz-a-Karak.
 ",,,,,,"{""iconScale"":0.31}",,"{""title"":""Zarak-az-Garaz"",""subtitle"":""Dwarfen Hold Profile"",""rows"":[{""label"":""Status"",""value"":""Watchful Border Hold""},{""label"":""Founded"",""value"":""-1420 KI""},{""label"":""Specialty"",""value"":""Obsidian runebulwarks & ash-steel""},{""label"":""Notable Clan"",""value"":""Clan Darkflint""}]}"
-marker,59.3,-4.9,broken-dwarven-hold,Barûn-karag,Vault of Wells,Aquifer-bound hold famed for its subterranean breweries,"## Overview
-Barûn-karag anchors a network of natural aquifers, its halls linked by slow-moving underground canals. The air smells of malt and mineral springs, and carved cisterns line nearly every avenue.
-
-## History
-Initially founded as a pump-station to feed distant fortresses, Barûn-karag flourished after engineers discovered pressure gradients that could lift entire ore barges. The hold supplied water and beer during the Long March of the Silver Host, earning lasting gratitude from allied clans.
-
-### Culture and Craft
-Brewthane brewmasters guard yeast cultures older than the hold itself, sharing casks only during oath-swearing festivals. Aquifer wardens combine rune hydraulics with water-wheels to drive mills, polishing halls to a glasslike sheen.
-
-### Strategic Notes
-- Floodgates can reverse canal flow, turning central plazas into defensive moats within minutes.
-- Hydraulic lifts ferry entire shieldwalls between tiers, allowing rapid redeployment of defenders.
-
-### Current Outlook
-Low snowmelt has tightened rationing; the council weighs whether to trade reserve casks to surface caravans for additional grain.
-",,,,,,"{""iconScale"":0.26}",,"{""title"":""Barûn-karag"",""subtitle"":""Dwarfen Hold Profile"",""rows"":[{""label"":""Status"",""value"":""Prosperous Waterhold""},{""label"":""Founded"",""value"":""-1512 KI""},{""label"":""Specialty"",""value"":""Stone-filtered ales & hydraulic lifts""},{""label"":""Notable Clan"",""value"":""Clan Brewthane""}]}"
 marker,58,-2.1,broken-dwarven-hold,Gundûm Garmak,Hammer of the Westwall,Frontier fortress shielding the troll-haunted crags,"## Overview
 Gundûm Garmak juts from a wind-scoured ridge like the head of a warhammer, all blunt angles and bristling artillery towers. Signal bonfires scar the surrounding cliffs, remnants of countless campaigns against the western troll clans.
 
@@ -311,23 +295,6 @@ Mortuary artisans weave silver-wire ossuaries and inscribe lament runes that soo
 ### Current Outlook
 A surge in ghostly whispers hints at a new breach between worlds; the priests consult with Thûrdrim Duraz for lore on sealing shadow rifts.
 ",,,,,,"{""iconScale"":0.01}",,"{""title"":""Gazûl-dûm"",""subtitle"":""Dwarfen Hold Profile"",""rows"":[{""label"":""Status"",""value"":""Sacred Necropolis""},{""label"":""Founded"",""value"":""-2120 KI""},{""label"":""Specialty"",""value"":""Ancestral catacombs & mortuary rites""},{""label"":""Notable Clan"",""value"":""Clan Gravesong""}]}"
-marker,31.3,16.2,broken-dwarven-hold,Gor Dûrgheled,Shadowfast,Mysterious hold guarding a rift-torn chasm,"## Overview
-Gor Dûrgheled clings to cliffs overlooking a chasm where shadows behave unnaturally, flowing like water against the stone. The hold is perpetually dim, lit by rune lanterns that emit steady, shadowless light.
-
-## History
-Established after daemonic silhouettes emerged from the chasm, Clan Nightward constructed overlapping wards to contain the threat. Their vigilance has prevented the gloom from spreading, though occasional incursions still test the defenses.
-
-### Culture and Craft
-Nightward sentries train to fight without relying on sight, using chime-lattices and tremor sense to navigate. Artisans craft obsidian ward-stones etched with anti-shadow runes exported to other holds needing protection.
-
-### Strategic Notes
-- Concentric ward circles can collapse inward, trapping manifestations in null-light cages.
-- The hold maintains hidden routes lit only by touch-sensitive glowstones for silent redeployment.
-
-### Current Outlook
-Recent fluctuations in the shadow wards prompt calls for aid; rune-smiths from Azar-khazad have been invited to reinforce the failing sigils.
-<<<<<<< HEAD
-",,,,,,"{""iconScale"":0.35}",,"{""title"":""Gor Dûrgheled"",""subtitle"":""Dwarfen Hold Profile"",""rows"":[{""label"":""Status"",""value"":""Wardens of the Gloom""},{""label"":""Founded"",""value"":""-1325 KI""},{""label"":""Specialty"",""value"":""Shadow wards & lightless sentry paths""},{""label"":""Notable Clan"",""value"":""Clan Nightward""}]}"
 marker,64,-24,abandon-dwarfhold,ABANDON DWARFHOLD,,,,,,,,,"{""iconScale"":0.01}",,
 marker,64,-20,barony-of-dorsen,BARONY OF DORSEN,,,,,,,,,"{""iconScale"":0.1}",,
 marker,64,-16,barony-of-livonia,BARONY OF LIVONIA,,,,,,,,,"{""iconScale"":0.11}",,
@@ -408,7 +375,7 @@ marker,-72.67284810103507,84.2434386737767,ld-010,LD 010,,,,,,,,,"{""iconScale""
 marker,-73.91847254592017,53.084839054893216,ld-012,LD 012,,,,,,,,,"{""iconScale"":0.25}",,
 marker,-74.01934150784015,88.37064800722405,ld-013,LD 013,,,,,,,,,"{""iconScale"":0.14}",,
 marker,-69.03751436758597,68.99402620363475,ld-015,LD 015,,,,,,,,,"{""iconScale"":0.11}",,
-marker,40,8,ld-018,LD 018,,,,,,,,,"{""iconScale"":0.24}",,
+marker,33.358061612778876,25.312500000000004,ld-018,LD 018,,,,,,,,,"{""iconScale"":0.24}",,
 marker,-72.95820739647147,90.04201159142667,ld-019,LD 019,,,,,,,,,"{""iconScale"":0.08}",,
 marker,11.27157392525834,-11.506509097533051,ld-021,LD 021,,,,,,,,,"{""iconScale"":0.16}",,
 marker,40,20,ld-022,LD 022,,,,,,,,,"{""iconScale"":0.12}",,
@@ -491,3 +458,9 @@ marker,69.8698915662856,55.32714843750001,dwarf-outpost,Dûrgrim Dûm,,,"Dûrgri
 
 It should be noted the current dwarfhold of Dûrgrim Dûm is not the primary bearer of its name. In fact Dûrgrim Dûm as it currently exists, was abandoned for over a thousand years after it became too crowded and its population migrated to a new hold which was constructed to fit its much larger population. This hold was lost during the Great Desecration, when Chaos marauders defiled sacred tombs across the northern reaches and elsewhere. The surviving clans gathered remaining relics and relocated to their orginal hold that had been abandoned a millennium past. Out of the great shame of losing their hold the dwarves swore an eternal oath to erase the name of the original hold of their ancestors, they had retreated into and replace it with the one that had just been lost, as to make any without personal knowledge believe this was their only hold and no hold had been breached and looted by the outlanders. ",,,,,,"{""iconScale"":0.01}",,
 marker,-43.707593504052944,-3.251953125,dwarf-outpost,Y'olazad-az-Bôr,,,,,,,,,"{""iconScale"":0.01}",,
+marker,-18.750309813140653,58.97460937500001,dwarf-outpost,Gor Dûrgheld,,,,,,,,,"{""iconScale"":0.01}",,
+marker,-8.211490323420682,86.33056640625,dwarf-outpost,Barûn-Karag,,,"Initially founded as a pump-station to feed distant fortresses, Barûn-karag flourished after engineers became taking up brewing as a hobby and found the local undersoil was exceptionally well for growing hops 
+
+The hold supplied water and beer during the Long March of the Grey Beards, earning lasting gratitude from allied clans.
+
+Brewthane brewmasters guard yeast cultures older than the hold itself, sharing casks only during oath-swearing festivals. Aquifer wardens combine rune hydraulics with water-wheels to drive mills, polishing halls to a glasslike sheen.",,,,,,"{""iconScale"":0.01}",,
