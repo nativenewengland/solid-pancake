@@ -1,7 +1,7 @@
 //Creating the Map
 var map = L.map('map', {
   zoomAnimation: true,
-  markerZoomAnimation: true,
+  markerZoomAnimation: false,
   attributionControl: false,
   minZoom: 3,
   maxZoom: 6,
