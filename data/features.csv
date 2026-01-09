@@ -71,7 +71,7 @@ Every warrior trains with collapsible palisades designed to spring from the eart
 ### Current Outlook
 Scouts report troll warbands uniting under a fire-scarred shaman; preparations are underway to lure them into the avalanche traps before spring thaws the snowpack.
 ",,,,,,"{""iconScale"":0.54}",,"{""title"":""Gundûm Garmak"",""subtitle"":""Dwarfen Hold Profile"",""rows"":[{""label"":""Status"",""value"":""Fortified Borderhold""},{""label"":""Founded"",""value"":""-1330 KI""},{""label"":""Specialty"",""value"":""Runed bolt throwers & collapsible palisades""},{""label"":""Notable Clan"",""value"":""Clan Trolldräng""}]}"
-marker,56.5,0.2,broken-dwarven-hold,Azar-khazad,Flamelit Sanctuary,Sacred forgehold that tends the Eternal Ember,"## Overview
+marker,-9.968684322671002,72.22412109375001,dwarf-outpost,Azar-khazad,Flamelit Sanctuary,Sacred forgehold that tends the Eternal Ember,"## Overview
 Azar-khazad is built around a sanctum whose heart-fire has burned without pause since before recorded lore. Pillared galleries direct the glow through rune lenses, painting the halls in amber and crimson bands.
 
 ## History
@@ -86,7 +86,7 @@ Pilgrims from distant holds bring offerings of rare coals and alchemical oils to
 
 ### Current Outlook
 The priest-smiths prepare for the once-in-a-century Ember Reckoning, when impurities are purged and new votive braziers are forged for allied holds.
-",,,,,,"{""iconScale"":0.32}",,"{""title"":""Azar-khazad"",""subtitle"":""Dwarfen Hold Profile"",""rows"":[{""label"":""Status"",""value"":""Holy Forgehold""},{""label"":""Founded"",""value"":""-2105 KI""},{""label"":""Specialty"",""value"":""Consecrated rune-fire & ember glass""},{""label"":""Notable Clan"",""value"":""Clan Emberborn""}]}"
+",,,,,,"{""iconScale"":0.01}",,"{""title"":""Azar-khazad"",""subtitle"":""Dwarfen Hold Profile"",""rows"":[{""label"":""Status"",""value"":""Holy Forgehold""},{""label"":""Founded"",""value"":""-2105 KI""},{""label"":""Specialty"",""value"":""Consecrated rune-fire & ember glass""},{""label"":""Notable Clan"",""value"":""Clan Emberborn""}]}"
 marker,55,2.9,broken-dwarven-hold,Thûrdrim Duraz,Lorevault,Repository hold preserving runic wisdom and maps,"## Overview
 Thûrdrim Duraz descends in concentric rings of libraries, each tier devoted to a different era of dwarfen lore. Lanterns filled with glow-worm colonies cast steady light over scriptoria and map vaults.
 
@@ -135,7 +135,7 @@ Sailors here chart currents by listening to harmonic resonances in the cavern ce
 ### Current Outlook
 Merchants petition for expanded warehousing after discovering rich amber deposits downstream; negotiations with Thûrdrim Duraz scribes are underway to catalog the new routes.
 ",,,,,,"{""iconScale"":0.01}",,"{""title"":""Bêrdûm Barak"",""subtitle"":""Dwarfen Hold Profile"",""rows"":[{""label"":""Status"",""value"":""Riverway Tradehold""},{""label"":""Founded"",""value"":""-1575 KI""},{""label"":""Specialty"",""value"":""Stone-hulled barges & tide locks""},{""label"":""Notable Clan"",""value"":""Clan Riverthane""}]}"
-marker,50.3,10.3,broken-dwarven-hold,Zirak-khazad,Peak of Echoes,Mountain-top hold famed for its resonant signal horns,"![Zirak-khazad](images/Dwarfhold/Zirak-khazad.jpg)
+marker,25.58137607008905,93.66943359375,dwarf-outpost,Zirak-khazad,Peak of Echoes,Mountain-top hold famed for its resonant signal horns,"![Zirak-khazad](images/Dwarfhold/Zirak-khazad.jpg)
 
 ## Overview
 Zirak-khazad crowns a needle peak, its terraces stepping into the clouds. Vast bronze horns line the cliffs, channeling wind into melodies that can be heard valleys away.
