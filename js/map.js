@@ -3525,7 +3525,10 @@ map.addControl(new AddMarkerControl());
       return;
     }
 
-    var defaultAlt = fileName.replace(/\.[^/.]+$/, '').replace(/[-_]+/g, ' ').trim();
+    var safeFileName = fileName.replace(/[/\\]+/g, '');
+    var encodedFileName = encodeURIComponent(safeFileName);
+
+    var defaultAlt = safeFileName.replace(/\.[^/.]+$/, '').replace(/[-_]+/g, ' ').trim();
     if (!defaultAlt) {
       defaultAlt = 'image';
     }
@@ -3539,7 +3542,7 @@ map.addControl(new AddMarkerControl());
     }
 
     altText = altText.replace(/\]/g, '\\]');
-    var markdownPath = 'images/' + fileName;
+    var markdownPath = 'images/' + encodedFileName;
     var markdown = '![' + altText + '](' + markdownPath + ')';
 
     var needsPrefixSpace =
