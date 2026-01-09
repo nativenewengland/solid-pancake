@@ -5,8 +5,8 @@ Gorlak Orc
 
 goblin
 ",,,,,,"{""iconScale"":0.1}",,"{""title"":""Gorlak Watch"",""subtitle"":""Estuary Guardian Profile"",""image"":{""src"":""images/the-bored-gorlak-v0-hn8cg9kvykde1.webp"",""alt"":""Illustration of the marsh sentinel Gorlak""},""rows"":[{""label"":""Habitat"",""value"":""Peat bogs at the river estuary""},{""label"":""Role"",""value"":""Balances salt and freshwater tides""},{""label"":""Offerings"",""value"":""Cedar smoke braids before eel harvests""}]}"
-marker,68.5362764153349,30.540178243609155,broken-dwarven-hold,Zubar,,,"![Avlar Thrûn](images/Avlar-Thrûn.jpg)
-",,,,,,"{""iconScale"":0.01}",,"{""title"":""Zubar Hold"",""subtitle"":""Lost Hold Profile"",""image"":{""src"":""images/Avlar-Thrûn.jpg"",""alt"":""Illustration of the hold in its current state""},""rows"":[{""label"":""Type"",""value"":""Lost Hold""},{""label"":""Location"",""value"":""Central-western Worlds Edge Mountains""},{""label"":""Population"",""value"":""N/A""},{""label"":""Allegiance"",""value"":""None""},{""label"":""Industry"",""value"":""Gemstones (Former); Dragontaming (Former)""}]}"
+marker,68.5362764153349,30.540178243609155,broken-dwarven-hold,Zubar,,,"![Avlar Thrûn](images/Avlar-Thr%C3%BBn.jpg)
+",,,,,,"{""iconScale"":0.01}",,"{""title"":""Zubar Hold"",""subtitle"":""Lost Hold Profile"",""image"":{""src"":""images/Avlar-Thr%C3%BBn.jpg"",""alt"":""Illustration of the hold in its current state""},""rows"":[{""label"":""Type"",""value"":""Lost Hold""},{""label"":""Location"",""value"":""Central-western Worlds Edge Mountains""},{""label"":""Population"",""value"":""N/A""},{""label"":""Allegiance"",""value"":""None""},{""label"":""Industry"",""value"":""Gemstones (Former); Dragontaming (Former)""}]}"
 marker,63.5,-12.3,broken-dwarven-hold,Khazadûn Kharn,Gate of the Skyhammer; Kharn-azor,Sky-carved bastion guarding the Northern Crown Pass,"## Overview
 Khazadûn Kharn straddles the Northern Crown Pass, its runic terraces carved into the sheer basalt ridgeline to watch the auroral skies. Granite signal towers feed a mesh of mirrored beacons that can alert every clanhold along the ridge in moments.
 
@@ -447,23 +447,23 @@ marker,-41.721428710864664,73.32045975787602,dwarf-outpost,Krak-Morgas,,,![Krak-
 marker,57.680961955099285,98.60588477732192,abandon-dwarfhold,Uzbad-az-Narg,,,"![Uzbad-az-Narg](images/Dwarfhold/Uzbad-az-Narg.jpg)
 Hold has been sealed 1000 years so its unknown if the inhabitants are alive or dead and thus unknown if its an active or abandoned dwarfhold",,,,,,"{""iconScale"":0.01}",,
 marker,70.04329338556502,81.60533535046464,abandon-dwarfhold,Avlar-Thrûn,,,Dwarfhold destroyed by dragons ,,,,,,"{""iconScale"":0.01}",,
-marker,-43.844541500583176,55.71149769360912,dwarf-outpost,Dun-Ôrdstun,,,![Dun-Ôrdstun](images/Dwarfhold/Dun-Ôrdstun.jpg),,,,,,"{""iconScale"":0.01}",,
-marker,-35.35396257952243,66.35503496549036,dwarf-outpost,Dûrandur,,,![Dûrandur](images/Dwarfhold/Dûrandur.jpg),,,,,,"{""iconScale"":0.01}",,
+marker,-43.844541500583176,55.71149769360912,dwarf-outpost,Dun-Ôrdstun,,,![Dun-Ôrdstun](images/Dwarfhold/Dun-%C3%94rdstun.jpg),,,,,,"{""iconScale"":0.01}",,
+marker,-35.35396257952243,66.35503496549036,dwarf-outpost,Dûrandur,,,![Dûrandur](images/Dwarfhold/D%C3%BBrandur.jpg),,,,,,"{""iconScale"":0.01}",,
 marker,-34.37966637421009,82.66012598852991,dwarf-outpost,Black Rock Hold,,,,,,,,,"{""iconScale"":0.01}",,
-marker,-12.854373616569383,83.32024374128984,dwarf-outpost,Barat Nûmenz,,,![Barat Nûmenz](images/Dwarfhold/Barat Nûmenz.jpg),,,,,,"{""iconScale"":0.01}",,
-marker,-69.40349544360423,55.12939453125,dwarf-outpost,Dun Toruhm,,,![Dun Toruhm](images/Dwarfhold/Dun Toruhm.jpg),,,,,,"{""iconScale"":0.01}",,
+marker,-12.854373616569383,83.32024374128984,dwarf-outpost,Barat Nûmenz,,,![Barat Nûmenz](images/Dwarfhold/Barat%20N%C3%BBmenz.jpg),,,,,,"{""iconScale"":0.01}",,
+marker,-69.40349544360423,55.12939453125,dwarf-outpost,Dun Toruhm,,,![Dun Toruhm](images/Dwarfhold/Dun%20Toruhm.jpg),,,,,,"{""iconScale"":0.01}",,
 marker,-20.941008333246586,80.59367965438688,dwarf-outpost,Karad-Graef,,,![Karad-Graef](images/Dwarfhold/Karad-Graef.jpg),,,,,,"{""iconScale"":0.01}",,
 marker,34.19554856630493,-25.848322373167758,bp-003,BP 003,,,,,,,,,"{""iconScale"":0.37}",,
 marker,15.158663336160132,-60.05096059356373,carrow,Neverwinter,,,,,,,,,"{""iconScale"":0.2}",,
 marker,-47.57627196331696,-50.27213309643573,carrow,Moorsfield,,,,,,,,,"{""iconScale"":0.3}",,
-marker,61.41754927758897,75.89469029520824,dwarf-outpost,Dûmthûr Mînrth,,,![Dûmthûr Mînrth](images/Dwarfhold/Dûmthûr Mînrth.jpg),,,,,,"{""iconScale"":0.01}",,
-marker,69.8698915662856,55.32714843750001,dwarf-outpost,Dûrgrim Dûm,,,"![Dûrgrim Dûm](images/Dwarfhold/Dûrgrim Dûm.jpg)
+marker,61.41754927758897,75.89469029520824,dwarf-outpost,Dûmthûr Mînrth,,,![Dûmthûr Mînrth](images/Dwarfhold/D%C3%BBmth%C3%BBr%20M%C3%AEnrth.jpg),,,,,,"{""iconScale"":0.01}",,
+marker,69.8698915662856,55.32714843750001,dwarf-outpost,Dûrgrim Dûm,,,"![Dûrgrim Dûm](images/Dwarfhold/D%C3%BBrgrim%20D%C3%BBm.jpg)
 Dûrgrim Dûm is an ancient Dwarvern hold located in the ___ 
 
 It should be noted the current dwarfhold of Dûrgrim Dûm is not the primary bearer of its name. In fact Dûrgrim Dûm as it currently exists, was abandoned for over a thousand years after it became too crowded and its population migrated to a new hold which was constructed to fit its much larger population. This hold was lost during the Great Desecration, when Chaos marauders defiled sacred tombs across the northern reaches and elsewhere. The surviving clans gathered remaining relics and relocated to their orginal hold that had been abandoned a millennium past. Out of the great shame of losing their hold the dwarves swore an eternal oath to erase the name of the original hold of their ancestors, they had retreated into and replace it with the one that had just been lost, as to make any without personal knowledge believe this was their only hold and no hold had been breached and looted by the outlanders. ",,,,,,"{""iconScale"":0.01}",,
-marker,-43.707593504052944,-3.251953125,dwarf-outpost,Y'olazad-az-Bôr,,,![Y'olazad-az-Bôr](images/Dwarfhold/Y'olazad-az-Bôr.jpg),,,,,,"{""iconScale"":0.01}",,
-marker,-18.750309813140653,58.97460937500001,dwarf-outpost,Gor Dûrgheld,,,![Gor Dûrgheld](images/Dwarfhold/Gor Dûrgheld.png),,,,,,"{""iconScale"":0.01}",,
-marker,-8.211490323420682,86.33056640625,dwarf-outpost,Barûn-Karag,,,"![Barûn-Karag](images/Dwarfhold/Barûn-Karag.jpg)
+marker,-43.707593504052944,-3.251953125,dwarf-outpost,Y'olazad-az-Bôr,,,![Y'olazad-az-Bôr](images/Dwarfhold/Y'olazad-az-B%C3%B4r.jpg),,,,,,"{""iconScale"":0.01}",,
+marker,-18.750309813140653,58.97460937500001,dwarf-outpost,Gor Dûrgheld,,,![Gor Dûrgheld](images/Dwarfhold/Gor%20D%C3%BBrgheld.png),,,,,,"{""iconScale"":0.01}",,
+marker,-8.211490323420682,86.33056640625,dwarf-outpost,Barûn-Karag,,,"![Barûn-Karag](images/Dwarfhold/Bar%C3%BBn-Karag.jpg)
 Initially founded as a pump-station to feed distant fortresses, Barûn-karag flourished after engineers became taking up brewing as a hobby and found the local undersoil was exceptionally well for growing hops 
 
 The hold supplied water and beer during the Long March of the Grey Beards, earning lasting gratitude from allied clans.
