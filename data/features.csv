@@ -1,13 +1,15 @@
 type,lat,lng,icon,name/text,alt_names,subheader/text,description,size,angle,spacing,curve,coords,style,overlay,infobox
-marker,35.85343961959182,-1.4941406250000002,broken-dwarven-hold,Marker,,,,,,,,,"{""iconScale"":0.01}",,
+marker,35.85343961959182,-1.4941406250000002,dwarf-outpost,Marker,,,,,,,,,"{""iconScale"":0.01}",,
 marker,17.602139123350852,-24.9609375,bp-010,Marker,,,"![69df3a4e695e5be07b1695521eb7d2ca](images/69df3a4e695e5be07b1695521eb7d2ca.jpg)
 Gorlak Orc
 
 goblin
 ",,,,,,"{""iconScale"":0.1}",,"{""title"":""Gorlak Watch"",""subtitle"":""Estuary Guardian Profile"",""image"":{""src"":""images/the-bored-gorlak-v0-hn8cg9kvykde1.webp"",""alt"":""Illustration of the marsh sentinel Gorlak""},""rows"":[{""label"":""Habitat"",""value"":""Peat bogs at the river estuary""},{""label"":""Role"",""value"":""Balances salt and freshwater tides""},{""label"":""Offerings"",""value"":""Cedar smoke braids before eel harvests""}]}"
-marker,68.5362764153349,30.540178243609155,broken-dwarven-hold,Zubar,,,"![Avlar Thrûn](images/Avlar-Thr%C3%BBn.jpg)
+marker,68.5362764153349,30.540178243609155,dwarf-outpost,Zubar,,,"![Avlar Thrûn](images/Avlar-Thr%C3%BBn.jpg)
 ",,,,,,"{""iconScale"":0.01}",,"{""title"":""Zubar Hold"",""subtitle"":""Lost Hold Profile"",""image"":{""src"":""images/Avlar-Thr%C3%BBn.jpg"",""alt"":""Illustration of the hold in its current state""},""rows"":[{""label"":""Type"",""value"":""Lost Hold""},{""label"":""Location"",""value"":""Central-western Worlds Edge Mountains""},{""label"":""Population"",""value"":""N/A""},{""label"":""Allegiance"",""value"":""None""},{""label"":""Industry"",""value"":""Gemstones (Former); Dragontaming (Former)""}]}"
-marker,63.5,-12.3,broken-dwarven-hold,Khazadûn Kharn,Gate of the Skyhammer; Kharn-azor,Sky-carved bastion guarding the Northern Crown Pass,"## Overview
+marker,63.5,-12.3,dwarf-outpost,Khazadûn Kharn,Gate of the Skyhammer; Kharn-azor,Sky-carved bastion guarding the Northern Crown Pass,"![Khazadûn Kharn](images/Dwarfhold/Khazad%C3%BBn%20Kharn.jpg)
+
+## Overview
 Khazadûn Kharn straddles the Northern Crown Pass, its runic terraces carved into the sheer basalt ridgeline to watch the auroral skies. Granite signal towers feed a mesh of mirrored beacons that can alert every clanhold along the ridge in moments.
 
 ## History
@@ -23,7 +25,9 @@ The hold's guilds venerate the open sky; apprentices spend their oath-year tendi
 ### Current Outlook
 With winter squalls thickening, Thane Dromri Stormthane has ordered additional patrols of the hanging rope-roads and reopened talks with Kislevite trappers for shared avalanche wards.
 ",,,,,,"{""iconScale"":0.19}",,"{""title"":""Khazadûn Kharn"",""subtitle"":""Dwarfen Hold Profile"",""rows"":[{""label"":""Status"",""value"":""Prosperous High Hold""},{""label"":""Founded"",""value"":""c. -1900 KI""},{""label"":""Specialty"",""value"":""Skyhammer ballistae & aurora beacons""},{""label"":""Notable Clan"",""value"":""Clan Stormthane""}]}"
-marker,62.1,-10,broken-dwarven-hold,Dhurnomli Bûr,Oathforge Deep,Gem-cored stronghold renowned for oath-tempered steel,"## Overview
+marker,62.1,-10,dwarf-outpost,Dhurnomli Bûr,Oathforge Deep,Gem-cored stronghold renowned for oath-tempered steel,"![Dhurnomli Bûr](images/Dwarfhold/Dhurnomli%20B%C3%BBr.jpg)
+
+## Overview
 Dhurnomli Bûr coils around a cathedral-sized geode whose glittering walls reflect every forge light. The glow lends the hold an amber twilight even in the deepest workshops, inspiring smiths and rune-priests alike.
 
 ## History
@@ -39,7 +43,9 @@ Every journeyman must bind a sworn companion to witness their masterwork, a trad
 ### Current Outlook
 The thane's council debates opening a trade spur to nearby human barons in exchange for timber and draft animals to expand the forge-haulers.
 ",,,,,,"{""iconScale"":0.33}",,"{""title"":""Dhurnomli Bûr"",""subtitle"":""Dwarfen Hold Profile"",""rows"":[{""label"":""Status"",""value"":""Thriving Forgehold""},{""label"":""Founded"",""value"":""-1687 KI""},{""label"":""Specialty"",""value"":""Oath-tempered adamant blades""},{""label"":""Notable Clan"",""value"":""Clan Grimdron""}]}"
-marker,60.7,-7.2,broken-dwarven-hold,Zarak-az-Garaz,Obsidian Crown,Volcanic bastion crowned with rune-lit obsidian,"## Overview
+marker,60.7,-7.2,dwarf-outpost,Zarak-az-Garaz,Obsidian Crown,Volcanic bastion crowned with rune-lit obsidian,"![Zarak-az-Garaz](images/Ruined%20Dwarfhold/Zarak-az-Garaz.jpg)
+
+## Overview
 Zarak-az-Garaz grips the rim of a dormant caldera, its curtain walls faced with obsidian plates etched in gold. Steam plumes vent from the terraces, giving the impression of a crown wreathed in silver vapour.
 
 ## History
@@ -55,7 +61,9 @@ Residents cultivate heat-hardened fungus gardens and brew smoky lagers infused w
 ### Current Outlook
 A recent tremor has revived fears that the caldera may awaken; engineers are reinforcing the southern siphon tunnels while envoys request additional rune-warders from Karaz-a-Karak.
 ",,,,,,"{""iconScale"":0.31}",,"{""title"":""Zarak-az-Garaz"",""subtitle"":""Dwarfen Hold Profile"",""rows"":[{""label"":""Status"",""value"":""Watchful Border Hold""},{""label"":""Founded"",""value"":""-1420 KI""},{""label"":""Specialty"",""value"":""Obsidian runebulwarks & ash-steel""},{""label"":""Notable Clan"",""value"":""Clan Darkflint""}]}"
-marker,58,-2.1,broken-dwarven-hold,Gundûm Garmak,Hammer of the Westwall,Frontier fortress shielding the troll-haunted crags,"## Overview
+marker,58,-2.1,dwarf-outpost,Gundûm Garmak,Hammer of the Westwall,Frontier fortress shielding the troll-haunted crags,"![Gundûm Garmak](images/Dwarfhold/Gund%C3%BBm%20Garmak.jpg)
+
+## Overview
 Gundûm Garmak juts from a wind-scoured ridge like the head of a warhammer, all blunt angles and bristling artillery towers. Signal bonfires scar the surrounding cliffs, remnants of countless campaigns against the western troll clans.
 
 ## History
@@ -87,7 +95,9 @@ Pilgrims from distant holds bring offerings of rare coals and alchemical oils to
 ### Current Outlook
 The priest-smiths prepare for the once-in-a-century Ember Reckoning, when impurities are purged and new votive braziers are forged for allied holds.
 ",,,,,,"{""iconScale"":0.01}",,"{""title"":""Azar-khazad"",""subtitle"":""Dwarfen Hold Profile"",""rows"":[{""label"":""Status"",""value"":""Holy Forgehold""},{""label"":""Founded"",""value"":""-2105 KI""},{""label"":""Specialty"",""value"":""Consecrated rune-fire & ember glass""},{""label"":""Notable Clan"",""value"":""Clan Emberborn""}]}"
-marker,55,2.9,broken-dwarven-hold,Thûrdrim Duraz,Lorevault,Repository hold preserving runic wisdom and maps,"## Overview
+marker,55,2.9,dwarf-outpost,Thûrdrim Duraz,Lorevault,Repository hold preserving runic wisdom and maps,"![Thûrdrim Duraz](images/Th%C3%BBrdrim%20Duraz.jpg)
+
+## Overview
 Thûrdrim Duraz descends in concentric rings of libraries, each tier devoted to a different era of dwarfen lore. Lanterns filled with glow-worm colonies cast steady light over scriptoria and map vaults.
 
 ## History
@@ -103,7 +113,9 @@ Scribes engrave oaths into stone cylinders that can be locked into rotating memo
 ### Current Outlook
 The archivists race to decode a recently unearthed tablet that hints at a forgotten underway linking Thûrdrim Duraz to distant Zorn Uzkul.
 ",,,,,,"{""iconScale"":0.43}",,"{""title"":""Thûrdrim Duraz"",""subtitle"":""Dwarfen Hold Profile"",""rows"":[{""label"":""Status"",""value"":""Scholarly Hold""},{""label"":""Founded"",""value"":""-1980 KI""},{""label"":""Specialty"",""value"":""Rune archives & cartographer guilds""},{""label"":""Notable Clan"",""value"":""Clan Lorekeeper""}]}"
-marker,-60.608180978791864,60.166741558714044,fort,Kazad-grimil,Hold of the Grim Oath,Stern sanctuary for slayer cults and oath-breakers seeking redemption,"## Overview
+marker,-60.608180978791864,60.166741558714044,fort,Kazad-grimil,Hold of the Grim Oath,Stern sanctuary for slayer cults and oath-breakers seeking redemption,"![Kazad-grimil](images/Dwarfhold/Kazad-grimil.jpg)
+
+## Overview
 Kazad-grimil looms like a granite gallows above the surrounding ravines, its statues depicting ancestors with axes held in grim salute. The hold offers sanctuary to oath-breakers who seek redemption through service and sacrifice.
 
 ## History
@@ -119,7 +131,9 @@ The hold's feasts are sparse, its songs low; residents carve their failings into
 ### Current Outlook
 A surge of volunteers from human frontier towns has strained supplies; the council weighs whether to expand the penitence quarters or send excess warriors to allied holds.
 ",,,,,,"{""iconScale"":0.18}",,"{""title"":""Kazad-grimil"",""subtitle"":""Dwarfen Hold Profile"",""rows"":[{""label"":""Status"",""value"":""Solemn Redemption Hold""},{""label"":""Founded"",""value"":""-1205 KI""},{""label"":""Specialty"",""value"":""Slayer forges & penitent lodges""},{""label"":""Notable Clan"",""value"":""Clan Grimskald""}]}"
-marker,51.8,7.9,broken-dwarven-hold,Bêrdûm Barak,Harbor Under the Mountain,Dockhold controlling a subterranean river harbor,"## Overview
+marker,51.8,7.9,dwarf-outpost,Bêrdûm Barak,Harbor Under the Mountain,Dockhold controlling a subterranean river harbor,"![Bêrdûm Barak](images/B%C3%AArd%C3%BBm%20Barak.jpg)
+
+## Overview
 Bêrdûm Barak nestles along a cavern lake where an underground river surfaces before plunging back into darkness. Tiered docks and carved breakwaters transform the chamber into a bustling harbor lit by floating lanterns.
 
 ## History
@@ -153,7 +167,7 @@ Residents weave music into daily labor; miners tap rhythms that guide collapsibl
 ### Current Outlook
 Recent storm damage snapped two sky-bridges; repair crews race to restore them before trading season opens.
 ",,,,,,"{""iconScale"":0.01}",,"{""title"":""Zirak-khazad"",""subtitle"":""Dwarfen Hold Profile"",""rows"":[{""label"":""Status"",""value"":""High Aerie Hold""},{""label"":""Founded"",""value"":""-1890 KI""},{""label"":""Specialty"",""value"":""Resonant hornworks & skywatching""},{""label"":""Notable Clan"",""value"":""Clan Echohelm""}]}"
-marker,47.2,15.1,broken-dwarven-hold,Dûmthûr Mîn,Crystal Sanctum,Gem-mining hold renowned for luminous quartz vaults,"## Overview
+marker,47.2,15.1,dwarf-outpost,Dûmthûr Mîn,Crystal Sanctum,Gem-mining hold renowned for luminous quartz vaults,"## Overview
 Dûmthûr Mîn dazzles visitors with vaulted chambers lined in luminous quartz that refracts even dim torchlight into radiant hues. Bridges of transparent lightstone span abyssal chasms, glowing softly beneath travelers' boots.
 
 ## History
@@ -169,7 +183,9 @@ Gemcutters apprentice as prism-tenders, learning to align mirrors that bathe the
 ### Current Outlook
 A newly discovered violet vein has sparked debate over whether to expand deeper despite whispers of restless spirits in the lower galleries.
 ",,,,,,"{""iconScale"":0.19}",,"{""title"":""Dûmthûr Mîn"",""subtitle"":""Dwarfen Hold Profile"",""rows"":[{""label"":""Status"",""value"":""Glittering Minehold""},{""label"":""Founded"",""value"":""-1260 KI""},{""label"":""Specialty"",""value"":""Lightstone facets & precision gemcutting""},{""label"":""Notable Clan"",""value"":""Clan Glimmervein""}]}"
-marker,45.6,17.5,broken-dwarven-hold,Gûndâl Grum,Forge of Clever Hands,Engineering hold famed for gyrocopter foundries,"## Overview
+marker,45.6,17.5,dwarf-outpost,Gûndâl Grum,Forge of Clever Hands,Engineering hold famed for gyrocopter foundries,"![Gûndâl Grum](images/Dwarfhold/G%C3%BBnd%C3%A2l%20Grum.jpg)
+
+## Overview
 Gûndâl Grum rings with the clatter of gears and the whine of rotor testing rigs. Elevated walkways crisscross vast assembly halls where engineers tinker with experimental machines under the watchful gaze of stern runelords.
 
 ## History
@@ -185,7 +201,9 @@ Tinker guilds prize innovation, though every prototype must pass rigorous rune-b
 ### Current Outlook
 A coalition of young engineers petitions to test steam-powered tunneling machines, prompting elders to demand extensive safety trials before deployment.
 ",,,,,,"{""iconScale"":0.44}",,"{""title"":""Gûndâl Grum"",""subtitle"":""Dwarfen Hold Profile"",""rows"":[{""label"":""Status"",""value"":""Innovator Hold""},{""label"":""Founded"",""value"":""-1104 KI""},{""label"":""Specialty"",""value"":""Gyrocopters & clockwork automata""},{""label"":""Notable Clan"",""value"":""Clan Geargrin""}]}"
-marker,44,19.8,broken-dwarven-hold,Thrâng-khazad,Ancestral Spiral,Hold descending through a spiral of ancestor crypts,"## Overview
+marker,44,19.8,dwarf-outpost,Thrâng-khazad,Ancestral Spiral,Hold descending through a spiral of ancestor crypts,"![Thrâng-khazad](images/Dwarfhold/Thr%C3%A2ng-khazad.jpg)
+
+## Overview
 Thrâng-khazad winds downward in a grand spiral carved around a central shaft of ancestor statues. Each tier honors a different age, and the air is thick with incense and echoing hymns.
 
 ## History
@@ -201,7 +219,9 @@ Stoneward artisans specialize in memorial craftsmanship, inlaying sarcophagi wit
 ### Current Outlook
 The High Shieldthane prepares for the 500th Jubilee of Remembrance, expecting delegations from every loyal clanhold.
 ",,,,,,"{""iconScale"":0.22}",,"{""title"":""Thrâng-khazad"",""subtitle"":""Dwarfen Hold Profile"",""rows"":[{""label"":""Status"",""value"":""Reverent Deephold""},{""label"":""Founded"",""value"":""-2077 KI""},{""label"":""Specialty"",""value"":""Ancestor crypts & spiral fortifications""},{""label"":""Notable Clan"",""value"":""Clan Stoneward""}]}"
-marker,42.5,22,broken-dwarven-hold,Khirûn-karag,Glacier Bastion,Frost-bound hold carved beneath a living glacier,"## Overview
+marker,42.5,22,dwarf-outpost,Khirûn-karag,Glacier Bastion,Frost-bound hold carved beneath a living glacier,"![Khirûn-karag](images/Dwarfhold/Khir%C3%BBn-karag.jpg)
+
+## Overview
 Khirûn-karag lies beneath translucent ice, its halls glimmering with captured starlight refracted through the glacier overhead. Frostbeard wardens patrol frozen galleries lined with runic heat braziers.
 
 ## History
@@ -217,7 +237,9 @@ Smiths temper steel in brine quenches and weave frost-proof mail lined with insu
 ### Current Outlook
 Spring thaws threaten to expose upper tunnels; crews work to redirect meltwater and reinforce key buttresses.
 ",,,,,,"{""iconScale"":0.23}",,"{""title"":""Khirûn-karag"",""subtitle"":""Dwarfen Hold Profile"",""rows"":[{""label"":""Status"",""value"":""Frozen Sentinel""},{""label"":""Founded"",""value"":""-1615 KI""},{""label"":""Specialty"",""value"":""Ice-carved fortifications & frost-proof mail""},{""label"":""Notable Clan"",""value"":""Clan Frostbeard""}]}"
-marker,41,24.3,broken-dwarven-hold,Gazad-az-Bôr,Bastion of the Border,Southern sentinel guarding the emerald marches,"## Overview
+marker,41,24.3,dwarf-outpost,Gazad-az-Bôr,Bastion of the Border,Southern sentinel guarding the emerald marches,"![Gazad-az-Bôr](images/Dwarfhold/Gazad-az-B%C3%B4r.jpg)
+
+## Overview
 Gazad-az-Bôr overlooks rolling emerald plains from a rocky escarpment studded with signal towers. Caravan roads converge beneath its guns, ensuring every traveler is cataloged before crossing the marches.
 
 ## History
@@ -233,7 +255,9 @@ Shieldmarch drillmasters train warriors in combined arms tactics with humans and
 ### Current Outlook
 Diplomatic envoys from the Moot negotiate expanded patrol rights, promising grain shipments in exchange for protection.
 ",,,,,,"{""iconScale"":0.31}",,"{""title"":""Gazad-az-Bôr"",""subtitle"":""Dwarfen Hold Profile"",""rows"":[{""label"":""Status"",""value"":""Southern March Hold""},{""label"":""Founded"",""value"":""-1182 KI""},{""label"":""Specialty"",""value"":""Border forts & rotating bastions""},{""label"":""Notable Clan"",""value"":""Clan Shieldmarch""}]}"
-marker,38.2,28,broken-dwarven-hold,Bazâr-durin,Market of the First Forge,Grand bazaar celebrating invention and ancestral craftsmanship,"## Overview
+marker,38.2,28,dwarf-outpost,Bazâr-durin,Market of the First Forge,Grand bazaar celebrating invention and ancestral craftsmanship,"![Bazâr-durin](images/Dwarfhold/Baz%C3%A2r-durin.jpg)
+
+## Overview
 Bazâr-durin thrives around an immense plaza roofed by stained glass depicting the forging of the first rune hammer. Market stalls burst with color, music, and the aroma of spice breads from every corner of the empire.
 
 ## History
@@ -249,7 +273,9 @@ Guildhouses line the plaza, each offering apprenticeships in crafts from jewelry
 ### Current Outlook
 Preparations for the next Maker's Fair have begun, and invitations have been sent to elf artisans willing to share glassmaking secrets in exchange for rune lore.
 ",,,,,,"{""iconScale"":0.27}",,"{""title"":""Bazâr-durin"",""subtitle"":""Dwarfen Hold Profile"",""rows"":[{""label"":""Status"",""value"":""Celebrated Market Hold""},{""label"":""Founded"",""value"":""-950 KI""},{""label"":""Specialty"",""value"":""Seasonal grand markets & artisan guildhouses""},{""label"":""Notable Clan"",""value"":""Clan Goldtally""}]}"
-marker,36.7,25.6,broken-dwarven-hold,Kharak-khazad,Sealed Redoubt,Partially collapsed hold watching over the southern deeps,"## Overview
+marker,36.7,25.6,dwarf-outpost,Kharak-khazad,Sealed Redoubt,Partially collapsed hold watching over the southern deeps,"![Kharak-khazad](images/Dwarfhold/Kharak-khazad.jpg)
+
+## Overview
 Kharak-khazad clings to cliffs above yawning chasms, many halls now sealed behind rune-locked gates after catastrophic quakes. Lantern-lit salvage crews still delve the blocked passages searching for lost kin and treasures.
 
 ## History
@@ -265,7 +291,9 @@ Survivors maintain meticulous records of which passages remain sealed and who wa
 ### Current Outlook
 Rockvault prospectors petition to reopen a lower shaft after detecting vibration patterns suggesting empty, stable chambers beyond the collapse.
 ",,,,,,"{""iconScale"":0.34}",,"{""title"":""Kharak-khazad"",""subtitle"":""Dwarfen Hold Profile"",""rows"":[{""label"":""Status"",""value"":""Partially Sealed Hold""},{""label"":""Founded"",""value"":""-1450 KI""},{""label"":""Specialty"",""value"":""Sealed gateworks & salvage crews""},{""label"":""Notable Clan"",""value"":""Clan Rockvault""}]}"
-marker,34,20.7,broken-dwarven-hold,Thûrdûn Thrum,Hall of Resonance,Melodic stronghold where runes are sung into stone,"## Overview
+marker,34,20.7,dwarf-outpost,Thûrdûn Thrum,Hall of Resonance,Melodic stronghold where runes are sung into stone,"![Thûrdûn Thrum](images/Dwarfhold/Th%C3%BBrd%C3%BBn%20Thrum.jpg)
+
+## Overview
 Thûrdûn Thrum is carved like a great instrument, with every corridor tuned to amplify the voices of its inhabitants. Choral rehearsals double as structural inspections, for any discordant echo may signal stress in the stone.
 
 ## History
@@ -281,7 +309,9 @@ Songthane artisans engrave wave-patterns into pillars, then test them with cryst
 ### Current Outlook
 The Grand Chorus prepares a new Hymn of Binding to stabilize distant outposts suffering from warpstone tremors.
 ",,,,,,"{""iconScale"":0.37}",,"{""title"":""Thûrdûn Thrum"",""subtitle"":""Dwarfen Hold Profile"",""rows"":[{""label"":""Status"",""value"":""Harmonic Runebastion""},{""label"":""Founded"",""value"":""-1010 KI""},{""label"":""Specialty"",""value"":""Resonant rune-singing & acoustic wards""},{""label"":""Notable Clan"",""value"":""Clan Songthane""}]}"
-marker,32.7,18.4,broken-dwarven-hold,Gazûl-dûm,Sanctum of Gazûl,Catacomb hold honoring the Lord of the Underearth,"## Overview
+marker,32.7,18.4,dwarf-outpost,Gazûl-dûm,Sanctum of Gazûl,Catacomb hold honoring the Lord of the Underearth,"![Gazûl-dûm](images/Dwarfhold/Gaz%C3%BBl-d%C3%BBm.jpg)
+
+## Overview
 Gazûl-dûm stretches through solemn catacombs carved with reliefs of every ancestor interred within. Luminous fungi paint the passageways in violet light as silent processions bear offerings to the Lord of the Underearth.
 
 ## History
@@ -297,7 +327,7 @@ Mortuary artisans weave silver-wire ossuaries and inscribe lament runes that soo
 ### Current Outlook
 A surge in ghostly whispers hints at a new breach between worlds; the priests consult with Thûrdrim Duraz for lore on sealing shadow rifts.
 ",,,,,,"{""iconScale"":0.01}",,"{""title"":""Gazûl-dûm"",""subtitle"":""Dwarfen Hold Profile"",""rows"":[{""label"":""Status"",""value"":""Sacred Necropolis""},{""label"":""Founded"",""value"":""-2120 KI""},{""label"":""Specialty"",""value"":""Ancestral catacombs & mortuary rites""},{""label"":""Notable Clan"",""value"":""Clan Gravesong""}]}"
-marker,64,-24,abandon-dwarfhold,ABANDON DWARFHOLD,,,,,,,,,"{""iconScale"":0.01}",,
+marker,64,-24,dwarf-outpost,ABANDON DWARFHOLD,,,,,,,,,"{""iconScale"":0.01}",,
 marker,64,-20,barony-of-dorsen,BARONY OF DORSEN,,,,,,,,,"{""iconScale"":0.1}",,
 marker,46.79076278876718,-44.95277310552409,barony-of-livonia,BARONY OF LIVONIA,,,,,,,,,"{""iconScale"":0.11}",,
 marker,42.22780218307558,-37.617560972910766,barony-of-saxonmoore,BARONY OF SAXONMOORE,,,,,,,,,"{""iconScale"":0.11}",,
@@ -444,18 +474,20 @@ marker,-61.331751211805454,16.78517727514166,the-monastic-order-of-the-wheel,THE
 marker,66.30218997058611,-78.75022884273056,the-realm-of-azurreach,THE REALM OF AZURREACH,,,,,,,,,"{""iconScale"":0.04}",,
 marker,39.84064201211833,-29.146705631351928,dwarf-outpost,DWARF OUTPOST,,,,,,,,,"{""iconScale"":0.01}",,
 marker,-41.721428710864664,73.32045975787602,dwarf-outpost,Krak-Morgas,,,![Krak-Morgas](images/Dwarfhold/Krak-Morgas.jpg),,,,,,"{""iconScale"":0.01}",,
-marker,57.680961955099285,98.60588477732192,abandon-dwarfhold,Uzbad-az-Narg,,,"![Uzbad-az-Narg](images/Dwarfhold/Uzbad-az-Narg.jpg)
+marker,57.680961955099285,98.60588477732192,dwarf-outpost,Uzbad-az-Narg,,,"![Uzbad-az-Narg](images/Dwarfhold/Uzbad-az-Narg.jpg)
 Hold has been sealed 1000 years so its unknown if the inhabitants are alive or dead and thus unknown if its an active or abandoned dwarfhold",,,,,,"{""iconScale"":0.01}",,
-marker,70.04329338556502,81.60533535046464,abandon-dwarfhold,Avlar-Thrûn,,,Dwarfhold destroyed by dragons ,,,,,,"{""iconScale"":0.01}",,
+marker,70.04329338556502,81.60533535046464,dwarf-outpost,Avlar-Thrûn,,,"![Avlar-Thrûn](images/Ruined%20Dwarfhold/Avlar-Thr%C3%BBn.jpg)
+
+Dwarfhold destroyed by dragons ",,,,,,"{""iconScale"":0.01}",,
 marker,-43.844541500583176,55.71149769360912,dwarf-outpost,Dun-Ôrdstun,,,![Dun-Ôrdstun](images/Dwarfhold/Dun-%C3%94rdstun.jpg),,,,,,"{""iconScale"":0.01}",,
 marker,-35.35396257952243,66.35503496549036,dwarf-outpost,Dûrandur,,,![Dûrandur](images/Dwarfhold/D%C3%BBrandur.jpg),,,,,,"{""iconScale"":0.01}",,
-marker,-34.37966637421009,82.66012598852991,dwarf-outpost,Black Rock Hold,,,,,,,,,"{""iconScale"":0.01}",,
+marker,-34.37966637421009,82.66012598852991,dwarf-outpost,Black Rock Hold,,,![Black Rock Hold](images/Dwarfhold/Black%20Rock%20Hold.jpg),,,,,,"{""iconScale"":0.01}",,
 marker,-12.854373616569383,83.32024374128984,dwarf-outpost,Barat Nûmenz,,,![Barat Nûmenz](images/Dwarfhold/Barat%20N%C3%BBmenz.jpg),,,,,,"{""iconScale"":0.01}",,
 marker,-69.40349544360423,55.12939453125,dwarf-outpost,Dun Toruhm,,,![Dun Toruhm](images/Dwarfhold/Dun%20Toruhm.jpg),,,,,,"{""iconScale"":0.01}",,
 marker,-20.941008333246586,80.59367965438688,dwarf-outpost,Karad-Graef,,,![Karad-Graef](images/Dwarfhold/Karad-Graef.jpg),,,,,,"{""iconScale"":0.01}",,
 marker,34.19554856630493,-25.848322373167758,bp-003,BP 003,,,,,,,,,"{""iconScale"":0.37}",,
-marker,15.158663336160132,-60.05096059356373,carrow,Neverwinter,,,,,,,,,"{""iconScale"":0.2}",,
-marker,-47.57627196331696,-50.27213309643573,carrow,Moorsfield,,,,,,,,,"{""iconScale"":0.3}",,
+marker,15.158663336160132,-60.05096059356373,carrow,Neverwinter,,,![Neverwinter](images/city/Neverwinter.jpg),,,,,,"{""iconScale"":0.2}",,
+marker,-47.57627196331696,-50.27213309643573,carrow,Moorsfield,,,![Moorsfield](images/city/Moorsfield.jpg),,,,,,"{""iconScale"":0.3}",,
 marker,61.41754927758897,75.89469029520824,dwarf-outpost,Dûmthûr Mînrth,,,![Dûmthûr Mînrth](images/Dwarfhold/D%C3%BBmth%C3%BBr%20M%C3%AEnrth.jpg),,,,,,"{""iconScale"":0.01}",,
 marker,69.8698915662856,55.32714843750001,dwarf-outpost,Dûrgrim Dûm,,,"![Dûrgrim Dûm](images/Dwarfhold/D%C3%BBrgrim%20D%C3%BBm.jpg)
 Dûrgrim Dûm is an ancient Dwarvern hold located in the ___ 
@@ -469,13 +501,13 @@ Initially founded as a pump-station to feed distant fortresses, Barûn-karag flo
 The hold supplied water and beer during the Long March of the Grey Beards, earning lasting gratitude from allied clans.
 
 Brewthane brewmasters guard yeast cultures older than the hold itself, sharing casks only during oath-swearing festivals. Aquifer wardens combine rune hydraulics with water-wheels to drive mills, polishing halls to a glasslike sheen.",,,,,,"{""iconScale"":0.01}",,
-marker,-25.244870668979043,26.410072149433425,dwarf-outpost,Dwemerhelm,,,,,,,,,"{""iconScale"":0.01}",,
-marker,63.76109674603392,-78.48616130709989,house,Brimfjord,,,,,,,,,"{""iconScale"":0.01}",,
-marker,70.90215450686442,-82.92413492608,house,Eirholt,,,,,,,,,"{""iconScale"":0.01}",,
-marker,-69.66506913577498,-25.950135280187677,porto,Eldoria,,,,,,,,,"{""iconScale"":0.01}",,
-marker,-34.75967405945443,-77.42884704762747,bret-034,Regorina,,,,,,,,,"{""iconScale"":0.35}",,
+marker,-25.244870668979043,26.410072149433425,dwarf-outpost,Dwemerhelm,,,![Dwemerhelm](images/Dwarfhold/Dwemerhelm.jpg),,,,,,"{""iconScale"":0.01}",,
+marker,63.76109674603392,-78.48616130709989,house,Brimfjord,,,![Brimfjord](images/city/Brimfjord.jpg),,,,,,"{""iconScale"":0.01}",,
+marker,70.90215450686442,-82.92413492608,house,Eirholt,,,![Eirholt](images/city/Eirholt.jpg),,,,,,"{""iconScale"":0.01}",,
+marker,-69.66506913577498,-25.950135280187677,porto,Eldoria,,,![Eldoria](images/city/Eldoria.jpg),,,,,,"{""iconScale"":0.01}",,
+marker,-34.75967405945443,-77.42884704762747,bret-034,Regorina,,,![Regorina](images/city/Regorina.jpg),,,,,,"{""iconScale"":0.35}",,
 marker,-35.27755840603654,-42.78076171875001,bret-034,Nightgale,,,,,,,,,"{""iconScale"":0.35}",,
-marker,-58.39069814092198,-63.061010534702575,bret-034,Carwell,,,,,,,,,"{""iconScale"":0.35}",,
+marker,-58.39069814092198,-63.061010534702575,bret-034,Carwell,,,![Carwell](images/city/Carwell.jpg),,,,,,"{""iconScale"":0.35}",,
 marker,-72.06039251607318,13.754882812500002,bazzar,BAZZAR,,,,,,,,,"{""iconScale"":0.15}",,
 marker,-38.06630003353315,35.59570312500001,orc,ORC,,,,,,,,,"{""iconScale"":0.41}",,
 text,-64.77280807927899,90.35156250000001,,Crooked Mountains,,,"Despite dwarves meticlious record keeping the origin of the dwarves that inhabit the crooked mountains remains a mystsery. Some believe them to have originally been banished clans, while others thought them to be a returning expedition from the far east. Regardless of how they arrived there, the dwaves of these mountains themselves in the most inhospitable mountain range for dwavern kind, far too hot and without any minerial wealth beyond raw industral ore that could only be stripped mined rather than traditionally gathered, this put the dwaves of the crooked moutnains at an extreme disadvantage but they adapted and persisted. ",14,0,0,0,,,,
