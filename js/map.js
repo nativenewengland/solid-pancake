@@ -8,6 +8,11 @@ var map = L.map('map', {
   maxBoundsViscosity: 1.0,
 }).setView([0, 0], 4);
 
+var textPane = map.createPane('textPane');
+if (textPane) {
+  textPane.classList.add('text-label-pane', 'leaflet-zoom-hide');
+}
+
 var tiles = L.tileLayer('map/{z}/{x}/{y}.jpg', {
   continuousWorld: false,
   noWrap: true,
@@ -1913,44 +1918,16 @@ function rescaleTextLabels() {
   if (baseZoom === undefined) {
     baseZoom = map.getZoom();
   }
-  var scale = 1;
+  var scale = Math.pow(2, baseZoom - map.getZoom());
   allTextLabels.forEach(function (m) {
-    if (m._icon) {
-      var span = m._icon.querySelector('span');
-      if (span) {
-        span.style.fontSize = m._baseFontSize * scale + 'px';
-        span.style.letterSpacing = (m._baseLetterSpacing || 0) * scale + 'px';
-      } else {
-        var svg = m._icon.querySelector('svg');
-        if (svg) {
-          var text = svg.querySelector('text');
-          if (text) {
-            text.style.fontSize = m._baseFontSize * scale + 'px';
-            text.style.letterSpacing = (m._baseLetterSpacing || 0) * scale + 'px';
-          }
-          if (m._baseSvgWidth) {
-            var scaledSvgWidth = m._baseSvgWidth * scale;
-            svg.setAttribute('width', scaledSvgWidth);
-            svg.style.width = scaledSvgWidth + 'px';
-          }
-          if (m._baseSvgHeight || m._baseFontSize) {
-            var baseHeight = m._baseSvgHeight || m._baseFontSize;
-            var scaledSvgHeight = baseHeight * scale;
-            svg.setAttribute('height', scaledSvgHeight);
-            svg.style.height = scaledSvgHeight + 'px';
-          }
-          if (m._baseCurve) {
-            var path = svg.querySelector('path');
-            if (path) {
-              var width = (m._basePathWidth || 0) * scale;
-              var r = Math.abs(m._baseCurve) * scale;
-              var sweep = m._baseCurve > 0 ? 0 : 1;
-              path.setAttribute('d', 'M0,0 A' + r + ',' + r + ' 0 0,' + sweep + ' ' + width + ',0');
-            }
-          }
-        }
-      }
+    if (!m._icon) {
+      return;
     }
+    var inner = m._icon.querySelector('.text-label__inner');
+    if (!inner) {
+      return;
+    }
+    inner.style.transform = 'scale(' + scale + ')';
   });
 }
 
@@ -2678,7 +2655,11 @@ function addTextLabelToMap(data) {
       iconAnchor: [0, 0],
     });
   }
-  var m = L.marker([data.lat, data.lng], { icon: textIcon, draggable: true });
+  var m = L.marker([data.lat, data.lng], {
+    icon: textIcon,
+    draggable: true,
+    pane: 'textPane',
+  });
   m
     .on('click', function (ev) {
       L.DomEvent.stopPropagation(ev);
@@ -4891,4 +4872,3 @@ document.addEventListener('click', function (event) {
   event.stopPropagation();
   openWikiEntry(entryId);
 });
-
