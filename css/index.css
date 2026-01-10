@@ -562,6 +562,9 @@ select {
     text-align: center;
     pointer-events: none;
 }
+.text-label-pane {
+    z-index: 650;
+}
 .text-label__inner {
     pointer-events: none;
     transform-origin: top left;
