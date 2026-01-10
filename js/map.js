@@ -1940,6 +1940,11 @@ function rescaleTextLabels(scaleOverride, useTransition) {
     } else if (useTransition === false) {
       inner.style.transition = '';
     }
+    var inner = m._icon.querySelector('.text-label__inner');
+    if (!inner) {
+      return;
+    }
+    inner.style.transform = 'scale(' + scale + ')';
   });
 }
 
