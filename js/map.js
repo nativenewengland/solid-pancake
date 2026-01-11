@@ -1918,7 +1918,7 @@ function getTextLabelScale() {
   if (baseZoom === undefined) {
     baseZoom = map.getZoom();
   }
-  return Math.pow(2, baseZoom - map.getZoom());
+  return Math.pow(2, map.getZoom() - baseZoom);
 }
 
 function rescaleTextLabels(scaleOverride, useTransition) {
@@ -2836,7 +2836,7 @@ map.on('zoomanim', function (event) {
     return;
   }
   var currentScale = getTextLabelScale();
-  rescaleTextLabels(currentScale / event.scale, true);
+  rescaleTextLabels(currentScale * event.scale, true);
 });
 map.on('zoomend', function () {
   rescaleTextLabels(getTextLabelScale(), false);
