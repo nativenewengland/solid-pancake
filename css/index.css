@@ -282,6 +282,7 @@
     box-shadow: none;
     backdrop-filter: none;
     padding: 0;
+    overflow: hidden;
 }
 
 .wiki-info--collapsed .wiki-info__toggle {
@@ -297,6 +298,10 @@
 
 .wiki-info--collapsed .wiki-info__content {
     pointer-events: none;
+    opacity: 0;
+    visibility: hidden;
+    max-height: 0;
+    overflow: hidden;
 }
 html, body{
     height: 100%;
