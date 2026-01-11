@@ -10,7 +10,7 @@ var map = L.map('map', {
 
 var textPane = map.createPane('textPane');
 if (textPane) {
-  textPane.classList.add('text-label-pane', 'leaflet-zoom-hide');
+  textPane.classList.add('text-label-pane');
 }
 
 var tiles = L.tileLayer('map/{z}/{x}/{y}.jpg', {
@@ -1914,14 +1914,31 @@ function rescaleMarkerNameLabels() {
   });
 }
 
-function rescaleTextLabels() {
+function getTextLabelScale() {
   if (baseZoom === undefined) {
     baseZoom = map.getZoom();
   }
-  var scale = Math.pow(2, baseZoom - map.getZoom());
+  return Math.pow(2, baseZoom - map.getZoom());
+}
+
+function rescaleTextLabels(scaleOverride, useTransition) {
+  var scale =
+    typeof scaleOverride === 'number' && isFinite(scaleOverride)
+      ? scaleOverride
+      : getTextLabelScale();
   allTextLabels.forEach(function (m) {
     if (!m._icon) {
       return;
+    }
+    var inner = m._icon.querySelector('.text-label__inner');
+    if (!inner) {
+      return;
+    }
+    inner.style.transform = 'scale(' + scale + ')';
+    if (useTransition === true) {
+      inner.style.transition = 'transform 0.25s ease';
+    } else if (useTransition === false) {
+      inner.style.transition = '';
     }
     var inner = m._icon.querySelector('.text-label__inner');
     if (!inner) {
@@ -2811,7 +2828,19 @@ function createMarker(
 // ******END OF MARKERS DECLARATION ******
 
 map.on('zoomend', rescaleIcons);
-map.on('zoomend', rescaleTextLabels);
+map.on('zoomstart', function () {
+  rescaleTextLabels(getTextLabelScale(), true);
+});
+map.on('zoomanim', function (event) {
+  if (!event || typeof event.scale !== 'number' || !isFinite(event.scale)) {
+    return;
+  }
+  var currentScale = getTextLabelScale();
+  rescaleTextLabels(currentScale / event.scale, true);
+});
+map.on('zoomend', function () {
+  rescaleTextLabels(getTextLabelScale(), false);
+});
 
 document.addEventListener('keydown', function (event) {
   if (event.defaultPrevented) return;
