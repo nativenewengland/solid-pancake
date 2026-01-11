@@ -278,6 +278,11 @@
 
 .wiki-info--collapsed {
     transform: translateX(calc(-100% + 48px));
+    background: transparent;
+    box-shadow: none;
+    backdrop-filter: none;
+    padding: 0;
+    overflow: hidden;
 }
 
 .wiki-info--collapsed .wiki-info__toggle {
@@ -293,6 +298,10 @@
 
 .wiki-info--collapsed .wiki-info__content {
     pointer-events: none;
+    opacity: 0;
+    visibility: hidden;
+    max-height: 0;
+    overflow: hidden;
 }
 html, body{
     height: 100%;
@@ -561,6 +570,9 @@ select {
     height: auto !important;
     text-align: center;
     pointer-events: none;
+}
+.text-label-pane {
+    z-index: 650;
 }
 .text-label__inner {
     pointer-events: none;
