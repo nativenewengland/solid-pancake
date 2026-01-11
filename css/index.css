@@ -278,6 +278,10 @@
 
 .wiki-info--collapsed {
     transform: translateX(calc(-100% + 48px));
+    background: transparent;
+    box-shadow: none;
+    backdrop-filter: none;
+    padding: 0;
 }
 
 .wiki-info--collapsed .wiki-info__toggle {
