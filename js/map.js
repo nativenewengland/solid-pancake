@@ -1344,7 +1344,7 @@ var ICON_DEFINITIONS = [
   { label: 'KARAK IZOR', key: 'karak-izor', file: 'karak-izor.png', pixelSize: [518, 518] },
   { label: 'KARAK NORNN', key: 'karak-nornn', file: 'karak-nornn.png', pixelSize: [520, 531] },
   { label: 'KARAK VARN', key: 'karak-varn', file: 'karak-varn.png', pixelSize: [519, 605] },
-  { label: 'KINGDOM FO GAWTHAUD', key: 'kingdom-fo-gawthaud', file: 'Kingdom fo Gawthaud.webp', pixelSize: [263, 365] },
+  { label: 'KINGDOM OF GAWTHAUD', key: 'kingdom-of-gawthaud', file: 'Kingdom of Gawthaud.webp', pixelSize: [263, 365] },
   { label: 'KINGDOM OF ALVERON', key: 'kingdom-of-alveron', file: 'Kingdom of Alveron.webp', pixelSize: [263, 365] },
   { label: 'KINGDOM OF BELMOR', key: 'kingdom-of-belmor', file: 'Kingdom of Belmor.webp', pixelSize: [232, 322] },
   { label: 'KINGDOM OF BRETTON', key: 'kingdom-of-bretton', file: 'Kingdom of Bretton.webp', pixelSize: [263, 365] },
