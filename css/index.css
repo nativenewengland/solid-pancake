@@ -338,7 +338,7 @@ select {
     pointer-events: auto;
     text-align: center;
     text-transform: none;
-    transform-origin: top center;
+    transform-origin: top left;
     white-space: nowrap;
     box-shadow: none;
 }
