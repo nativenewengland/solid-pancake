@@ -1910,7 +1910,7 @@ function rescaleMarkerNameLabels() {
     tooltipEl.style.fontSize = baseFontSize + 'px';
     tooltipEl.style.transform =
       (baseTransformValue ? baseTransformValue + ' ' : '') + 'scale(' + scale + ')';
-    tooltipEl.style.transformOrigin = 'top center';
+    tooltipEl.style.transformOrigin = 'top left';
   });
 }
 
