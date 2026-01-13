@@ -325,7 +325,7 @@ marker,-13.251603188505007,-36.65415523194043,grand-barony-of-branth,GRAND BARON
 marker,62.75503543622,-64.55583834985835,grand-duchy-of-thaldara,GRAND DUCHY OF THALDARA,,,,,,,,,"{""iconScale"":0.04}",,
 marker,-14.788255487061242,-80.59450801168562,grand-kingdom-of-bellmore,GRAND KINGDOM OF BELLMORE,,,,,,,,,"{""iconScale"":0.14}",,
 marker,56.84752478675568,-17.797194250177032,huntsmarshalship-of-wexsod,HUNTSMARSHALSHIP OF WEXSOD,,,,,,,,,"{""iconScale"":0.07}",,
-marker,58.321407212594686,-9.44786459699456,kingdom-fo-gawthaud,KINGDOM FO GAWTHAUD,,,,,,,,,"{""iconScale"":0.06}",,
+marker,58.321407212594686,-9.44786459699456,kingdom-of-gawthaud,KINGDOM OF GAWTHAUD,,,,,,,,,"{""iconScale"":0.06}",,
 marker,-30.56196155422879,-90.2646976805949,kingdom-of-alveron,KINGDOM OF ALVERON,,,,,,,,,"{""iconScale"":0.14}",,
 marker,-50.70748452933861,-78.13628939447594,kingdom-of-belmor,KINGDOM OF BELMOR,,,,,,,,,"{""iconScale"":0.19}",,
 marker,-45.51754057873579,-52.20213401556572,kingdom-of-bretton,KINGDOM OF BRETTON,,,,,,,,,"{""iconScale"":0.21}",,
@@ -493,3 +493,4 @@ marker,-58.39069814092198,-63.061010534702575,bret-034,Carwell,,,![Carwell](imag
 marker,-72.06039251607318,13.754882812500002,bazzar,BAZZAR,,,,,,,,,"{""iconScale"":0.15}",,
 marker,-38.06630003353315,35.59570312500001,orc,ORC,,,,,,,,,"{""iconScale"":0.41}",,
 text,-64.77280807927899,90.35156250000001,,Crooked Mountains,,,"Despite dwarves meticlious record keeping the origin of the dwarves that inhabit the crooked mountains remains a mystsery. Some believe them to have originally been banished clans, while others thought them to be a returning expedition from the far east. Regardless of how they arrived there, the dwaves of these mountains themselves in the most inhospitable mountain range for dwavern kind, far too hot and without any minerial wealth beyond raw industral ore that could only be stripped mined rather than traditionally gathered, this put the dwaves of the crooked moutnains at an extreme disadvantage but they adapted and persisted. ",14,0,0,0,,,,
+text,69.83962194067463,29.794921875000004,,Sea of Claws,,,,14,0,0,0,,,,

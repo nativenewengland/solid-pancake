@@ -8,6 +8,11 @@ var map = L.map('map', {
   maxBoundsViscosity: 1.0,
 }).setView([0, 0], 4);
 
+var textPane = map.createPane('textPane');
+if (textPane) {
+  textPane.classList.add('text-label-pane');
+}
+
 var tiles = L.tileLayer('map/{z}/{x}/{y}.jpg', {
   continuousWorld: false,
   noWrap: true,
@@ -1339,7 +1344,7 @@ var ICON_DEFINITIONS = [
   { label: 'KARAK IZOR', key: 'karak-izor', file: 'karak-izor.png', pixelSize: [518, 518] },
   { label: 'KARAK NORNN', key: 'karak-nornn', file: 'karak-nornn.png', pixelSize: [520, 531] },
   { label: 'KARAK VARN', key: 'karak-varn', file: 'karak-varn.png', pixelSize: [519, 605] },
-  { label: 'KINGDOM FO GAWTHAUD', key: 'kingdom-fo-gawthaud', file: 'Kingdom fo Gawthaud.webp', pixelSize: [263, 365] },
+  { label: 'KINGDOM OF GAWTHAUD', key: 'kingdom-of-gawthaud', file: 'Kingdom of Gawthaud.webp', pixelSize: [263, 365] },
   { label: 'KINGDOM OF ALVERON', key: 'kingdom-of-alveron', file: 'Kingdom of Alveron.webp', pixelSize: [263, 365] },
   { label: 'KINGDOM OF BELMOR', key: 'kingdom-of-belmor', file: 'Kingdom of Belmor.webp', pixelSize: [232, 322] },
   { label: 'KINGDOM OF BRETTON', key: 'kingdom-of-bretton', file: 'Kingdom of Bretton.webp', pixelSize: [263, 365] },
@@ -1909,48 +1914,37 @@ function rescaleMarkerNameLabels() {
   });
 }
 
-function rescaleTextLabels() {
+function getTextLabelScale() {
   if (baseZoom === undefined) {
     baseZoom = map.getZoom();
   }
-  var scale = 1;
+  return Math.pow(2, map.getZoom() - baseZoom);
+}
+
+function rescaleTextLabels(scaleOverride, useTransition) {
+  var scale =
+    typeof scaleOverride === 'number' && isFinite(scaleOverride)
+      ? scaleOverride
+      : getTextLabelScale();
   allTextLabels.forEach(function (m) {
-    if (m._icon) {
-      var span = m._icon.querySelector('span');
-      if (span) {
-        span.style.fontSize = m._baseFontSize * scale + 'px';
-        span.style.letterSpacing = (m._baseLetterSpacing || 0) * scale + 'px';
-      } else {
-        var svg = m._icon.querySelector('svg');
-        if (svg) {
-          var text = svg.querySelector('text');
-          if (text) {
-            text.style.fontSize = m._baseFontSize * scale + 'px';
-            text.style.letterSpacing = (m._baseLetterSpacing || 0) * scale + 'px';
-          }
-          if (m._baseSvgWidth) {
-            var scaledSvgWidth = m._baseSvgWidth * scale;
-            svg.setAttribute('width', scaledSvgWidth);
-            svg.style.width = scaledSvgWidth + 'px';
-          }
-          if (m._baseSvgHeight || m._baseFontSize) {
-            var baseHeight = m._baseSvgHeight || m._baseFontSize;
-            var scaledSvgHeight = baseHeight * scale;
-            svg.setAttribute('height', scaledSvgHeight);
-            svg.style.height = scaledSvgHeight + 'px';
-          }
-          if (m._baseCurve) {
-            var path = svg.querySelector('path');
-            if (path) {
-              var width = (m._basePathWidth || 0) * scale;
-              var r = Math.abs(m._baseCurve) * scale;
-              var sweep = m._baseCurve > 0 ? 0 : 1;
-              path.setAttribute('d', 'M0,0 A' + r + ',' + r + ' 0 0,' + sweep + ' ' + width + ',0');
-            }
-          }
-        }
-      }
+    if (!m._icon) {
+      return;
     }
+    var inner = m._icon.querySelector('.text-label__inner');
+    if (!inner) {
+      return;
+    }
+    inner.style.transform = 'scale(' + scale + ')';
+    if (useTransition === true) {
+      inner.style.transition = 'transform 0.25s ease';
+    } else if (useTransition === false) {
+      inner.style.transition = '';
+    }
+    var inner = m._icon.querySelector('.text-label__inner');
+    if (!inner) {
+      return;
+    }
+    inner.style.transform = 'scale(' + scale + ')';
   });
 }
 
@@ -2678,7 +2672,11 @@ function addTextLabelToMap(data) {
       iconAnchor: [0, 0],
     });
   }
-  var m = L.marker([data.lat, data.lng], { icon: textIcon, draggable: true });
+  var m = L.marker([data.lat, data.lng], {
+    icon: textIcon,
+    draggable: true,
+    pane: 'textPane',
+  });
   m
     .on('click', function (ev) {
       L.DomEvent.stopPropagation(ev);
@@ -2830,7 +2828,19 @@ function createMarker(
 // ******END OF MARKERS DECLARATION ******
 
 map.on('zoomend', rescaleIcons);
-map.on('zoomend', rescaleTextLabels);
+map.on('zoomstart', function () {
+  rescaleTextLabels(getTextLabelScale(), true);
+});
+map.on('zoomanim', function (event) {
+  if (!event || typeof event.scale !== 'number' || !isFinite(event.scale)) {
+    return;
+  }
+  var currentScale = getTextLabelScale();
+  rescaleTextLabels(currentScale * event.scale, true);
+});
+map.on('zoomend', function () {
+  rescaleTextLabels(getTextLabelScale(), false);
+});
 
 document.addEventListener('keydown', function (event) {
   if (event.defaultPrevented) return;
@@ -4891,4 +4901,3 @@ document.addEventListener('click', function (event) {
   event.stopPropagation();
   openWikiEntry(entryId);
 });
-
