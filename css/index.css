@@ -338,7 +338,7 @@ select {
     pointer-events: auto;
     text-align: center;
     text-transform: none;
-    transform-origin: top center;
+    transform-origin: top left;
     white-space: nowrap;
     box-shadow: none;
 }
@@ -570,13 +570,15 @@ select {
     height: auto !important;
     text-align: center;
     pointer-events: none;
+    transform: translate(-50%, -50%);
 }
 .text-label-pane {
     z-index: 650;
 }
 .text-label__inner {
+    display: inline-block;
     pointer-events: none;
-    transform-origin: top left;
+    transform-origin: center center;
 }
 .text-label__inner span,
 .text-label__measure {

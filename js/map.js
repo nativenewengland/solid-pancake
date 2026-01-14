@@ -966,15 +966,15 @@ function enrichWikiContent(html) {
     return html;
   }
 
-  var result = html;
+  var container = document.createElement('div');
+  container.innerHTML = html;
 
   for (var i = 0; i < WIKI_LINK_RULES.length; i++) {
     var rule = WIKI_LINK_RULES[i];
     if (!rule || !rule.entryId || !Array.isArray(rule.terms)) {
       continue;
     }
-    var entryAttribute = 'data-wiki-entry="' + rule.entryId + '"';
-    if (result.indexOf(entryAttribute) !== -1) {
+    if (container.querySelector('[data-wiki-entry="' + rule.entryId + '"]')) {
       continue;
     }
     var escapedTerms = [];
@@ -989,24 +989,68 @@ function enrichWikiContent(html) {
     }
     var patternSource = '\\b(?:' + escapedTerms.join('|') + ')\\b';
     var pattern = new RegExp(patternSource, 'gi');
-    if (!pattern.test(result)) {
-      continue;
+
+    var walker = document.createTreeWalker(
+      container,
+      NodeFilter.SHOW_TEXT,
+      {
+        acceptNode: function (node) {
+          if (!node || !node.nodeValue || node.nodeValue.trim() === '') {
+            return NodeFilter.FILTER_REJECT;
+          }
+          var parent = node.parentNode;
+          if (!parent || !parent.nodeName) {
+            return NodeFilter.FILTER_REJECT;
+          }
+          var tagName = parent.nodeName.toLowerCase();
+          if (tagName === 'script' || tagName === 'style') {
+            return NodeFilter.FILTER_REJECT;
+          }
+          return NodeFilter.FILTER_ACCEPT;
+        },
+      },
+      false
+    );
+
+    var textNodes = [];
+    while (walker.nextNode()) {
+      textNodes.push(walker.currentNode);
     }
-    var replacementPattern = new RegExp(patternSource, 'gi');
-    result = result.replace(replacementPattern, function (match) {
-      return (
-        '<a class="wiki-entry-link" href="#wiki-' +
-        rule.entryId +
-        '" data-wiki-entry="' +
-        rule.entryId +
-        '">' +
-        match +
-        '</a>'
-      );
-    });
+
+    for (var k = 0; k < textNodes.length; k++) {
+      var textNode = textNodes[k];
+      pattern.lastIndex = 0;
+      if (!pattern.test(textNode.nodeValue)) {
+        continue;
+      }
+      pattern.lastIndex = 0;
+      var replacedHtml = textNode.nodeValue.replace(pattern, function (match) {
+        return (
+          '<a class="wiki-entry-link" href="#wiki-' +
+          rule.entryId +
+          '" data-wiki-entry="' +
+          rule.entryId +
+          '">' +
+          match +
+          '</a>'
+        );
+      });
+      if (replacedHtml === textNode.nodeValue) {
+        continue;
+      }
+      var replacementWrapper = document.createElement('span');
+      replacementWrapper.innerHTML = replacedHtml;
+      var fragment = document.createDocumentFragment();
+      while (replacementWrapper.firstChild) {
+        fragment.appendChild(replacementWrapper.firstChild);
+      }
+      if (textNode.parentNode) {
+        textNode.parentNode.replaceChild(fragment, textNode);
+      }
+    }
   }
 
-  return result;
+  return container.innerHTML;
 }
 
 function showMarkerInfoInSidebar(title, altNames, subheader, html, infoboxData) {
@@ -1910,7 +1954,7 @@ function rescaleMarkerNameLabels() {
     tooltipEl.style.fontSize = baseFontSize + 'px';
     tooltipEl.style.transform =
       (baseTransformValue ? baseTransformValue + ' ' : '') + 'scale(' + scale + ')';
-    tooltipEl.style.transformOrigin = 'top center';
+    tooltipEl.style.transformOrigin = 'top left';
   });
 }
 
@@ -4619,15 +4663,15 @@ function enrichWikiContent(html) {
     return html;
   }
 
-  var result = html;
+  var container = document.createElement('div');
+  container.innerHTML = html;
 
   for (var i = 0; i < WIKI_LINK_RULES.length; i++) {
     var rule = WIKI_LINK_RULES[i];
     if (!rule || !rule.entryId || !Array.isArray(rule.terms)) {
       continue;
     }
-    var entryAttribute = 'data-wiki-entry="' + rule.entryId + '"';
-    if (result.indexOf(entryAttribute) !== -1) {
+    if (container.querySelector('[data-wiki-entry="' + rule.entryId + '"]')) {
       continue;
     }
     var escapedTerms = [];
@@ -4642,24 +4686,68 @@ function enrichWikiContent(html) {
     }
     var patternSource = '\\b(?:' + escapedTerms.join('|') + ')\\b';
     var pattern = new RegExp(patternSource, 'gi');
-    if (!pattern.test(result)) {
-      continue;
+
+    var walker = document.createTreeWalker(
+      container,
+      NodeFilter.SHOW_TEXT,
+      {
+        acceptNode: function (node) {
+          if (!node || !node.nodeValue || node.nodeValue.trim() === '') {
+            return NodeFilter.FILTER_REJECT;
+          }
+          var parent = node.parentNode;
+          if (!parent || !parent.nodeName) {
+            return NodeFilter.FILTER_REJECT;
+          }
+          var tagName = parent.nodeName.toLowerCase();
+          if (tagName === 'script' || tagName === 'style') {
+            return NodeFilter.FILTER_REJECT;
+          }
+          return NodeFilter.FILTER_ACCEPT;
+        },
+      },
+      false
+    );
+
+    var textNodes = [];
+    while (walker.nextNode()) {
+      textNodes.push(walker.currentNode);
     }
-    var replacementPattern = new RegExp(patternSource, 'gi');
-    result = result.replace(replacementPattern, function (match) {
-      return (
-        '<a class="wiki-entry-link" href="#wiki-' +
-        rule.entryId +
-        '" data-wiki-entry="' +
-        rule.entryId +
-        '">' +
-        match +
-        '</a>'
-      );
-    });
+
+    for (var k = 0; k < textNodes.length; k++) {
+      var textNode = textNodes[k];
+      pattern.lastIndex = 0;
+      if (!pattern.test(textNode.nodeValue)) {
+        continue;
+      }
+      pattern.lastIndex = 0;
+      var replacedHtml = textNode.nodeValue.replace(pattern, function (match) {
+        return (
+          '<a class="wiki-entry-link" href="#wiki-' +
+          rule.entryId +
+          '" data-wiki-entry="' +
+          rule.entryId +
+          '">' +
+          match +
+          '</a>'
+        );
+      });
+      if (replacedHtml === textNode.nodeValue) {
+        continue;
+      }
+      var replacementWrapper = document.createElement('span');
+      replacementWrapper.innerHTML = replacedHtml;
+      var fragment = document.createDocumentFragment();
+      while (replacementWrapper.firstChild) {
+        fragment.appendChild(replacementWrapper.firstChild);
+      }
+      if (textNode.parentNode) {
+        textNode.parentNode.replaceChild(fragment, textNode);
+      }
+    }
   }
 
-  return result;
+  return container.innerHTML;
 }
 
 function showMarkerInfoInSidebar(title, altNames, subheader, html, infoboxData) {
