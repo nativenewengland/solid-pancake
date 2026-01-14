@@ -1433,7 +1433,6 @@ var ICON_DEFINITIONS = [
   { label: 'OG 006', key: 'og-006', file: 'og-006.webp', pixelSize: [200, 201] },
   { label: 'OG 007', key: 'og-007', file: 'og-007.webp', pixelSize: [200, 237] },
   { label: 'OG 008', key: 'og-008', file: 'og-008.webp', pixelSize: [200, 200] },
-  { label: 'OG 009', key: 'og-009', file: 'og-009.webp', pixelSize: [200, 198] },
   { label: 'ORC', key: 'orc', file: 'Orc.webp', pixelSize: [99, 89] },
   { label: 'PARMOUNT KINGDOM OF RUNTHA', key: 'parmount-kingdom-of-runtha', file: 'Parmount Kingdom of Runtha.png', pixelSize: [2048, 2048] },
   { label: 'PORTO', key: 'porto', file: 'porto.png', pixelSize: [573, 341] },
