@@ -434,7 +434,7 @@ marker,-71.40637795306482,53.657330586778755,ld-007,LD 007,,,,,,,,,"{""iconScale
 marker,-73.09864515998866,50.39503576895697,ld-007,LD 007,,,,,,,,,"{""iconScale"":0.11}",,
 marker,-73.75708225264577,74.81846829249757,ld-007,LD 007,,,,,,,,,"{""iconScale"":0.11}",,
 marker,-28.885038259360872,54.39325853473561,abandon-dwarfhold,Grom's Peak,,,,,,,,,"{""iconScale"":0.01}",,
-marker,-23.221877979325416,68.81858712512549,gnome,Gnomepoint,,,,,,,,,"{""iconScale"":0.01}",,
+marker,-23.221877979325416,68.81858712512549,gnome,Gnomepoint,,,"![Gnomepoint](images/Gnome.jpg)",,,,,,"{""iconScale"":0.01}",,
 marker,64.3686063877401,75.47588035532141,abandon-dwarfhold,Karak Gorûmzra,,,"![Karak Gorûmzra](images/Ruined%20Dwarfhold/Karak%20Gor%C3%BBmzra.jpg)",,,,,,"{""iconScale"":0.01}",,
 marker,72.45566578454303,-82.90390426910153,abandon-dwarfhold,Ostapchuk,,,"![Ostapchuk](images/Ruined%20Dwarfhold/Ostapchuk.jpg)",,,,,,"{""iconScale"":0.01}",,
 marker,-43.25265825851726,55.68969726562501,abandon-dwarfhold,Dammerhall,,,"![Dammerhall](images/Ruined%20Dwarfhold/dammerhall.jpg)",,,,,,"{""iconScale"":0.01}",,
