@@ -1375,6 +1375,8 @@ var ICON_DEFINITIONS = [
   { label: 'FREE PROVINCE OF MARROLYN', key: 'free-province-of-marrolyn', file: 'Free Province of Marrolyn.png', pixelSize: [1024, 969] },
   { label: 'GATE', key: 'gate', file: 'Gate.png', pixelSize: [25, 19] },
   { label: 'GOBLIN', key: 'goblin', file: 'Goblin.png', pixelSize: [1024, 1024] },
+  { label: 'GNOME', key: 'gnome', file: 'gnome.png', pixelSize: [895, 615] },
+  { label: 'GNOME OUTPOST', key: 'gnome-outpost', file: 'gnome-outpost.png', pixelSize: [410, 387] },
   { label: 'GRAND BARONY OF BRANTH', key: 'grand-barony-of-branth', file: 'Grand Barony of Branth.webp', pixelSize: [263, 365] },
   { label: 'GRAND DUCHY OF THALDARA', key: 'grand-duchy-of-thaldara', file: 'Grand Duchy of Thaldara.png', pixelSize: [1024, 1536] },
   { label: 'GRAND DUTCHY OF THE PALENSADES', key: 'grand-dutchy-of-the-palensades', file: 'Grand Dutchy of The Palensades.png', pixelSize: [1024, 1536] },
