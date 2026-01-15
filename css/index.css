@@ -100,7 +100,9 @@
     border: 1px solid rgba(192, 226, 255, 0.28);
     border-radius: 12px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.35);
-    overflow: hidden;
+    width: min(100%, 520px);
+    max-height: min(70vh, 520px);
+    overflow: auto;
     display: flex;
     flex-direction: column;
     color: #f7f7f2;
@@ -387,7 +389,7 @@ select {
     position: absolute;
     top: 10px;
     left: 60px;
-    width: 250px;
+    width: 320px;
     background: #fff;
     border: 1px solid #333;
     padding: 10px;
