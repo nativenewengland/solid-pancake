@@ -25,24 +25,8 @@ The hold's guilds venerate the open sky; apprentices spend their oath-year tendi
 ### Current Outlook
 With winter squalls thickening, Thane Dromri Stormthane has ordered additional patrols of the hanging rope-roads and reopened talks with Kislevite trappers for shared avalanche wards.
 ",,,,,,"{""iconScale"":0.01}",,"{""title"":""Khazadûn Kharn"",""subtitle"":""Dwarfen Hold Profile"",""rows"":[{""label"":""Status"",""value"":""Prosperous High Hold""},{""label"":""Founded"",""value"":""c. -1900 KI""},{""label"":""Specialty"",""value"":""Skyhammer ballistae & aurora beacons""},{""label"":""Notable Clan"",""value"":""Clan Stormthane""}]}"
-marker,-17.743143160455016,73.69621978455072,dwarf-outpost,Dhurnomli Bûr,Oathforge Deep,Gem-cored stronghold renowned for oath-tempered steel,"![Dhurnomli Bûr](images/Dwarfhold/Dhurnomli%20B%C3%BBr.jpg)
-
-## Overview
-Dhurnomli Bûr coils around a cathedral-sized geode whose glittering walls reflect every forge light. The glow lends the hold an amber twilight even in the deepest workshops, inspiring smiths and rune-priests alike.
-
-## History
-The hold was sealed for a generation after a magma surge in the Firewake Cataclysm, reopening once Clan Grimdron mastered rune-sluice valves to tame the molten flow. Its ""Pledgeblade"" campaign equipped three surface armies during the Pact of Barak Varn.
-
-### Culture and Craft
-Every journeyman must bind a sworn companion to witness their masterwork, a tradition that gives the hold its name. Dhurnomli smiths weave tiny gem shards into the edge of their blades, claiming the oath-stones sing warnings when wielders stray.
-
-### Strategic Notes
-- Deep magma channels power twelve vertical drop-furnaces capable of smelting sky-iron without outside fuel.
-- Rune-sluice spillways can flood the lower tunnels with liquid basalt to thwart invasions.
-
-### Current Outlook
-The thane's council debates opening a trade spur to nearby human barons in exchange for timber and draft animals to expand the forge-haulers.
-",,,,,,"{""iconScale"":0.01}",,"{""title"":""Dhurnomli Bûr"",""subtitle"":""Dwarfen Hold Profile"",""rows"":[{""label"":""Status"",""value"":""Thriving Forgehold""},{""label"":""Founded"",""value"":""-1687 KI""},{""label"":""Specialty"",""value"":""Oath-tempered adamant blades""},{""label"":""Notable Clan"",""value"":""Clan Grimdron""}]}"
+marker,-17.743143160455016,73.69621978455072,dwarf-outpost,Dhurnomli Bûr,,,"![Dhurnomli Bûr](images/Dwarfhold/Dhurnomli%20B%C3%BBr.jpg)
+",,,,,,"{""iconScale"":0.01}",,
 marker,68.12248241161676,84.19921875000001,abandon-dwarfhold,Zarak-az-Garaz,Obsidian Crown,Volcanic bastion crowned with rune-lit obsidian,"![Zarak-az-Garaz](images/Ruined%20Dwarfhold/Zarak-az-Garaz.jpg)
 
 ## Overview
@@ -149,22 +133,7 @@ Residents weave music into daily labor; miners tap rhythms that guide collapsibl
 ### Current Outlook
 Recent storm damage snapped two sky-bridges; repair crews race to restore them before trading season opens.
 ",,,,,,"{""iconScale"":0.01}",,"{""title"":""Zirak-khazad"",""subtitle"":""Dwarfen Hold Profile"",""rows"":[{""label"":""Status"",""value"":""High Aerie Hold""},{""label"":""Founded"",""value"":""-1890 KI""},{""label"":""Specialty"",""value"":""Resonant hornworks & skywatching""},{""label"":""Notable Clan"",""value"":""Clan Echohelm""}]}"
-marker,55.781794497074856,82.96802985079914,dwarf-outpost,Dûmthûr Mîn,Crystal Sanctum,Gem-mining hold renowned for luminous quartz vaults,"## Overview
-Dûmthûr Mîn dazzles visitors with vaulted chambers lined in luminous quartz that refracts even dim torchlight into radiant hues. Bridges of transparent lightstone span abyssal chasms, glowing softly beneath travelers' boots.
-
-## History
-The Glimmervein clan unearthed the first lightstone seam while chasing skaven raiders and immediately fortified the cavern network. Their gems lit the royal halls of Karaz-a-Karak and later financed a joint army to crush the Gray Seers of the Bleak Warrens.
-
-### Culture and Craft
-Gemcutters apprentice as prism-tenders, learning to align mirrors that bathe the mines in safe, indirect light. The hold's artisans cut ""skyvault"" crystals used by navigators and seers across the holds.
-
-### Strategic Notes
-- Adjustable prism arrays can blind intruders or plunge entire districts into darkness on command.
-- Suspended gem bridges can retract into the ceiling, isolating vital vaults from attack.
-
-### Current Outlook
-A newly discovered violet vein has sparked debate over whether to expand deeper despite whispers of restless spirits in the lower galleries.
-",,,,,,"{""iconScale"":0.19}",,"{""title"":""Dûmthûr Mîn"",""subtitle"":""Dwarfen Hold Profile"",""rows"":[{""label"":""Status"",""value"":""Glittering Minehold""},{""label"":""Founded"",""value"":""-1260 KI""},{""label"":""Specialty"",""value"":""Lightstone facets & precision gemcutting""},{""label"":""Notable Clan"",""value"":""Clan Glimmervein""}]}"
+marker,3.34689177525274,-3.4705238467110004,dwarf-outpost,Dur-Vazhatun,,,,,,,,,"{""iconScale"":0.01}",,
 marker,-30.767202747489456,-24.525899689634794,dwarf-outpost,Gûndâl Grum,Forge of Clever Hands,Engineering hold famed for gyrocopter foundries,"![Gûndâl Grum](images/Dwarfhold/G%C3%BBnd%C3%A2l%20Grum.jpg)
 
 ## Overview
@@ -358,18 +327,16 @@ marker,-40.81917173353749,18.01716234030457,the-shire-of-anvilmar,THE SHIRE OF A
 marker,-21.232056204199043,-16.605342599150003,the-state-of-rhymeria,THE STATE OF RHYMERIA,,,,,,,,,"{""iconScale"":0.04}",,
 marker,52.3755167451357,45.6085750515403,tsardom-of-belogorod,TSARDOM OF BELOGOROD,,,,,,,,,"{""iconScale"":0.13}",,
 marker,-56.62646424556126,-66.4414283817282,viceroy-of-tarragon,VICEROY OF TARRAGON,,,,,,,,,"{""iconScale"":0.04}",,
-marker,-15.241710004771683,74.17964820930851,a-karak,A KARAK,,,,,,,,,"{""iconScale"":0.08}",,
+marker,-15.199361363244345,73.78412284287104,a-karak,A KARAK,,,,,,,,,"{""iconScale"":0.08}",,
 marker,48,-16,altdorf,ALTDORF,,,,,,,,,"{""iconScale"":0.32}",,
-marker,48,-12,beastman-crest-1,BEASTMAN CREST 1,,,,,,,,,"{""iconScale"":0.22}",,
 marker,48,-8,beastman-small,BEASTMAN SMALL,,,,,,,,,"{""iconScale"":0.49}",,
 marker,48,-4,beastman-stone,BEASTMAN STONE,,,,,,,,,"{""iconScale"":0.46}",,
-marker,48,0,bp-001,BP 001,,,,,,,,,"{""iconScale"":0.22}",,
 marker,43.32463935415545,0.35238760452182666,bp-002,BP 002,,,,,,,,,"{""iconScale"":0.22}",,
 marker,48,8,bp-003,BP 003,,,,,,,,,"{""iconScale"":0.37}",,
 marker,45.02661324988345,33.437589348134885,bret-012,BRET 012,,,,,,,,,"{""iconScale"":0.26}",,
 marker,46.49772075203549,10.503552142351264,bret-034,BRET 034,,,,,,,,,"{""iconScale"":0.35}",,
 marker,48,20,carrow,CARROW,,,,,,,,,"{""iconScale"":0.3}",,
-marker,44,-24,dwarf-outpost,DWARF OUTPOST,,,,,,,,,"{""iconScale"":0.01}",,
+marker,44.434035565943226,7.255467288188432,dwarf-outpost,DWARF OUTPOST,,,,,,,,,"{""iconScale"":0.01}",,
 marker,44,-20,eleven-tower,ELEVEN TOWER,,,,,,,,,"{""iconScale"":0.01}",,
 marker,44,-16,fort,FORT,,,,,,,,,"{""iconScale"":0.15}",,
 marker,57.59837620746089,7.404785156250001,hirm,HIRM,,,,,,,,,"{""iconScale"":0.07}",,
@@ -377,7 +344,7 @@ marker,70.28911664330674,-68.68652343750001,house,HOUSE,,,,,,,,,"{""iconScale"":
 marker,-39.08034705167423,66.16335609082715,karak-angazhar,KARAK ANGAZHAR,,,,,,,,,"{""iconScale"":0.06}",,
 marker,-17.546232291663774,0,karak-azul,KARAK AZUL,,,,,,,,,"{""iconScale"":0.08}",,
 marker,-46.968130354910144,73.90864688907553,karak-izor,KARAK IZOR,,,,,,,,,"{""iconScale"":0.07}",,
-marker,15.287087827075853,100.88067930410752,karak-nornn,KARAK NORNN,,,,,,,,,"{""iconScale"":0.07}",,
+marker,15.287087827075853,100.88067930410752,karak-nornn,Iron Dwarves,,,,,,,,,"{""iconScale"":0.07}",,
 marker,57.18399594285948,73.91670215319175,karak-varn,KARAK VARN,,,,,,,,,"{""iconScale"":0.09}",,
 marker,44,16,kislev,KISLEV,,,,,,,,,"{""iconScale"":0.01}",,
 marker,-71.09067743970229,74.52645958746456,ld-003,LD 003,,,,,,,,,"{""iconScale"":0.07}",,
@@ -403,10 +370,9 @@ marker,36,0,og-005,OG 005,,,,,,,,,"{""iconScale"":0.11}",,
 marker,33.21173781172757,-0.26256198775672873,og-006,OG 006,,,,,,,,,"{""iconScale"":0.14}",,
 marker,36,8,og-007,OG 007,,,,,,,,,"{""iconScale"":0.21}",,
 marker,36,12,og-008,OG 008,,,,,,,,,"{""iconScale"":0.15}",,
-marker,36,16,og-009,OG 009,,,,,,,,,"{""iconScale"":0.14}",,
 marker,-69.162557908105,-31.508789062500004,porto,PORTO,,,,,,,,,"{""iconScale"":0.01}",,
-marker,32,-24,shroudedisle,SHROUDEDISLE,,,,,,,,,"{""iconScale"":0.01}",,
-marker,32,-20,the-silent-isle,THE SILENT ISLE,,,,,,,,,"{""iconScale"":0.01}",,
+marker,22.09997894490813,-73.13206136613177,shroudedisle,SHROUDEDISLE,,,,,,,,,"{""iconScale"":0.11}",,
+marker,36.52984365554116,-80.42860015502237,the-silent-isle,THE SILENT ISLE,,,,,,,,,"{""iconScale"":0.08}",,
 marker,-55.19151431955214,-25.42236328125,vala-azril-ungol,VALA AZRIL UNGOL,,,,,,,,,"{""iconScale"":0.06}",,
 marker,-56.41994903025323,51.93639783994327,varr,VARR,,,,,,,,,"{""iconScale"":0.07}",,
 marker,7.977813988982235,79.7818261112157,wood-elf,WOOD ELF,,,,,,,,,"{""iconScale"":0.04}",,
@@ -455,7 +421,6 @@ marker,44.647740907829146,24.513017193968775,the-great-brey-heard,THE GREAT BREY
 marker,-61.331751211805454,16.78517727514166,the-monastic-order-of-the-wheel,THE MONASTIC ORDER OF THE WHEEL,,,,,,,,,"{""iconScale"":0.06}",,
 marker,66.30218997058611,-78.75022884273056,the-realm-of-azurreach,THE REALM OF AZURREACH,,,,,,,,,"{""iconScale"":0.04}",,
 marker,39.84064201211833,-29.146705631351928,dwarf-outpost,DWARF OUTPOST,,,,,,,,,"{""iconScale"":0.01}",,
-marker,60.76989094827325,66.90673828125001,dwarf-outpost,Krak-Morgas,,,![Krak-Morgas](images/Dwarfhold/Krak-Morgas.jpg),,,,,,"{""iconScale"":0.01}",,
 marker,57.680961955099285,98.60588477732192,dwarf-outpost,Uzbad-az-Narg,,,"![Uzbad-az-Narg](images/Dwarfhold/Uzbad-az-Narg.jpg)
 Hold has been sealed 1000 years so its unknown if the inhabitants are alive or dead and thus unknown if its an active or abandoned dwarfhold",,,,,,"{""iconScale"":0.01}",,
 marker,72.68576494172952,-8.613281250000002,abandon-dwarfhold,Avlar-Thrûn,,,"![Avlar-Thrûn](images/Ruined%20Dwarfhold/Avlar-Thr%C3%BBn.jpg)
@@ -465,12 +430,12 @@ marker,-45.15105326556339,61.78710937500001,dwarf-outpost,Dun-Ôrdstun,,,![Dun-�
 marker,-35.35396257952243,66.35503496549036,dwarf-outpost,Dûrandur,,,![Dûrandur](images/Dwarfhold/D%C3%BBrandur.jpg),,,,,,"{""iconScale"":0.01}",,
 marker,-34.37966637421009,82.66012598852991,dwarf-outpost,Black Rock Hold,,,![Black Rock Hold](images/Dwarfhold/Black%20Rock%20Hold.jpg),,,,,,"{""iconScale"":0.01}",,
 marker,-12.854373616569383,83.32024374128984,dwarf-outpost,Barat Nûmenz,,,![Barat Nûmenz](images/Dwarfhold/Barat%20N%C3%BBmenz.jpg),,,,,,"{""iconScale"":0.01}",,
-marker,-69.40349544360423,55.12939453125,dwarf-outpost,Dun Toruhm,,,![Dun Toruhm](images/Dwarfhold/Dun%20Toruhm.jpg),,,,,,"{""iconScale"":0.01}",,
-marker,-20.941008333246586,80.59367965438688,dwarf-outpost,Karad-Graef,,,![Karad-Graef](images/Dwarfhold/Karad-Graef.jpg),,,,,,"{""iconScale"":0.01}",,
+marker,-70.72860581459155,53.96480198267597,dwarf-outpost,Dun Toruhm,,,![Dun Toruhm](images/Dwarfhold/Dun%20Toruhm.jpg),,,,,,"{""iconScale"":0.01}",,
+marker,-48.62629692516604,77.73915536434669,dwarf-outpost,Karad-Graef,,,![Karad-Graef](images/Dwarfhold/Karad-Graef.jpg),,,,,,"{""iconScale"":0.01}",,
 marker,-7.18810087117902,69.16992187500001,bp-003,BP 003,,,,,,,,,"{""iconScale"":0.18}",,
 marker,15.158663336160132,-60.05096059356373,carrow,Neverwinter,,,![Neverwinter](images/city/Neverwinter.jpg),,,,,,"{""iconScale"":0.2}",,
 marker,-47.57627196331696,-50.27213309643573,carrow,Moorsfield,,,![Moorsfield](images/city/Moorsfield.jpg),,,,,,"{""iconScale"":0.3}",,
-marker,61.41754927758897,75.89469029520824,dwarf-outpost,Dûmthûr Mînrth,,,![Dûmthûr Mînrth](images/Dwarfhold/D%C3%BBmth%C3%BBr%20M%C3%AEnrth.jpg),,,,,,"{""iconScale"":0.01}",,
+marker,60.78024418936339,67.01532571638317,dwarf-outpost,Dûmthûr Mînrth,,,![Dûmthûr Mînrth](images/Dwarfhold/D%C3%BBmth%C3%BBr%20M%C3%AEnrth.jpg),,,,,,"{""iconScale"":0.01}",,
 marker,69.8698915662856,55.32714843750001,dwarf-outpost,Dûrgrim Dûm,,,"![Dûrgrim Dûm](images/Dwarfhold/D%C3%BBrgrim%20D%C3%BBm.jpg)
 Dûrgrim Dûm is an ancient Dwarvern hold located in the ___ 
 
@@ -493,6 +458,11 @@ marker,-58.39069814092198,-63.061010534702575,bret-034,Carwell,,,![Carwell](imag
 marker,-72.06039251607318,13.754882812500002,bazzar,BAZZAR,,,,,,,,,"{""iconScale"":0.15}",,
 marker,-38.06630003353315,35.59570312500001,orc,ORC,,,,,,,,,"{""iconScale"":0.41}",,
 marker,-24.485519001505402,34.76126538324178,gate,Dol Guldur,,,,,,,,,"{""iconScale"":0.41}",,
+marker,-26.60840312508897,61.36966909744862,dwarf-outpost,Tuwad-Dhumakon,,,,,,,,,"{""iconScale"":0.01}",,
+marker,-26.334904993143063,51.196552275447765,dwarf-outpost,Skomdihir,,,,,,,,,"{""iconScale"":0.01}",,
+marker,-32.58293311165956,-24.27972289929529,dwarf-outpost,Hul-Jorkad,,,,,,,,,"{""iconScale"":0.01}",,
+marker,-32.04665027893795,70.86218837185285,dwarf-outpost,Hul-Az-Krakazol,,,,,,,,,"{""iconScale"":0.01}",,
+marker,-69.29496811357295,56.57958826762457,dwarf-outpost,Ovdal-az-An,,,,,,,,,"{""iconScale"":0.01}",,
 text,-64.77280807927899,90.35156250000001,,Crooked Mountains,,,"Despite dwarves meticlious record keeping the origin of the dwarves that inhabit the crooked mountains remains a mystsery. Some believe them to have originally been banished clans, while others thought them to be a returning expedition from the far east. Regardless of how they arrived there, the dwaves of these mountains themselves in the most inhospitable mountain range for dwavern kind, far too hot and without any minerial wealth beyond raw industral ore that could only be stripped mined rather than traditionally gathered, this put the dwaves of the crooked moutnains at an extreme disadvantage but they adapted and persisted. ",14,0,0,0,,,,
 text,72.36910450725075,6.152343750000001,,Sea of Claws,,,,14,0,0,0,,,,
 text,70.87349131926352,39.11132812500001,,Sea of Storms,,,,14,0,0,0,,,,
