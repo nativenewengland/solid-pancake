@@ -421,8 +421,12 @@ var wikiEntriesPromise = null;
 var currentWikiEntryId = null;
 var wikiEntryEditButton =
   typeof document !== 'undefined' ? document.getElementById('edit-wiki-entry') : null;
+var wikiEntryCreateButton =
+  typeof document !== 'undefined' ? document.getElementById('create-wiki-entry') : null;
 var wikiEntryFormOverlay =
   typeof document !== 'undefined' ? document.getElementById('wiki-entry-form-overlay') : null;
+var wikiEntryFormTitle =
+  typeof document !== 'undefined' ? document.getElementById('wiki-entry-form-title') : null;
 var wikiEntryIdField =
   typeof document !== 'undefined' ? document.getElementById('wiki-entry-id') : null;
 var wikiEntryTitleField =
@@ -441,6 +445,18 @@ var wikiEntryCancelButton =
   typeof document !== 'undefined' ? document.getElementById('wiki-entry-cancel') : null;
 var wikiEntryDownloadButton =
   typeof document !== 'undefined' ? document.getElementById('wiki-entry-download') : null;
+
+function normalizeWikiEntryId(value) {
+  if (!value) {
+    return '';
+  }
+  return String(value)
+    .trim()
+    .toLowerCase()
+    .replace(/[^a-z0-9\s-]/g, '')
+    .replace(/\s+/g, '-')
+    .replace(/-+/g, '-');
+}
 
 function loadWikiEntries() {
   if (wikiEntriesPromise) {
@@ -505,6 +521,7 @@ function populateWikiEntryForm(entryId) {
   }
   if (wikiEntryIdField) {
     wikiEntryIdField.value = key;
+    wikiEntryIdField.readOnly = true;
   }
   if (wikiEntryTitleField) {
     wikiEntryTitleField.value = entry.title || '';
@@ -528,6 +545,37 @@ function populateWikiEntryForm(entryId) {
   return true;
 }
 
+function resetWikiEntryForm() {
+  if (wikiEntryIdField) {
+    wikiEntryIdField.value = '';
+  }
+  if (wikiEntryTitleField) {
+    wikiEntryTitleField.value = '';
+  }
+  if (wikiEntryAltNamesField) {
+    wikiEntryAltNamesField.value = '';
+  }
+  if (wikiEntrySubheaderField) {
+    wikiEntrySubheaderField.value = '';
+  }
+  if (wikiEntryDescriptionField) {
+    wikiEntryDescriptionField.value = '';
+  }
+  if (wikiEntryInfoboxField) {
+    wikiEntryInfoboxField.value = '';
+  }
+}
+
+function setWikiEntryFormMode(mode) {
+  if (wikiEntryFormTitle) {
+    wikiEntryFormTitle.textContent =
+      mode === 'new' ? 'New Wiki Entry' : 'Edit Wiki Entry';
+  }
+  if (wikiEntryIdField) {
+    wikiEntryIdField.readOnly = mode !== 'new';
+  }
+}
+
 function openWikiEntryEditor(entryId) {
   if (!entryId || !wikiEntryFormOverlay) {
     return;
@@ -547,9 +595,23 @@ function openWikiEntryEditor(entryId) {
   if (!populateWikiEntryForm(key)) {
     return;
   }
+  setWikiEntryFormMode('edit');
   wikiEntryFormOverlay.classList.remove('hidden');
   if (wikiEntryTitleField) {
     wikiEntryTitleField.focus();
+  }
+}
+
+function openNewWikiEntryEditor() {
+  if (!wikiEntryFormOverlay) {
+    return;
+  }
+  setWikiEntryEditorState(null);
+  resetWikiEntryForm();
+  setWikiEntryFormMode('new');
+  wikiEntryFormOverlay.classList.remove('hidden');
+  if (wikiEntryIdField) {
+    wikiEntryIdField.focus();
   }
 }
 
@@ -557,11 +619,23 @@ function closeWikiEntryEditor() {
   if (wikiEntryFormOverlay) {
     wikiEntryFormOverlay.classList.add('hidden');
   }
+  setWikiEntryFormMode('edit');
 }
 
 function saveWikiEntryEdits() {
-  var entryId = currentWikiEntryId || (wikiEntryIdField ? wikiEntryIdField.value : '');
+  var entryIdRaw =
+    currentWikiEntryId || (wikiEntryIdField ? wikiEntryIdField.value : '');
+  var entryId = normalizeWikiEntryId(entryIdRaw);
   if (!entryId) {
+    alert('Entry ID is required.');
+    return;
+  }
+  if (wikiEntryIdField) {
+    wikiEntryIdField.value = entryId;
+  }
+  var existingEntry = wikiEntries[entryId];
+  if (existingEntry && entryId !== currentWikiEntryId) {
+    alert('That entry ID already exists. Choose a unique ID.');
     return;
   }
   var key = String(entryId).toLowerCase();
@@ -614,6 +688,9 @@ if (wikiEntryEditButton) {
       openWikiEntryEditor(currentWikiEntryId);
     }
   });
+}
+if (wikiEntryCreateButton) {
+  wikiEntryCreateButton.addEventListener('click', openNewWikiEntryEditor);
 }
 if (wikiEntrySaveButton) {
   wikiEntrySaveButton.addEventListener('click', saveWikiEntryEdits);
