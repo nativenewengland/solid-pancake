@@ -418,6 +418,29 @@ var infoInfobox =
 
 var wikiEntries = {};
 var wikiEntriesPromise = null;
+var currentWikiEntryId = null;
+var wikiEntryEditButton =
+  typeof document !== 'undefined' ? document.getElementById('edit-wiki-entry') : null;
+var wikiEntryFormOverlay =
+  typeof document !== 'undefined' ? document.getElementById('wiki-entry-form-overlay') : null;
+var wikiEntryIdField =
+  typeof document !== 'undefined' ? document.getElementById('wiki-entry-id') : null;
+var wikiEntryTitleField =
+  typeof document !== 'undefined' ? document.getElementById('wiki-entry-title') : null;
+var wikiEntryAltNamesField =
+  typeof document !== 'undefined' ? document.getElementById('wiki-entry-alt-names') : null;
+var wikiEntrySubheaderField =
+  typeof document !== 'undefined' ? document.getElementById('wiki-entry-subheader') : null;
+var wikiEntryDescriptionField =
+  typeof document !== 'undefined' ? document.getElementById('wiki-entry-description') : null;
+var wikiEntryInfoboxField =
+  typeof document !== 'undefined' ? document.getElementById('wiki-entry-infobox') : null;
+var wikiEntrySaveButton =
+  typeof document !== 'undefined' ? document.getElementById('wiki-entry-save') : null;
+var wikiEntryCancelButton =
+  typeof document !== 'undefined' ? document.getElementById('wiki-entry-cancel') : null;
+var wikiEntryDownloadButton =
+  typeof document !== 'undefined' ? document.getElementById('wiki-entry-download') : null;
 
 function loadWikiEntries() {
   if (wikiEntriesPromise) {
@@ -442,6 +465,165 @@ function loadWikiEntries() {
 }
 
 loadWikiEntries();
+
+function normalizeWikiEntryDescription(description) {
+  if (Array.isArray(description)) {
+    return description.join('\n\n');
+  }
+  return description || '';
+}
+
+function normalizeWikiEntryAltNames(altNames) {
+  if (Array.isArray(altNames)) {
+    return altNames.join(', ');
+  }
+  if (altNames === null || altNames === undefined) {
+    return '';
+  }
+  return String(altNames);
+}
+
+function setWikiEntryEditorState(entryId) {
+  currentWikiEntryId = entryId ? String(entryId).toLowerCase() : null;
+  if (wikiEntryEditButton) {
+    if (currentWikiEntryId) {
+      wikiEntryEditButton.classList.remove('hidden');
+    } else if (!wikiEntryEditButton.classList.contains('hidden')) {
+      wikiEntryEditButton.classList.add('hidden');
+    }
+  }
+}
+
+function populateWikiEntryForm(entryId) {
+  if (!wikiEntryFormOverlay) {
+    return false;
+  }
+  var key = String(entryId).toLowerCase();
+  var entry = wikiEntries[key];
+  if (!entry) {
+    return false;
+  }
+  if (wikiEntryIdField) {
+    wikiEntryIdField.value = key;
+  }
+  if (wikiEntryTitleField) {
+    wikiEntryTitleField.value = entry.title || '';
+  }
+  if (wikiEntryAltNamesField) {
+    wikiEntryAltNamesField.value = normalizeWikiEntryAltNames(entry.altNames);
+  }
+  if (wikiEntrySubheaderField) {
+    wikiEntrySubheaderField.value = entry.subheader || '';
+  }
+  if (wikiEntryDescriptionField) {
+    wikiEntryDescriptionField.value = normalizeWikiEntryDescription(entry.description);
+  }
+  if (wikiEntryInfoboxField) {
+    if (entry.infobox && typeof entry.infobox === 'object') {
+      wikiEntryInfoboxField.value = JSON.stringify(entry.infobox, null, 2);
+    } else {
+      wikiEntryInfoboxField.value = '';
+    }
+  }
+  return true;
+}
+
+function openWikiEntryEditor(entryId) {
+  if (!entryId || !wikiEntryFormOverlay) {
+    return;
+  }
+  var key = String(entryId).toLowerCase();
+  var entry = wikiEntries[key];
+  if (!entry) {
+    if (wikiEntriesPromise) {
+      wikiEntriesPromise.then(function () {
+        if (wikiEntries[key]) {
+          openWikiEntryEditor(key);
+        }
+      });
+    }
+    return;
+  }
+  if (!populateWikiEntryForm(key)) {
+    return;
+  }
+  wikiEntryFormOverlay.classList.remove('hidden');
+  if (wikiEntryTitleField) {
+    wikiEntryTitleField.focus();
+  }
+}
+
+function closeWikiEntryEditor() {
+  if (wikiEntryFormOverlay) {
+    wikiEntryFormOverlay.classList.add('hidden');
+  }
+}
+
+function saveWikiEntryEdits() {
+  var entryId = currentWikiEntryId || (wikiEntryIdField ? wikiEntryIdField.value : '');
+  if (!entryId) {
+    return;
+  }
+  var key = String(entryId).toLowerCase();
+  var title = wikiEntryTitleField ? wikiEntryTitleField.value.trim() : '';
+  var altNames = wikiEntryAltNamesField ? wikiEntryAltNamesField.value.trim() : '';
+  var subheader = wikiEntrySubheaderField ? wikiEntrySubheaderField.value.trim() : '';
+  var description = wikiEntryDescriptionField ? wikiEntryDescriptionField.value : '';
+  var infoboxData = null;
+  if (wikiEntryInfoboxField) {
+    var infoboxRaw = wikiEntryInfoboxField.value ? wikiEntryInfoboxField.value.trim() : '';
+    if (infoboxRaw) {
+      try {
+        infoboxData = JSON.parse(infoboxRaw);
+      } catch (err) {
+        alert('Infobox data must be valid JSON.');
+        return;
+      }
+    }
+  }
+  wikiEntries[key] = {
+    title: title,
+    altNames: altNames,
+    subheader: subheader,
+    description: description,
+    infobox: infoboxData,
+  };
+  setWikiEntryEditorState(key);
+  closeWikiEntryEditor();
+  openWikiEntry(key);
+}
+
+function downloadWikiEntries() {
+  var json = JSON.stringify(wikiEntries, null, 2);
+  var blob = new Blob([json], { type: 'application/json' });
+  var url = URL.createObjectURL(blob);
+  var link = document.createElement('a');
+  link.href = url;
+  link.download = 'wiki-entries.json';
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+  setTimeout(function () {
+    URL.revokeObjectURL(url);
+  }, 0);
+}
+
+if (wikiEntryEditButton) {
+  wikiEntryEditButton.addEventListener('click', function () {
+    if (currentWikiEntryId) {
+      openWikiEntryEditor(currentWikiEntryId);
+    }
+  });
+}
+if (wikiEntrySaveButton) {
+  wikiEntrySaveButton.addEventListener('click', saveWikiEntryEdits);
+}
+if (wikiEntryCancelButton) {
+  wikiEntryCancelButton.addEventListener('click', closeWikiEntryEditor);
+}
+if (wikiEntryDownloadButton) {
+  wikiEntryDownloadButton.addEventListener('click', downloadWikiEntries);
+}
 
 
 var WIKI_LINK_RULES = [
@@ -1233,10 +1415,12 @@ function openWikiEntry(entryId) {
   var key = String(entryId).toLowerCase();
   var entry = wikiEntries[key];
   if (!entry) {
+    setWikiEntryEditorState(null);
     if (wikiEntriesPromise) {
       wikiEntriesPromise.then(function () {
         var loadedEntry = wikiEntries[key];
         if (!loadedEntry) {
+          setWikiEntryEditorState(null);
           return;
         }
         var loadedDescription = loadedEntry.description;
@@ -1244,6 +1428,7 @@ function openWikiEntry(entryId) {
           loadedDescription = loadedDescription.join('\n\n');
         }
         clearSelectedMarker();
+        setWikiEntryEditorState(key);
         showInfo(
           loadedEntry.title,
           loadedEntry.altNames,
@@ -1260,18 +1445,23 @@ function openWikiEntry(entryId) {
     description = description.join('\n\n');
   }
   clearSelectedMarker();
+  setWikiEntryEditorState(key);
   showInfo(entry.title, entry.altNames, entry.subheader, description, entry.infobox);
 }
 
 document.getElementById('close-info').addEventListener('click', function () {
   document.getElementById('info-panel').classList.add('hidden');
   resetWikiInfoContent();
+  setWikiEntryEditorState(null);
+  closeWikiEntryEditor();
   clearSelectedMarker();
 });
 
 map.on('click', function () {
   document.getElementById('info-panel').classList.add('hidden');
   resetWikiInfoContent();
+  setWikiEntryEditorState(null);
+  closeWikiEntryEditor();
   clearSelectedMarker();
 });
 
@@ -4931,10 +5121,12 @@ function openWikiEntry(entryId) {
   var key = String(entryId).toLowerCase();
   var entry = wikiEntries[key];
   if (!entry) {
+    setWikiEntryEditorState(null);
     if (wikiEntriesPromise) {
       wikiEntriesPromise.then(function () {
         var loadedEntry = wikiEntries[key];
         if (!loadedEntry) {
+          setWikiEntryEditorState(null);
           return;
         }
         var loadedDescription = loadedEntry.description;
@@ -4942,6 +5134,7 @@ function openWikiEntry(entryId) {
           loadedDescription = loadedDescription.join('\n\n');
         }
         clearSelectedMarker();
+        setWikiEntryEditorState(key);
         showInfo(
           loadedEntry.title,
           loadedEntry.altNames,
@@ -4958,18 +5151,23 @@ function openWikiEntry(entryId) {
     description = description.join('\n\n');
   }
   clearSelectedMarker();
+  setWikiEntryEditorState(key);
   showInfo(entry.title, entry.altNames, entry.subheader, description, entry.infobox);
 }
 
 document.getElementById('close-info').addEventListener('click', function () {
   document.getElementById('info-panel').classList.add('hidden');
   resetWikiInfoContent();
+  setWikiEntryEditorState(null);
+  closeWikiEntryEditor();
   clearSelectedMarker();
 });
 
 map.on('click', function () {
   document.getElementById('info-panel').classList.add('hidden');
   resetWikiInfoContent();
+  setWikiEntryEditorState(null);
+  closeWikiEntryEditor();
   clearSelectedMarker();
 });
 

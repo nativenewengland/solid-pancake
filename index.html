@@ -106,6 +106,7 @@
     <div id="mouse-coords"></div>
     <div id="info-panel" class="hidden">
         <button id="close-info" class="close-button">&times;</button>
+        <button id="edit-wiki-entry" class="edit-button hidden" type="button">Edit Entry</button>
         <div
             id="info-infobox"
             class="wiki-infobox hidden"
@@ -206,6 +207,38 @@
             <button id="text-convert" class="hidden">Convert to Marker</button>
         </div>
     </div>
+    <div id="wiki-entry-form-overlay" class="hidden">
+        <div id="wiki-entry-form">
+            <h3>Edit Wiki Entry</h3>
+            <label>Entry ID:
+                <input type="text" id="wiki-entry-id" readonly>
+            </label>
+            <label>Title:
+                <input type="text" id="wiki-entry-title">
+            </label>
+            <label>Alternative Names:
+                <input type="text" id="wiki-entry-alt-names">
+            </label>
+            <label>Subheader:
+                <input type="text" id="wiki-entry-subheader">
+            </label>
+            <label>Description:
+                <small>Supports Markdown (e.g., <code>**bold**</code>, <code>![alt](url)</code> for images) and footnotes (pair <code>[^1]</code> with <code>[^1]: Source details</code>).</small>
+                <div class="markdown-image-tools">
+                    <button type="button" class="markdown-image-button" data-target="wiki-entry-description">Insert image reference</button>
+                    <input type="file" accept="image/*" class="markdown-image-input" data-target="wiki-entry-description" aria-label="Choose an image to insert into the description">
+                </div>
+                <textarea id="wiki-entry-description"></textarea>
+            </label>
+            <label for="wiki-entry-infobox">Infobox Data:
+                <small>Provide JSON describing the infobox (e.g., <code>{"title":"Profile","rows":[{"label":"Habitat","value":"Tidal bog"}]}</code>).</small>
+            </label>
+            <textarea id="wiki-entry-infobox" class="marker-infobox-input"></textarea>
+            <button id="wiki-entry-save" type="button">Save</button>
+            <button id="wiki-entry-cancel" type="button">Cancel</button>
+            <button id="wiki-entry-download" type="button">Download JSON</button>
+        </div>
+    </div>
     <div
         id="image-lightbox"
         class="image-lightbox hidden"
@@ -232,4 +265,3 @@
     <script src="js/map.js"></script>
 </body>
 </html>
-
