@@ -36,6 +36,28 @@
     padding-right: 12px;
 }
 
+.wiki-info__actions {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 1rem;
+}
+
+.wiki-info__action-button {
+    background: rgba(247, 247, 242, 0.12);
+    border: 1px solid rgba(247, 247, 242, 0.3);
+    color: #f7f7f2;
+    font-size: 0.85rem;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    letter-spacing: 0.02em;
+}
+
+.wiki-info__action-button:hover,
+.wiki-info__action-button:focus {
+    background: rgba(247, 247, 242, 0.2);
+}
+
 .wiki-info__title {
     margin-top: 0;
     margin-bottom: 0.5em;

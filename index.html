@@ -16,6 +16,11 @@
     <div id="map"></div>
     <aside id="wiki-info" class="wiki-info" aria-expanded="true">
         <div class="wiki-info__content">
+            <div class="wiki-info__actions">
+                <button id="create-wiki-entry" class="wiki-info__action-button" type="button">
+                    New Wiki Entry
+                </button>
+            </div>
             <div id="wiki-info-default" class="wiki-info__default">
                 <h2 class="wiki-info__title">Project Overview</h2>
                 <p class="wiki-info__intro">
@@ -209,9 +214,10 @@
     </div>
     <div id="wiki-entry-form-overlay" class="hidden">
         <div id="wiki-entry-form">
-            <h3>Edit Wiki Entry</h3>
+            <h3 id="wiki-entry-form-title">Edit Wiki Entry</h3>
             <label>Entry ID:
                 <input type="text" id="wiki-entry-id" readonly>
+                <small>Use lowercase letters, numbers, and hyphens (e.g., <code>crimson-spire</code>).</small>
             </label>
             <label>Title:
                 <input type="text" id="wiki-entry-title">
