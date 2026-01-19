@@ -451,6 +451,24 @@ select {
     color: #333;
 }
 
+#info-panel .edit-button {
+    position: absolute;
+    top: 5px;
+    right: 32px;
+    background: rgba(31, 74, 125, 0.1);
+    border: 1px solid rgba(31, 74, 125, 0.45);
+    border-radius: 4px;
+    padding: 2px 8px;
+    font-size: 12px;
+    cursor: pointer;
+    color: #1f4a7d;
+}
+
+#info-panel .edit-button:hover,
+#info-panel .edit-button:focus {
+    background: rgba(31, 74, 125, 0.2);
+}
+
 
 #info-title {
     text-align: center;
@@ -615,7 +633,8 @@ select {
 /* Marker form styles */
 #marker-form-overlay,
 #text-form-overlay,
-#polygon-form-overlay {
+#polygon-form-overlay,
+#wiki-entry-form-overlay {
     position: fixed;
     top: 0;
     left: 0;
@@ -630,13 +649,15 @@ select {
 
 #marker-form-overlay.hidden,
 #text-form-overlay.hidden,
-#polygon-form-overlay.hidden {
+#polygon-form-overlay.hidden,
+#wiki-entry-form-overlay.hidden {
     display: none;
 }
 
 #marker-form,
 #text-form,
-#polygon-form {
+#polygon-form,
+#wiki-entry-form {
     background: #fff;
     padding: 15px;
     border: 1px solid #333;
@@ -646,13 +667,15 @@ select {
 
 #marker-form label,
 #text-form label,
-#polygon-form label {
+#polygon-form label,
+#wiki-entry-form label {
     display: block;
     margin-bottom: 8px;
 }
 
 #marker-form label:first-of-type,
-#text-form label:first-of-type {
+#text-form label:first-of-type,
+#wiki-entry-form label:first-of-type {
     margin-bottom: 4px;
 }
 
@@ -664,14 +687,18 @@ select {
 #text-form textarea,
 #polygon-form input,
 #polygon-form select,
-#polygon-form textarea {
+#polygon-form textarea,
+#wiki-entry-form input,
+#wiki-entry-form select,
+#wiki-entry-form textarea {
     width: 100%;
     box-sizing: border-box;
 }
 
 #marker-form button,
 #text-form button,
-#polygon-form button {
+#polygon-form button,
+#wiki-entry-form button {
     margin-top: 10px;
     margin-right: 5px;
 }
