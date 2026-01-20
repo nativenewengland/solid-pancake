@@ -638,10 +638,12 @@ select {
 .text-label__text {
     display: inline-block;
     transform-origin: top center;
+    white-space: nowrap;
 }
 
 .text-label__line {
     display: block;
+    white-space: nowrap;
 }
 
 .text-label__inner span,
