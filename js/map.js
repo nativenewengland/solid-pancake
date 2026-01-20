@@ -2233,24 +2233,9 @@ function getTextLabelScale() {
   return Math.pow(2, map.getZoom() - baseZoom);
 }
 
-function setTextLabelBaseSize(marker, scaleOverride) {
+function setTextLabelBaseSize(marker) {
   if (!marker || !marker._data) {
     return;
-  }
-  var scale =
-    typeof scaleOverride === 'number' && Number.isFinite(scaleOverride) && scaleOverride > 0
-      ? scaleOverride
-      : getTextLabelScale();
-  if (marker._icon) {
-    var inner = marker._icon.querySelector('.text-label__inner');
-    if (inner) {
-      var rect = inner.getBoundingClientRect();
-      if (rect && rect.width > 0 && rect.height > 0) {
-        marker._baseLabelWidth = rect.width / scale;
-        marker._baseLabelHeight = rect.height / scale;
-        return;
-      }
-    }
   }
   var data = marker._data;
   var width = 0;
@@ -2287,12 +2272,10 @@ function applyTextLabelAnchor(marker, scale) {
     return;
   }
   if (
-    marker._needsBaseSize ||
     typeof marker._baseLabelWidth !== 'number' ||
     typeof marker._baseLabelHeight !== 'number'
   ) {
-    setTextLabelBaseSize(marker, scale);
-    marker._needsBaseSize = false;
+    setTextLabelBaseSize(marker);
   }
   var baseWidth = marker._baseLabelWidth || 1;
   var baseHeight = marker._baseLabelHeight || 1;
@@ -3112,7 +3095,7 @@ function addTextLabelToMap(data) {
     m._baseSvgWidth = null;
     m._baseSvgHeight = null;
   }
-  m._needsBaseSize = true;
+  setTextLabelBaseSize(m);
   m._data = data;
   m._markerType = 'text';
   allTextLabels.push(m);
@@ -3763,7 +3746,7 @@ function editTextForm(labelMarker) {
     data.spacing = spacing;
     data.curve = curve;
     data.overlay = '';
-    labelMarker._needsBaseSize = true;
+    setTextLabelBaseSize(labelMarker);
     saveTextLabels();
     rescaleTextLabels();
     cleanup();
