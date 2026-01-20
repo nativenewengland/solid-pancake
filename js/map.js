@@ -2267,24 +2267,14 @@ function setTextLabelBaseSize(marker) {
   marker._baseLabelHeight = height;
 }
 
-function applyTextLabelAnchor(marker, scale) {
+function applyTextLabelAnchor(marker) {
   if (!marker || !marker._icon) {
     return;
   }
-  if (
-    typeof marker._baseLabelWidth !== 'number' ||
-    typeof marker._baseLabelHeight !== 'number'
-  ) {
-    setTextLabelBaseSize(marker);
-  }
-  var baseWidth = marker._baseLabelWidth || 1;
-  var baseHeight = marker._baseLabelHeight || 1;
-  var scaledWidth = baseWidth * scale;
-  var scaledHeight = baseHeight * scale;
-  marker._icon.style.width = scaledWidth + 'px';
-  marker._icon.style.height = scaledHeight + 'px';
-  marker._icon.style.marginLeft = -(scaledWidth / 2) + 'px';
-  marker._icon.style.marginTop = -(scaledHeight / 2) + 'px';
+  marker._icon.style.width = '';
+  marker._icon.style.height = '';
+  marker._icon.style.marginLeft = '0';
+  marker._icon.style.marginTop = '0';
 }
 
 function rescaleTextLabels(scaleOverride, useTransition) {
@@ -2300,21 +2290,20 @@ function rescaleTextLabels(scaleOverride, useTransition) {
     if (!inner) {
       return;
     }
-    inner.style.transform = 'scale(' + scale + ')';
+    inner.style.transform = 'translate(-50%, -50%) scale(' + scale + ')';
     if (useTransition === true) {
       inner.style.transition = 'transform 0.25s ease';
     } else if (useTransition === false) {
       inner.style.transition = '';
     }
-    applyTextLabelAnchor(m, scale);
+    applyTextLabelAnchor(m);
   });
 }
 
 function refreshTextLabelSizing() {
-  var scale = getTextLabelScale();
   allTextLabels.forEach(function (m) {
     setTextLabelBaseSize(m);
-    applyTextLabelAnchor(m, scale);
+    applyTextLabelAnchor(m);
   });
 }
 
