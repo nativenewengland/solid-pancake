@@ -2310,6 +2310,14 @@ function rescaleTextLabels(scaleOverride, useTransition) {
   });
 }
 
+function refreshTextLabelSizing() {
+  var scale = getTextLabelScale();
+  allTextLabels.forEach(function (m) {
+    setTextLabelBaseSize(m);
+    applyTextLabelAnchor(m, scale);
+  });
+}
+
 // Parse a single CSV row into an array of values
 function parseCsvRow(line) {
   var result = [];
@@ -3202,6 +3210,11 @@ map.on('zoomanim', function (event) {
   rescaleTextLabels(currentScale * event.scale, true);
 });
 map.on('zoomend', function () {
+  rescaleTextLabels(getTextLabelScale(), false);
+});
+
+window.addEventListener('resize', function () {
+  refreshTextLabelSizing();
   rescaleTextLabels(getTextLabelScale(), false);
 });
 
