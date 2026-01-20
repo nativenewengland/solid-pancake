@@ -362,7 +362,7 @@ select {
     pointer-events: auto;
     text-align: center;
     text-transform: none;
-    transform-origin: top left;
+    transform-origin: top center;
     white-space: nowrap;
     box-shadow: none;
 }
