@@ -2254,8 +2254,14 @@ function setTextLabelBaseSize(marker) {
         ? marker._baseSvgHeight
         : baseSize;
   } else {
-    width = measureCurvedTextWidth(data.text || '', baseSize, data.spacing || 0);
-    height = baseSize;
+    var lineMetrics = measureStraightTextLabel(
+      data.text || '',
+      baseSize,
+      data.spacing || 0,
+      data.lines || 1
+    );
+    width = lineMetrics.width;
+    height = lineMetrics.height;
   }
   if (!Number.isFinite(width) || width <= 0) {
     width = 1;
@@ -2442,6 +2448,7 @@ function loadFeaturesFromCSV(text) {
         curve: parseFloat(cols[11]) || 0,
         overlay: cols[14] || '',
         infobox: textInfoboxRaw && typeof textInfoboxRaw === 'object' ? textInfoboxRaw : null,
+        lines: normalizeTextLabelLines(cols.length > 16 ? parseInt(cols[16], 10) : 1),
       });
     } else if (type === 'polygon') {
       var coordsRaw = cols[12] ? safeJsonParse(cols[12]) : null;
@@ -2468,7 +2475,7 @@ function escapeCsvValue(val) {
 
 function buildFeaturesCSV() {
   var rows = [
-    'type,lat,lng,icon,name/text,alt_names,subheader/text,description,size,angle,spacing,curve,coords,style,overlay,infobox'
+    'type,lat,lng,icon,name/text,alt_names,subheader/text,description,size,angle,spacing,curve,coords,style,overlay,infobox,text_lines'
   ];
 
   customMarkers.forEach(function (m) {
@@ -2503,7 +2510,8 @@ function buildFeaturesCSV() {
         '',
         escapeCsvValue(styleString),
         escapeCsvValue(m.overlay || ''),
-        escapeCsvValue(infoboxString)
+        escapeCsvValue(infoboxString),
+        ''
       ].join(',')
     );
   });
@@ -2534,7 +2542,8 @@ function buildFeaturesCSV() {
         '',
         '',
         escapeCsvValue(t.overlay || ''),
-        escapeCsvValue(textInfoboxString)
+        escapeCsvValue(textInfoboxString),
+        escapeCsvValue(t.lines || 1)
       ].join(',')
     );
   });
@@ -2568,6 +2577,7 @@ function buildFeaturesCSV() {
         '',
         escapeCsvValue(coordsString),
         escapeCsvValue(styleString),
+        '',
         '',
         ''
       ].join(',')
@@ -2965,6 +2975,73 @@ function measureCurvedTextWidth(text, fontSize, letterSpacing) {
   return width;
 }
 
+function normalizeTextLabelLines(value) {
+  var lines = parseInt(value, 10);
+  if (!Number.isFinite(lines) || lines < 1) {
+    return 1;
+  }
+  return Math.min(lines, 6);
+}
+
+function splitTextLabelLines(text, lineCount) {
+  var clean = String(text || '').trim();
+  if (!clean) {
+    return [''];
+  }
+  var words = clean.split(/\s+/);
+  var targetLines = normalizeTextLabelLines(lineCount);
+  targetLines = Math.min(targetLines, words.length);
+  if (targetLines <= 1) {
+    return [clean];
+  }
+  var baseSize = Math.floor(words.length / targetLines);
+  var remainder = words.length % targetLines;
+  var lines = [];
+  var index = 0;
+  for (var i = 0; i < targetLines; i++) {
+    var take = baseSize + (i < remainder ? 1 : 0);
+    lines.push(words.slice(index, index + take).join(' '));
+    index += take;
+  }
+  return lines;
+}
+
+function buildStraightTextLabelHtml(text, size, spacing, angle, lineCount) {
+  var lines = splitTextLabelLines(text, lineCount);
+  var lineHtml = lines
+    .map(function (line) {
+      return '<span class="text-label__line">' + line + '</span>';
+    })
+    .join('');
+  return {
+    html:
+      '<span class="text-label__text" style="font-size:' +
+      size +
+      'px; letter-spacing:' +
+      spacing +
+      'px; transform: rotate(' +
+      (angle || 0) +
+      'deg);">' +
+      lineHtml +
+      '</span>',
+    lines: lines,
+  };
+}
+
+function measureStraightTextLabel(text, fontSize, letterSpacing, lineCount) {
+  var lines = splitTextLabelLines(text, lineCount);
+  var width = 0;
+  lines.forEach(function (line) {
+    width = Math.max(width, measureCurvedTextWidth(line, fontSize, letterSpacing));
+  });
+  var sizeValue = parseFloat(fontSize);
+  if (!Number.isFinite(sizeValue) || sizeValue <= 0) {
+    sizeValue = 1;
+  }
+  var height = sizeValue * Math.max(1, lines.length);
+  return { width: width, height: height };
+}
+
 function addTextLabelToMap(data) {
   if (data.subheader === undefined || data.subheader === null) {
     data.subheader = '';
@@ -2973,11 +3050,13 @@ function addTextLabelToMap(data) {
     data.altNames = '';
   }
   if (data.spacing === undefined) data.spacing = 0;
+  if (data.lines === undefined || data.lines === null) data.lines = 1;
   var textIcon;
   var pathWidth = 0;
   var baseSvgWidth = null;
   var baseSvgHeight = null;
   if (data.curve) {
+    data.lines = 1;
     pathWidth = measureCurvedTextWidth(data.text, data.size, data.spacing);
     var r = Math.abs(data.curve);
     var sweep = data.curve > 0 ? 0 : 1;
@@ -3014,17 +3093,15 @@ function addTextLabelToMap(data) {
     var curvedHtml = '<div class="text-label__inner">' + svgHtml + '</div>';
     textIcon = L.divIcon({ className: 'text-label', html: curvedHtml, iconAnchor: [0, 0] });
   } else {
-    var spanHtml =
-      '<span style="font-size:' +
-      data.size +
-      'px; letter-spacing:' +
-      data.spacing +
-      'px; transform: rotate(' +
-      (data.angle || 0) +
-      'deg);">' +
-      data.text +
-      '</span>';
-    var straightHtml = '<div class="text-label__inner">' + spanHtml + '</div>';
+    data.lines = normalizeTextLabelLines(data.lines);
+    var straightText = buildStraightTextLabelHtml(
+      data.text,
+      data.size,
+      data.spacing,
+      data.angle,
+      data.lines
+    );
+    var straightHtml = '<div class="text-label__inner">' + straightText.html + '</div>';
     textIcon = L.divIcon({
       className: 'text-label',
       html: straightHtml,
@@ -3615,6 +3692,7 @@ function showTextForm(latlng) {
     var subheader = document.getElementById('text-label-subheader').value || '';
     var description = document.getElementById('text-label-description').value || '';
     var size = parseFloat(document.getElementById('text-label-size').value) || 14;
+    var lines = parseInt(document.getElementById('text-label-lines').value, 10) || 1;
     var angle = parseFloat(document.getElementById('text-label-angle').value) || 0;
     var spacing = parseFloat(document.getElementById('text-letter-spacing').value) || 0;
     var curve = parseFloat(document.getElementById('text-curve-radius').value) || 0;
@@ -3626,6 +3704,7 @@ function showTextForm(latlng) {
       subheader: subheader,
       description: description,
       size: size,
+      lines: normalizeTextLabelLines(lines),
       angle: angle,
       spacing: spacing,
       curve: curve,
@@ -3650,6 +3729,7 @@ function showTextForm(latlng) {
     document.getElementById('text-label-subheader').value = '';
     document.getElementById('text-label-description').value = '';
     document.getElementById('text-label-size').value = '14';
+    document.getElementById('text-label-lines').value = '1';
     document.getElementById('text-label-angle').value = '0';
     document.getElementById('text-letter-spacing').value = '0';
     document.getElementById('text-curve-radius').value = '0';
@@ -3672,6 +3752,7 @@ function editTextForm(labelMarker) {
   document.getElementById('text-label-subheader').value = data.subheader || '';
   document.getElementById('text-label-description').value = data.description || '';
   document.getElementById('text-label-size').value = data.size || 14;
+  document.getElementById('text-label-lines').value = data.lines || 1;
   document.getElementById('text-label-angle').value = data.angle || 0;
   document.getElementById('text-letter-spacing').value = data.spacing || 0;
   document.getElementById('text-curve-radius').value = data.curve || 0;
@@ -3688,6 +3769,7 @@ function editTextForm(labelMarker) {
     var altNames = document.getElementById('text-label-alt-names').value || '';
     var description = document.getElementById('text-label-description').value || '';
     var size = parseFloat(document.getElementById('text-label-size').value) || 14;
+    var lines = parseInt(document.getElementById('text-label-lines').value, 10) || 1;
     var angle = parseFloat(document.getElementById('text-label-angle').value) || 0;
     var spacing = parseFloat(document.getElementById('text-letter-spacing').value) || 0;
     var curve = parseFloat(document.getElementById('text-curve-radius').value) || 0;
@@ -3695,6 +3777,7 @@ function editTextForm(labelMarker) {
     var textIcon;
     var pathWidth = 0;
     if (curve) {
+      lines = 1;
       pathWidth = measureCurvedTextWidth(text, size, spacing);
       var r = Math.abs(curve);
       var sweep = curve > 0 ? 0 : 1;
@@ -3719,17 +3802,8 @@ function editTextForm(labelMarker) {
       var curvedHtml = '<div class="text-label__inner">' + svgHtml + '</div>';
       textIcon = L.divIcon({ className: 'text-label', html: curvedHtml, iconAnchor: [0, 0] });
     } else {
-      var spanHtml =
-        '<span style="font-size:' +
-        size +
-        'px; letter-spacing:' +
-        spacing +
-        'px; transform: rotate(' +
-        angle +
-        'deg);">' +
-        text +
-        '</span>';
-      var straightHtml = '<div class="text-label__inner">' + spanHtml + '</div>';
+      var straightText = buildStraightTextLabelHtml(text, size, spacing, angle, lines);
+      var straightHtml = '<div class="text-label__inner">' + straightText.html + '</div>';
       textIcon = L.divIcon({
         className: 'text-label',
         html: straightHtml,
@@ -3744,6 +3818,7 @@ function editTextForm(labelMarker) {
     data.subheader = subheader;
     data.description = description;
     data.size = size;
+    data.lines = normalizeTextLabelLines(lines);
     data.angle = angle;
     data.spacing = spacing;
     data.curve = curve;
@@ -3774,6 +3849,7 @@ function editTextForm(labelMarker) {
     document.getElementById('text-label-subheader').value = '';
     document.getElementById('text-label-description').value = '';
     document.getElementById('text-label-size').value = '14';
+    document.getElementById('text-label-lines').value = '1';
     document.getElementById('text-label-angle').value = '0';
     document.getElementById('text-letter-spacing').value = '0';
     document.getElementById('text-curve-radius').value = '0';
@@ -3807,6 +3883,7 @@ function convertMarkerToText(marker) {
     subheader: data.subheader || '',
     description: data.description || '',
     size: 14,
+    lines: 1,
     angle: 0,
     spacing: 0,
     curve: 0,

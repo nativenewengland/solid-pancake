@@ -635,6 +635,15 @@ select {
     transform-origin: top center;
 }
 
+.text-label__text {
+    display: inline-block;
+    transform-origin: top center;
+}
+
+.text-label__line {
+    display: block;
+}
+
 .text-label__inner span,
 .text-label__inner svg text,
 .text-label__inner svg textPath,
