@@ -2233,6 +2233,77 @@ function getTextLabelScale() {
   return Math.pow(2, map.getZoom() - baseZoom);
 }
 
+function setTextLabelBaseSize(marker, scaleOverride) {
+  if (!marker || !marker._data) {
+    return;
+  }
+  var scale =
+    typeof scaleOverride === 'number' && Number.isFinite(scaleOverride) && scaleOverride > 0
+      ? scaleOverride
+      : getTextLabelScale();
+  if (marker._icon) {
+    var inner = marker._icon.querySelector('.text-label__inner');
+    if (inner) {
+      var rect = inner.getBoundingClientRect();
+      if (rect && rect.width > 0 && rect.height > 0) {
+        marker._baseLabelWidth = rect.width / scale;
+        marker._baseLabelHeight = rect.height / scale;
+        return;
+      }
+    }
+  }
+  var data = marker._data;
+  var width = 0;
+  var height = 0;
+  var baseSize = parseFloat(data.size);
+  if (!Number.isFinite(baseSize) || baseSize <= 0) {
+    baseSize = 1;
+  }
+  if (data.curve) {
+    width =
+      typeof marker._baseSvgWidth === 'number' && Number.isFinite(marker._baseSvgWidth)
+        ? marker._baseSvgWidth
+        : measureCurvedTextWidth(data.text || '', baseSize, data.spacing || 0);
+    height =
+      typeof marker._baseSvgHeight === 'number' && Number.isFinite(marker._baseSvgHeight)
+        ? marker._baseSvgHeight
+        : baseSize;
+  } else {
+    width = measureCurvedTextWidth(data.text || '', baseSize, data.spacing || 0);
+    height = baseSize;
+  }
+  if (!Number.isFinite(width) || width <= 0) {
+    width = 1;
+  }
+  if (!Number.isFinite(height) || height <= 0) {
+    height = 1;
+  }
+  marker._baseLabelWidth = width;
+  marker._baseLabelHeight = height;
+}
+
+function applyTextLabelAnchor(marker, scale) {
+  if (!marker || !marker._icon) {
+    return;
+  }
+  if (
+    marker._needsBaseSize ||
+    typeof marker._baseLabelWidth !== 'number' ||
+    typeof marker._baseLabelHeight !== 'number'
+  ) {
+    setTextLabelBaseSize(marker, scale);
+    marker._needsBaseSize = false;
+  }
+  var baseWidth = marker._baseLabelWidth || 1;
+  var baseHeight = marker._baseLabelHeight || 1;
+  var scaledWidth = baseWidth * scale;
+  var scaledHeight = baseHeight * scale;
+  marker._icon.style.width = scaledWidth + 'px';
+  marker._icon.style.height = scaledHeight + 'px';
+  marker._icon.style.marginLeft = -(scaledWidth / 2) + 'px';
+  marker._icon.style.marginTop = -(scaledHeight / 2) + 'px';
+}
+
 function rescaleTextLabels(scaleOverride, useTransition) {
   var scale =
     typeof scaleOverride === 'number' && isFinite(scaleOverride)
@@ -2252,11 +2323,7 @@ function rescaleTextLabels(scaleOverride, useTransition) {
     } else if (useTransition === false) {
       inner.style.transition = '';
     }
-    var inner = m._icon.querySelector('.text-label__inner');
-    if (!inner) {
-      return;
-    }
-    inner.style.transform = 'scale(' + scale + ')';
+    applyTextLabelAnchor(m, scale);
   });
 }
 
@@ -3045,6 +3112,7 @@ function addTextLabelToMap(data) {
     m._baseSvgWidth = null;
     m._baseSvgHeight = null;
   }
+  m._needsBaseSize = true;
   m._data = data;
   m._markerType = 'text';
   allTextLabels.push(m);
@@ -3695,6 +3763,7 @@ function editTextForm(labelMarker) {
     data.spacing = spacing;
     data.curve = curve;
     data.overlay = '';
+    labelMarker._needsBaseSize = true;
     saveTextLabels();
     rescaleTextLabels();
     cleanup();
