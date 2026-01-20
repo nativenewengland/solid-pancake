@@ -2222,7 +2222,7 @@ function rescaleMarkerNameLabels() {
     tooltipEl.style.fontSize = baseFontSize + 'px';
     tooltipEl.style.transform =
       (baseTransformValue ? baseTransformValue + ' ' : '') + 'scale(' + scale + ')';
-    tooltipEl.style.transformOrigin = 'top left';
+    tooltipEl.style.transformOrigin = 'top center';
   });
 }
 
