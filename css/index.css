@@ -618,6 +618,9 @@ select {
 }
 .text-label__inner {
     display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 0;
     pointer-events: none;
     transform-origin: center center;
 }
