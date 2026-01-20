@@ -612,7 +612,6 @@ select {
     height: auto !important;
     text-align: center;
     pointer-events: none;
-    transform: translate(-50%, -50%);
 }
 .text-label-pane {
     z-index: 650;
