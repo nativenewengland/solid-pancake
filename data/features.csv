@@ -363,7 +363,7 @@ marker,-71.07375572837172,-92.24135534702546,free-pirate-republic-of-sabo,FREE P
 marker,0.9279298996053476,-12.964489642351264,free-province-of-marrolyn,FREE PROVINCE OF MARROLYN,,,,,,,,,"{""iconScale"":0.08}",,,
 marker,24,-4,gate,GATE,,,,,,,,,"{""iconScale"":0.41}",,,
 marker,7.493905081105289,27.728889651203946,grand-dutchy-of-the-palensades,GRAND DUTCHY OF THE PALENSADES,,,,,,,,,"{""iconScale"":0.04}",,,
-marker,-60.737223166643865,16.697734817634537,heraldecember-day-1-molsheim-and-guebwiller-v0-tatogcctmy8g1,HERALDECEMBER DAY 1 MOLSHEIM AND GUEBWILLER V0 TATOGCCTMY8G1,,,,,,,,,"{""iconScale"":0.06}",,,
+marker,-60.737223166643865,16.697734817634537,heraldecember-day-1-molsheim-and-guebwiller-v0-tatogcctmy8g1,HERALDECEMBER DAY 1 MOLSHEIM AND GUEBWILLER V0 TATOGCCTMY8G1,,,,,,,,,"{""iconScale"":0.04}",,,
 marker,-36.996836968187594,-60.417708702195455,kingdom-of-lysandor,KINGDOM OF LYSANDOR,,,,,,,,,"{""iconScale"":0.05}",,,
 marker,66.03578334544193,-89.25297545604614,kingdom-of-ostylward,KINGDOM OF OSTYLWARD,,,,,,,,,"{""iconScale"":0.04}",,,
 marker,-70.53215239614086,12.106933593750002,large-bazzar,LARGE BAZZAR,,,,,,,,,"{""iconScale"":0.17}",,,
@@ -385,7 +385,7 @@ marker,-59.901106211317106,42.97020958746464,tandar,TANDAR,,,,,,,,,"{""iconScale
 marker,-52.53005409460626,98.25297695769208,the-dark-lords-domain,THE DARK LORDS DOMAIN,,,,,,,,,"{""iconScale"":0.01}",,,
 marker,16,-12,the-free-state-of-myroberg,THE FREE STATE OF MYROBERG,,,,,,,,,"{""iconScale"":0.09}",,,
 marker,44.647740907829146,24.513017193968775,the-great-brey-heard,THE GREAT BREY HEARD,,,,,,,,,"{""iconScale"":0.03}",,,
-marker,-61.331751211805454,16.78517727514166,the-monastic-order-of-the-wheel,THE MONASTIC ORDER OF THE WHEEL,,,,,,,,,"{""iconScale"":0.06}",,,
+marker,-60.5334403966211,17.226562500000004,the-monastic-order-of-the-wheel,THE MONASTIC ORDER OF THE WHEEL,,,,,,,,,"{""iconScale"":0.06}",,,
 marker,66.30218997058611,-78.75022884273056,the-realm-of-azurreach,THE REALM OF AZURREACH,,,,,,,,,"{""iconScale"":0.04}",,,
 marker,39.84064201211833,-29.146705631351928,dwarf-outpost,DWARF OUTPOST,,,,,,,,,"{""iconScale"":0.01}",,,
 marker,57.680961955099285,98.60588477732192,dwarf-outpost,Uzbad-az-Narg,,,"![Uzbad-az-Narg](images/Dwarfhold/Uzbad-az-Narg.jpg)
@@ -449,13 +449,28 @@ marker,55.10351605801967,40.62592997182795,abandon-dwarfhold,Ironhold,,,,,,,,,"{
 marker,53.396432127095984,27.861186812025558,abandon-dwarfhold,Alvar-Baroag,,,,,,,,,"{""iconScale"":0.01}",,,
 marker,15.766049967388058,31.091308593750004,carrow,Stenengard,,,,,,,,,"{""iconScale"":0.3}",,,
 marker,-2.483345737982608,-32.16796875000001,carrow,Seabrook,,,![Moorsfield](images/city/Moorsfield.jpg),,,,,,"{""iconScale"":0.3}",,,
+marker,-65.50400376763241,9.953613281250002,large-bazzar,LARGE BAZZAR,,,,,,,,,"{""iconScale"":0.17}",,,
+marker,-66.42570377245043,9.382324218750002,bazzar,Siwasuf,,,,,,,,,"{""iconScale"":0.15}",,,
+marker,-65.29442413880925,12.32666015625,bazzar,Vivera,,,,,,,,,"{""iconScale"":0.15}",,,
+marker,-64.97112183741547,18.303222656250004,large-bazzar,Tunisople,,,,,,,,,"{""iconScale"":0.17}",,,
+marker,-68.41538996517319,10.085449218750002,bazzar,BAZZAR,,,,,,,,,"{""iconScale"":0.15}",,,
+marker,-70.80149329222245,32.32177734375001,large-bazzar,Saradeena,,,,,,,,,"{""iconScale"":0.17}",,,
+marker,-71.11629558881025,47.08740234375001,bazzar,Al Didad,,,,,,,,,"{""iconScale"":0.15}",,,
+marker,-64.07228140882118,24.147949218750004,bazzar,Yaribs,,,,,,,,,"{""iconScale"":0.15}",,,
+marker,-72.1548877325445,46.03271484375001,large-bazzar,Sheôl,,,,,,,,,"{""iconScale"":0.17}",,,
+marker,-73.3341174958937,35.59570312500001,eleven-tower,Tor Midon,,,,,,,,,"{""iconScale"":0.01}",,,
+marker,-73.63385704026865,17.182617187500004,bazzar,Tukero,,,,,,,,,"{""iconScale"":0.15}",,,
+marker,-72.56745499911975,23.994140625000004,bazzar,Tel Karbaruk,,,,,,,,,"{""iconScale"":0.15}",,,
+marker,-53.82696376450747,11.228027343750002,large-bazzar,Tehraroft,,,,,,,,,"{""iconScale"":0.17}",,,
+marker,-68.25975865531507,21.73095703125,bazzar,Tarrisse,,,,,,,,,"{""iconScale"":0.17}",,,
+marker,-59.54622176877541,8.657226562500002,bazzar,Sha'ri Red City,,,,,,,,,"{""iconScale"":0.15}",,,
 text,-64.77280807927899,90.35156250000001,,Crooked Mountains,,,"Despite dwarves meticlious record keeping the origin of the dwarves that inhabit the crooked mountains remains a mystsery. Some believe them to have originally been banished clans, while others thought them to be a returning expedition from the far east. Regardless of how they arrived there, the dwaves of these mountains themselves in the most inhospitable mountain range for dwavern kind, far too hot and without any minerial wealth beyond raw industral ore that could only be stripped mined rather than traditionally gathered, this put the dwaves of the crooked moutnains at an extreme disadvantage but they adapted and persisted. ",14,0,0,0,,,,,1
 text,72.36910450725075,6.152343750000001,,Sea of Claws,,,,14,0,0,0,,,,,1
 text,70.87349131926352,39.11132812500001,,Sea of Storms,,,,14,0,0,0,,,,,1
 text,0.8788717828324276,-47.52685546875001,,Bay of Sargoas,,,,14,0,0,0,,,,,1
 text,28.22697003891834,-92.98828125,,Great Ocean,,,,31,0,0,0,,,,,1
 text,-68.44766195833505,84.68261718750001,,The Ivory Lands,,,,14,0,0,0,,,,,1
-text,-72.99690914812648,43.8134765625,,The Great Desert ,,,,14,0,0,0,,,,,1
+text,-73.3969517254008,58.00781250000001,,The Great Desert ,,,,14,0,0,0,,,,,1
 text,-40.54720023441048,41.61621093750001,,Silverpine Forest,,,,14,0,0,0,,,,,1
 text,38.61687046392973,22.5,,The Aldarwood,,,,14,0,0,0,,,,,1
 text,-6.315298538330033,44.91210937500001,,The Plaguelands,,,,14,0,0,0,,,,,1
@@ -479,3 +494,4 @@ text,-3.3825348818321057,67.93945312500001,,Mourning Wood ,,,,14,-31,2,0,,,,,1
 text,-11.609855739079984,50.185546875,,Corpsewood,,,,14,0,2,0,,,,,1
 text,49.55206487701461,73.95996093750001,,The Sweptlands,,,,14,0,0,0,,,,,1
 text,53.63207957029406,-61.50146484375001,,The Caldar Moore Coast ,,,,14,0,0,0,,,,,1
+text,-73.03504521190952,42.60498046875,,Zontha Cascade,,,"Despite dwarves meticlious record keeping the origin of the dwarves that inhabit the crooked mountains remains a mystsery. Some believe them to have originally been banished clans, while others thought them to be a returning expedition from the far east. Regardless of how they arrived there, the dwaves of these mountains themselves in the most inhospitable mountain range for dwavern kind, far too hot and without any minerial wealth beyond raw industral ore that could only be stripped mined rather than traditionally gathered, this put the dwaves of the crooked moutnains at an extreme disadvantage but they adapted and persisted. ",14,0,0,0,,,,,1
