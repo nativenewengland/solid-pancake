@@ -719,6 +719,38 @@ var WIKI_LINK_RULES = [
     terms: ['Goblins', 'goblins', 'Goblin', 'goblin'],
   },
   {
+    entryId: 'dread-king',
+    terms: ['Dread King', 'dread king', 'The Dread King', 'the Dread King'],
+  },
+  {
+    entryId: 'fel-magic',
+    terms: ['Fel Magic', 'fel magic', 'Fel', 'fel'],
+  },
+  {
+    entryId: 'drow',
+    terms: ['Drow', 'drow'],
+  },
+  {
+    entryId: 'elf-wars',
+    terms: ['Elf Wars', 'elf wars', 'Elven Wars', 'elven wars'],
+  },
+  {
+    entryId: 'giant',
+    terms: ['Giant', 'giant', 'Giants', 'giants'],
+  },
+  {
+    entryId: 'gnome',
+    terms: ['Gnome', 'gnome', 'Gnomes', 'gnomes'],
+  },
+  {
+    entryId: 'great-plague',
+    terms: ['Great Plague', 'great plague'],
+  },
+  {
+    entryId: 'great-regrowth',
+    terms: ['Great Regrowth', 'great regrowth'],
+  },
+  {
     entryId: 'ice-trolls',
     terms: ['Ice Trolls', 'ice trolls', 'Ice Troll', 'ice troll'],
   },
@@ -761,36 +793,36 @@ var WIKI_LINK_RULES = [
     terms: ['Religion', 'religion', 'Forgefaith', 'forgefaith'],
   },
   {
-    entryId: 'hill-dwarfs',
-    terms: ['Hill Dwarfs', 'hill dwarfs', 'Hill Dwarf', 'hill dwarf'],
+    entryId: 'northmen',
+    terms: ['Northmen', 'northmen', 'Northman', 'northman'],
   },
   {
-    entryId: 'yeti',
-    terms: ['Yeti', 'yeti', 'Yetis', 'yetis'],
+    entryId: 'ogre',
+    terms: ['Ogre', 'ogre', 'Ogres', 'ogres'],
   },
   {
-    entryId: 'drow',
-    terms: ['Drow', 'drow'],
-  },
-  {
-    entryId: 'giant',
-    terms: ['Giant', 'giant', 'Giants', 'giants'],
-  },
-  {
-    entryId: 'gnome',
-    terms: ['Gnome', 'gnome', 'Gnomes', 'gnomes'],
+    entryId: 'piracy',
+    terms: ['Piracy', 'piracy', 'Pirate', 'pirate', 'Pirates', 'pirates'],
   },
   {
     entryId: 'ratling',
     terms: ['Ratling', 'ratling', 'Ratlings', 'ratlings'],
   },
   {
+    entryId: 'tram',
+    terms: ['Tram', 'tram', 'Trams', 'trams'],
+  },
+  {
     entryId: 'troglodyte',
     terms: ['Troglodyte', 'troglodyte', 'Troglodytes', 'troglodytes'],
   },
   {
-    entryId: 'ogre',
-    terms: ['Ogre', 'ogre', 'Ogres', 'ogres'],
+    entryId: 'hill-dwarfs',
+    terms: ['Hill Dwarfs', 'hill dwarfs', 'Hill Dwarf', 'hill dwarf'],
+  },
+  {
+    entryId: 'yeti',
+    terms: ['Yeti', 'yeti', 'Yetis', 'yetis'],
   },
 ];
 
@@ -4556,6 +4588,38 @@ var WIKI_LINK_RULES = [
     terms: ['Goblins', 'goblins', 'Goblin', 'goblin'],
   },
   {
+    entryId: 'dread-king',
+    terms: ['Dread King', 'dread king', 'The Dread King', 'the Dread King'],
+  },
+  {
+    entryId: 'fel-magic',
+    terms: ['Fel Magic', 'fel magic', 'Fel', 'fel'],
+  },
+  {
+    entryId: 'drow',
+    terms: ['Drow', 'drow'],
+  },
+  {
+    entryId: 'elf-wars',
+    terms: ['Elf Wars', 'elf wars', 'Elven Wars', 'elven wars'],
+  },
+  {
+    entryId: 'giant',
+    terms: ['Giant', 'giant', 'Giants', 'giants'],
+  },
+  {
+    entryId: 'gnome',
+    terms: ['Gnome', 'gnome', 'Gnomes', 'gnomes'],
+  },
+  {
+    entryId: 'great-plague',
+    terms: ['Great Plague', 'great plague'],
+  },
+  {
+    entryId: 'great-regrowth',
+    terms: ['Great Regrowth', 'great regrowth'],
+  },
+  {
     entryId: 'ice-trolls',
     terms: ['Ice Trolls', 'ice trolls', 'Ice Troll', 'ice troll'],
   },
@@ -4598,36 +4662,36 @@ var WIKI_LINK_RULES = [
     terms: ['Religion', 'religion', 'Forgefaith', 'forgefaith'],
   },
   {
-    entryId: 'hill-dwarfs',
-    terms: ['Hill Dwarfs', 'hill dwarfs', 'Hill Dwarf', 'hill dwarf'],
+    entryId: 'northmen',
+    terms: ['Northmen', 'northmen', 'Northman', 'northman'],
   },
   {
-    entryId: 'yeti',
-    terms: ['Yeti', 'yeti', 'Yetis', 'yetis'],
+    entryId: 'ogre',
+    terms: ['Ogre', 'ogre', 'Ogres', 'ogres'],
   },
   {
-    entryId: 'drow',
-    terms: ['Drow', 'drow'],
-  },
-  {
-    entryId: 'giant',
-    terms: ['Giant', 'giant', 'Giants', 'giants'],
-  },
-  {
-    entryId: 'gnome',
-    terms: ['Gnome', 'gnome', 'Gnomes', 'gnomes'],
+    entryId: 'piracy',
+    terms: ['Piracy', 'piracy', 'Pirate', 'pirate', 'Pirates', 'pirates'],
   },
   {
     entryId: 'ratling',
     terms: ['Ratling', 'ratling', 'Ratlings', 'ratlings'],
   },
   {
+    entryId: 'tram',
+    terms: ['Tram', 'tram', 'Trams', 'trams'],
+  },
+  {
     entryId: 'troglodyte',
     terms: ['Troglodyte', 'troglodyte', 'Troglodytes', 'troglodytes'],
   },
   {
-    entryId: 'ogre',
-    terms: ['Ogre', 'ogre', 'Ogres', 'ogres'],
+    entryId: 'hill-dwarfs',
+    terms: ['Hill Dwarfs', 'hill dwarfs', 'Hill Dwarf', 'hill dwarf'],
+  },
+  {
+    entryId: 'yeti',
+    terms: ['Yeti', 'yeti', 'Yetis', 'yetis'],
   },
 ];
 
