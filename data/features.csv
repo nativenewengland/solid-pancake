@@ -464,6 +464,9 @@ marker,-72.56745499911975,23.994140625000004,bazzar,Tel Karbaruk,,,,,,,,,"{""ico
 marker,-53.82696376450747,11.228027343750002,large-bazzar,Tehraroft,,,,,,,,,"{""iconScale"":0.17}",,,
 marker,-68.25975865531507,21.73095703125,bazzar,Tarrisse,,,,,,,,,"{""iconScale"":0.17}",,,
 marker,-59.54622176877541,8.657226562500002,bazzar,Sha'ri Red City,,,,,,,,,"{""iconScale"":0.15}",,,
+marker,-71.86306997499312,4.2402280608395335,fort,High Point Citidel,,,,,,,,,"{""iconScale"":0.15}",,,
+marker,-71.52490903732816,21.060791015625004,bazzar,Al-Salri,,,,,,,,,"{""iconScale"":0.15}",,,
+marker,-72.32912972217885,35.55049213977258,large-bazzar,Baahubali,,,,,,,,,"{""iconScale"":0.17}",,,
 text,-64.77280807927899,90.35156250000001,,Crooked Mountains,,,"Despite dwarves meticlious record keeping the origin of the dwarves that inhabit the crooked mountains remains a mystsery. Some believe them to have originally been banished clans, while others thought them to be a returning expedition from the far east. Regardless of how they arrived there, the dwaves of these mountains themselves in the most inhospitable mountain range for dwavern kind, far too hot and without any minerial wealth beyond raw industral ore that could only be stripped mined rather than traditionally gathered, this put the dwaves of the crooked moutnains at an extreme disadvantage but they adapted and persisted. ",14,0,0,0,,,,,1
 text,72.36910450725075,6.152343750000001,,Sea of Claws,,,,14,0,0,0,,,,,1
 text,70.87349131926352,39.11132812500001,,Sea of Storms,,,,14,0,0,0,,,,,1
@@ -488,10 +491,11 @@ text,69.5345668312469,14.194346970378053,,Gnomeford,,,,7,-63,0,0,,,,,1
 text,-41.21152901145914,55.2613526808062,,Stonepeaks,,,,11,-17,2,0,,,,,1
 text,-42.22851735620851,-3.01100962346103,,The Misty Mountains ,,,,14,0,0,0,,,,,1
 text,62.34967091320326,-49.28466796875,,The Sentinels ,,,,23,-43,4,0,,,,,1
-text,-32.9163333073905,-5.273437500000001,,The Long Forest,,,,14,-31,10,0,,,,,1
+text,-32.9163333073905,-5.273437500000001,,The Long Forest,,,,18,-31,17,0,,,,,1
 text,-48.371248754707736,-42.2314453125,,The Kings Woods,,,,14,0,2,0,,,,,1
 text,-3.3825348818321057,67.93945312500001,,Mourning Wood ,,,,14,-31,2,0,,,,,1
 text,-11.609855739079984,50.185546875,,Corpsewood,,,,14,0,2,0,,,,,1
 text,49.55206487701461,73.95996093750001,,The Sweptlands,,,,14,0,0,0,,,,,1
 text,53.63207957029406,-61.50146484375001,,The Caldar Moore Coast ,,,,14,0,0,0,,,,,1
 text,-73.03504521190952,42.60498046875,,Zontha Cascade,,,"Despite dwarves meticlious record keeping the origin of the dwarves that inhabit the crooked mountains remains a mystsery. Some believe them to have originally been banished clans, while others thought them to be a returning expedition from the far east. Regardless of how they arrived there, the dwaves of these mountains themselves in the most inhospitable mountain range for dwavern kind, far too hot and without any minerial wealth beyond raw industral ore that could only be stripped mined rather than traditionally gathered, this put the dwaves of the crooked moutnains at an extreme disadvantage but they adapted and persisted. ",14,0,0,0,,,,,1
+text,-67.85898479324494,62.46832623119483,,Gates of Myria,,,,4,0,0,0,,,,,1
