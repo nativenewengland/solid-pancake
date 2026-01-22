@@ -140,7 +140,7 @@ marker,-60.45721779774396,-51.767578125,kingdom-of-gawthaud,KINGDOM OF GAWTHAUD,
 marker,-30.56196155422879,-90.2646976805949,kingdom-of-alveron,KINGDOM OF ALVERON,,,,,,,,,"{""iconScale"":0.14}",,,
 marker,-50.70748452933861,-78.13628939447594,kingdom-of-belmor,KINGDOM OF BELMOR,,,,,,,,,"{""iconScale"":0.19}",,,
 marker,-45.51754057873579,-52.20213401556572,kingdom-of-bretton,KINGDOM OF BRETTON,,,Crown Wars,,,,,,"{""iconScale"":0.21}",,,
-marker,-48.81187564447393,31.899974548512716,kingdom-of-caledon,KINGDOM OF CALEDON,,,,,,,,,"{""iconScale"":0.07}",,,
+marker,-49.53946900793533,32.05813663563831,kingdom-of-caledon,KINGDOM OF CALEDON,,,,,,,,,"{""iconScale"":0.07}",,,
 marker,60,12,kingdom-of-lancchaster,KINGDOM OF LANCCHASTER,,,,,,,,,"{""iconScale"":0.19}",,,
 marker,60,16,kingdom-of-norhaven,KINGDOM OF NORHAVEN,,,,,,,,,"{""iconScale"":0.15}",,,
 marker,63.666128285006366,-53.1719973831554,kingdom-of-valmont,KINGDOM OF VALMONT,,,,,,,,,"{""iconScale"":0.16}",,,
@@ -169,9 +169,9 @@ marker,-40.81917173353749,18.01716234030457,the-shire-of-anvilmar,THE SHIRE OF A
 marker,-21.232056204199043,-16.605342599150003,the-state-of-rhymeria,THE STATE OF RHYMERIA,,,,,,,,,"{""iconScale"":0.04}",,,
 marker,52.3755167451357,45.6085750515403,tsardom-of-belogorod,TSARDOM OF BELOGOROD,,,The land of Rusland is a massive stretch of hilllands wilderness and farmlands that cover most of the North eastern sections of the known world originally known as the Tsardom of Rusland and ruled and perpetuality by the Romanov family it served as one of the three great powers in The Realm along with the Empire Bohemia and the kingdom of Breton these are them was known for its hearty people and regarded for many centuries as the bulwark of humanity serving as a shield to protect the Southlands from demonic incursions in Northern Raiders who frequently were stopped by the Tsars military when attempting invasions of the realm to the South despite its reputation of strength rusland eventually fell to a massive mixed incursion of both Northland Raiders and demonic armies the largest such attack the realm had ever seen up to that point after the destruction of Rusland the land laid nearly totally depopulated by The Invasion over 95% of Ruslands people were slaughtered and what few survivors never were able to rebuild the empire that they had known what few minor noble families and Boyers who had survived the initial onslaught spent many years warring with each other afterwards for the presumed title of czar eventually these attempts faded along with any semblance of an organized power structure and ruessland was reduced once again to a massive stretch of forest occasionally dotted by small villages and Hardy people though today a few scattered cities remain around old rules the only one to exert enough power to actually declare itself a zardom is these are dumb bell garage which controls a substantial stretch of territory on the borders of the empire of Bohemia,,,,,,"{""iconScale"":0.13}",,,
 marker,-56.62646424556126,-66.4414283817282,viceroy-of-tarragon,VICEROY OF TARRAGON,,,,,,,,,"{""iconScale"":0.04}",,,
-marker,-15.199361363244345,73.78412284287104,a-karak,A KARAK,,,,,,,,,"{""iconScale"":0.08}",,,
+marker,-15.199361363244345,73.78412284287104,a-karak,Grey Dwarves,,,,,,,,,"{""iconScale"":0.08}",,,
 marker,48,-16,altdorf,ALTDORF,,,,,,,,,"{""iconScale"":0.32}",,,
-marker,48,-8,beastman-small,BEASTMAN SMALL,,,,,,,,,"{""iconScale"":0.49}",,,
+marker,44.98034238084973,-8.789222786854111,beastman-small,BEASTMAN SMALL,,,,,,,,,"{""iconScale"":0.49}",,,
 marker,48,-4,beastman-stone,BEASTMAN STONE,,,,,,,,,"{""iconScale"":0.46}",,,
 marker,43.32463935415545,0.35238760452182666,bp-002,BP 002,,,,,,,,,"{""iconScale"":0.22}",,,
 marker,48,8,bp-003,BP 003,,,,,,,,,"{""iconScale"":0.37}",,,
@@ -260,7 +260,7 @@ marker,16,-12,the-free-state-of-myroberg,THE FREE STATE OF MYROBERG,,,,,,,,,"{""
 marker,44.647740907829146,24.513017193968775,the-great-brey-heard,THE GREAT BREY HEARD,,,,,,,,,"{""iconScale"":0.03}",,,
 marker,-60.5334403966211,17.226562500000004,the-monastic-order-of-the-wheel,THE MONASTIC ORDER OF THE WHEEL,,,,,,,,,"{""iconScale"":0.06}",,,
 marker,66.30218997058611,-78.75022884273056,the-realm-of-azurreach,THE REALM OF AZURREACH,,,,,,,,,"{""iconScale"":0.04}",,,
-marker,39.84064201211833,-29.146705631351928,dwarf-outpost,DWARF OUTPOST,,,,,,,,,"{""iconScale"":0.01}",,,
+marker,30.259067203213018,-44.102153186740125,dwarf-outpost,Throal,,,,,,,,,"{""iconScale"":0.01}",,,
 marker,57.680961955099285,98.60588477732192,dwarf-outpost,Uzbad-az-Narg,,,"![Uzbad-az-Narg](images/Dwarfhold/Uzbad-az-Narg.jpg)
 Hold has been sealed 1000 years so its unknown if the inhabitants are alive or dead and thus unknown if its an active or abandoned dwarfhold",,,,,,"{""iconScale"":0.01}",,,
 marker,72.68576494172952,-8.613281250000002,abandon-dwarfhold,Avlar-Thrûn,,,"![Avlar-Thrûn](images/Ruined%20Dwarfhold/Avlar-Thr%C3%BBn.jpg)
@@ -377,6 +377,11 @@ marker,8.86336203355168,-32.98068098166794,carrow,Rydale,,,,,,,,,"{""iconScale""
 marker,-0.4394488164139641,37.42297326177813,carrow,Mourngrove,,,,,,,,,"{""iconScale"":0.3}",,,
 marker,-9.156332560046778,40.364081200132986,carrow,Ravenhollow,,,,,,,,,"{""iconScale"":0.3}",,,
 marker,59.153403092050375,48.93451688354864,abandon-dwarfhold,Ondrehrdin,,,,,,,,,"{""iconScale"":0.01}",,,
+marker,-40.530501775743204,-17.3371915962196,beastman-small,BEASTMAN SMALL,,,,,,,,,"{""iconScale"":0.2}",,,
+marker,-50.86144411058924,-39.28543526785715,beastman-small,BEASTMAN SMALL,,,,,,,,,"{""iconScale"":0.2}",,,
+marker,-10.660607953624762,79.4761795925152,orc,ORC,,,,,,,,,"{""iconScale"":0.41}",,,
+marker,-66.63555577803263,83.60787602108664,orc,ORC,,,,,,,,,"{""iconScale"":0.41}",,,
+marker,-62.40055082541711,39.308935101633736,orc,ORC,,,,,,,,,"{""iconScale"":0.41}",,,
 text,-64.77280807927899,90.35156250000001,,Crooked Mountains,,,"Despite dwarves meticlious record keeping the origin of the dwarves that inhabit the crooked mountains remains a mystsery. Some believe them to have originally been banished clans, while others thought them to be a returning expedition from the far east. Regardless of how they arrived there, the dwaves of these mountains themselves in the most inhospitable mountain range for dwavern kind, far too hot and without any minerial wealth beyond raw industral ore that could only be stripped mined rather than traditionally gathered, this put the dwaves of the crooked moutnains at an extreme disadvantage but they adapted and persisted. ",14,0,0,0,,,,,1
 text,72.36910450725075,6.152343750000001,,Sea of Claws,,,,14,0,0,0,,,,,1
 text,70.87349131926352,39.11132812500001,,Sea of Storms,,,,14,0,0,0,,,,,1
@@ -411,3 +416,4 @@ text,-73.03504521190952,42.60498046875,,Zontha Cascade,,,"Despite dwarves meticl
 text,-67.85898479324494,62.46832623119483,,Gates of Myria,,,,4,0,0,0,,,,,1
 text,-50.078294547389426,69.67592521134121,,The Fell Warrens,,,,14,0,0,0,,,,,1
 text,61.51745610656004,65.74285981430472,,The Frostmourn Mountains ,,,,27,0,0,0,,,,,1
+text,27.391278222579277,65.65508495203268,,The Wildwood,,,,14,0,0,0,,,,,1
