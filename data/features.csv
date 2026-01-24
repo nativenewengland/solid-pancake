@@ -120,6 +120,134 @@ Recent storm damage snapped two sky-bridges; repair crews race to restore them b
 <<<<<<< HEAD
 ",,,,,,"{""iconScale"":0.01}",,"{""title"":""Zirak-khazad"",""subtitle"":""Dwarfen Hold Profile"",""rows"":[{""label"":""Status"",""value"":""High Aerie Hold""},{""label"":""Founded"",""value"":""-1890 KI""},{""label"":""Specialty"",""value"":""Resonant hornworks & skywatching""},{""label"":""Notable Clan"",""value"":""Clan Echohelm""}]}",
 marker,3.34689177525274,-3.4705238467110004,dwarf-outpost,Dur-Vazhatun,,,![Dur-Vazhatun](images/Dwarfhold/new/Dur-Vazhatun.webp),,,,,,"{""iconScale"":0.01}",,,
+marker,-30.767202747489456,-24.525899689634794,dwarf-outpost,Gûndâl Grum,Forge of Clever Hands,Engineering hold famed for gyrocopter foundries,"![Gûndâl Grum](images/Dwarfhold/G%C3%BBnd%C3%A2l%20Grum.jpg)
+
+## Overview
+Gûndâl Grum rings with the clatter of gears and the whine of rotor testing rigs. Elevated walkways crisscross vast assembly halls where engineers tinker with experimental machines under the watchful gaze of stern runelords.
+
+## History
+Once a modest toolmaker's enclave, the hold vaulted to prominence after Master Geargrin unveiled the first reliable gyrocopter clutch. Their skyfliers turned the tide at the Battle of Five Peaks by harrying enemy supply lines.
+
+### Culture and Craft
+Tinker guilds prize innovation, though every prototype must pass rigorous rune-blessing rituals before flight. Apprentices rotate through design conclaves, forge halls, and a dangerous proving canyon where machines earn their names.
+
+### Strategic Notes
+- Retractable hangar doors shield fleets of gyrocopters from sabotage.
+- Automated hammer lines can be retooled as defensive crushers in case of invasion.
+
+### Current Outlook
+A coalition of young engineers petitions to test steam-powered tunneling machines, prompting elders to demand extensive safety trials before deployment.
+",,,,,,"{""iconScale"":0.01}",,"{""title"":""Gûndâl Grum"",""subtitle"":""Dwarfen Hold Profile"",""rows"":[{""label"":""Status"",""value"":""Innovator Hold""},{""label"":""Founded"",""value"":""-1104 KI""},{""label"":""Specialty"",""value"":""Gyrocopters & clockwork automata""},{""label"":""Notable Clan"",""value"":""Clan Geargrin""}]}",
+marker,-33.797408767572485,-15.908203125000002,dwarf-outpost,Thrâng-khazad,Ancestral Spiral,Hold descending through a spiral of ancestor crypts,"![Thrâng-khazad](images/Dwarfhold/Thr%C3%A2ng-khazad.jpg)
+
+## Overview
+Thrâng-khazad winds downward in a grand spiral carved around a central shaft of ancestor statues. Each tier honors a different age, and the air is thick with incense and echoing hymns.
+
+## History
+Built to shelter the remains of heroes who fell in the War of Bloody Tears, the hold became a pilgrimage site for clans across the range. Its spiral fortifications absorbed and redirected countless assaults by greenskin hordes.
+
+### Culture and Craft
+Stoneward artisans specialize in memorial craftsmanship, inlaying sarcophagi with starmetal filigree. Processions carry memory lanterns along the spiral, recounting lineages stretching back millennia.
+
+### Strategic Notes
+- The spiral ramp can rotate, sealing sections and forcing attackers to fight uphill through kill zones.
+- Resonant hymn chambers amplify battle chants that bolster defending warriors' resolve.
+
+### Current Outlook
+The High Shieldthane prepares for the 500th Jubilee of Remembrance, expecting delegations from every loyal clanhold.
+",,,,,,"{""iconScale"":0.01}",,"{""title"":""Thrâng-khazad"",""subtitle"":""Dwarfen Hold Profile"",""rows"":[{""label"":""Status"",""value"":""Reverent Deephold""},{""label"":""Founded"",""value"":""-2077 KI""},{""label"":""Specialty"",""value"":""Ancestor crypts & spiral fortifications""},{""label"":""Notable Clan"",""value"":""Clan Stoneward""}]}",
+marker,-14.905717297470664,59.37245416365607,dwarf-outpost,Khirûn-karag,,,"![Khirûn-karag](images/Dwarfhold/Khir%C3%BBn-karag.jpg)
+",,,,,,"{""iconScale"":0.01}",,,
+marker,-33.43144133557529,-13.974609375000002,dwarf-outpost,Gazad-az-Bôr,Bastion of the Border,Southern sentinel guarding the emerald marches,"![Gazad-az-Bôr](images/Dwarfhold/Gazad-az-B%C3%B4r.jpg)
+
+## Overview
+Gazad-az-Bôr overlooks rolling emerald plains from a rocky escarpment studded with signal towers. Caravan roads converge beneath its guns, ensuring every traveler is cataloged before crossing the marches.
+
+## History
+Established to shield trade routes from marauding beastmen, the hold grew into the keystone of southern defenses. Its rotating bastions turned the tide at the Battle of Thornfield when they shredded a Brayherd's ambush with crossfires.
+
+### Culture and Craft
+Shieldmarch drillmasters train warriors in combined arms tactics with humans and halfling scouts. Artisans craft modular fort sections that can be shipped to remote outposts and locked together like stone puzzle pieces.
+
+### Strategic Notes
+- Rotating bastions allow overlapping fields of fire across the entire march road.
+- Beacon towers connect to Uzbad-az-Narg, relaying warnings faster than horse messengers.
+
+### Current Outlook
+Diplomatic envoys from the Moot negotiate expanded patrol rights, promising grain shipments in exchange for protection.
+",,,,,,"{""iconScale"":0.01}",,"{""title"":""Gazad-az-Bôr"",""subtitle"":""Dwarfen Hold Profile"",""rows"":[{""label"":""Status"",""value"":""Southern March Hold""},{""label"":""Founded"",""value"":""-1182 KI""},{""label"":""Specialty"",""value"":""Border forts & rotating bastions""},{""label"":""Notable Clan"",""value"":""Clan Shieldmarch""}]}",
+marker,-37.30431673639372,83.4953640222675,dwarf-outpost,Bazâr-durin,Market of the First Forge,Grand bazaar celebrating invention and ancestral craftsmanship,"![Bazâr-durin](images/Dwarfhold/Baz%C3%A2r-durin.jpg)
+
+## Overview
+Bazâr-durin thrives around an immense plaza roofed by stained glass depicting the forging of the first rune hammer. Market stalls burst with color, music, and the aroma of spice breads from every corner of the empire.
+
+## History
+Founded by traders who followed the First Forge's pilgrim trail, the hold became the official venue for the Great Maker's Fair. Innovations unveiled here—like the collapsible cannon carriage—often reshape warfare and commerce alike.
+
+### Culture and Craft
+Guildhouses line the plaza, each offering apprenticeships in crafts from jewelry to mechanika. Festivals pair competitions with story circles where inventors recount the lineage of their tools.
+
+### Strategic Notes
+- Hidden portcullis tracks can isolate the bazaar into defensible wedges during unrest.
+- Vaulted acoustics allow announcers to coordinate the entire market from a single dais.
+
+### Current Outlook
+Preparations for the next Maker's Fair have begun, and invitations have been sent to elf artisans willing to share glassmaking secrets in exchange for rune lore.
+",,,,,,"{""iconScale"":0.01}",,"{""title"":""Bazâr-durin"",""subtitle"":""Dwarfen Hold Profile"",""rows"":[{""label"":""Status"",""value"":""Celebrated Market Hold""},{""label"":""Founded"",""value"":""-950 KI""},{""label"":""Specialty"",""value"":""Seasonal grand markets & artisan guildhouses""},{""label"":""Notable Clan"",""value"":""Clan Goldtally""}]}",
+marker,-25.337309791039797,-5.895341032251709,dwarf-outpost,Kharak-khazad,Sealed Redoubt,Partially collapsed hold watching over the southern deeps,"![Kharak-khazad](images/Dwarfhold/Kharak-khazad.jpg)
+
+## Overview
+Kharak-khazad clings to cliffs above yawning chasms, many halls now sealed behind rune-locked gates after catastrophic quakes. Lantern-lit salvage crews still delve the blocked passages searching for lost kin and treasures.
+
+## History
+Once a thriving ore hub, the hold suffered a series of cave-ins during the Deep Rumble. Clan Rockvault saved the core districts by triggering counter-quakes that collapsed the invading skaven tunnels.
+
+### Culture and Craft
+Survivors maintain meticulous records of which passages remain sealed and who was entombed within. Salvage engineers design reinforced braces and shock-absorbing boots used across the range.
+
+### Strategic Notes
+- Counter-quake charges can bring down entire bridges if enemies press too hard.
+- Aerial tramways connect intact districts, bypassing unstable lower tunnels.
+
+### Current Outlook
+Rockvault prospectors petition to reopen a lower shaft after detecting vibration patterns suggesting empty, stable chambers beyond the collapse.
+",,,,,,"{""iconScale"":0.01}",,"{""title"":""Kharak-khazad"",""subtitle"":""Dwarfen Hold Profile"",""rows"":[{""label"":""Status"",""value"":""Partially Sealed Hold""},{""label"":""Founded"",""value"":""-1450 KI""},{""label"":""Specialty"",""value"":""Sealed gateworks & salvage crews""},{""label"":""Notable Clan"",""value"":""Clan Rockvault""}]}",
+marker,-34.391841419665546,-13.978461228980557,dwarf-outpost,Thûrdûn Thrum,Hall of Resonance,Melodic stronghold where runes are sung into stone,"![Thûrdûn Thrum](images/Dwarfhold/Th%C3%BBrd%C3%BBn%20Thrum.jpg)
+
+## Overview
+Thûrdûn Thrum is carved like a great instrument, with every corridor tuned to amplify the voices of its inhabitants. Choral rehearsals double as structural inspections, for any discordant echo may signal stress in the stone.
+
+## History
+The hold emerged after rune-singer Thûrdûn discovered harmonic inscriptions that could bind magic more efficiently. Its choirs shattered a Chaos sorcerer's wards during the Siege of Nine Echoes, proving the power of sung runes.
+
+### Culture and Craft
+Songthane artisans engrave wave-patterns into pillars, then test them with crystal tuning forks. Young dwarfs learn to harmonize before wielding axes, ensuring battlefield commands carry even in the thickest melee.
+
+### Strategic Notes
+- Resonant halls can project stunning sonic bursts toward invaders.
+- Harmonic wards woven into the gates disrupt enemy spellcasting by desynchronizing incantations.
+
+### Current Outlook
+The Grand Chorus prepares a new Hymn of Binding to stabilize distant outposts suffering from warpstone tremors.
+",,,,,,"{""iconScale"":0.01}",,"{""title"":""Thûrdûn Thrum"",""subtitle"":""Dwarfen Hold Profile"",""rows"":[{""label"":""Status"",""value"":""Harmonic Runebastion""},{""label"":""Founded"",""value"":""-1010 KI""},{""label"":""Specialty"",""value"":""Resonant rune-singing & acoustic wards""},{""label"":""Notable Clan"",""value"":""Clan Songthane""}]}",
+marker,32.7,18.4,dwarf-outpost,Gazûl-dûm,Sanctum of Gazûl,Catacomb hold honoring the Lord of the Underearth,"![Gazûl-dûm](images/Dwarfhold/Gaz%C3%BBl-d%C3%BBm.jpg)
+
+## Overview
+Gazûl-dûm stretches through solemn catacombs carved with reliefs of every ancestor interred within. Luminous fungi paint the passageways in violet light as silent processions bear offerings to the Lord of the Underearth.
+
+## History
+Priests of Gazûl established the hold to safeguard the honored dead after necromancers desecrated burial fields elsewhere. The Gravesong clan has since thwarted undead incursions by sanctifying bones and sealing portals to the shadow realm.
+
+### Culture and Craft
+Mortuary artisans weave silver-wire ossuaries and inscribe lament runes that soothe restless spirits. Festivals of Quiet Remembrance invite living kin to dine among ancestor statues, reaffirming bonds across generations.
+
+### Strategic Notes
+- Sanctified catacombs emit wards that unravel necromantic energies.
+- Hidden reliquary caches house consecrated hammerheads used to banish spirits on short notice.
+
+### Current Outlook
+A surge in ghostly whispers hints at a new breach between worlds; the priests consult with Thûrdrim Duraz for lore on sealing shadow rifts.
+",,,,,,"{""iconScale"":0.01}",,"{""title"":""Gazûl-dûm"",""subtitle"":""Dwarfen Hold Profile"",""rows"":[{""label"":""Status"",""value"":""Sacred Necropolis""},{""label"":""Founded"",""value"":""-2120 KI""},{""label"":""Specialty"",""value"":""Ancestral catacombs & mortuary rites""},{""label"":""Notable Clan"",""value"":""Clan Gravesong""}]}",
 marker,64,-24,dwarf-outpost,ABANDON DWARFHOLD,,,,,,,,,"{""iconScale"":0.01}",,,
 marker,64,-20,barony-of-dorsen,BARONY OF DORSEN,,,,,,,,,"{""iconScale"":0.1}",,,
 marker,46.79076278876718,-44.95277310552409,barony-of-livonia,BARONY OF LIVONIA,,,,,,,,,"{""iconScale"":0.11}",,,
