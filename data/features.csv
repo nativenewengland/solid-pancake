@@ -27,7 +27,7 @@ With winter squalls thickening, Thane Dromri Stormthane has ordered additional p
 ",,,,,,"{""iconScale"":0.01}",,"{""title"":""Khazadûn Kharn"",""subtitle"":""Dwarfen Hold Profile"",""rows"":[{""label"":""Status"",""value"":""Prosperous High Hold""},{""label"":""Founded"",""value"":""c. -1900 KI""},{""label"":""Specialty"",""value"":""Skyhammer ballistae & aurora beacons""},{""label"":""Notable Clan"",""value"":""Clan Stormthane""}]}",
 marker,-17.743143160455016,73.69621978455072,dwarf-outpost,Dhurnomli Bûr,,,"![Dhurnomli Bûr](images/Dwarfhold/Dhurnomli%20B%C3%BBr.jpg)
 ",,,,,,"{""iconScale"":0.01}",,,
-marker,68.12248241161676,84.19921875000001,abandon-dwarfhold,Zarak-az-Garaz,Obsidian Crown,Volcanic bastion crowned with rune-lit obsidian,"![Zarak-az-Garaz](images/Zarak-az-Garaz.jpg)
+marker,66.91328491074654,86.66026073563467,abandon-dwarfhold,Zarak-az-Garaz,Obsidian Crown,Volcanic bastion crowned with rune-lit obsidian,"![Zarak-az-Garaz](images/Zarak-az-Garaz.jpg)
 
 ## Overview
 Zarak-az-Garaz grips the rim of a dormant caldera, its curtain walls faced with obsidian plates etched in gold. Steam plumes vent from the terraces, giving the impression of a crown wreathed in silver vapour.
@@ -403,7 +403,7 @@ marker,-7.18810087117902,69.16992187500001,bp-003,BP 003,,,,,,,,,"{""iconScale""
 marker,15.158663336160132,-60.05096059356373,carrow,Neverwinter,,,![Neverwinter](images/city/Neverwinter.jpg),,,,,,"{""iconScale"":0.2}",,,
 marker,-47.57627196331696,-50.27213309643573,carrow,Moorsfield,,,![Moorsfield](images/city/Moorsfield.jpg),,,,,,"{""iconScale"":0.3}",,,
 marker,60.78024418936339,67.01532571638317,dwarf-outpost,Dûmthûr Mînrth,,,![Dûmthûr Mînrth](images/Dwarfhold/D%C3%BBmth%C3%BBr%20M%C3%AEnrth.jpg),,,,,,"{""iconScale"":0.01}",,,
-marker,69.8698915662856,55.32714843750001,dwarf-outpost,Dûrgrim Dûm,,,"![Dûrgrim Dûm](images/Dwarfhold/D%C3%BBrgrim%20D%C3%BBm.jpg)
+marker,66.56574968490334,24.2138653216851,dwarf-outpost,Dûrgrim Dûm,,,"![Dûrgrim Dûm](images/Dwarfhold/D%C3%BBrgrim%20D%C3%BBm.jpg)
 Dûrgrim Dûm is an ancient Dwarvern hold located in the ___ 
 
 It should be noted the current dwarfhold of Dûrgrim Dûm is not the primary bearer of its name. In fact Dûrgrim Dûm as it currently exists, was abandoned for over a thousand years after it became too crowded and its population migrated to a new hold which was constructed to fit its much larger population. This hold was lost during the Great Desecration, when Chaos marauders defiled sacred tombs across the northern reaches and elsewhere. The surviving clans gathered remaining relics and relocated to their orginal hold that had been abandoned a millennium past. Out of the great shame of losing their hold the dwarves swore an eternal oath to erase the name of the original hold of their ancestors, they had retreated into and replace it with the one that had just been lost, as to make any without personal knowledge believe this was their only hold and no hold had been breached and looted by the outlanders. ",,,,,,"{""iconScale"":0.01}",,,
@@ -535,6 +535,8 @@ marker,-13.689401542510035,45.79103801477888,ld-018,Ilfelin,,,,,,,,,"{""iconScal
 marker,-20.919807666209465,52.47070499081491,dwarf-outpost,Karak-Duraz,,,,,,,,,"{""iconScale"":0.01}",,,
 marker,-21.329578687037973,48.075987159324455,dwarf-outpost,Tharn Khazrim,,,,,,,,,"{""iconScale"":0.01}",,,
 marker,-55.217123325658896,-18.67671210003483,dwarf-outpost,Karak Grumdril,,,,,,,,,"{""iconScale"":0.01}",,,
+marker,69.2871242121239,76.72883654516365,abandon-dwarfhold,Azrak Zarak,,,,,,,,,"{""iconScale"":0.01}",,,
+marker,67.47150773528324,68.23608398437501,gate,Icecrown Citidel,,,,,,,,,"{""iconScale"":0.41}",,,
 text,-64.77280807927899,90.35156250000001,,Crooked Mountains,,,"Despite dwarves meticlious record keeping the origin of the dwarves that inhabit the crooked mountains remains a mystsery. Some believe them to have originally been banished clans, while others thought them to be a returning expedition from the far east. Regardless of how they arrived there, the dwaves of these mountains themselves in the most inhospitable mountain range for dwavern kind, far too hot and without any minerial wealth beyond raw industral ore that could only be stripped mined rather than traditionally gathered, this put the dwaves of the crooked moutnains at an extreme disadvantage but they adapted and persisted. ",14,0,0,0,,,,,1
 text,72.36910450725075,6.152343750000001,,Sea of Claws,,,,14,0,0,0,,,,,1
 text,70.87349131926352,39.11132812500001,,Sea of Storms,,,,14,0,0,0,,,,,1
