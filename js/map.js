@@ -705,7 +705,6 @@ if (wikiEntryDownloadButton) {
 
 var WIKI_LINK_RULES = [
   { entryId: 'gorlak', terms: ['Gorlak', 'gorlak'] },
-  { entryId: 'gorlock', terms: ['Gorlock', 'gorlock'] },
   {
     entryId: 'orc',
     terms: ['Orc', 'orc', 'Orcs', 'orcs', 'Orcish', 'orcish'],
@@ -4572,7 +4571,6 @@ loadWikiEntries();
 
 var WIKI_LINK_RULES = [
   { entryId: 'gorlak', terms: ['Gorlak', 'gorlak'] },
-  { entryId: 'gorlock', terms: ['Gorlock', 'gorlock'] },
   {
     entryId: 'orc',
     terms: ['Orc', 'orc', 'Orcs', 'orcs', 'Orcish', 'orcish'],
