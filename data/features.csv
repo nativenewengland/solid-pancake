@@ -544,6 +544,23 @@ marker,67.47150773528324,68.23608398437501,gate,Icecrown Citidel,,,![Icecrown Ci
 marker,-43.484812128916026,68.35693359375001,dwarf-outpost,Mirabar,,,,,,,,,"{""iconScale"":0.01}",,,
 marker,-49.28214015975995,-12.63427734375,abandon-dwarfhold,Dun Ezmar,,,,,,,,,"{""iconScale"":0.01}",,,
 marker,-46.66451741754235,50.31738281250001,abandon-dwarfhold,Azgark Metzger,,,,,,,,,"{""iconScale"":0.01}",,,
+marker,1.3613002606283828,75.47607421875001,abandon-dwarfhold,Faerchik,,,"Faerchik, translating to ""Blue Haven"" in the wood elf language is a ruined Dwarf Stronghold located within a hidden cavern on the edge of the Wildwoods. 
+
+In its current state the hold is a large mostly unoccupied complex of tunnels and cavers, some natural and some dwarf, ratkin, goblin or gnome-made. Though the population tend to keep to themselves they do not reject outsiders who make their way to them as long as they behave themselves. 
+
+# History 
+
+Originally built by captured Dwarvern slaves upon the orders of  Elves during the early years of the Elf Wars, this stronghold had a unique history of being conquered and reconquered numerous times between the elves and dwarves until the eventual retreat and defeat of the elves in the war. 
+
+The dwarfhold stayed in Dwarvern hands for the next several millennia afterwards surviving numerous orcish, troll and ratkin invasions. On at least two occasions the hold was overrun and its population massacred but it was always retaken within several decades and repopulated by new Dwarvern settlers from nearby strongholds. 
+
+Eventually a series of dragon attacks weakened the stronghold to allow it to be completely overrun by Goblins in 2143. The Goblin armies occupied the hold for several hundred years until they to abandoned it. 
+
+Recently a group of wood elves began occupying the long abandoned stronghold. These elves eventually came into contact with a large Gnome expedition that was attempting to perform historical research at the hold. After being captured and enslaved the elves the Gnomes eventually crossbred with them, forming a race of Gnomish half-elfs that currently constitute a sizeable portion of the holds current population. 
+
+
+# half-gnome-half-elf
+",,,,,,"{""iconScale"":0.01}",,,
 text,-64.77280807927899,90.35156250000001,,Crooked Mountains,,,"Despite dwarves meticlious record keeping the origin of the dwarves that inhabit the crooked mountains remains a mystsery. Some believe them to have originally been banished clans, while others thought them to be a returning expedition from the far east. Regardless of how they arrived there, the dwaves of these mountains themselves in the most inhospitable mountain range for dwavern kind, far too hot and without any minerial wealth beyond raw industral ore that could only be stripped mined rather than traditionally gathered, this put the dwaves of the crooked moutnains at an extreme disadvantage but they adapted and persisted. ",14,0,0,0,,,,,1
 text,72.36910450725075,6.152343750000001,,Sea of Claws,,,,14,0,0,0,,,,,1
 text,70.87349131926352,39.11132812500001,,Sea of Storms,,,,14,0,0,0,,,,,1
