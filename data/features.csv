@@ -137,7 +137,7 @@ Tinker guilds prize innovation, though every prototype must pass rigorous rune-b
 ### Current Outlook
 A coalition of young engineers petitions to test steam-powered tunneling machines, prompting elders to demand extensive safety trials before deployment.
 ",,,,,,"{""iconScale"":0.01}",,"{""title"":""Gûndâl Grum"",""subtitle"":""Dwarfen Hold Profile"",""rows"":[{""label"":""Status"",""value"":""Innovator Hold""},{""label"":""Founded"",""value"":""-1104 KI""},{""label"":""Specialty"",""value"":""Gyrocopters & clockwork automata""},{""label"":""Notable Clan"",""value"":""Clan Geargrin""}]}",
-marker,-33.797408767572485,-15.908203125000002,dwarf-outpost,Thrâng-khazad,Ancestral Spiral,Hold descending through a spiral of ancestor crypts,"![Thrâng-khazad](images/Dwarfhold/Thr%C3%A2ng-khazad.jpg)
+marker,-47.93106634750978,-5.625,dwarf-outpost,Thrâng-khazad,Ancestral Spiral,Hold descending through a spiral of ancestor crypts,"![Thrâng-khazad](images/Dwarfhold/Thr%C3%A2ng-khazad.jpg)
 
 ## Overview
 Thrâng-khazad winds downward in a grand spiral carved around a central shaft of ancestor statues. Each tier honors a different age, and the air is thick with incense and echoing hymns.
@@ -157,7 +157,7 @@ The High Shieldthane prepares for the 500th Jubilee of Remembrance, expecting de
 ",,,,,,"{""iconScale"":0.01}",,"{""title"":""Thrâng-khazad"",""subtitle"":""Dwarfen Hold Profile"",""rows"":[{""label"":""Status"",""value"":""Reverent Deephold""},{""label"":""Founded"",""value"":""-2077 KI""},{""label"":""Specialty"",""value"":""Ancestor crypts & spiral fortifications""},{""label"":""Notable Clan"",""value"":""Clan Stoneward""}]}",
 marker,-14.905717297470664,59.37245416365607,dwarf-outpost,Khirûn-karag,,,"![Khirûn-karag](images/Dwarfhold/Khir%C3%BBn-karag.jpg)
 ",,,,,,"{""iconScale"":0.01}",,,
-marker,-33.43144133557529,-13.974609375000002,dwarf-outpost,Gazad-az-Bôr,Bastion of the Border,Southern sentinel guarding the emerald marches,"![Gazad-az-Bôr](images/Dwarfhold/Gazad-az-B%C3%B4r.jpg)
+marker,-41.0130657870063,-2.2412109375000004,dwarf-outpost,Gazad-az-Bôr,Bastion of the Border,Southern sentinel guarding the emerald marches,"![Gazad-az-Bôr](images/Dwarfhold/Gazad-az-B%C3%B4r.jpg)
 
 ## Overview
 Gazad-az-Bôr overlooks rolling emerald plains from a rocky escarpment studded with signal towers. Caravan roads converge beneath its guns, ensuring every traveler is cataloged before crossing the marches.
@@ -211,7 +211,7 @@ Survivors maintain meticulous records of which passages remain sealed and who wa
 ### Current Outlook
 Rockvault prospectors petition to reopen a lower shaft after detecting vibration patterns suggesting empty, stable chambers beyond the collapse.
 ",,,,,,"{""iconScale"":0.01}",,"{""title"":""Kharak-khazad"",""subtitle"":""Dwarfen Hold Profile"",""rows"":[{""label"":""Status"",""value"":""Partially Sealed Hold""},{""label"":""Founded"",""value"":""-1450 KI""},{""label"":""Specialty"",""value"":""Sealed gateworks & salvage crews""},{""label"":""Notable Clan"",""value"":""Clan Rockvault""}]}",
-marker,-34.391841419665546,-13.978461228980557,dwarf-outpost,Thûrdûn Thrum,Hall of Resonance,Melodic stronghold where runes are sung into stone,"![Thûrdûn Thrum](images/Dwarfhold/Th%C3%BBrd%C3%BBn%20Thrum.jpg)
+marker,-40.11168866559596,-5.9326171875,dwarf-outpost,Thûrdûn Thrum,Hall of Resonance,Melodic stronghold where runes are sung into stone,"![Thûrdûn Thrum](images/Dwarfhold/Th%C3%BBrd%C3%BBn%20Thrum.jpg)
 
 ## Overview
 Thûrdûn Thrum is carved like a great instrument, with every corridor tuned to amplify the voices of its inhabitants. Choral rehearsals double as structural inspections, for any discordant echo may signal stress in the stone.
@@ -448,7 +448,7 @@ marker,69.98292897269606,-50.75475372076899,abandon-dwarfhold,Almharaz,,,![Almha
 marker,14.99274339047006,90.22422765558854,abandon-dwarfhold,Haraz Oldrum,,,![Haraz Oldrum](images/Haraz%20Oldrum.jpg),,,,,,"{""iconScale"":0.01}",,,
 marker,7.405823569059584,15.095530750385812,abandon-dwarfhold,Elaig Drum,,,![Elaig Drum](images/Elaig%20Drum.jpg),,,,,,"{""iconScale"":0.01}",,,
 marker,26.527867230022412,82.66158707240697,orc,ORC,,,,,,,,,"{""iconScale"":0.41}",,,
-marker,-40.22921818870116,-7.229910152499006,dwarf-outpost,Orocarni,,,![Orocarni](images/Dwarfhold/Orocarni.jpg),,,,,,"{""iconScale"":0.01}",,,
+marker,-51.89005393521691,-32.47558593750001,dwarf-outpost,Orocarni,,,![Orocarni](images/Dwarfhold/Orocarni.jpg),,,,,,"{""iconScale"":0.01}",,,
 marker,41.261291493919884,75.60658304309892,dwarf-outpost,Dun-Gardro,,,![Dun-Gardro](images/Dwarfhold/Dun-Gardro.jpg),,,,,,"{""iconScale"":0.01}",,,
 marker,63.753349751812074,48.03138175667467,abandon-dwarfhold,Karak Ozambrald,,,![Karak Ozambrald](images/Karak%20Ozambrald.jpg),,,,,,"{""iconScale"":0.01}",,,
 marker,55.10351605801967,40.62592997182795,abandon-dwarfhold,Ironhold,,,![Ironhold](images/Ironhold.jpg),,,,,,"{""iconScale"":0.01}",,,
@@ -573,3 +573,4 @@ text,-67.85898479324494,62.46832623119483,,Gates of Myria,,,,4,0,0,0,,,,,1
 text,-50.078294547389426,69.67592521134121,,The Fell Warrens,,,,14,0,0,0,,,,,1
 text,61.51745610656004,65.74285981430472,,The Frostmourn Mountains ,,,,27,0,0,0,,,,,1
 text,27.391278222579277,65.65508495203268,,The Wildwood,,,,14,0,0,0,,,,,1
+text,-59.130863097255904,-23.378906250000004,,Mirkwood,,,,14,0,2,0,,,,,1
