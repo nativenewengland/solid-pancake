@@ -393,16 +393,20 @@ Hold has been sealed 1000 years so its unknown if the inhabitants are alive or d
 marker,72.68576494172952,-8.613281250000002,abandon-dwarfhold,Avlar-Thrûn,,,"![Avlar-Thrûn](images/Avlar-Thr%C3%BBn.jpg)
 
 Dwarfhold destroyed by dragons ",,,,,,"{""iconScale"":0.01}",,,
-marker,-45.15105326556339,61.78710937500001,dwarf-outpost,Dun-Ôrdstun,,,![Dun-Ôrdstun](images/Dwarfhold/Dun-%C3%94rdstun.jpg),,,,,,"{""iconScale"":0.01}",,,
+marker,-45.15105326556339,61.78710937500001,dwarf-outpost,Dun-Ôrdstun,,,"![Dun-Ôrdstun](images/Dwarfhold/Dun-%C3%94rdstun.jpg)
+
+Ruled by Thane Maldrik Blackspine",,,,,,"{""iconScale"":0.01}",,,
 marker,-35.35396257952243,66.35503496549036,dwarf-outpost,Dûrandur,,,![Dûrandur](images/Dwarfhold/D%C3%BBrandur.jpg),,,,,,"{""iconScale"":0.01}",,,
 marker,-34.37966637421009,82.66012598852991,dwarf-outpost,Black Rock Hold,,,![Black Rock Hold](images/Dwarfhold/Black%20Rock%20Hold.jpg),,,,,,"{""iconScale"":0.01}",,,
-marker,-12.854373616569383,83.32024374128984,dwarf-outpost,Barat Nûmenz,,,![Barat Nûmenz](images/Dwarfhold/Barat%20N%C3%BBmenz.jpg),,,,,,"{""iconScale"":0.01}",,,
+marker,-60.99384283888707,33.88522275250645,dwarf-outpost,Barat Nûmenz,,,![Barat Nûmenz](images/Dwarfhold/Barat%20N%C3%BBmenz.jpg),,,,,,"{""iconScale"":0.01}",,,
 marker,-70.72860581459155,53.96480198267597,dwarf-outpost,Dun Toruhm,,,![Dun Toruhm](images/Dwarfhold/Dun%20Toruhm.jpg),,,,,,"{""iconScale"":0.01}",,,
 marker,-48.62629692516604,77.73915536434669,dwarf-outpost,Karad-Graef,,,![Karad-Graef](images/Dwarfhold/Karad-Graef.jpg),,,,,,"{""iconScale"":0.01}",,,
 marker,-7.18810087117902,69.16992187500001,bp-003,BP 003,,,,,,,,,"{""iconScale"":0.18}",,,
 marker,15.158663336160132,-60.05096059356373,carrow,Neverwinter,,,![Neverwinter](images/city/Neverwinter.jpg),,,,,,"{""iconScale"":0.2}",,,
 marker,-47.57627196331696,-50.27213309643573,carrow,Moorsfield,,,![Moorsfield](images/city/Moorsfield.jpg),,,,,,"{""iconScale"":0.3}",,,
-marker,60.78024418936339,67.01532571638317,dwarf-outpost,Dûmthûr Mînrth,,,![Dûmthûr Mînrth](images/Dwarfhold/D%C3%BBmth%C3%BBr%20M%C3%AEnrth.jpg),,,,,,"{""iconScale"":0.01}",,,
+marker,60.78024418936339,67.01532571638317,dwarf-outpost,Dûmthûr Mînrth,,,"![Dûmthûr Mînrth](images/Dwarfhold/D%C3%BBmth%C3%BBr%20M%C3%AEnrth.jpg)
+
+Led by the Thane Oshuart Oakhammer",,,,,,"{""iconScale"":0.01}",,,
 marker,66.56574968490334,24.2138653216851,dwarf-outpost,Dûrgrim Dûm,,,"![Dûrgrim Dûm](images/Dwarfhold/D%C3%BBrgrim%20D%C3%BBm.jpg)
 Dûrgrim Dûm is an ancient Dwarvern hold located in the ___ 
 
