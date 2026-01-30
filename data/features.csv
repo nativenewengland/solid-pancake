@@ -293,7 +293,8 @@ marker,58.312431526543406,-64.24461092422099,lordship-of-aquitania,LORDSHIP OF A
 marker,29.060247472383494,-57.652176655453225,lordship-of-breanore,LORDSHIP OF BREANORE,,,,,,,,,"{""iconScale"":0.04}",,,
 marker,-9.663910319532734,-58.051737893944804,lordship-of-calearagio,LORDSHIP OF CALEARAGIO,,,,,,,,,"{""iconScale"":0.05}",,,
 marker,-42.295464551772824,-38.27249800814445,lordship-of-esser,LORDSHIP OF ESSER,,,,,,,,,"{""iconScale"":0.05}",,,
-marker,60.32730156078029,-33.97064779567991,mageacracy-of-ostfold,MAGEACRACY OF OSTFOLD,,,,,,,,,"{""iconScale"":0.04}",,,
+marker,60.32730156078029,-33.97064779567991,mageacracy-of-ostfold,MAGEACRACY OF OSTFOLD,,,"Mages' Guild Mages' Union, Sorcerers' League
+",,,,,,"{""iconScale"":0.04}",,,
 marker,56,-4,marquess-of-lanaria,MARQUESS OF LANARIA,,,,,,,,,"{""iconScale"":0.07}",,,
 marker,68.58943072967844,-7.297141649486564,obermarch-of-ryazan,OBERMARCH OF RYAZAN,,,,,,,,,"{""iconScale"":0.08}",,,
 marker,54.0331443689097,14.282226562500002,orc,ORC,,,,,,,,,"{""iconScale"":0.41}",,,
