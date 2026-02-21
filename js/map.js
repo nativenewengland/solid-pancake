@@ -2789,8 +2789,42 @@ function ensureMarkerNameLabelClickable(marker, tooltip) {
   }
 }
 
+var ICON_KEYS_WITH_NAME_LABELS = {
+  'abandon-dwarfhold': true,
+  altdorf: true,
+  bazzar: true,
+  'bazzar-large': true,
+  'beastman-stone': true,
+  carrow: true,
+  'eleven-tower': true,
+  'dwarf-outpost': true,
+  gate: true,
+  gnome: true,
+  'gnome-outpost': true,
+  fort: true,
+  house: true,
+  kislev: true,
+  'large-bazzar': true,
+  porto: true,
+};
+
+function markerIconShowsNameLabel(iconKey) {
+  if (typeof iconKey !== 'string') {
+    return false;
+  }
+  return !!ICON_KEYS_WITH_NAME_LABELS[iconKey.trim().toLowerCase()];
+}
+
 function updateMarkerNameLabel(marker, name) {
   if (!marker || marker._markerType !== 'marker') {
+    return;
+  }
+  var iconKey = marker._data && marker._data.icon;
+  if (!markerIconShowsNameLabel(iconKey)) {
+    if (marker._nameTooltip) {
+      marker.unbindTooltip();
+      marker._nameTooltip = null;
+    }
     return;
   }
   var label = '';
