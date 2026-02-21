@@ -62,17 +62,18 @@ var tiles = L.tileLayer('map/{z}/{x}/{y}.jpg', {
     maxY: 53,
     zoom: 6,
   };
+  var horizontalTilePadding = 2;
 
   var tileSize = tiles.getTileSize();
   var sizeX = tileSize && typeof tileSize.x === 'number' ? tileSize.x : 256;
   var sizeY = tileSize && typeof tileSize.y === 'number' ? tileSize.y : sizeX;
 
   var southWest = map.unproject(
-    [TILE_COORD_BOUNDS.minX * sizeX, (TILE_COORD_BOUNDS.maxY + 1) * sizeY],
+    [(TILE_COORD_BOUNDS.minX - horizontalTilePadding) * sizeX, (TILE_COORD_BOUNDS.maxY + 1) * sizeY],
     TILE_COORD_BOUNDS.zoom
   );
   var northEast = map.unproject(
-    [(TILE_COORD_BOUNDS.maxX + 1) * sizeX, TILE_COORD_BOUNDS.minY * sizeY],
+    [(TILE_COORD_BOUNDS.maxX + 1 + horizontalTilePadding) * sizeX, TILE_COORD_BOUNDS.minY * sizeY],
     TILE_COORD_BOUNDS.zoom
   );
   var bounds = L.latLngBounds(southWest, northEast);
