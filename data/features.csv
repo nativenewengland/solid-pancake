@@ -315,7 +315,7 @@ marker,-21.232056204199043,-16.605342599150003,the-state-of-rhymeria,THE STATE O
 marker,52.3755167451357,45.6085750515403,tsardom-of-belogorod,TSARDOM OF BELOGOROD,,,The land of Rusland is a massive stretch of hilllands wilderness and farmlands that cover most of the North eastern sections of the known world originally known as the Tsardom of Rusland and ruled and perpetuality by the Romanov family it served as one of the three great powers in The Realm along with the Empire Bohemia and the kingdom of Breton these are them was known for its hearty people and regarded for many centuries as the bulwark of humanity serving as a shield to protect the Southlands from demonic incursions in Northern Raiders who frequently were stopped by the Tsars military when attempting invasions of the realm to the South despite its reputation of strength rusland eventually fell to a massive mixed incursion of both Northland Raiders and demonic armies the largest such attack the realm had ever seen up to that point after the destruction of Rusland the land laid nearly totally depopulated by The Invasion over 95% of Ruslands people were slaughtered and what few survivors never were able to rebuild the empire that they had known what few minor noble families and Boyers who had survived the initial onslaught spent many years warring with each other afterwards for the presumed title of czar eventually these attempts faded along with any semblance of an organized power structure and ruessland was reduced once again to a massive stretch of forest occasionally dotted by small villages and Hardy people though today a few scattered cities remain around old rules the only one to exert enough power to actually declare itself a zardom is these are dumb bell garage which controls a substantial stretch of territory on the borders of the empire of Bohemia,,,,,,"{""iconScale"":0.13}",,,
 marker,-56.62646424556126,-66.4414283817282,viceroy-of-tarragon,VICEROY OF TARRAGON,,,,,,,,,"{""iconScale"":0.04}",,,
 marker,-15.199361363244345,73.78412284287104,a-karak,Grey Dwarves,,,,,,,,,"{""iconScale"":0.08}",,,
-marker,48,-16,altdorf,ALTDORF,,,,,,,,,"{""iconScale"":0.32}",,,
+marker,48,-16,altdorf,The Imperial Capital ,,,,,,,,,"{""iconScale"":0.32}",,,
 marker,44.98034238084973,-8.789222786854111,beastman-small,BEASTMAN SMALL,,,,,,,,,"{""iconScale"":0.49}",,,
 marker,48,-4,beastman-stone,BEASTMAN STONE,,,,,,,,,"{""iconScale"":0.46}",,,
 marker,43.32463935415545,0.35238760452182666,bp-002,BP 002,,,,,,,,,"{""iconScale"":0.22}",,,
@@ -405,7 +405,7 @@ marker,16,-12,the-free-state-of-myroberg,THE FREE STATE OF MYROBERG,,,,,,,,,"{""
 marker,44.647740907829146,24.513017193968775,the-great-brey-heard,THE GREAT BREY HEARD,,,,,,,,,"{""iconScale"":0.03}",,,
 marker,-60.5334403966211,17.226562500000004,the-monastic-order-of-the-wheel,THE MONASTIC ORDER OF THE WHEEL,,,,,,,,,"{""iconScale"":0.06}",,,
 marker,66.10716955858042,-78.68408203125001,the-realm-of-azurreach,THE REALM OF AZURREACH,,,,,,,,,"{""iconScale"":0.04}",,,
-marker,30.259067203213018,-44.102153186740125,dwarf-outpost,Throal,,,![Throal](images/Dwarfhold/Throal.jpg),,,,,,"{""iconScale"":0.01}",,,
+marker,30.52435507753783,-43.44004445335973,dwarf-outpost,Throal,,,![Throal](images/Dwarfhold/Throal.jpg),,,,,,"{""iconScale"":0.01}",,,
 marker,57.680961955099285,98.60588477732192,dwarf-outpost,Uzbad-az-Narg,,,"![Uzbad-az-Narg](images/Dwarfhold/Uzbad-az-Narg.jpg)
 Hold has been sealed 1000 years so its unknown if the inhabitants are alive or dead and thus unknown if its an active or abandoned dwarfhold",,,,,,"{""iconScale"":0.01}",,,
 marker,72.68576494172952,-8.613281250000002,abandon-dwarfhold,Avlar-Thrûn,,,"![Avlar-Thrûn](images/Avlar-Thr%C3%BBn.jpg)
@@ -609,6 +609,7 @@ marker,-45.17987365618048,25.86948612366965,carrow,Avylyn ,,,,,,,,,"{""iconScale
 marker,-53.85398103141348,37.374584901588044,carrow,Boorsdon,,,,,,,,,"{""iconScale"":0.3}",,,
 marker,-31.615550910848324,-105.6666756514329,carrow,Sarugra ,,,,,,,,,"{""iconScale"":0.3}",,,
 marker,63.32253431151152,66.81884765625001,ld-018,LD 018,,,,,,,,,"{""iconScale"":0.05}",,,
+marker,-26.863551817004467,41.27605382387123,dwarf-outpost,Dun Moregar,,,,,,,,,"{""iconScale"":0.01}",,,
 text,-64.77280807927899,90.35156250000001,,Crooked Mountains,,,"Despite dwarves meticlious record keeping the origin of the dwarves that inhabit the crooked mountains remains a mystsery. Some believe them to have originally been banished clans, while others thought them to be a returning expedition from the far east. Regardless of how they arrived there, the dwaves of these mountains themselves in the most inhospitable mountain range for dwavern kind, far too hot and without any minerial wealth beyond raw industral ore that could only be stripped mined rather than traditionally gathered, this put the dwaves of the crooked moutnains at an extreme disadvantage but they adapted and persisted. ",14,0,0,0,,,,,1
 text,72.36910450725075,6.152343750000001,,Sea of Claws,,,,14,0,0,0,,,,,1
 text,70.87349131926352,39.11132812500001,,Sea of Storms,,,,14,0,0,0,,,,,1
