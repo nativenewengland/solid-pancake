@@ -247,7 +247,7 @@ Mortuary artisans weave silver-wire ossuaries and inscribe lament runes that soo
 A surge in ghostly whispers hints at a new breach between worlds; the priests consult with Thûrdrim Duraz for lore on sealing shadow rifts.
 ",,,,,,"{""iconScale"":0.01}",,"{""title"":""Gazûl-dûm"",""subtitle"":""Dwarfen Hold Profile"",""rows"":[{""label"":""Status"",""value"":""Sacred Necropolis""},{""label"":""Founded"",""value"":""-2120 KI""},{""label"":""Specialty"",""value"":""Ancestral catacombs & mortuary rites""},{""label"":""Notable Clan"",""value"":""Clan Gravesong""}]}",
 marker,64,-20,barony-of-dorsen,BARONY OF DORSEN,,,,,,,,,"{""iconScale"":0.1}",,,
-marker,46.79076278876718,-44.95277310552409,barony-of-livonia,BARONY OF LIVONIA,,,,,,,,,"{""iconScale"":0.11}",,,
+marker,16.29905101458183,-30.22764681547421,barony-of-livonia,BARONY OF LIVONIA,,,,,,,,,"{""iconScale"":0.11}",,,
 marker,42.22780218307558,-37.617560972910766,barony-of-saxonmoore,BARONY OF SAXONMOORE,,,,,,,,,"{""iconScale"":0.11}",,,
 marker,4.2592107913514905,-39.468462945489485,county-of-ardenne,COUNTY OF ARDENNE,,,,,,,,,"{""iconScale"":0.11}",,,
 marker,64,-4,county-of-cardiona,COUNTY OF CARDIONA,,,,,,,,,"{""iconScale"":0.1}",,,
@@ -273,7 +273,7 @@ marker,22.83689209957139,-10.107421875000002,empire-of-grand-bohemia,EMPIRE OF G
 
 # Rebellion of the Vampire Counts 
 
-# The Great Sundering",,,,,,"{""iconScale"":0.2}",,,
+# The Great Sundering",,,,,,"{""iconScale"":0.14}",,,
 marker,-65.03355211809361,-0.3955825070821195,free-pirate-confederacy-of-sartogio,FREE PIRATE CONFEDERACY OF SARTOGIO,,,,,,,,,"{""iconScale"":0.03}",,,
 marker,64,20,goblin,GOBLIN,,,,,,,,,"{""iconScale"":0.01}",,,
 marker,-13.368215083416215,-36.69432906769268,grand-barony-of-branth,GRAND BARONY OF BRANTH,,,,,,,,,"{""iconScale"":0.11}",,,
@@ -313,7 +313,7 @@ marker,48.402623040296895,15.203783418909346,the-sentinals,THE SENTINALS,,,![THE
 marker,-40.81917173353749,18.01716234030457,the-shire-of-anvilmar,THE SHIRE OF ANVILMAR,,,,,,,,,"{""iconScale"":0.04}",,,
 marker,-21.232056204199043,-16.605342599150003,the-state-of-rhymeria,THE STATE OF RHYMERIA,,,,,,,,,"{""iconScale"":0.04}",,,
 marker,52.3755167451357,45.6085750515403,tsardom-of-belogorod,TSARDOM OF BELOGOROD,,,The land of Rusland is a massive stretch of hilllands wilderness and farmlands that cover most of the North eastern sections of the known world originally known as the Tsardom of Rusland and ruled and perpetuality by the Romanov family it served as one of the three great powers in The Realm along with the Empire Bohemia and the kingdom of Breton these are them was known for its hearty people and regarded for many centuries as the bulwark of humanity serving as a shield to protect the Southlands from demonic incursions in Northern Raiders who frequently were stopped by the Tsars military when attempting invasions of the realm to the South despite its reputation of strength rusland eventually fell to a massive mixed incursion of both Northland Raiders and demonic armies the largest such attack the realm had ever seen up to that point after the destruction of Rusland the land laid nearly totally depopulated by The Invasion over 95% of Ruslands people were slaughtered and what few survivors never were able to rebuild the empire that they had known what few minor noble families and Boyers who had survived the initial onslaught spent many years warring with each other afterwards for the presumed title of czar eventually these attempts faded along with any semblance of an organized power structure and ruessland was reduced once again to a massive stretch of forest occasionally dotted by small villages and Hardy people though today a few scattered cities remain around old rules the only one to exert enough power to actually declare itself a zardom is these are dumb bell garage which controls a substantial stretch of territory on the borders of the empire of Bohemia,,,,,,"{""iconScale"":0.13}",,,
-marker,-56.62646424556126,-66.4414283817282,viceroy-of-tarragon,VICEROY OF TARRAGON,,,,,,,,,"{""iconScale"":0.04}",,,
+marker,-56.62646424556126,-66.4414283817282,viceroy-of-tarragon,VICEROY OF TARRAGON,,,,,,,,,"{""iconScale"":0.03}",,,
 marker,-15.199361363244345,73.78412284287104,a-karak,Grey Dwarves,,,,,,,,,"{""iconScale"":0.08}",,,
 marker,48,-16,altdorf,The Imperial Capital ,,,,,,,,,"{""iconScale"":0.32}",,,
 marker,44.98034238084973,-8.789222786854111,beastman-small,BEASTMAN SMALL,,,,,,,,,"{""iconScale"":0.49}",,,
@@ -348,7 +348,7 @@ marker,-72.73916221432165,59.28392830773533,ld-021,LD 021,,,,,,,,,"{""iconScale"
 marker,-71.01020706910192,87.34648419357593,ld-023,LD 023,,,,,,,,,"{""iconScale"":0.09}",,,
 marker,-71.46868278778487,83.0983089523308,ld-026,LD 026,,,,,,,,,"{""iconScale"":0.08}",,,
 marker,39.16324838056937,52.824733837432284,og-001,OG 001,,,,,,,,,"{""iconScale"":0.1}",,,
-marker,33.2119512920823,51.85776043638351,og-002,OG 002,,,,,,,,,"{""iconScale"":0.14}",,,
+marker,71.62214274510511,55.01502267274043,og-002,OG 002,,,,,,,,,"{""iconScale"":0.14}",,,
 marker,34.66975834574615,61.0864620441849,og-003,OG 003,,,,,,,,,"{""iconScale"":0.1}",,,
 marker,37.15999030967233,56.603737553101276,og-004,OG 004,,,,,,,,,"{""iconScale"":0.1}",,,
 marker,32.54784837241278,58.800936980832965,og-005,OG 005,,,,,,,,,"{""iconScale"":0.11}",,,
@@ -394,14 +394,14 @@ marker,6.4493653841741505,-3.6925275793798096,principality-of-karengal,PRINCIPAL
 marker,5.83780163015662,-20.342423212711328,principality-of-paragus,PRINCIPALITY OF PARAGUS,,,,,,,,,"{""iconScale"":0.05}",,,
 marker,9.797968075409534,-13.619499812676102,principality-of-veylanth,PRINCIPALITY OF VEYLANTH,,,,,,,,,"{""iconScale"":0.05}",,,
 marker,22.02460818767856,21.137626659680816,realm-of-nurn,REALM OF NURN,,,,,,,,,"{""iconScale"":0.04}",,,
-marker,9.104534699889653,10.985550059716038,realm-of-saryndal,REALM OF SARYNDAL,,,,,,,,,"{""iconScale"":0.06}",,,
+marker,9.104534699889653,10.985550059716038,realm-of-saryndal,REALM OF SARYNDAL,,,,,,,,,"{""iconScale"":0.03}",,,
 marker,20,12,realm-of-the-moot,REALM OF THE MOOT,,,,,,,,,"{""iconScale"":0.05}",,,
 marker,-27.441008538185756,-53.32974582598623,realm-of-ulyween,REALM OF ULYWEEN,,,,,,,,,"{""iconScale"":0.04}",,,
 marker,-60.5220815015886,-12.348498362252105,republic-of-florence,REPUBLIC OF FLORENCE,,,,,,,,,"{""iconScale"":0.05}",,,
 marker,-68.25307124863983,13.316551016879833,sultanate-of-qashir,SULTANATE OF QASHIR,,,,,,,,,"{""iconScale"":0.03}",,,
 marker,-59.901106211317106,42.97020958746464,tandar,TANDAR,,,,,,,,,"{""iconScale"":0.02}",,,
 marker,-52.53005409460626,98.25297695769208,the-dark-lords-domain,THE DARK LORDS DOMAIN,,,,,,,,,"{""iconScale"":0.01}",,,
-marker,16,-12,the-free-state-of-myroberg,THE FREE STATE OF MYROBERG,,,,,,,,,"{""iconScale"":0.09}",,,
+marker,16,-12,the-free-state-of-myroberg,THE FREE STATE OF MYROBERG,,,,,,,,,"{""iconScale"":0.04}",,,
 marker,44.647740907829146,24.513017193968775,the-great-brey-heard,THE GREAT BREY HEARD,,,,,,,,,"{""iconScale"":0.03}",,,
 marker,-60.5334403966211,17.226562500000004,the-monastic-order-of-the-wheel,THE MONASTIC ORDER OF THE WHEEL,,,,,,,,,"{""iconScale"":0.06}",,,
 marker,66.10716955858042,-78.68408203125001,the-realm-of-azurreach,THE REALM OF AZURREACH,,,,,,,,,"{""iconScale"":0.04}",,,
@@ -463,7 +463,7 @@ marker,-73.09864515998866,50.39503576895697,ld-007,LD 007,,,,,,,,,"{""iconScale"
 marker,-73.75708225264577,74.81846829249757,ld-007,LD 007,,,,,,,,,"{""iconScale"":0.11}",,,
 marker,-28.885038259360872,54.39325853473561,abandon-dwarfhold,Grom's Peak,,,![Grom's Peak](images/city/Grom%27s%20Peak.jpg),,,,,,"{""iconScale"":0.01}",,,
 marker,-23.221877979325416,68.81858712512549,gnome,Gnomepoint,,,![Gnomepoint](images/Gnome.jpg),,,,,,"{""iconScale"":0.01}",,,
-marker,64.3686063877401,75.47588035532141,abandon-dwarfhold,Karak Gorûmzra,,,![Karak Gorûmzra](images/Karak%20Gor%C3%BBmzra.jpg),,,,,,"{""iconScale"":0.01}",,,
+marker,64.82090711923603,74.83861574761437,abandon-dwarfhold,Karak Gorûmzra,,,![Karak Gorûmzra](images/Karak%20Gor%C3%BBmzra.jpg),,,,,,"{""iconScale"":0.01}",,,
 marker,72.67922441671935,-83.16650390625001,abandon-dwarfhold,Ostapchuk,,,![Ostapchuk](images/Ostapchuk.jpg),,,,,,"{""iconScale"":0.01}",,,
 marker,-43.25265825851726,55.68969726562501,abandon-dwarfhold,Dammerhall,,,![Dammerhall](images/dammerhall.jpg),,,,,,"{""iconScale"":0.01}",,,
 marker,69.98292897269606,-50.75475372076899,abandon-dwarfhold,Almharaz,,,![Almharaz](images/Almharaz.jpg),,,,,,"{""iconScale"":0.01}",,,
@@ -612,6 +612,11 @@ marker,-53.77468884583577,37.30954430147735,carrow,Boorsdon,,,"![Boorsdon](image
 marker,-31.615550910848324,-105.6666756514329,carrow,Sarugra ,,,,,,,,,"{""iconScale"":0.3}",,,
 marker,63.32253431151152,66.81884765625001,ld-018,LD 018,,,,,,,,,"{""iconScale"":0.05}",,,
 marker,-26.863551817004467,41.27605382387123,dwarf-outpost,Dun Moregar,,,![Dun Moregar](images/Dun%20Moregar.jpg),,,,,,"{""iconScale"":0.01}",,,
+marker,71.97218900592375,64.29517420260434,abandon-dwarfhold,Nazarov,,,,,,,,,"{""iconScale"":0.01}",,,
+marker,70.67088107015755,51.39209214205115,abandon-dwarfhold,Mithrilhall,,,,,,,,,"{""iconScale"":0.01}",,,
+marker,71.42717893107374,58.07140681739316,abandon-dwarfhold,Karak-Barud,,,,,,,,,"{""iconScale"":0.01}",,,
+marker,56.8729956637964,-14.171851731137853,porto,Marienburg,,,,,,,,,"{""iconScale"":0.01}",,,
+marker,-45.996961618203805,-100.9672340219234,fort,Fort Davenport,,,,,,,,,"{""iconScale"":0.15}",,,
 text,-64.77280807927899,90.35156250000001,,Crooked Mountains,,,"Despite dwarves meticlious record keeping the origin of the dwarves that inhabit the crooked mountains remains a mystsery. Some believe them to have originally been banished clans, while others thought them to be a returning expedition from the far east. Regardless of how they arrived there, the dwaves of these mountains themselves in the most inhospitable mountain range for dwavern kind, far too hot and without any minerial wealth beyond raw industral ore that could only be stripped mined rather than traditionally gathered, this put the dwaves of the crooked moutnains at an extreme disadvantage but they adapted and persisted. ",14,0,0,0,,,,,1
 text,72.36910450725075,6.152343750000001,,Sea of Claws,,,,14,0,0,0,,,,,1
 text,70.87349131926352,39.11132812500001,,Sea of Storms,,,,14,0,0,0,,,,,1
