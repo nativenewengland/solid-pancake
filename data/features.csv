@@ -5,7 +5,7 @@ Gorlak Orc
 
 goblin
 ",,,,,,"{""iconScale"":0.1}",,"{""title"":""Gorlak Watch"",""subtitle"":""Estuary Guardian Profile"",""image"":{""src"":""images/Events/the-bored-gorlak.webp"",""alt"":""Illustration of the marsh sentinel Gorlak""},""rows"":[{""label"":""Habitat"",""value"":""Peat bogs at the river estuary""},{""label"":""Role"",""value"":""Balances salt and freshwater tides""},{""label"":""Offerings"",""value"":""Cedar smoke braids before eel harvests""}]}",
-marker,62.47021666481544,38.365079910831575,dwarf-outpost,Gor Karakazol,,,,,,,,,"{""iconScale"":0.01}",,,
+marker,62.47021666481544,38.365079910831575,dwarf-outpost,Gor Karakazol,,,![Gor Karakazol](images/Gor%20Karakazol.jpg),,,,,,"{""iconScale"":0.01}",,,
 marker,-60.064369323057086,60.623369145756726,dwarf-outpost,Khazadûn Kharn,Gate of the Skyhammer; Kharn-azor,Sky-carved bastion guarding the Northern Crown Pass,"![Khazadûn Kharn](images/Dwarfhold/Khazad%C3%BBn%20Kharn.jpg)
 
 ## Overview
@@ -548,7 +548,6 @@ marker,29.305847291822687,99.22584719495144,dwarf-outpost,Karak-Dûmankon,,,![Ka
 marker,-0.9881958383385184,88.21897776643627,dwarf-outpost,Grozumdihr,,,![Grozumdihr](images/Grozumdihr.png),,,,,,"{""iconScale"":0.01}",,,
 marker,-2.855686387374083,96.91901827280756,dwarf-outpost,Gor Ozumbrog,,,![Gor Ozumbrog](images/Gor%20Ozumbrog.jpg),,,,,,"{""iconScale"":0.01}",,,
 marker,-59.06364324941021,-33.50839692679559,dwarf-outpost,Azad-Khas,,,![Azad-Khas](images/Azad-Khas.jpg),,,,,,"{""iconScale"":0.01}",,,
-marker,55.11481492859595,90.04419999623451,dwarf-outpost,Azad-Khas,,,![Azad-Khas](images/Azad-Khas.jpg),,,,,,"{""iconScale"":0.01}",,,
 marker,-32.787207396195136,56.71148175569717,gate,Three Kings Dam,,,![Three Kings Dam](images/Three%20Kings%20Dam.jpg),,,,,,"{""iconScale"":0.41}",,,
 marker,-53.1860100506733,47.61476475189903,gate,Grimgals Wall,,,![Grimgals Wall](images/Grimgals%20Wall.png),,,,,,"{""iconScale"":0.41}",,,
 marker,56.315327684346954,86.2429388611516,dwarf-outpost,Karag Burag,,,![Karag Burag](images/Karag%20Burag.jpg),,,,,,"{""iconScale"":0.01}",,,
@@ -559,9 +558,9 @@ marker,-21.329578687037973,48.075987159324455,dwarf-outpost,Tharn Khazrim,,,![Th
 marker,-55.35410513489106,-18.061619614802424,dwarf-outpost,Karak Grumdril,,,![Karak Grumdril](images/Dwarfhold/Karak%20Grumdril.jpg),,,,,,"{""iconScale"":0.01}",,,
 marker,69.2871242121239,76.72883654516365,abandon-dwarfhold,Azrak Zarak,,,![Azrak Zarak](images/Azrak%20Zarak.jpg),,,,,,"{""iconScale"":0.01}",,,
 marker,67.47150773528324,68.23608398437501,gate,Icecrown Citidel,,,![Icecrown Citidel](images/Icecrown%20Citidel.jpeg),,,,,,"{""iconScale"":0.41}",,,
-marker,-43.484812128916026,68.35693359375001,dwarf-outpost,Mirabar,,,,,,,,,"{""iconScale"":0.01}",,,
-marker,-49.28214015975995,-12.63427734375,abandon-dwarfhold,Dun Ezmar,,,,,,,,,"{""iconScale"":0.01}",,,
-marker,-46.66451741754235,50.31738281250001,abandon-dwarfhold,Azgark Metzger,,,,,,,,,"{""iconScale"":0.01}",,,
+marker,-43.484812128916026,68.35693359375001,dwarf-outpost,Mirabar,,,![Mirabar](images/Mirabar.jpg),,,,,,"{""iconScale"":0.01}",,,
+marker,-49.28214015975995,-12.63427734375,abandon-dwarfhold,Dun Ezmar,,,![Dun Ezmar](images/Dun%20Ezmar.jpg),,,,,,"{""iconScale"":0.01}",,,
+marker,-46.66451741754235,50.31738281250001,abandon-dwarfhold,Azgark Metzger,,,![Azgark Metzger](images/Azgark%20Metzger.jpg),,,,,,"{""iconScale"":0.01}",,,
 marker,1.3613002606283828,75.47607421875001,abandon-dwarfhold,Faerchik,,,"
 ![Faerchik](images/Faerchik.webp)
 
@@ -583,7 +582,9 @@ Recently a group of wood elves began occupying the long abandoned stronghold. Th
 
 ",,,,,,"{""iconScale"":0.01}",,,
 marker,-13.753714244725606,82.77099609375,dwarf-outpost,Dun Ashborun,,,![Dun Ashborun(images/dun%20ashborun.webp),,,,,,"{""iconScale"":0.01}",,,
-marker,-49.89527660896696,-94.3505859375,gnome,Zyn Razon,,,"Zyn Razon, or, The 'Iron City', is a unique Gnomish city, rather than being hidden away in the mountains this  city is located in the Tolodean foothills and not only easily accessible by humans but well traveled and traded. ",,,,,,"{""iconScale"":0.01}",,,
+marker,-49.89527660896696,-94.3505859375,gnome,Zyn Razon,,,"Zyn Razon, or, The 'Iron City', is a unique Gnomish city, rather than being hidden away in the mountains this  city is located in the Tolodean foothills and not only easily accessible by humans but well traveled and traded.
+
+![Zyn Razon](images/Zyn%20Razon.webp)",,,,,,"{""iconScale"":0.01}",,,
 marker,-27.44979032978423,65.61035156250001,gnome,Gnomehold,,,![Gnomepoint](images/Gnome.jpg),,,,,,"{""iconScale"":0.01}",,,
 marker,6.839169626342808,104.41406250000001,dwarf-outpost,Mirabar,,,![Dun'ragram](images/Dun'ragram.jpg),,,,,,"{""iconScale"":0.01}",,,
 marker,71.7050925307212,-75.91552734375001,house,Village,,,,,,,,,"{""iconScale"":0.01}",,,
@@ -606,10 +607,11 @@ marker,-50.04968198112584,-103.66470797656768,carrow,Swordfin,,,,,,,,,"{""iconSc
 marker,65.2180534225447,-23.464255046293367,carrow,Rhocrusta,,,,,,,,,"{""iconScale"":0.2}",,,
 marker,-32.23133659998973,-64.79765181315726,porto,Gavony,,,,,,,,,"{""iconScale"":0.02}",,,
 marker,-45.17987365618048,25.86948612366965,carrow,Avylyn ,,,,,,,,,"{""iconScale"":0.3}",,,
-marker,-53.85398103141348,37.374584901588044,carrow,Boorsdon,,,,,,,,,"{""iconScale"":0.3}",,,
+marker,-53.77468884583577,37.30954430147735,carrow,Boorsdon,,,"![Boorsdon](images/Boorsdon.jpg)
+",,,,,,"{""iconScale"":0.3}",,,
 marker,-31.615550910848324,-105.6666756514329,carrow,Sarugra ,,,,,,,,,"{""iconScale"":0.3}",,,
 marker,63.32253431151152,66.81884765625001,ld-018,LD 018,,,,,,,,,"{""iconScale"":0.05}",,,
-marker,-26.863551817004467,41.27605382387123,dwarf-outpost,Dun Moregar,,,,,,,,,"{""iconScale"":0.01}",,,
+marker,-26.863551817004467,41.27605382387123,dwarf-outpost,Dun Moregar,,,![Dun Moregar](images/Dun%20Moregar.jpg),,,,,,"{""iconScale"":0.01}",,,
 text,-64.77280807927899,90.35156250000001,,Crooked Mountains,,,"Despite dwarves meticlious record keeping the origin of the dwarves that inhabit the crooked mountains remains a mystsery. Some believe them to have originally been banished clans, while others thought them to be a returning expedition from the far east. Regardless of how they arrived there, the dwaves of these mountains themselves in the most inhospitable mountain range for dwavern kind, far too hot and without any minerial wealth beyond raw industral ore that could only be stripped mined rather than traditionally gathered, this put the dwaves of the crooked moutnains at an extreme disadvantage but they adapted and persisted. ",14,0,0,0,,,,,1
 text,72.36910450725075,6.152343750000001,,Sea of Claws,,,,14,0,0,0,,,,,1
 text,70.87349131926352,39.11132812500001,,Sea of Storms,,,,14,0,0,0,,,,,1
