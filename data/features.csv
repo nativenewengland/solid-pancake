@@ -4,9 +4,9 @@ marker,17.602139123350852,-24.9609375,bp-010,Marker,,,"![69df3a4e695e5be07b16955
 Gorlak Orc
 
 goblin
-",,,,,,"{""iconScale"":0.1}",,"{""title"":""Gorlak Watch"",""subtitle"":""Estuary Guardian Profile"",""image"":{""src"":""images/Events/the-bored-gorlak.webp"",""alt"":""Illustration of the marsh sentinel Gorlak""},""rows"":[{""label"":""Habitat"",""value"":""Peat bogs at the river estuary""},{""label"":""Role"",""value"":""Balances salt and freshwater tides""},{""label"":""Offerings"",""value"":""Cedar smoke braids before eel harvests""}]}",
+",,,,,,"{""iconScale"":0.1}",,"{""title"":""Gorlak Watch"",""subtitle"":""Estuary Guardian Profile"",""image"":{""src"":""images/the-bored-gorlak.webp"",""alt"":""Illustration of the marsh sentinel Gorlak""},""rows"":[{""label"":""Habitat"",""value"":""Peat bogs at the river estuary""},{""label"":""Role"",""value"":""Balances salt and freshwater tides""},{""label"":""Offerings"",""value"":""Cedar smoke braids before eel harvests""}]}",
 marker,62.47021666481544,38.365079910831575,dwarf-outpost,Gor Karakazol,,,![Gor Karakazol](images/Gor%20Karakazol.jpg),,,,,,"{""iconScale"":0.01}",,,
-marker,-60.064369323057086,60.623369145756726,dwarf-outpost,Khazadûn Kharn,Gate of the Skyhammer; Kharn-azor,Sky-carved bastion guarding the Northern Crown Pass,"![Khazadûn Kharn](images/Dwarfhold/Khazad%C3%BBn%20Kharn.jpg)
+marker,-60.064369323057086,60.623369145756726,dwarf-outpost,Khazadûn Kharn,Gate of the Skyhammer; Kharn-azor,Sky-carved bastion guarding the Northern Crown Pass,"![Khazadûn Kharn](images/Khazad%C3%BBn%20Kharn.jpg)
 
 ## Overview
 Khazadûn Kharn straddles the Northern Crown Pass, its runic terraces carved into the sheer basalt ridgeline to watch the auroral skies. Granite signal towers feed a mesh of mirrored beacons that can alert every clanhold along the ridge in moments.
@@ -24,7 +24,7 @@ The hold's guilds venerate the open sky; apprentices spend their oath-year tendi
 ### Current Outlook
 With winter squalls thickening, Thane Dromri Stormthane has ordered additional patrols of the hanging rope-roads and reopened talks with Kislevite trappers for shared avalanche wards.
 ",,,,,,"{""iconScale"":0.01}",,"{""title"":""Khazadûn Kharn"",""subtitle"":""Dwarfen Hold Profile"",""rows"":[{""label"":""Status"",""value"":""Prosperous High Hold""},{""label"":""Founded"",""value"":""c. -1900 KI""},{""label"":""Specialty"",""value"":""Skyhammer ballistae & aurora beacons""},{""label"":""Notable Clan"",""value"":""Clan Stormthane""}]}",
-marker,-17.743143160455016,73.69621978455072,dwarf-outpost,Dhurnomli Bûr,,,"![Dhurnomli Bûr](images/Dwarfhold/Dhurnomli%20B%C3%BBr.jpg)
+marker,-17.743143160455016,73.69621978455072,dwarf-outpost,Dhurnomli Bûr,,,"![Dhurnomli Bûr](images/Dhurnomli%20B%C3%BBr.jpg)
 ",,,,,,"{""iconScale"":0.01}",,,
 marker,66.91328491074654,86.66026073563467,abandon-dwarfhold,Zarak-az-Garaz,Obsidian Crown,Volcanic bastion crowned with rune-lit obsidian,"![Zarak-az-Garaz](images/Zarak-az-Garaz.jpg)
 
@@ -44,7 +44,7 @@ Residents cultivate heat-hardened fungus gardens and brew smoky lagers infused w
 ### Current Outlook
 A recent tremor has revived fears that the caldera may awaken; engineers are reinforcing the southern siphon tunnels while envoys request additional rune-warders from Karaz-a-Karak.
 ",,,,,,"{""iconScale"":0.01}",,"{""title"":""Zarak-az-Garaz"",""subtitle"":""Dwarfen Hold Profile"",""rows"":[{""label"":""Status"",""value"":""Watchful Border Hold""},{""label"":""Founded"",""value"":""-1420 KI""},{""label"":""Specialty"",""value"":""Obsidian runebulwarks & ash-steel""},{""label"":""Notable Clan"",""value"":""Clan Darkflint""}]}",
-marker,-15.707868045450846,37.529057062663334,dwarf-outpost,Gundûm Garmak,Hammer of the Westwall,Frontier fortress shielding the troll-haunted crags,"![Gundûm Garmak](images/Dwarfhold/Gund%C3%BBm%20Garmak.jpg)
+marker,-15.707868045450846,37.529057062663334,dwarf-outpost,Gundûm Garmak,Hammer of the Westwall,Frontier fortress shielding the troll-haunted crags,"![Gundûm Garmak](images/Gund%C3%BBm%20Garmak.jpg)
 
 ## Overview
 Gundûm Garmak juts from a wind-scoured ridge like the head of a warhammer, all blunt angles and bristling artillery towers. Signal bonfires scar the surrounding cliffs, remnants of countless campaigns against the western troll clans.
@@ -62,8 +62,8 @@ Every warrior trains with collapsible palisades designed to spring from the eart
 ### Current Outlook
 Scouts report troll warbands uniting under a fire-scarred shaman; preparations are underway to lure them into the avalanche traps before spring thaws the snowpack.
 ",,,,,,"{""iconScale"":0.01}",,"{""title"":""Gundûm Garmak"",""subtitle"":""Dwarfen Hold Profile"",""rows"":[{""label"":""Status"",""value"":""Fortified Borderhold""},{""label"":""Founded"",""value"":""-1330 KI""},{""label"":""Specialty"",""value"":""Runed bolt throwers & collapsible palisades""},{""label"":""Notable Clan"",""value"":""Clan Trolldräng""}]}",
-marker,-9.968684322671002,72.22412109375001,dwarf-outpost,Azar-khazad,,,![Azar-khazad](images/Dwarfhold/Azar-Khazad.jpg),,,,,,"{""iconScale"":0.01}",,,
-marker,-18.646245142670608,0.7910156250000001,dwarf-outpost,Kazad-grimil,Hold of the Grim Oath,Stern sanctuary for slayer cults and oath-breakers seeking redemption,"![Kazad-grimil](images/Dwarfhold/Kazad-grimil.jpg)
+marker,-9.968684322671002,72.22412109375001,dwarf-outpost,Azar-khazad,,,![Azar-khazad](images/Azar-Khazad.jpg),,,,,,"{""iconScale"":0.01}",,,
+marker,-18.646245142670608,0.7910156250000001,dwarf-outpost,Kazad-grimil,Hold of the Grim Oath,Stern sanctuary for slayer cults and oath-breakers seeking redemption,"![Kazad-grimil](images/Kazad-grimil.jpg)
 
 ## Overview
 Kazad-grimil looms like a granite gallows above the surrounding ravines, its statues depicting ancestors with axes held in grim salute. The hold offers sanctuary to oath-breakers who seek redemption through service and sacrifice.
@@ -81,7 +81,7 @@ The hold's feasts are sparse, its songs low; residents carve their failings into
 ### Current Outlook
 A surge of volunteers from human frontier towns has strained supplies; the council weighs whether to expand the penitence quarters or send excess warriors to allied holds.
 ",,,,,,"{""iconScale"":0.01}",,"{""title"":""Kazad-grimil"",""subtitle"":""Dwarfen Hold Profile"",""rows"":[{""label"":""Status"",""value"":""Solemn Redemption Hold""},{""label"":""Founded"",""value"":""-1205 KI""},{""label"":""Specialty"",""value"":""Slayer forges & penitent lodges""},{""label"":""Notable Clan"",""value"":""Clan Grimskald""}]}",
-marker,51.8,7.9,dwarf-outpost,Bêrdûm Barak,Harbor Under the Mountain,Dockhold controlling a subterranean river harbor,"![Bêrdûm Barak](images/Dwarfhold/B%C3%AArd%C3%BBm%20Barak.jpg)
+marker,51.8,7.9,dwarf-outpost,Bêrdûm Barak,Harbor Under the Mountain,Dockhold controlling a subterranean river harbor,"![Bêrdûm Barak](images/B%C3%AArd%C3%BBm%20Barak.jpg)
 
 ## Overview
 Bêrdûm Barak nestles along a cavern lake where an underground river surfaces before plunging back into darkness. Tiered docks and carved breakwaters transform the chamber into a bustling harbor lit by floating lanterns.
@@ -99,7 +99,7 @@ Sailors here chart currents by listening to harmonic resonances in the cavern ce
 ### Current Outlook
 Merchants petition for expanded warehousing after discovering rich amber deposits downstream; negotiations with Thûrdrim Duraz scribes are underway to catalog the new routes.
 ",,,,,,"{""iconScale"":0.01}",,"{""title"":""Bêrdûm Barak"",""subtitle"":""Dwarfen Hold Profile"",""rows"":[{""label"":""Status"",""value"":""Riverway Tradehold""},{""label"":""Founded"",""value"":""-1575 KI""},{""label"":""Specialty"",""value"":""Stone-hulled barges & tide locks""},{""label"":""Notable Clan"",""value"":""Clan Riverthane""}]}",
-marker,25.58137607008905,93.66943359375,dwarf-outpost,Zirak-khazad,Peak of Echoes,Mountain-top hold famed for its resonant signal horns,"![Zirak-khazad](images/Dwarfhold/Zirak-khazad.jpg)
+marker,25.58137607008905,93.66943359375,dwarf-outpost,Zirak-khazad,Peak of Echoes,Mountain-top hold famed for its resonant signal horns,"![Zirak-khazad](images/Zirak-khazad.jpg)
 
 ## Overview
 Zirak-khazad crowns a needle peak, its terraces stepping into the clouds. Vast bronze horns line the cliffs, channeling wind into melodies that can be heard valleys away.
@@ -118,7 +118,7 @@ Residents weave music into daily labor; miners tap rhythms that guide collapsibl
 Recent storm damage snapped two sky-bridges; repair crews race to restore them before trading season opens.
 ",,,,,,"{""iconScale"":0.01}",,"{""title"":""Zirak-khazad"",""subtitle"":""Dwarfen Hold Profile"",""rows"":[{""label"":""Status"",""value"":""High Aerie Hold""},{""label"":""Founded"",""value"":""-1890 KI""},{""label"":""Specialty"",""value"":""Resonant hornworks & skywatching""},{""label"":""Notable Clan"",""value"":""Clan Echohelm""}]}",
 marker,3.34689177525274,-3.4705238467110004,dwarf-outpost,Dur-Vazhatun,,,![Dur-Vazhatun](images/Dur-Vazhatun.webp),,,,,,"{""iconScale"":0.01}",,,
-marker,-30.767202747489456,-24.525899689634794,dwarf-outpost,Gûndâl Grum,Forge of Clever Hands,Engineering hold famed for gyrocopter foundries,"![Gûndâl Grum](images/Dwarfhold/G%C3%BBnd%C3%A2l%20Grum.jpg)
+marker,-30.767202747489456,-24.525899689634794,dwarf-outpost,Gûndâl Grum,Forge of Clever Hands,Engineering hold famed for gyrocopter foundries,"![Gûndâl Grum](images/G%C3%BBnd%C3%A2l%20Grum.jpg)
 
 ## Overview
 Gûndâl Grum rings with the clatter of gears and the whine of rotor testing rigs. Elevated walkways crisscross vast assembly halls where engineers tinker with experimental machines under the watchful gaze of stern runelords.
@@ -136,7 +136,7 @@ Tinker guilds prize innovation, though every prototype must pass rigorous rune-b
 ### Current Outlook
 A coalition of young engineers petitions to test steam-powered tunneling machines, prompting elders to demand extensive safety trials before deployment.
 ",,,,,,"{""iconScale"":0.01}",,"{""title"":""Gûndâl Grum"",""subtitle"":""Dwarfen Hold Profile"",""rows"":[{""label"":""Status"",""value"":""Innovator Hold""},{""label"":""Founded"",""value"":""-1104 KI""},{""label"":""Specialty"",""value"":""Gyrocopters & clockwork automata""},{""label"":""Notable Clan"",""value"":""Clan Geargrin""}]}",
-marker,-47.93106634750978,-5.625,dwarf-outpost,Thrâng-khazad,Ancestral Spiral,Hold descending through a spiral of ancestor crypts,"![Thrâng-khazad](images/Dwarfhold/Thr%C3%A2ng-khazad.jpg)
+marker,-47.93106634750978,-5.625,dwarf-outpost,Thrâng-khazad,Ancestral Spiral,Hold descending through a spiral of ancestor crypts,"![Thrâng-khazad](images/Thr%C3%A2ng-khazad.jpg)
 
 ## Overview
 Thrâng-khazad winds downward in a grand spiral carved around a central shaft of ancestor statues. Each tier honors a different age, and the air is thick with incense and echoing hymns.
@@ -154,9 +154,9 @@ Stoneward artisans specialize in memorial craftsmanship, inlaying sarcophagi wit
 ### Current Outlook
 The High Shieldthane prepares for the 500th Jubilee of Remembrance, expecting delegations from every loyal clanhold.
 ",,,,,,"{""iconScale"":0.01}",,"{""title"":""Thrâng-khazad"",""subtitle"":""Dwarfen Hold Profile"",""rows"":[{""label"":""Status"",""value"":""Reverent Deephold""},{""label"":""Founded"",""value"":""-2077 KI""},{""label"":""Specialty"",""value"":""Ancestor crypts & spiral fortifications""},{""label"":""Notable Clan"",""value"":""Clan Stoneward""}]}",
-marker,-14.905717297470664,59.37245416365607,dwarf-outpost,Khirûn-karag,,,"![Khirûn-karag](images/Dwarfhold/Khir%C3%BBn-karag.jpg)
+marker,-14.905717297470664,59.37245416365607,dwarf-outpost,Khirûn-karag,,,"![Khirûn-karag](images/Khir%C3%BBn-karag.jpg)
 ",,,,,,"{""iconScale"":0.01}",,,
-marker,-41.0130657870063,-2.2412109375000004,dwarf-outpost,Gazad-az-Bôr,Bastion of the Border,Southern sentinel guarding the emerald marches,"![Gazad-az-Bôr](images/Dwarfhold/Gazad-az-B%C3%B4r.jpg)
+marker,-41.0130657870063,-2.2412109375000004,dwarf-outpost,Gazad-az-Bôr,Bastion of the Border,Southern sentinel guarding the emerald marches,"![Gazad-az-Bôr](images/Gazad-az-B%C3%B4r.jpg)
 
 ## Overview
 Gazad-az-Bôr overlooks rolling emerald plains from a rocky escarpment studded with signal towers. Caravan roads converge beneath its guns, ensuring every traveler is cataloged before crossing the marches.
@@ -174,7 +174,7 @@ Shieldmarch drillmasters train warriors in combined arms tactics with humans and
 ### Current Outlook
 Diplomatic envoys from the Moot negotiate expanded patrol rights, promising grain shipments in exchange for protection.
 ",,,,,,"{""iconScale"":0.01}",,"{""title"":""Gazad-az-Bôr"",""subtitle"":""Dwarfen Hold Profile"",""rows"":[{""label"":""Status"",""value"":""Southern March Hold""},{""label"":""Founded"",""value"":""-1182 KI""},{""label"":""Specialty"",""value"":""Border forts & rotating bastions""},{""label"":""Notable Clan"",""value"":""Clan Shieldmarch""}]}",
-marker,-37.30431673639372,83.4953640222675,dwarf-outpost,Bazâr-durin,Market of the First Forge,Grand bazaar celebrating invention and ancestral craftsmanship,"![Bazâr-durin](images/Dwarfhold/Baz%C3%A2r-durin.jpg)
+marker,-37.30431673639372,83.4953640222675,dwarf-outpost,Bazâr-durin,Market of the First Forge,Grand bazaar celebrating invention and ancestral craftsmanship,"![Bazâr-durin](images/Baz%C3%A2r-durin.jpg)
 
 ## Overview
 Bazâr-durin thrives around an immense plaza roofed by stained glass depicting the forging of the first rune hammer. Market stalls burst with color, music, and the aroma of spice breads from every corner of the empire.
@@ -192,7 +192,7 @@ Guildhouses line the plaza, each offering apprenticeships in crafts from jewelry
 ### Current Outlook
 Preparations for the next Maker's Fair have begun, and invitations have been sent to elf artisans willing to share glassmaking secrets in exchange for rune lore.
 ",,,,,,"{""iconScale"":0.01}",,"{""title"":""Bazâr-durin"",""subtitle"":""Dwarfen Hold Profile"",""rows"":[{""label"":""Status"",""value"":""Celebrated Market Hold""},{""label"":""Founded"",""value"":""-950 KI""},{""label"":""Specialty"",""value"":""Seasonal grand markets & artisan guildhouses""},{""label"":""Notable Clan"",""value"":""Clan Goldtally""}]}",
-marker,-25.337309791039797,-5.895341032251709,dwarf-outpost,Kharak-khazad,Sealed Redoubt,Partially collapsed hold watching over the southern deeps,"![Kharak-khazad](images/Dwarfhold/Kharak-khazad.jpg)
+marker,-25.337309791039797,-5.895341032251709,dwarf-outpost,Kharak-khazad,Sealed Redoubt,Partially collapsed hold watching over the southern deeps,"![Kharak-khazad](images/Kharak-khazad.jpg)
 
 ## Overview
 Kharak-khazad clings to cliffs above yawning chasms, many halls now sealed behind rune-locked gates after catastrophic quakes. Lantern-lit salvage crews still delve the blocked passages searching for lost kin and treasures.
@@ -210,7 +210,7 @@ Survivors maintain meticulous records of which passages remain sealed and who wa
 ### Current Outlook
 Rockvault prospectors petition to reopen a lower shaft after detecting vibration patterns suggesting empty, stable chambers beyond the collapse.
 ",,,,,,"{""iconScale"":0.01}",,"{""title"":""Kharak-khazad"",""subtitle"":""Dwarfen Hold Profile"",""rows"":[{""label"":""Status"",""value"":""Partially Sealed Hold""},{""label"":""Founded"",""value"":""-1450 KI""},{""label"":""Specialty"",""value"":""Sealed gateworks & salvage crews""},{""label"":""Notable Clan"",""value"":""Clan Rockvault""}]}",
-marker,-40.11168866559596,-5.9326171875,dwarf-outpost,Thûrdûn Thrum,Hall of Resonance,Melodic stronghold where runes are sung into stone,"![Thûrdûn Thrum](images/Dwarfhold/Th%C3%BBrd%C3%BBn%20Thrum.jpg)
+marker,-40.11168866559596,-5.9326171875,dwarf-outpost,Thûrdûn Thrum,Hall of Resonance,Melodic stronghold where runes are sung into stone,"![Thûrdûn Thrum](images/Th%C3%BBrd%C3%BBn%20Thrum.jpg)
 
 ## Overview
 Thûrdûn Thrum is carved like a great instrument, with every corridor tuned to amplify the voices of its inhabitants. Choral rehearsals double as structural inspections, for any discordant echo may signal stress in the stone.
@@ -228,7 +228,7 @@ Songthane artisans engrave wave-patterns into pillars, then test them with cryst
 ### Current Outlook
 The Grand Chorus prepares a new Hymn of Binding to stabilize distant outposts suffering from warpstone tremors.
 ",,,,,,"{""iconScale"":0.01}",,"{""title"":""Thûrdûn Thrum"",""subtitle"":""Dwarfen Hold Profile"",""rows"":[{""label"":""Status"",""value"":""Harmonic Runebastion""},{""label"":""Founded"",""value"":""-1010 KI""},{""label"":""Specialty"",""value"":""Resonant rune-singing & acoustic wards""},{""label"":""Notable Clan"",""value"":""Clan Songthane""}]}",
-marker,32.7,18.4,dwarf-outpost,Gazûl-dûm,Sanctum of Gazûl,Catacomb hold honoring the Lord of the Underearth,"![Gazûl-dûm](images/Dwarfhold/Gaz%C3%BBl-d%C3%BBm.jpg)
+marker,32.7,18.4,dwarf-outpost,Gazûl-dûm,Sanctum of Gazûl,Catacomb hold honoring the Lord of the Underearth,"![Gazûl-dûm](images/Gaz%C3%BBl-d%C3%BBm.jpg)
 
 ## Overview
 Gazûl-dûm stretches through solemn catacombs carved with reliefs of every ancestor interred within. Luminous fungi paint the passageways in violet light as silent processions bear offerings to the Lord of the Underearth.
@@ -319,12 +319,12 @@ marker,48,-16,altdorf,The Imperial Capital ,,,,,,,,,"{""iconScale"":0.32}",,,
 marker,44.98034238084973,-8.789222786854111,beastman-small,BEASTMAN SMALL,,,,,,,,,"{""iconScale"":0.49}",,,
 marker,48,-4,beastman-stone,BEASTMAN STONE,,,,,,,,,"{""iconScale"":0.46}",,,
 marker,43.32463935415545,0.35238760452182666,bp-002,BP 002,,,,,,,,,"{""iconScale"":0.22}",,,
-marker,59.57885104663189,-50.528928738463755,carrow-large,Frostgrave,,,,,,,,,"{""iconScale"":0.24}",,,
+marker,59.57885104663189,-50.528928738463755,carrow-large,Frostgrave,,,![Frostgrave](images/Frostgrave.jpg),,,,,,"{""iconScale"":0.24}",,,
 marker,46.49772075203549,10.503552142351264,castle,Castle Westhrope,,,,,,,,,"{""iconScale"":0.35}",,,
 marker,48,20,carrow,CARROW,,,,,,,,,"{""iconScale"":0.3}",,,
 marker,44.434035565943226,7.255467288188432,dwarf-outpost,DWARF OUTPOST,,,,,,,,,"{""iconScale"":0.01}",,,
-marker,14.797051335299228,-77.98128678200113,eleven-tower,Tol Teloro,,,![Tol Teloro](images/city/Tol Teloro.jpg),,,,,,"{""iconScale"":0.01}",,,
-marker,-53.65686034442051,-91.71339660569892,fort,Bridgeford,,,![Bridgeford](images/city/Bridgeford.jpg),,,,,,"{""iconScale"":0.15}",,,
+marker,14.797051335299228,-77.98128678200113,eleven-tower,Tol Teloro,,,![Tol Teloro](images/Tol Teloro.jpg),,,,,,"{""iconScale"":0.01}",,,
+marker,-53.65686034442051,-91.71339660569892,fort,Bridgeford,,,![Bridgeford](images/Bridgeford.jpg),,,,,,"{""iconScale"":0.15}",,,
 marker,57.59837620746089,7.404785156250001,hirm,HIRM,,,,,,,,,"{""iconScale"":0.07}",,,
 marker,70.28911664330674,-68.68652343750001,house,Dragonbluff,,,,,,,,,"{""iconScale"":0.01}",,,
 marker,-39.08034705167423,66.16335609082715,karak-angazhar,KARAK ANGAZHAR,,,,,,,,,"{""iconScale"":0.06}",,,
@@ -404,33 +404,33 @@ marker,16,-12,the-free-state-of-myroberg,THE FREE STATE OF MYROBERG,,,,,,,,,"{""
 marker,44.647740907829146,24.513017193968775,the-great-brey-heard,THE GREAT BREY HEARD,,,,,,,,,"{""iconScale"":0.03}",,,
 marker,-60.5334403966211,17.226562500000004,the-monastic-order-of-the-wheel,THE MONASTIC ORDER OF THE WHEEL,,,,,,,,,"{""iconScale"":0.06}",,,
 marker,66.10716955858042,-78.68408203125001,the-realm-of-azurreach,THE REALM OF AZURREACH,,,,,,,,,"{""iconScale"":0.04}",,,
-marker,30.52435507753783,-43.44004445335973,dwarf-outpost,Throal,,,![Throal](images/Dwarfhold/Throal.jpg),,,,,,"{""iconScale"":0.01}",,,
-marker,57.680961955099285,98.60588477732192,dwarf-outpost,Uzbad-az-Narg,,,"![Uzbad-az-Narg](images/Dwarfhold/Uzbad-az-Narg.jpg)
+marker,30.52435507753783,-43.44004445335973,dwarf-outpost,Throal,,,![Throal](images/Throal.jpg),,,,,,"{""iconScale"":0.01}",,,
+marker,57.680961955099285,98.60588477732192,dwarf-outpost,Uzbad-az-Narg,,,"![Uzbad-az-Narg](images/Uzbad-az-Narg.jpg)
 Hold has been sealed 1000 years so its unknown if the inhabitants are alive or dead and thus unknown if its an active or abandoned dwarfhold",,,,,,"{""iconScale"":0.01}",,,
 marker,72.68576494172952,-8.613281250000002,abandon-dwarfhold,Avlar-Thrûn,,,"![Avlar-Thrûn](images/Avlar-Thr%C3%BBn.jpg)
 
 Dwarfhold destroyed by dragons ",,,,,,"{""iconScale"":0.01}",,,
-marker,-45.15105326556339,61.78710937500001,dwarf-outpost,Dun-Ôrdstun,,,"![Dun-Ôrdstun](images/Dwarfhold/Dun-%C3%94rdstun.jpg)
+marker,-45.15105326556339,61.78710937500001,dwarf-outpost,Dun-Ôrdstun,,,"![Dun-Ôrdstun](images/Dun-%C3%94rdstun.jpg)
 
 Ruled by Thane Maldrik Blackspine",,,,,,"{""iconScale"":0.01}",,,
-marker,-35.35396257952243,66.35503496549036,dwarf-outpost,Dûrandur,,,![Dûrandur](images/Dwarfhold/D%C3%BBrandur.jpg),,,,,,"{""iconScale"":0.01}",,,
-marker,-34.37966637421009,82.66012598852991,dwarf-outpost,Black Rock Hold,,,![Black Rock Hold](images/Dwarfhold/Black%20Rock%20Hold.jpg),,,,,,"{""iconScale"":0.01}",,,
-marker,-60.99384283888707,33.88522275250645,dwarf-outpost,Barat Nûmenz,,,![Barat Nûmenz](images/Dwarfhold/Barat%20N%C3%BBmenz.jpg),,,,,,"{""iconScale"":0.01}",,,
-marker,-70.72860581459155,53.96480198267597,dwarf-outpost,Dun Toruhm,,,![Dun Toruhm](images/Dwarfhold/Dun%20Toruhm.jpg),,,,,,"{""iconScale"":0.01}",,,
-marker,-48.62629692516604,77.73915536434669,dwarf-outpost,Karad-Graef,,,![Karad-Graef](images/Dwarfhold/Karad-Graef.jpg),,,,,,"{""iconScale"":0.01}",,,
+marker,-35.35396257952243,66.35503496549036,dwarf-outpost,Dûrandur,,,![Dûrandur](images/D%C3%BBrandur.jpg),,,,,,"{""iconScale"":0.01}",,,
+marker,-34.37966637421009,82.66012598852991,dwarf-outpost,Black Rock Hold,,,![Black Rock Hold](images/Black%20Rock%20Hold.jpg),,,,,,"{""iconScale"":0.01}",,,
+marker,-60.99384283888707,33.88522275250645,dwarf-outpost,Barat Nûmenz,,,![Barat Nûmenz](images/Barat%20N%C3%BBmenz.jpg),,,,,,"{""iconScale"":0.01}",,,
+marker,-70.72860581459155,53.96480198267597,dwarf-outpost,Dun Toruhm,,,![Dun Toruhm](images/Dun%20Toruhm.jpg),,,,,,"{""iconScale"":0.01}",,,
+marker,-48.62629692516604,77.73915536434669,dwarf-outpost,Karad-Graef,,,![Karad-Graef](images/Karad-Graef.jpg),,,,,,"{""iconScale"":0.01}",,,
 marker,-7.18810087117902,69.16992187500001,carrow-large,BP 003,,,,,,,,,"{""iconScale"":0.18}",,,
-marker,11.84657904044014,-61.83077646030375,carrow,Neverwinter,,,![Neverwinter](images/city/Neverwinter.jpg),,,,,,"{""iconScale"":0.2}",,,
-marker,-47.57627196331696,-50.27213309643573,carrow,Moorsfield,,,![Moorsfield](images/city/Moorsfield.jpg),,,,,,"{""iconScale"":0.3}",,,
-marker,60.78024418936339,67.01532571638317,dwarf-outpost,Dûmthûr Mînrth,,,"![Dûmthûr Mînrth](images/Dwarfhold/D%C3%BBmth%C3%BBr%20M%C3%AEnrth.jpg)
+marker,11.84657904044014,-61.83077646030375,carrow,Neverwinter,,,![Neverwinter](images/Neverwinter.jpg),,,,,,"{""iconScale"":0.2}",,,
+marker,-47.57627196331696,-50.27213309643573,carrow,Moorsfield,,,![Moorsfield](images/Moorsfield.jpg),,,,,,"{""iconScale"":0.3}",,,
+marker,60.78024418936339,67.01532571638317,dwarf-outpost,Dûmthûr Mînrth,,,"![Dûmthûr Mînrth](images/D%C3%BBmth%C3%BBr%20M%C3%AEnrth.jpg)
 
 Led by the Thane Oshuart Oakhammer",,,,,,"{""iconScale"":0.01}",,,
-marker,66.56574968490334,24.2138653216851,dwarf-outpost,Dûrgrim Dûm,,,"![Dûrgrim Dûm](images/Dwarfhold/D%C3%BBrgrim%20D%C3%BBm.jpg)
+marker,66.56574968490334,24.2138653216851,dwarf-outpost,Dûrgrim Dûm,,,"![Dûrgrim Dûm](images/D%C3%BBrgrim%20D%C3%BBm.jpg)
 Dûrgrim Dûm is an ancient Dwarvern hold located in the ___ 
 
 It should be noted the current dwarfhold of Dûrgrim Dûm is not the primary bearer of its name. In fact Dûrgrim Dûm as it currently exists, was abandoned for over a thousand years after it became too crowded and its population migrated to a new hold which was constructed to fit its much larger population. This hold was lost during the Great Desecration, when Chaos marauders defiled sacred tombs across the northern reaches and elsewhere. The surviving clans gathered remaining relics and relocated to their orginal hold that had been abandoned a millennium past. Out of the great shame of losing their hold the dwarves swore an eternal oath to erase the name of the original hold of their ancestors, they had retreated into and replace it with the one that had just been lost, as to make any without personal knowledge believe this was their only hold and no hold had been breached and looted by the outlanders. ",,,,,,"{""iconScale"":0.01}",,,
-marker,-43.707593504052944,-3.251953125,dwarf-outpost,Y'olazad-az-Bôr,,,![Y'olazad-az-Bôr](images/Dwarfhold/Y'olazad-az-B%C3%B4r.jpg),,,,,,"{""iconScale"":0.01}",,,
-marker,-21.88257623382042,63.809101788294804,dwarf-outpost,Gor Dûrgheld,,,![Gor Dûrgheld](images/Dwarfhold/Gor%20D%C3%BBrgheld.png),,,,,,"{""iconScale"":0.01}",,,
-marker,-60.13056361691419,50.2294921875,dwarf-outpost,Barûn-Karag,,,"![Barûn-Karag](images/Dwarfhold/Bar%C3%BBn-Karag.jpg)
+marker,-43.707593504052944,-3.251953125,dwarf-outpost,Y'olazad-az-Bôr,,,![Y'olazad-az-Bôr](images/Y'olazad-az-B%C3%B4r.jpg),,,,,,"{""iconScale"":0.01}",,,
+marker,-21.88257623382042,63.809101788294804,dwarf-outpost,Gor Dûrgheld,,,![Gor Dûrgheld](images/Gor%20D%C3%BBrgheld.png),,,,,,"{""iconScale"":0.01}",,,
+marker,-60.13056361691419,50.2294921875,dwarf-outpost,Barûn-Karag,,,"![Barûn-Karag](images/Bar%C3%BBn-Karag.jpg)
 Initially founded as a pump-station to feed distant fortresses, Barûn-karag flourished after engineers became taking up brewing as a hobby and found the local undersoil was exceptionally well for growing hops 
 
 The hold supplied water and beer during the Long March of the Grey Beards, earning lasting gratitude from allied clans.
@@ -439,28 +439,28 @@ Ruled by the Thane-King Brewmaster Gardian Brewhammer, the hold is
 
 
 Brewthane brewmasters guard yeast cultures older than the hold itself, sharing casks only during oath-swearing festivals. Aquifer wardens combine rune hydraulics with water-wheels to drive mills, polishing halls to a glasslike sheen.",,,,,,"{""iconScale"":0.01}",,,
-marker,-25.244870668979043,26.410072149433425,dwarf-outpost,Dwemerhelm,,,![Dwemerhelm](images/Dwarfhold/Dwemerhelm.jpg),,,,,,"{""iconScale"":0.01}",,,
-marker,63.71445458364793,-78.37646484375001,house,Brimfjord,,,![Brimfjord](images/city/Brimfjord.jpg),,,,,,"{""iconScale"":0.01}",,,
-marker,71.00265967789281,-82.39746093750001,house,Eirholt,,,![Eirholt](images/city/Eirholt.jpg),,,,,,"{""iconScale"":0.01}",,,
-marker,-69.66506913577498,-25.950135280187677,porto,Eldoria,,,![Eldoria](images/city/Eldoria.jpg),,,,,,"{""iconScale"":0.01}",,,
-marker,-34.75967405945443,-77.42884704762747,castle,Regorina,,,![Regorina](images/city/Regorina.jpg),,,,,,"{""iconScale"":0.35}",,,
-marker,-35.27755840603654,-42.78076171875001,castle,Nightgale,,,![Nightgale](images/city/nightgale.jpg),,,,,,"{""iconScale"":0.35}",,,
-marker,-58.39069814092198,-63.061010534702575,castle,Carwell,,,![Carwell](images/city/Carwell.jpg),,,,,,"{""iconScale"":0.35}",,,
+marker,-25.244870668979043,26.410072149433425,dwarf-outpost,Dwemerhelm,,,![Dwemerhelm](images/Dwemerhelm.jpg),,,,,,"{""iconScale"":0.01}",,,
+marker,63.71445458364793,-78.37646484375001,house,Brimfjord,,,![Brimfjord](images/Brimfjord.jpg),,,,,,"{""iconScale"":0.01}",,,
+marker,71.00265967789281,-82.39746093750001,house,Eirholt,,,![Eirholt](images/Eirholt.jpg),,,,,,"{""iconScale"":0.01}",,,
+marker,-69.66506913577498,-25.950135280187677,porto,Eldoria,,,![Eldoria](images/Eldoria.jpg),,,,,,"{""iconScale"":0.01}",,,
+marker,-34.75967405945443,-77.42884704762747,castle,Regorina,,,![Regorina](images/Regorina.jpg),,,,,,"{""iconScale"":0.35}",,,
+marker,-35.27755840603654,-42.78076171875001,castle,Nightgale,,,![Nightgale](images/nightgale.jpg),,,,,,"{""iconScale"":0.35}",,,
+marker,-58.39069814092198,-63.061010534702575,castle,Carwell,,,![Carwell](images/Carwell.jpg),,,,,,"{""iconScale"":0.35}",,,
 marker,-72.06039251607318,13.754882812500002,bazzar,BAZZAR,,,,,,,,,"{""iconScale"":0.15}",,,
 marker,-38.06630003353315,35.59570312500001,orc,ORC,,,,,,,,,"{""iconScale"":0.41}",,,
-marker,-24.726809066760115,34.76074218750001,gate,Dol Guldur,,,![Dol Guldur](images/city/Dol%20Guldur.jpg),,,,,,"{""iconScale"":0.41}",,,
-marker,-26.60840312508897,61.36966909744862,dwarf-outpost,Tuwad-Dhumakon,,,![Tuwad-Dhumakon](images/Dwarfhold/Tuwad-Dhumakon.jpeg),,,,,,"{""iconScale"":0.01}",,,
-marker,-26.334904993143063,51.196552275447765,dwarf-outpost,Skomdihir,,,![Skomdihir](images/Dwarfhold/Skomdihir.jpg),,,,,,"{""iconScale"":0.01}",,,
-marker,-32.58293311165956,-24.27972289929529,dwarf-outpost,Hul-Jorkad,,,"![Hul-Jorkad](images/Dwarfhold/Hul-Jorkad.jpg)
+marker,-24.726809066760115,34.76074218750001,gate,Dol Guldur,,,![Dol Guldur](images/Dol%20Guldur.jpg),,,,,,"{""iconScale"":0.41}",,,
+marker,-26.60840312508897,61.36966909744862,dwarf-outpost,Tuwad-Dhumakon,,,![Tuwad-Dhumakon](images/Tuwad-Dhumakon.jpeg),,,,,,"{""iconScale"":0.01}",,,
+marker,-26.334904993143063,51.196552275447765,dwarf-outpost,Skomdihir,,,![Skomdihir](images/Skomdihir.jpg),,,,,,"{""iconScale"":0.01}",,,
+marker,-32.58293311165956,-24.27972289929529,dwarf-outpost,Hul-Jorkad,,,"![Hul-Jorkad](images/Hul-Jorkad.jpg)
 
 
 Ruled by King Thrain Oathhammer",,,,,,"{""iconScale"":0.01}",,,
-marker,-32.04665027893795,70.86218837185285,dwarf-outpost,Hul-Az-Krakazol,,,![Hul-Az-Krakazol](images/Dwarfhold/Hul-Az-Krakazol.jpg),,,,,,"{""iconScale"":0.01}",,,
-marker,-69.29496811357295,56.57958826762457,dwarf-outpost,Ovdal-az-An,,,![Ovdal-az-An](images/Dwarfhold/Ovdal-az-An.jpg),,,,,,"{""iconScale"":0.01}",,,
+marker,-32.04665027893795,70.86218837185285,dwarf-outpost,Hul-Az-Krakazol,,,![Hul-Az-Krakazol](images/Hul-Az-Krakazol.jpg),,,,,,"{""iconScale"":0.01}",,,
+marker,-69.29496811357295,56.57958826762457,dwarf-outpost,Ovdal-az-An,,,![Ovdal-az-An](images/Ovdal-az-An.jpg),,,,,,"{""iconScale"":0.01}",,,
 marker,-71.40637795306482,53.657330586778755,ld-007,LD 007,,,,,,,,,"{""iconScale"":0.11}",,,
 marker,-73.09864515998866,50.39503576895697,ld-007,LD 007,,,,,,,,,"{""iconScale"":0.11}",,,
 marker,-73.75708225264577,74.81846829249757,ld-007,LD 007,,,,,,,,,"{""iconScale"":0.11}",,,
-marker,-28.885038259360872,54.39325853473561,abandon-dwarfhold,Grom's Peak,,,![Grom's Peak](images/city/Grom%27s%20Peak.jpg),,,,,,"{""iconScale"":0.01}",,,
+marker,-28.885038259360872,54.39325853473561,abandon-dwarfhold,Grom's Peak,,,![Grom's Peak](images/Grom%27s%20Peak.jpg),,,,,,"{""iconScale"":0.01}",,,
 marker,-23.221877979325416,68.81858712512549,gnome,Gnomepoint,,,![Gnomepoint](images/Gnome.jpg),,,,,,"{""iconScale"":0.01}",,,
 marker,64.82090711923603,74.83861574761437,abandon-dwarfhold,Karak Gorûmzra,,,![Karak Gorûmzra](images/Karak%20Gor%C3%BBmzra.jpg),,,,,,"{""iconScale"":0.01}",,,
 marker,72.67922441671935,-83.16650390625001,abandon-dwarfhold,Ostapchuk,,,![Ostapchuk](images/Ostapchuk.jpg),,,,,,"{""iconScale"":0.01}",,,
@@ -469,13 +469,13 @@ marker,69.98292897269606,-50.75475372076899,abandon-dwarfhold,Almharaz,,,![Almha
 marker,14.99274339047006,90.22422765558854,abandon-dwarfhold,Haraz Oldrum,,,![Haraz Oldrum](images/Haraz%20Oldrum.jpg),,,,,,"{""iconScale"":0.01}",,,
 marker,7.405823569059584,15.095530750385812,abandon-dwarfhold,Elaig Drum,,,![Elaig Drum](images/Elaig%20Drum.jpg),,,,,,"{""iconScale"":0.01}",,,
 marker,26.527867230022412,82.66158707240697,orc,ORC,,,,,,,,,"{""iconScale"":0.41}",,,
-marker,-51.89005393521691,-32.47558593750001,dwarf-outpost,Orocarni,,,![Orocarni](images/Dwarfhold/Orocarni.jpg),,,,,,"{""iconScale"":0.01}",,,
-marker,41.261291493919884,75.60658304309892,dwarf-outpost,Dun-Gardro,,,![Dun-Gardro](images/Dwarfhold/Dun-Gardro.jpg),,,,,,"{""iconScale"":0.01}",,,
+marker,-51.89005393521691,-32.47558593750001,dwarf-outpost,Orocarni,,,![Orocarni](images/Orocarni.jpg),,,,,,"{""iconScale"":0.01}",,,
+marker,41.261291493919884,75.60658304309892,dwarf-outpost,Dun-Gardro,,,![Dun-Gardro](images/Dun-Gardro.jpg),,,,,,"{""iconScale"":0.01}",,,
 marker,63.753349751812074,48.03138175667467,abandon-dwarfhold,Karak Ozambrald,,,![Karak Ozambrald](images/Karak%20Ozambrald.jpg),,,,,,"{""iconScale"":0.01}",,,
 marker,55.10351605801967,40.62592997182795,abandon-dwarfhold,Ironhold,,,![Ironhold](images/Ironhold.jpg),,,,,,"{""iconScale"":0.01}",,,
 marker,53.396432127095984,27.861186812025558,abandon-dwarfhold,Alvar-Baroag,,,![Alvar-Baroag](images/Alvar-Baroag.jpg),,,,,,"{""iconScale"":0.01}",,,
 marker,15.766049967388058,31.091308593750004,carrow,Stenengard,,,,,,,,,"{""iconScale"":0.3}",,,
-marker,-2.483345737982608,-32.16796875000001,carrow,Seabrook,,,"![Moorsfield](images/city/Moorsfield.jpg)
+marker,-2.483345737982608,-32.16796875000001,carrow,Seabrook,,,"![Moorsfield](images/Moorsfield.jpg)
 
 Current wiki entries:
 - The Curse of Stone
@@ -508,28 +508,28 @@ Current wiki entries:
 - Shardspine Yetis
 Great Destruction ",,,,,,"{""iconScale"":0.3}",,,
 marker,-65.50400376763241,9.953613281250002,large-bazzar,LARGE BAZZAR,,,,,,,,,"{""iconScale"":0.17}",,,
-marker,-66.42570377245043,9.382324218750002,bazzar,Siwasuf,,,![Siwasuf](images/city/Siwasuf.jpg),,,,,,"{""iconScale"":0.15}",,,
-marker,-65.29442413880925,12.32666015625,bazzar,Vivera,,,![Vivera](images/city/Vivera.jpg),,,,,,"{""iconScale"":0.15}",,,
-marker,-64.97112183741547,18.303222656250004,large-bazzar,Tunisople,,,![Tunisople](images/city/Tunisople.jpg),,,,,,"{""iconScale"":0.17}",,,
+marker,-66.42570377245043,9.382324218750002,bazzar,Siwasuf,,,![Siwasuf](images/Siwasuf.jpg),,,,,,"{""iconScale"":0.15}",,,
+marker,-65.29442413880925,12.32666015625,bazzar,Vivera,,,![Vivera](images/Vivera.jpg),,,,,,"{""iconScale"":0.15}",,,
+marker,-64.97112183741547,18.303222656250004,large-bazzar,Tunisople,,,![Tunisople](images/Tunisople.jpg),,,,,,"{""iconScale"":0.17}",,,
 marker,-68.41538996517319,10.085449218750002,bazzar,BAZZAR,,,,,,,,,"{""iconScale"":0.15}",,,
 marker,-70.80149329222245,32.32177734375001,large-bazzar,Saradeena,,,,,,,,,"{""iconScale"":0.17}",,,
 marker,-71.11629558881025,47.08740234375001,bazzar,Al Didad,,,,,,,,,"{""iconScale"":0.15}",,,
-marker,-64.07228140882118,24.147949218750004,bazzar,Yaribs,,,![Yaribs](images/city/Yaribs.jpg),,,,,,"{""iconScale"":0.15}",,,
+marker,-64.07228140882118,24.147949218750004,bazzar,Yaribs,,,![Yaribs](images/Yaribs.jpg),,,,,,"{""iconScale"":0.15}",,,
 marker,-72.1548877325445,46.03271484375001,large-bazzar,Sheôl,,,,,,,,,"{""iconScale"":0.17}",,,
-marker,-73.3341174958937,35.59570312500001,eleven-tower,Tor Midon,,,![Tor Midon](images/city/Tor%20Midon.jpg),,,,,,"{""iconScale"":0.01}",,,
-marker,-73.63385704026865,17.182617187500004,bazzar,Tukero,,,![Tukero](images/city/Tukero.jpg),,,,,,"{""iconScale"":0.15}",,,
-marker,-72.56745499911975,23.994140625000004,bazzar,Tel Karbaruk,,,![Tel Karbaruk](images/city/Tel%20Karbaruk.jpg),,,,,,"{""iconScale"":0.15}",,,
-marker,-53.82696376450747,11.228027343750002,large-bazzar,Tehraroft,,,![Tehraroft](images/city/Tehraroft.jpg),,,,,,"{""iconScale"":0.17}",,,
-marker,-68.25975865531507,21.73095703125,bazzar,Tarrisse,,,![Tarrisse](images/city/Tarrisse.jpg),,,,,,"{""iconScale"":0.17}",,,
-marker,-68.07950702586419,9.711914062500002,bazzar,Sha'ri Red City,,,![Sha'ri Red City](images/city/Sha%27ri%20Red%20City.jpg),,,,,,"{""iconScale"":0.15}",,,
-marker,-63.03295871655778,13.337402343750002,fort,High Point Citidel,,,![High Point Citidel](images/city/High%20Point%20Citidel.jpg),,,,,,"{""iconScale"":0.15}",,,
-marker,-71.52490903732816,21.060791015625004,bazzar,Al-Salri,,,![Al-Salri](images/city/Al-Salri.jpg),,,,,,"{""iconScale"":0.15}",,,
-marker,-72.32912972217885,35.55049213977258,large-bazzar,Baahubali,,,![Baahubali](images/city/Baahubali.jpg),,,,,,"{""iconScale"":0.17}",,,
-marker,-53.85208501857218,30.146484375000004,porto,Olzar,,,![Olzar](images/city/Olzar.jpg),,,,,,"{""iconScale"":0.01}",,,
+marker,-73.3341174958937,35.59570312500001,eleven-tower,Tor Midon,,,![Tor Midon](images/Tor%20Midon.jpg),,,,,,"{""iconScale"":0.01}",,,
+marker,-73.63385704026865,17.182617187500004,bazzar,Tukero,,,![Tukero](images/Tukero.jpg),,,,,,"{""iconScale"":0.15}",,,
+marker,-72.56745499911975,23.994140625000004,bazzar,Tel Karbaruk,,,![Tel Karbaruk](images/Tel%20Karbaruk.jpg),,,,,,"{""iconScale"":0.15}",,,
+marker,-53.82696376450747,11.228027343750002,large-bazzar,Tehraroft,,,![Tehraroft](images/Tehraroft.jpg),,,,,,"{""iconScale"":0.17}",,,
+marker,-68.25975865531507,21.73095703125,bazzar,Tarrisse,,,![Tarrisse](images/Tarrisse.jpg),,,,,,"{""iconScale"":0.17}",,,
+marker,-68.07950702586419,9.711914062500002,bazzar,Sha'ri Red City,,,![Sha'ri Red City](images/Sha%27ri%20Red%20City.jpg),,,,,,"{""iconScale"":0.15}",,,
+marker,-63.03295871655778,13.337402343750002,fort,High Point Citidel,,,![High Point Citidel](images/High%20Point%20Citidel.jpg),,,,,,"{""iconScale"":0.15}",,,
+marker,-71.52490903732816,21.060791015625004,bazzar,Al-Salri,,,![Al-Salri](images/Al-Salri.jpg),,,,,,"{""iconScale"":0.15}",,,
+marker,-72.32912972217885,35.55049213977258,large-bazzar,Baahubali,,,![Baahubali](images/Baahubali.jpg),,,,,,"{""iconScale"":0.17}",,,
+marker,-53.85208501857218,30.146484375000004,porto,Olzar,,,![Olzar](images/Olzar.jpg),,,,,,"{""iconScale"":0.01}",,,
 marker,8.86336203355168,-32.98068098166794,carrow,Rydale,,,,,,,,,"{""iconScale"":0.3}",,,
 marker,-0.4394488164139641,37.42297326177813,carrow,Mourngrove,,,,,,,,,"{""iconScale"":0.3}",,,
 marker,-9.156332560046778,40.364081200132986,carrow,Ravenhollow,,,,,,,,,"{""iconScale"":0.3}",,,
-marker,59.153403092050375,48.93451688354864,abandon-dwarfhold,Ondrehrdin,,,![Ondrehrdin](images/Dwarfhold/Ondrehrdin.jpg),,,,,,"{""iconScale"":0.01}",,,
+marker,59.153403092050375,48.93451688354864,abandon-dwarfhold,Ondrehrdin,,,![Ondrehrdin](images/Ondrehrdin.jpg),,,,,,"{""iconScale"":0.01}",,,
 marker,-40.530501775743204,-17.3371915962196,beastman-small,BEASTMAN SMALL,,,,,,,,,"{""iconScale"":0.2}",,,
 marker,-50.86144411058924,-39.28543526785715,beastman-small,BEASTMAN SMALL,,,,,,,,,"{""iconScale"":0.2}",,,
 marker,-10.660607953624762,79.4761795925152,orc,ORC,,,,,,,,,"{""iconScale"":0.41}",,,
@@ -551,10 +551,10 @@ marker,-32.787207396195136,56.71148175569717,gate,Three Kings Dam,,,![Three King
 marker,-53.1860100506733,47.61476475189903,gate,Grimgals Wall,,,![Grimgals Wall](images/Grimgals%20Wall.png),,,,,,"{""iconScale"":0.41}",,,
 marker,56.315327684346954,86.2429388611516,dwarf-outpost,Karag Burag,,,![Karag Burag](images/Karag%20Burag.jpg),,,,,,"{""iconScale"":0.01}",,,
 marker,6.806350231931331,83.2766265357718,dwarf-outpost,Hul-Kargdrum,,,![Hul-Kargdrum](images/Hul-Kargdrum.jpg),,,,,,"{""iconScale"":0.01}",,,
-marker,-13.689401542510035,45.79103801477888,ld-018,Ilfelin,,,![Ilfelin](images/Dwarfhold/Ilfelin.jpg),,,,,,"{""iconScale"":0.05}",,,
-marker,-20.919807666209465,52.47070499081491,dwarf-outpost,Karak-Duraz,,,![Karak-Duraz](images/Dwarfhold/Karak-Duraz.jpg),,,,,,"{""iconScale"":0.01}",,,
-marker,-21.329578687037973,48.075987159324455,dwarf-outpost,Tharn Khazrim,,,![Tharn Khazrim](images/Dwarfhold/Tharn%20Khazrim.jpg),,,,,,"{""iconScale"":0.01}",,,
-marker,-55.35410513489106,-18.061619614802424,dwarf-outpost,Karak Grumdril,,,![Karak Grumdril](images/Dwarfhold/Karak%20Grumdril.jpg),,,,,,"{""iconScale"":0.01}",,,
+marker,-13.689401542510035,45.79103801477888,ld-018,Ilfelin,,,![Ilfelin](images/Ilfelin.jpg),,,,,,"{""iconScale"":0.05}",,,
+marker,-20.919807666209465,52.47070499081491,dwarf-outpost,Karak-Duraz,,,![Karak-Duraz](images/Karak-Duraz.jpg),,,,,,"{""iconScale"":0.01}",,,
+marker,-21.329578687037973,48.075987159324455,dwarf-outpost,Tharn Khazrim,,,![Tharn Khazrim](images/Tharn%20Khazrim.jpg),,,,,,"{""iconScale"":0.01}",,,
+marker,-55.35410513489106,-18.061619614802424,dwarf-outpost,Karak Grumdril,,,![Karak Grumdril](images/Karak%20Grumdril.jpg),,,,,,"{""iconScale"":0.01}",,,
 marker,69.2871242121239,76.72883654516365,abandon-dwarfhold,Azrak Zarak,,,![Azrak Zarak](images/Azrak%20Zarak.jpg),,,,,,"{""iconScale"":0.01}",,,
 marker,67.47150773528324,68.23608398437501,gate,Icecrown Citidel,,,![Icecrown Citidel](images/Icecrown%20Citidel.jpeg),,,,,,"{""iconScale"":0.41}",,,
 marker,-42.22851735620851,65.61149795214915,dwarf-outpost,Mirabar,,,![Mirabar](images/Mirabar.jpg),,,,,,"{""iconScale"":0.01}",,,
@@ -580,7 +580,9 @@ Recently a group of wood elves began occupying the long abandoned stronghold. Th
 ![Half Gnome](images/half-gnome-half-elf.webp)
 
 ",,,,,,"{""iconScale"":0.01}",,,
-marker,-13.753714244725606,82.77099609375,dwarf-outpost,Dun Ashborun,,,![Dun Ashborun(images/dun%20ashborun.webp),,,,,,"{""iconScale"":0.01}",,,
+marker,-13.753714244725606,82.77099609375,dwarf-outpost,Dun Ashborun,,,"![Dun Ashborun](images/Dun%20Ashborun.webp)
+
+![Dun Ashborun](images/dun%20ashborun.webp)",,,,,,"{""iconScale"":0.01}",,,
 marker,-49.89527660896696,-94.3505859375,gnome,Zyn Razon,,,"Zyn Razon, or, The 'Iron City', is a unique Gnomish city, rather than being hidden away in the mountains this  city is located in the Tolodean foothills and not only easily accessible by humans but well traveled and traded.
 
 ![Zyn Razon](images/Zyn%20Razon.webp)",,,,,,"{""iconScale"":0.01}",,,
@@ -598,17 +600,17 @@ marker,65.59480042624014,-89.9560546875,house,Village,,,,,,,,,"{""iconScale"":0.
 marker,70.95969716686398,-73.56445312500001,house,Village,,,,,,,,,"{""iconScale"":0.01}",,,
 marker,70.67815257195306,-90.98876953125001,house,Village,,,,,,,,,"{""iconScale"":0.01}",,,
 marker,70.75072302031477,-80.57373046875001,house,Village,,,,,,,,,"{""iconScale"":0.01}",,,
-marker,-63.587763298582104,34.60663132222811,carrow,The Holy City of Schramm,,,![The Holy City of Schramm](images/city/The Holy City of Schramm.jpg),,,,,,"{""iconScale"":0.3}",,,
-marker,-58.84742684031281,-77.3418470633737,castle,Kingshold,,,![Kingshold](images/city/Kingshold.jpg),,,,,,"{""iconScale"":0.24}",,,
-marker,-44.85605351909083,-64.35751857723304,carrow,Caspain,,,![Caspain](images/city/Caspain.png),,,,,,"{""iconScale"":0.3}",,,
-marker,-38.242023105066835,-57.70504539646459,castle,Chatuea,,,![Chatuea](images/city/Chatuea.jpg),,,,,,"{""iconScale"":0.24}",,,
-marker,-50.04968198112584,-103.66470797656768,carrow,Swordfin,,,![Swordfin](images/city/Swordfin.jpg),,,,,,"{""iconScale"":0.2}",,,
-marker,65.2180534225447,-23.464255046293367,carrow,Rhocrusta,,,![Rhocrusta](images/city/Rhocrusta.jpg),,,,,,"{""iconScale"":0.2}",,,
-marker,-32.23133659998973,-64.79765181315726,porto,Gavony,,,![Gavony](images/city/Gavony.jpg),,,,,,"{""iconScale"":0.02}",,,
+marker,-63.587763298582104,34.60663132222811,carrow,The Holy City of Schramm,,,![The Holy City of Schramm](images/The Holy City of Schramm.jpg),,,,,,"{""iconScale"":0.3}",,,
+marker,-58.84742684031281,-77.3418470633737,castle,Kingshold,,,![Kingshold](images/Kingshold.jpg),,,,,,"{""iconScale"":0.24}",,,
+marker,-44.85605351909083,-64.35751857723304,carrow,Caspain,,,![Caspain](images/Caspain.png),,,,,,"{""iconScale"":0.3}",,,
+marker,-38.242023105066835,-57.70504539646459,castle,Chatuea,,,![Chatuea](images/Chatuea.jpg),,,,,,"{""iconScale"":0.24}",,,
+marker,-50.04968198112584,-103.66470797656768,carrow,Swordfin,,,![Swordfin](images/Swordfin.jpg),,,,,,"{""iconScale"":0.2}",,,
+marker,65.2180534225447,-23.464255046293367,carrow,Rhocrusta,,,![Rhocrusta](images/Rhocrusta.jpg),,,,,,"{""iconScale"":0.2}",,,
+marker,-32.23133659998973,-64.79765181315726,porto,Gavony,,,![Gavony](images/Gavony.jpg),,,,,,"{""iconScale"":0.02}",,,
 marker,-45.17987365618048,25.86948612366965,carrow,Avylyn ,,,,,,,,,"{""iconScale"":0.3}",,,
 marker,-53.77468884583577,37.30954430147735,carrow,Boorsdon,,,"![Boorsdon](images/Boorsdon.jpg)
 ",,,,,,"{""iconScale"":0.3}",,,
-marker,-31.615550910848324,-105.6666756514329,carrow,Sarugra ,,,![Sarugra](images/city/Sarugra.jpg),,,,,,"{""iconScale"":0.3}",,,
+marker,-31.615550910848324,-105.6666756514329,carrow,Sarugra ,,,![Sarugra](images/Sarugra.jpg),,,,,,"{""iconScale"":0.3}",,,
 marker,62.97519757003266,66.62118546117193,ld-018,LD 018,,,,,,,,,"{""iconScale"":0.05}",,,
 marker,-26.863551817004467,41.27605382387123,dwarf-outpost,Dun Moregar,,,![Dun Moregar](images/Dun%20Moregar.jpg),,,,,,"{""iconScale"":0.01}",,,
 marker,71.97218900592375,64.29517420260434,abandon-dwarfhold,Nazarov,,,![Nazarov](images/Nazarov.jpg),,,,,,"{""iconScale"":0.01}",,,
@@ -616,14 +618,14 @@ marker,70.67088107015755,51.39209214205115,abandon-dwarfhold,Mithrilhall,,,![Mit
 marker,71.42717893107374,58.07140681739316,abandon-dwarfhold,Karak-Barud,,,![Karak-Barud](images/Karak-Barud.webp),,,,,,"{""iconScale"":0.01}",,,
 marker,56.8729956637964,-14.171851731137853,porto,Marienburg,,,![Marienburg](images/marienburg.webp),,,,,,"{""iconScale"":0.01}",,,
 marker,-45.996961618203805,-100.9672340219234,fort,Fort Davenport,,,![Fort Davenport](images/Fort-Davenport.jpg),,,,,,"{""iconScale"":0.15}",,,
-marker,2.723583083348398,-40.14317959543694,castle,Chaumont,,,,,,,,,"{""iconScale"":0.24}",,,
+marker,2.723583083348398,-40.14317959543694,castle,Chaumont,,,![Chaumont](images/Chaumont.webp),,,,,,"{""iconScale"":0.24}",,,
 marker,24.32707654001865,29.178740081497153,carrow,Mulhouse,,,,,,,,,"{""iconScale"":0.3}",,,
-marker,-65.5129625532949,-66.26642921845043,castle,Saint-Brieuc,,,![Regorina](images/city/Regorina.jpg),,,,,,"{""iconScale"":0.35}",,,
-marker,-44.80912170007736,-87.93589095337583,castle,Valheilm,,,,,,,,,"{""iconScale"":0.35}",,,
-marker,-31.709476360019337,-99.7348221727037,carrow,Elhadra,,,,,,,,,"{""iconScale"":0.3}",,,
+marker,-65.5129625532949,-66.26642921845043,castle,Saint-Brieuc,,,![Regorina](images/Regorina.jpg),,,,,,"{""iconScale"":0.35}",,,
+marker,-44.80912170007736,-87.93589095337583,castle,Valheilm,,,![Valheilm](images/Valheilm.jpg),,,,,,"{""iconScale"":0.35}",,,
+marker,-31.709476360019337,-99.7348221727037,carrow,Elhadra,,,![Elhadra](images/Elhadra.jpg),,,,,,"{""iconScale"":0.3}",,,
 marker,64.74601725111455,66.26958627670315,beastman-small,BEASTMAN SMALL,,,,,,,,,"{""iconScale"":0.13}",,,
-marker,-5.353521355337321,-79.23399087371428,carrow,Gaelaley,,,,,,,,,"{""iconScale"":0.35}",,,
-marker,-63.17419360420508,52.12700386929841,carrow,Witchfater Tor,,,,,,,,,"{""iconScale"":0.3}",,,
+marker,-5.353521355337321,-79.23399087371428,carrow,Gaelaley,,,![Gaelaley](images/Gaelaley.jpg),,,,,,"{""iconScale"":0.35}",,,
+marker,-63.17419360420508,52.12700386929841,carrow,Witchfater Tor,,,![Witchfater Tor](images/Witchfater%20Tor.jpg),,,,,,"{""iconScale"":0.3}",,,
 text,-64.77280807927899,90.35156250000001,,Crooked Mountains,,,"Despite dwarves meticlious record keeping the origin of the dwarves that inhabit the crooked mountains remains a mystsery. Some believe them to have originally been banished clans, while others thought them to be a returning expedition from the far east. Regardless of how they arrived there, the dwaves of these mountains themselves in the most inhospitable mountain range for dwavern kind, far too hot and without any minerial wealth beyond raw industral ore that could only be stripped mined rather than traditionally gathered, this put the dwaves of the crooked moutnains at an extreme disadvantage but they adapted and persisted. ",14,0,0,0,,,,,1
 text,62.83508901142283,1.9788046766726632,,Sea of Claws,,,,20,0,0,0,,,,,1
 text,67.44122869796351,50.09307069140345,,Sea of Storms,,,,24,20,0,0,,,,,1
