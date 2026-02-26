@@ -461,7 +461,7 @@ marker,-71.40637795306482,53.657330586778755,ld-007,LD 007,,,,,,,,,"{""iconScale
 marker,-73.09864515998866,50.39503576895697,ld-007,LD 007,,,,,,,,,"{""iconScale"":0.11}",,,
 marker,-73.75708225264577,74.81846829249757,ld-007,LD 007,,,,,,,,,"{""iconScale"":0.11}",,,
 marker,-28.885038259360872,54.39325853473561,abandon-dwarfhold,Grom's Peak,,,![Grom's Peak](images/Grom%27s%20Peak.jpg),,,,,,"{""iconScale"":0.01}",,,
-marker,-23.221877979325416,68.81858712512549,gnome,Gnomepoint,,,![Gnomepoint](images/Gnome.jpg),,,,,,"{""iconScale"":0.01}",,,
+marker,-23.221877979325416,68.81858712512549,gnome,Gnomepoint,,,![Gnomepoint](images/Gnomepoint.jpg),,,,,,"{""iconScale"":0.01}",,,
 marker,64.82090711923603,74.83861574761437,abandon-dwarfhold,Karak Gorûmzra,,,![Karak Gorûmzra](images/Karak%20Gor%C3%BBmzra.jpg),,,,,,"{""iconScale"":0.01}",,,
 marker,72.67922441671935,-83.16650390625001,abandon-dwarfhold,Ostapchuk,,,![Ostapchuk](images/Ostapchuk.jpg),,,,,,"{""iconScale"":0.01}",,,
 marker,-43.25265825851726,55.68969726562501,abandon-dwarfhold,Dammerhall,,,![Dammerhall](images/dammerhall.jpg),,,,,,"{""iconScale"":0.01}",,,
@@ -586,7 +586,7 @@ marker,-13.753714244725606,82.77099609375,dwarf-outpost,Dun Ashborun,,,"![Dun As
 marker,-49.89527660896696,-94.3505859375,gnome,Zyn Razon,,,"Zyn Razon, or, The 'Iron City', is a unique Gnomish city, rather than being hidden away in the mountains this  city is located in the Tolodean foothills and not only easily accessible by humans but well traveled and traded.
 
 ![Zyn Razon](images/Zyn%20Razon.webp)",,,,,,"{""iconScale"":0.01}",,,
-marker,-27.44979032978423,65.61035156250001,gnome,Gnomehold,,,![Gnomepoint](images/Gnome.jpg),,,,,,"{""iconScale"":0.01}",,,
+marker,-27.44979032978423,65.61035156250001,gnome,Gnomehold,,,![Gnomepoint](images/Gnomehold.jpg),,,,,,"{""iconScale"":0.01}",,,
 marker,6.839169626342808,104.41406250000001,dwarf-outpost,Mirabar,,,![Dun'ragram](images/Dun'ragram.jpg),,,,,,"{""iconScale"":0.01}",,,
 marker,71.7050925307212,-75.91552734375001,house,Village,,,,,,,,,"{""iconScale"":0.01}",,,
 marker,69.20940390181205,-88.7255859375,house,Village,,,,,,,,,"{""iconScale"":0.01}",,,
