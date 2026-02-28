@@ -275,7 +275,7 @@ marker,22.83689209957139,-10.107421875000002,empire-of-grand-bohemia,EMPIRE OF G
 
 # The Great Sundering",,,,,,"{""iconScale"":0.14}",,,
 marker,-65.03355211809361,-0.3955825070821195,free-pirate-confederacy-of-sartogio,FREE PIRATE CONFEDERACY OF SARTOGIO,,,,,,,,,"{""iconScale"":0.03}",,,
-marker,64,20,goblin,GOBLIN,,,,,,,,,"{""iconScale"":0.01}",,,
+marker,-53.95604006696609,3.9550781250000004,goblin,The Bog Barons,,,,,,,,,"{""iconScale"":0.01}",,,
 marker,-13.368215083416215,-36.69432906769268,grand-barony-of-branth,GRAND BARONY OF BRANTH,,,,,,,,,"{""iconScale"":0.11}",,,
 marker,62.75503543622,-64.55583834985835,grand-duchy-of-thaldara,GRAND DUCHY OF THALDARA,,,,,,,,,"{""iconScale"":0.04}",,,
 marker,-14.788255487061242,-80.59450801168562,grand-kingdom-of-bellmore,GRAND KINGDOM OF BELLMORE,,,,,,,,,"{""iconScale"":0.08}",,,
@@ -636,6 +636,9 @@ marker,-14.944784875088372,-49.570347970536055,orc,The Tuskchopper Tribe,,,,,,,,
 marker,57.231502991478926,63.58898246674216,orc,Frostrider Tribe,,,,,,,,,"{""iconScale"":0.2}",,,
 marker,43.83452678223684,79.7165751841497,orc,Boarrider Boys,,,,,,,,,"{""iconScale"":0.2}",,,
 marker,-37.43997405227058,32.87022472186675,orc,The Bloodbiter Tribe,,,,,,,,,"{""iconScale"":0.41}",,,
+marker,-41.172300185492,61.25976562500001,dwarf-outpost,Karak Ulihm,,,,,,,,,"{""iconScale"":0.01}",,,
+marker,-54.927086366154796,78.39843750000001,orc,Skullsplitter Clan,,,,,,,,,"{""iconScale"":0.13}",,,
+marker,-47.77035495313166,13.513183593750002,orc,Gorehide Clan,,,,,,,,,"{""iconScale"":0.41}",,,
 text,-64.77280807927899,90.35156250000001,,Crooked Mountains,,,"Despite dwarves meticlious record keeping the origin of the dwarves that inhabit the crooked mountains remains a mystsery. Some believe them to have originally been banished clans, while others thought them to be a returning expedition from the far east. Regardless of how they arrived there, the dwaves of these mountains themselves in the most inhospitable mountain range for dwavern kind, far too hot and without any minerial wealth beyond raw industral ore that could only be stripped mined rather than traditionally gathered, this put the dwaves of the crooked moutnains at an extreme disadvantage but they adapted and persisted. ",14,0,0,0,,,,,1
 text,62.83508901142283,1.9788046766726632,,Sea of Claws,,,,20,0,0,0,,,,,1
 text,67.44122869796351,50.09307069140345,,Sea of Storms,,,,24,20,0,0,,,,,1
@@ -674,3 +677,6 @@ text,27.391278222579277,65.65508495203268,,The Wildwood,,,,14,0,0,0,,,,,1
 text,-59.72311260415261,-27.18000776933702,,Mirkwood,,,,14,0,2,0,,,,,1
 text,20.385798243228674,-60.99612809903659,,The Sword Coast,,,,14,-75,2,0,,,,,1
 text,64.33990785750463,64.81997791570353,,Razorpine Valley,,,,8,22,0,0,,,,,1
+text,41.88574126847667,85.47363281250001,,Pinesplitter Ridge,,,,4,0,0,0,,,,,1
+text,38.04803782642601,85.14404296875,,Skullpeak Pass ,,,,4,0,0,0,,,,,1
+text,35.1729793615279,86.30859375,,Battle of Deadwind Pass,,,,4,0,0,0,,,,,1
