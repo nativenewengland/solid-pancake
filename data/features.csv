@@ -308,7 +308,7 @@ marker,52,-12,principality-of-orange,PRINCIPALITY OF ORANGE,,,,,,,,,"{""iconScal
 marker,16.644557340939674,41.212944847733745,principality-of-redwall,PRINCIPALITY OF REDWALL,,,,,,,,,"{""iconScale"":0.2}",,,
 marker,-54.96574463209941,-97.14048882594622,principality-of-tolodo,PRINCIPALITY OF TOLODO,,,,,,,,,"{""iconScale"":0.03}",,,
 marker,-37.754000738893176,53.25568342776204,syldenia,SYLDENIA,,,,,,,,,"{""iconScale"":0.2}",,,
-marker,50.1485373845043,-2.1080096484697646,the-ecclesiasticy,THE ECCLESIASTICY,,,,,,,,,"{""iconScale"":0.2}",,,
+marker,55.32752920075887,-0.9667968750000001,the-ecclesiasticy,THE ECCLESIASTICY,,,,,,,,,"{""iconScale"":0.2}",,,
 marker,48.402623040296895,15.203783418909346,the-sentinals,THE SENTINALS,,,![THE SENTINALS](images/The%20Sentinals.jpg),,,,,,"{""iconScale"":0.22}",,,
 marker,-40.81917173353749,18.01716234030457,the-shire-of-anvilmar,THE SHIRE OF ANVILMAR,,,,,,,,,"{""iconScale"":0.04}",,,
 marker,-21.232056204199043,-16.605342599150003,the-state-of-rhymeria,THE STATE OF RHYMERIA,,,,,,,,,"{""iconScale"":0.04}",,,
@@ -399,7 +399,7 @@ marker,-60.5220815015886,-12.348498362252105,republic-of-florence,REPUBLIC OF FL
 marker,-68.25307124863983,13.316551016879833,sultanate-of-qashir,SULTANATE OF QASHIR,,,,,,,,,"{""iconScale"":0.03}",,,
 marker,-59.901106211317106,42.97020958746464,tandar,TANDAR,,,,,,,,,"{""iconScale"":0.02}",,,
 marker,-52.53005409460626,98.25297695769208,the-dark-lords-domain,THE DARK LORDS DOMAIN,,,,,,,,,"{""iconScale"":0.01}",,,
-marker,16,-12,the-free-state-of-myroberg,THE FREE STATE OF MYROBERG,,,,,,,,,"{""iconScale"":0.04}",,,
+marker,2.152799107066267,-31.508789062500004,the-free-state-of-myroberg,FREE STATE OF MYROBERG,,,,,,,,,"{""iconScale"":0.04}",,,
 marker,44.647740907829146,24.513017193968775,the-great-brey-heard,THE GREAT BREY HEARD,,,"The Unnumbered Tribes
 In the Great Forest, huge herds of Beastmen roam freely though vast tracts of woodland that are but sparsely populated by the denizens of the Empire. Out of sight, the Cloven Ones glut themselves on game animals and grow in strength before unleashing their wrath upon the people of Osterlund and Talabecland.",,,,,,"{""iconScale"":0.03}",,,
 marker,-60.5334403966211,17.226562500000004,the-monastic-order-of-the-wheel,THE MONASTIC ORDER OF THE WHEEL,,,,,,,,,"{""iconScale"":0.06}",,,
@@ -419,8 +419,8 @@ marker,-60.99384283888707,33.88522275250645,dwarf-outpost,Barat Nûmenz,,,![Bara
 marker,-70.72860581459155,53.96480198267597,dwarf-outpost,Dun Toruhm,,,![Dun Toruhm](images/Dun%20Toruhm.jpg),,,,,,"{""iconScale"":0.01}",,,
 marker,-48.62629692516604,77.73915536434669,dwarf-outpost,Karad-Graef,,,![Karad-Graef](images/Karad-Graef.jpg),,,,,,"{""iconScale"":0.01}",,,
 marker,-7.18810087117902,69.16992187500001,carrow-large,BP 003,,,,,,,,,"{""iconScale"":0.18}",,,
-marker,11.84657904044014,-61.83077646030375,carrow,Neverwinter,,,![Neverwinter](images/Neverwinter.jpg),,,,,,"{""iconScale"":0.2}",,,
-marker,-47.57627196331696,-50.27213309643573,carrow,Moorsfield,,,![Moorsfield](images/Moorsfield.jpg),,,,,,"{""iconScale"":0.3}",,,
+marker,12.0392568030782,-61.83105468750001,carrow,Neverwinter,,,![Neverwinter](images/Neverwinter.jpg),,,,,,"{""iconScale"":0.2}",,,
+marker,-51.123085325149184,-51.7236328125,carrow,Moorsfield,,,![Moorsfield](images/Moorsfield.jpg),,,,,,"{""iconScale"":0.3}",,,
 marker,60.78024418936339,67.01532571638317,dwarf-outpost,Dûmthûr Mînrth,,,"![Dûmthûr Mînrth](images/D%C3%BBmth%C3%BBr%20M%C3%AEnrth.jpg)
 
 Led by the Thane Oshuart Oakhammer",,,,,,"{""iconScale"":0.01}",,,
@@ -443,9 +443,9 @@ marker,-25.244870668979043,26.410072149433425,dwarf-outpost,Dwemerhelm,,,![Dweme
 marker,63.71445458364793,-78.37646484375001,house,Brimfjord,,,![Brimfjord](images/Brimfjord.jpg),,,,,,"{""iconScale"":0.01}",,,
 marker,71.00265967789281,-82.39746093750001,house,Eirholt,,,![Eirholt](images/Eirholt.jpg),,,,,,"{""iconScale"":0.01}",,,
 marker,-69.66506913577498,-25.950135280187677,porto,Eldoria,,,![Eldoria](images/Eldoria.jpg),,,,,,"{""iconScale"":0.01}",,,
-marker,-34.75967405945443,-77.42884704762747,castle,Regorina,,,![Regorina](images/Regorina.jpg),,,,,,"{""iconScale"":0.35}",,,
-marker,-35.27755840603654,-42.78076171875001,castle,Nightgale,,,![Nightgale](images/nightgale.jpg),,,,,,"{""iconScale"":0.35}",,,
-marker,-58.39069814092198,-63.061010534702575,castle,Carwell,,,![Carwell](images/Carwell.jpg),,,,,,"{""iconScale"":0.35}",,,
+marker,-34.75967405945443,-77.42884704762747,castle,Regorina,,,![Regorina](images/Regorina.jpg),,,,,,"{""iconScale"":0.24}",,,
+marker,-35.27755840603654,-42.78076171875001,castle,Nightgale,,,![Nightgale](images/nightgale.jpg),,,,,,"{""iconScale"":0.25}",,,
+marker,-58.39069814092198,-63.061010534702575,castle,Carwell,,,![Carwell](images/Carwell.jpg),,,,,,"{""iconScale"":0.22}",,,
 marker,-72.06039251607318,13.754882812500002,bazzar,BAZZAR,,,,,,,,,"{""iconScale"":0.15}",,,
 marker,-16.8886597873816,87.26496228740088,orc,The Whitehand Clan ,,,,,,,,,"{""iconScale"":0.41}",,,
 marker,-24.726809066760115,34.76074218750001,gate,Dol Guldur,,,![Dol Guldur](images/Dol%20Guldur.jpg),,,,,,"{""iconScale"":0.41}",,,
@@ -475,7 +475,7 @@ marker,63.753349751812074,48.03138175667467,abandon-dwarfhold,Karak Ozambrald,,,
 marker,55.10351605801967,40.62592997182795,abandon-dwarfhold,Ironhold,,,![Ironhold](images/Ironhold.jpg),,,,,,"{""iconScale"":0.01}",,,
 marker,53.396432127095984,27.861186812025558,abandon-dwarfhold,Alvar-Baroag,,,![Alvar-Baroag](images/Alvar-Baroag.jpg),,,,,,"{""iconScale"":0.01}",,,
 marker,15.766049967388058,31.091308593750004,carrow,Stenengard,,,,,,,,,"{""iconScale"":0.3}",,,
-marker,-2.483345737982608,-32.16796875000001,carrow,Seabrook,,,"![Moorsfield](images/Moorsfield.jpg)
+marker,-2.262667675979836,-35.41992187500001,carrow,Seabrook,,,"
 
 Current wiki entries:
 - The Curse of Stone
@@ -546,7 +546,7 @@ marker,70.08056215839737,20.742187500000004,gnome,Tinkertown,,,![Gnomepoint](ima
 marker,29.305847291822687,99.22584719495144,dwarf-outpost,Karak-Dûmankon,,,![Karak-Dûmankon](images/Karak-D%C3%BBmankon.jpg),,,,,,"{""iconScale"":0.01}",,,
 marker,-0.9881958383385184,88.21897776643627,dwarf-outpost,Grozumdihr,,,![Grozumdihr](images/Grozumdihr.png),,,,,,"{""iconScale"":0.01}",,,
 marker,-2.855686387374083,96.91901827280756,dwarf-outpost,Gor Ozumbrog,,,![Gor Ozumbrog](images/Gor%20Ozumbrog.jpg),,,,,,"{""iconScale"":0.01}",,,
-marker,-59.18723968628088,-33.44239230392819,dwarf-outpost,Azad-Khas,,,![Azad-Khas](images/Azad-Khas.jpg),,,,,,"{""iconScale"":0.01}",,,
+marker,-63.23360457848652,-35.72753906250001,dwarf-outpost,Azad-Khas,,,![Azad-Khas](images/Azad-Khas.jpg),,,,,,"{""iconScale"":0.01}",,,
 marker,-32.787207396195136,56.71148175569717,gate,Three Kings Dam,,,![Three Kings Dam](images/Three%20Kings%20Dam.jpg),,,,,,"{""iconScale"":0.41}",,,
 marker,-53.1860100506733,47.61476475189903,gate,Grimgals Wall,,,![Grimgals Wall](images/Grimgals%20Wall.png),,,,,,"{""iconScale"":0.41}",,,
 marker,58.894388506320766,90.70248274669277,dwarf-outpost,Karag Burag,,,![Karag Burag](images/Karag%20Burag.jpg),,,,,,"{""iconScale"":0.01}",,,
@@ -606,7 +606,7 @@ marker,-44.85605351909083,-64.35751857723304,carrow,Caspain,,,![Caspain](images/
 marker,-38.242023105066835,-57.70504539646459,castle,Chatuea,,,![Chatuea](images/Chatuea.jpg),,,,,,"{""iconScale"":0.24}",,,
 marker,-50.04968198112584,-103.66470797656768,carrow,Swordfin,,,![Swordfin](images/Swordfin.jpg),,,,,,"{""iconScale"":0.2}",,,
 marker,65.2180534225447,-23.464255046293367,carrow,Rhocrusta,,,![Rhocrusta](images/Rhocrusta.jpg),,,,,,"{""iconScale"":0.2}",,,
-marker,-32.23133659998973,-64.79765181315726,porto,Gavony,,,![Gavony](images/Gavony.jpg),,,,,,"{""iconScale"":0.02}",,,
+marker,-32.546709377855116,-64.73144531250001,porto,Gavony,,,![Gavony](images/Gavony.jpg),,,,,,"{""iconScale"":0.02}",,,
 marker,-45.17987365618048,25.86948612366965,carrow,Avylyn ,,,,,,,,,"{""iconScale"":0.3}",,,
 marker,-53.77468884583577,37.30954430147735,carrow,Boorsdon,,,"![Boorsdon](images/Boorsdon.jpg)
 ",,,,,,"{""iconScale"":0.3}",,,
@@ -620,7 +620,7 @@ marker,56.8729956637964,-14.171851731137853,porto,Marienburg,,,![Marienburg](ima
 marker,-45.996961618203805,-100.9672340219234,fort,Fort Davenport,,,![Fort Davenport](images/Fort-Davenport.jpg),,,,,,"{""iconScale"":0.15}",,,
 marker,2.723583083348398,-40.14317959543694,castle,Chaumont,,,![Chaumont](images/Chaumont.webp),,,,,,"{""iconScale"":0.24}",,,
 marker,24.32707654001865,29.178740081497153,carrow,Mulhouse,,,,,,,,,"{""iconScale"":0.3}",,,
-marker,-65.5129625532949,-66.26642921845043,castle,Saint-Brieuc,,,![Regorina](images/Regorina.jpg),,,,,,"{""iconScale"":0.35}",,,
+marker,-65.5129625532949,-66.26642921845043,castle,Saint-Brieuc,,,,,,,,,"{""iconScale"":0.19}",,,
 marker,-44.80912170007736,-87.93589095337583,castle,Valheilm,,,![Valheilm](images/Valheilm.jpg),,,,,,"{""iconScale"":0.35}",,,
 marker,-31.709476360019337,-99.7348221727037,carrow,Elhadra,,,![Elhadra](images/Elhadra.jpg),,,,,,"{""iconScale"":0.3}",,,
 marker,64.74601725111455,66.26958627670315,beastman-small,BEASTMAN SMALL,,,,,,,,,"{""iconScale"":0.13}",,,
@@ -668,6 +668,44 @@ marker,32.268465613214595,-12.018307628859565,carrow,City ,,,,,,,,,"{""iconScale
 marker,32.63944807137619,-6.85336194285358,carrow,City ,,,,,,,,,"{""iconScale"":0.2}",,,
 marker,42.682925299277095,-35.59576148530877,carrow,City ,,,,,,,,,"{""iconScale"":0.2}",,,
 marker,50.680472789835626,-22.325794478336654,carrow,City ,,,,,,,,,"{""iconScale"":0.2}",,,
+marker,-54.00879459431828,15.227050781250002,bazzar,Skyrock,,,,,,,,,"{""iconScale"":0.15}",,,
+marker,-59.16577016005325,-33.66210937500001,dwarf-outpost,Azad-Khas,,,![Azad-Khas](images/Azad-Khas.jpg),,,,,,"{""iconScale"":0.01}",,,
+marker,5.660871806913466,-64.66552734375001,carrow,City,,,,,,,,,"{""iconScale"":0.2}",,,
+marker,4.93820054749392,-45.02197265625,carrow,City,,,,,,,,,"{""iconScale"":0.2}",,,
+marker,22.004853239608114,-58.82080078125001,carrow,City,,,,,,,,,"{""iconScale"":0.2}",,,
+marker,25.065362573919337,-57.96386718750001,carrow,City,,,,,,,,,"{""iconScale"":0.2}",,,
+marker,15.284520487653433,-60.35888671875001,carrow,City,,,,,,,,,"{""iconScale"":0.2}",,,
+marker,12.146979486883886,-43.17626953125,carrow,City,,,,,,,,,"{""iconScale"":0.2}",,,
+marker,-2.262906513337367,-28.344726562500004,carrow,City,,,,,,,,,"{""iconScale"":0.2}",,,
+marker,-3.995426461584243,-25.817871093750004,carrow,City,,,,,,,,,"{""iconScale"":0.2}",,,
+marker,-7.319521117489465,-16.984863281250004,carrow,Reneaigner Hold,,,,,,,,,"{""iconScale"":0.2}",,,
+marker,-6.862028167464229,-13.557128906250002,carrow,City,,,,,,,,,"{""iconScale"":0.2}",,,
+marker,-9.968172898110822,-12.744140625000002,carrow,City,,,,,,,,,"{""iconScale"":0.2}",,,
+marker,-11.372331691205865,-6.789550781250001,carrow,City,,,,,,,,,"{""iconScale"":0.2}",,,
+marker,-1.6042216080757976,9.272460937500002,carrow,Szutenberg,,,,,,,,,"{""iconScale"":0.2}",,,
+marker,0.30807202109967596,13.425292968750002,carrow,City,,,,,,,,,"{""iconScale"":0.2}",,,
+marker,9.40666757289651,17.358398437500004,carrow,City,,,,,,,,,"{""iconScale"":0.2}",,,
+marker,-30.43129715974905,-76.77246093750001,castle,City,,,,,,,,,"{""iconScale"":0.24}",,,
+marker,-28.168913491651242,-62.22656250000001,castle,city,,,,,,,,,"{""iconScale"":0.24}",,,
+marker,-51.7142238523299,-6.8115234375,carrow,City,,,,,,,,,"{""iconScale"":0.3}",,,
+marker,-47.01025528887433,-31.398925781250004,carrow,City,,,,,,,,,"{""iconScale"":0.22}",,,
+marker,-48.15134599293254,-35.31005859375001,carrow,City,,,,,,,,,"{""iconScale"":0.22}",,,
+marker,-48.67685545487736,-45.90087890625,carrow,City,,,,,,,,,"{""iconScale"":0.22}",,,
+marker,-16.951585665694378,4.218750000000001,carrow,City,,,,,,,,,"{""iconScale"":0.22}",,,
+marker,52.84293143884182,-33.50830078125001,carrow,City,,,,,,,,,"{""iconScale"":0.22}",,,
+marker,58.008178378653405,-45.39550781250001,carrow,City,,,,,,,,,"{""iconScale"":0.22}",,,
+marker,60.08690000458957,-23.664550781250004,carrow,City,,,,,,,,,"{""iconScale"":0.22}",,,
+marker,58.837052318979055,-19.665527343750004,carrow,City,,,,,,,,,"{""iconScale"":0.22}",,,
+marker,52.682761739548916,2.3071289062500004,carrow,City,,,,,,,,,"{""iconScale"":0.22}",,,
+marker,-16.212254223915238,32.03613281250001,carrow,City,,,,,,,,,"{""iconScale"":0.22}",,,
+marker,13.154390161591186,-61.61132812500001,carrow,Rockcliff,,,,,,,,,"{""iconScale"":0.15}",,,
+marker,34.41632592492975,-53.76708984375001,fort,Redhawk Bastion,,,,,,,,,"{""iconScale"":0.1}",,,
+marker,-41.01557981661204,25.312500000000004,carrow,Oref,,,,,,,,,"{""iconScale"":0.3}",,,
+marker,2.5261163493281384,-35.46386718750001,castle, Myroberg ,,,,,,,,,"{""iconScale"":0.24}",,,
+marker,55.86399439985203,-24.982910156250004,porto,Docktown,,,![Marienburg](images/marienburg.webp),,,,,,"{""iconScale"":0.01}",,,
+marker,42.61897471137534,-24.93896484375,carrow,Ditlev,,,,,,,,,"{""iconScale"":0.2}",,,
+marker,61.49125903330273,6.35009765625,kislev,Karcza Port,,,,,,,,,"{""iconScale"":0.01}",,,
+marker,55.60606687739475,-55.23925781250001,fort,Keep of St. Borros,,,,,,,,,"{""iconScale"":0.1}",,,
 text,-64.77280807927899,90.35156250000001,,Crooked Mountains,,,"Despite dwarves meticlious record keeping the origin of the dwarves that inhabit the crooked mountains remains a mystsery. Some believe them to have originally been banished clans, while others thought them to be a returning expedition from the far east. Regardless of how they arrived there, the dwaves of these mountains themselves in the most inhospitable mountain range for dwavern kind, far too hot and without any minerial wealth beyond raw industral ore that could only be stripped mined rather than traditionally gathered, this put the dwaves of the crooked moutnains at an extreme disadvantage but they adapted and persisted. ",14,0,0,0,,,,,1
 text,62.83508901142283,1.9788046766726632,,Sea of Claws,,,,20,0,0,0,,,,,1
 text,67.44122869796351,50.09307069140345,,Sea of Storms,,,,24,20,0,0,,,,,1
@@ -697,7 +735,7 @@ text,-48.371248754707736,-42.2314453125,,The Kings Woods,,,,14,0,2,0,,,,,1
 text,-3.3825348818321057,67.93945312500001,,Mourning Wood ,,,,14,-31,2,0,,,,,1
 text,-11.609855739079984,50.185546875,,Corpsewood,,,,14,0,2,0,,,,,1
 text,49.55206487701461,73.95996093750001,,The Sweptlands,,,,14,0,0,0,,,,,1
-text,53.63207957029406,-61.50146484375001,,The Caldar Moore Coast ,,,,14,0,0,0,,,,,1
+text,53.63207957029406,-61.50146484375001,,The Caldar Moore Coast ,,,,14,65,0,0,,,,,1
 text,-73.03504521190952,42.60498046875,,Zontha Cascade,,,"Despite dwarves meticlious record keeping the origin of the dwarves that inhabit the crooked mountains remains a mystsery. Some believe them to have originally been banished clans, while others thought them to be a returning expedition from the far east. Regardless of how they arrived there, the dwaves of these mountains themselves in the most inhospitable mountain range for dwavern kind, far too hot and without any minerial wealth beyond raw industral ore that could only be stripped mined rather than traditionally gathered, this put the dwaves of the crooked moutnains at an extreme disadvantage but they adapted and persisted. ",14,0,0,0,,,,,1
 text,-67.85898479324494,62.46832623119483,,Gates of Myria,,,,4,0,0,0,,,,,1
 text,-50.078294547389426,69.67592521134121,,The Fell Warrens,,,,14,0,0,0,,,,,1
