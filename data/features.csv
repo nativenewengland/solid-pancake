@@ -277,14 +277,14 @@ marker,14.260526513773849,-0.17721129184665954,empire-of-grand-bohemia,EMPIRE OF
 marker,-65.03355211809361,-0.3955825070821195,free-pirate-confederacy-of-sartogio,FREE PIRATE CONFEDERACY OF SARTOGIO,,,,,,,,,"{""iconScale"":0.03}",,,
 marker,-53.95604006696609,3.9550781250000004,goblin,The Bog Barons,,,,,,,,,"{""iconScale"":0.01}",,,
 marker,-13.368215083416215,-36.69432906769268,grand-barony-of-branth,GRAND BARONY OF BRANTH,,,,,,,,,"{""iconScale"":0.11}",,,
-marker,62.75503543622,-64.55583834985835,grand-duchy-of-thaldara,GRAND DUCHY OF THALDARA,,,,,,,,,"{""iconScale"":0.04}",,,
+marker,62.674169946429785,-64.4238504935312,grand-duchy-of-thaldara,GRAND DUCHY OF THALDARA,,,,,,,,,"{""iconScale"":0.03}",,,
 marker,-14.788255487061242,-80.59450801168562,grand-kingdom-of-bellmore,GRAND KINGDOM OF BELLMORE,,,,,,,,,"{""iconScale"":0.08}",,,
 marker,56.96890989180571,-17.99557455461709,huntsmarshalship-of-wexsod,HUNTSMARSHALSHIP OF WEXSOD,,,,,,,,,"{""iconScale"":0.03}",,,
 marker,-61.88842845131128,-55.790387847881235,kingdom-of-gawthaud,KINGDOM OF GAWTHAUD,,,,,,,,,"{""iconScale"":0.09}",,,
 marker,-20.50935458871459,-89.42905943995335,kingdom-of-alveron,KINGDOM OF ALVERON,,,,,,,,,"{""iconScale"":0.07}",,,
 marker,-50.70748452933861,-78.13628939447594,kingdom-of-belmor,KINGDOM OF BELMOR,,,,,,,,,"{""iconScale"":0.09}",,,
 marker,-43.06943768119919,-50.888877969219465,kingdom-of-bretton,KINGDOM OF BRETTON,,,Crown Wars,,,,,,"{""iconScale"":0.21}",,,
-marker,-49.53946900793533,32.05813663563831,kingdom-of-caledon,KINGDOM OF CALEDON,,,,,,,,,"{""iconScale"":0.07}",,,
+marker,-49.53946900793533,32.05813663563831,kingdom-of-caledon,KINGDOM OF CALEDON,,,,,,,,,"{""iconScale"":0.03}",,,
 marker,-45.083557305195676,-27.15744744619531,kingdom-of-lancchaster,KINGDOM OF LANCCHASTER,,,,,,,,,"{""iconScale"":0.08}",,,
 marker,60,16,kingdom-of-norhaven,KINGDOM OF NORHAVEN,,,,,,,,,"{""iconScale"":0.15}",,,
 marker,-46.34692761055676,-92.89991372690598,kingdom-of-valmont,KINGDOM OF VALMONT,,,,,,,,,"{""iconScale"":0.09}",,,
@@ -673,8 +673,8 @@ marker,-59.16577016005325,-33.66210937500001,dwarf-outpost,Azad-Khas,,,![Azad-Kh
 marker,5.660871806913466,-64.66552734375001,carrow,City,,,,,,,,,"{""iconScale"":0.2}",,,
 marker,4.93820054749392,-45.02197265625,carrow,City,,,,,,,,,"{""iconScale"":0.2}",,,
 marker,22.004853239608114,-58.82080078125001,carrow,City,,,,,,,,,"{""iconScale"":0.2}",,,
-marker,25.065362573919337,-57.96386718750001,carrow,City,,,,,,,,,"{""iconScale"":0.2}",,,
-marker,15.284520487653433,-60.35888671875001,carrow,City,,,,,,,,,"{""iconScale"":0.2}",,,
+marker,25.125372938103137,-58.16158754095322,carrow,City,,,,,,,,,"{""iconScale"":0.2}",,,
+marker,17.622315532934206,-59.721787802067425,carrow,City,,,,,,,,,"{""iconScale"":0.2}",,,
 marker,12.146979486883886,-43.17626953125,carrow,City,,,,,,,,,"{""iconScale"":0.2}",,,
 marker,-2.262906513337367,-28.344726562500004,carrow,City,,,,,,,,,"{""iconScale"":0.2}",,,
 marker,-3.995426461584243,-25.817871093750004,carrow,City,,,,,,,,,"{""iconScale"":0.2}",,,
@@ -706,6 +706,18 @@ marker,55.86399439985203,-24.982910156250004,porto,Docktown,,,![Marienburg](imag
 marker,42.61897471137534,-24.93896484375,carrow,Ditlev,,,,,,,,,"{""iconScale"":0.2}",,,
 marker,61.49125903330273,6.35009765625,kislev,Karcza Port,,,,,,,,,"{""iconScale"":0.01}",,,
 marker,55.60606687739475,-55.23925781250001,fort,Keep of St. Borros,,,,,,,,,"{""iconScale"":0.1}",,,
+marker,65.17366010802058,-68.18148787171788,house,Village,,,,,,,,,"{""iconScale"":0.01}",,,
+marker,66.09825380169346,-71.12532797344315,house,Village,,,,,,,,,"{""iconScale"":0.01}",,,
+marker,72.34308394542171,-54.71070988990424,house,Village,,,,,,,,,"{""iconScale"":0.01}",,,
+marker,70.89556866389132,-58.93095485340548,house,Village,,,,,,,,,"{""iconScale"":0.01}",,,
+marker,73.09286626022227,-75.14625323351105,house,Village,,,,,,,,,"{""iconScale"":0.01}",,,
+marker,73.13110173109172,-46.05472478088532,house,Village,,,,,,,,,"{""iconScale"":0.01}",,,
+marker,59.45617710752141,-69.0816547130583,carrow,City ,,,,,,,,,"{""iconScale"":0.2}",,,
+marker,-52.45048394878677,22.270383167403345,fort,Bellrock Citidel,,,,,,,,,"{""iconScale"":0.1}",,,
+marker,2.9451241821214125,-60.270809689323414,carrow,City,,,,,,,,,"{""iconScale"":0.2}",,,
+marker,10.185515343165365,-63.67638873173536,carrow,City,,,,,,,,,"{""iconScale"":0.2}",,,
+marker,-8.516079112905794,-51.01959815889824,carrow,City,,,,,,,,,"{""iconScale"":0.2}",,,
+marker,68.87150921691185,16.12765380894864,carrow,Northrum,,,,,,,,,"{""iconScale"":0.22}",,,
 text,-64.77280807927899,90.35156250000001,,Crooked Mountains,,,"Despite dwarves meticlious record keeping the origin of the dwarves that inhabit the crooked mountains remains a mystsery. Some believe them to have originally been banished clans, while others thought them to be a returning expedition from the far east. Regardless of how they arrived there, the dwaves of these mountains themselves in the most inhospitable mountain range for dwavern kind, far too hot and without any minerial wealth beyond raw industral ore that could only be stripped mined rather than traditionally gathered, this put the dwaves of the crooked moutnains at an extreme disadvantage but they adapted and persisted. ",14,0,0,0,,,,,1
 text,62.83508901142283,1.9788046766726632,,Sea of Claws,,,,20,0,0,0,,,,,1
 text,67.44122869796351,50.09307069140345,,Sea of Storms,,,,24,20,0,0,,,,,1
@@ -725,10 +737,10 @@ text,70.9600436011352,-32.27809377464698,,The Stormpeak Mountains,,,,14,0,0,0,,,
 text,-27.23533915259327,28.015238378840593,,Whisperwood,,,,14,-31,2,0,,,,,1
 text,-61.85676425837896,85.65031560624924,,Deserts of Saerdwyn,,,,14,0,0,0,,,,,1
 text,-2.285752189878078,-9.228140507146302,,Heartlands,,,,14,0,2,0,,,,,1
-text,72.2488192636152,-61.501404950983456,,The Broken Shore,,,,14,0,0,0,,,,,1
-text,69.5345668312469,14.194346970378053,,Gnomeford,,,,7,-63,0,0,,,,,1
+text,72.19529453599743,-61.39170222089037,,The Broken Shore,,,,14,0,0,0,,,,,1
+text,71.78743392009314,16.85287076403165,,Gnomeford,,,,7,-63,0,0,,,,,1
 text,-41.21152901145914,55.2613526808062,,Stonepeaks,,,,11,-17,2,0,,,,,1
-text,-42.9406503346743,-1.2307281823704066,,The Misty Mountains ,,,,14,0,0,0,,,,,1
+text,-46.67840180660258,0.1755426523339754,,The Misty Mountains ,,,,14,0,0,0,,,,,1
 text,62.34967091320326,-49.28466796875,,The Sentinels ,,,,23,-43,4,0,,,,,1
 text,-32.9163333073905,-5.273437500000001,,The Long Forest,,,,18,-31,17,0,,,,,1
 text,-48.371248754707736,-42.2314453125,,The Kings Woods,,,,14,0,2,0,,,,,1
@@ -747,3 +759,4 @@ text,64.33990785750463,64.81997791570353,,Razorpine Valley,,,,8,22,0,0,,,,,1
 text,41.88574126847667,85.47363281250001,,Pinesplitter Ridge,,,,4,0,0,0,,,,,1
 text,38.04803782642601,85.14404296875,,Skullpeak Pass ,,,,4,0,0,0,,,,,1
 text,35.1729793615279,86.30859375,,Battle of Deadwind Pass,,,,4,0,0,0,,,,,1
+text,67.73489341854768,16.21552952159453,,Northpass,,,,7,-63,0,0,,,,,1
